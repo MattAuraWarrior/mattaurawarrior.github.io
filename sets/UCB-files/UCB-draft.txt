@@ -1,10 +1,10 @@
-[CustomCards]
+ï»¿[CustomCards]
 	[
 		{
 			"name": "Bearer of Golden Harvests",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{W}",
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/1_Bearer of Golden Harvests.png"
@@ -14,7 +14,7 @@
 			"name": "Blessed Aegis",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/2_Blessed Aegis.png"
@@ -34,7 +34,7 @@
 			"name": "Brick by Brick",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/4_Brick by Brick.png"
@@ -64,7 +64,7 @@
 			"name": "Godhood",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{W}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/7_Godhood.png"
@@ -74,7 +74,7 @@
 			"name": "Great Archives Codifier",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Advisor",
+			"type": "Creature â€” Human Advisor",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/8_Great Archives Codifier.png"
@@ -84,7 +84,7 @@
 			"name": "Guardian of Sannuria",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/9_Guardian of Sannuria.png"
@@ -94,7 +94,7 @@
 			"name": "Hannaru, the Lion Queen",
 			"rarity": "mythic",
 			"mana_cost": "{1}{W}",
-			"type": "Legendary Enchantment Creature — God",
+			"type": "Legendary Enchantment Creature â€” God",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/10_Hannaru, the Lion Queen.png"
@@ -114,7 +114,7 @@
 			"name": "Hannaru's Effulgence",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/12_Hannaru's Effulgence.png"
@@ -124,7 +124,7 @@
 			"name": "Harshapal Speardrover",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Bird Soldier",
+			"type": "Creature â€” Bird Soldier",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/13_Harshapal Speardrover.png"
@@ -134,7 +134,7 @@
 			"name": "Heartland Croptender",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}",
-			"type": "Creature — Bird Druid",
+			"type": "Creature â€” Bird Druid",
 			"collector_number": "14",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/14_Heartland Croptender.png"
@@ -144,7 +144,7 @@
 			"name": "Herald of Darutu",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}{W}",
-			"type": "Enchantment Creature — Ox",
+			"type": "Enchantment Creature â€” Ox",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/15_Herald of Darutu.png"
@@ -154,7 +154,7 @@
 			"name": "Imperator's Custodian",
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-			"type": "Creature — Human Advisor",
+			"type": "Creature â€” Human Advisor",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/16_Imperator's Custodian.png"
@@ -174,7 +174,7 @@
 			"name": "Inishtu's Attendant",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Human Cleric",
+			"type": "Creature â€” Human Cleric",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/18_Inishtu's Attendant.png"
@@ -184,7 +184,7 @@
 			"name": "Jobiah's Seedsower",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Spirit",
+			"type": "Creature â€” Spirit",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/19_Jobiah's Seedsower.png"
@@ -194,7 +194,7 @@
 			"name": "Kanaan Frontliner",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Goat Soldier",
+			"type": "Creature â€” Goat Soldier",
 			"collector_number": "20",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/20_Kanaan Frontliner.png"
@@ -204,7 +204,7 @@
 			"name": "Khulnarah Bloodseeker",
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-			"type": "Creature — Human Soldier Scout",
+			"type": "Creature â€” Human Soldier Scout",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/21_Khulnarah Bloodseeker.png"
@@ -214,7 +214,7 @@
 			"name": "Khulnarah Orator",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Cleric",
+			"type": "Creature â€” Human Cleric",
 			"collector_number": "22",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/22_Khulnarah Orator.png"
@@ -224,7 +224,7 @@
 			"name": "Lammasu Architect",
 			"rarity": "common",
 			"mana_cost": "{3}{W}{W}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "23",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/23_Lammasu Architect.png"
@@ -234,7 +234,7 @@
 			"name": "Law",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "24",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/24_Law.png"
@@ -244,7 +244,7 @@
 			"name": "Lion Queen's Champion",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "25",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/25_Lion Queen's Champion.png"
@@ -264,7 +264,7 @@
 			"name": "Malach of Divine Messages",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Creature — Angel",
+			"type": "Creature â€” Angel",
 			"collector_number": "27",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/27_Malach of Divine Messages.png"
@@ -274,7 +274,7 @@
 			"name": "Marble Row Edificers",
 			"rarity": "rare",
 			"mana_cost": "{W}{W}",
-			"type": "Creature — Bird Cleric",
+			"type": "Creature â€” Bird Cleric",
 			"collector_number": "28",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/28_Marble Row Edificers.png"
@@ -294,7 +294,7 @@
 			"name": "Nikanuur's Sorrow",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Enchantment Creature — Spirit",
+			"type": "Enchantment Creature â€” Spirit",
 			"collector_number": "30",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/30_Nikanuur's Sorrow.png"
@@ -304,7 +304,7 @@
 			"name": "Patriarch of Empires",
 			"rarity": "mythic",
 			"mana_cost": "{4}{W}{W}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "31",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/31_Patriarch of Empires.png"
@@ -314,7 +314,7 @@
 			"name": "Remnant of Anku's Tyranny",
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "32",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/32_Remnant of Anku's Tyranny.png"
@@ -324,7 +324,7 @@
 			"name": "Rhox Protector",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Rhino Soldier",
+			"type": "Creature â€” Rhino Soldier",
 			"collector_number": "33",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/33_Rhox Protector.png"
@@ -334,7 +334,7 @@
 			"name": "Rhudai Grain-Hauler",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Ox",
+			"type": "Creature â€” Ox",
 			"collector_number": "34",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/34_Rhudai Grain-Hauler.png"
@@ -344,7 +344,7 @@
 			"name": "Roaming Bactribok",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Antelope Camel",
+			"type": "Creature â€” Antelope Camel",
 			"collector_number": "35",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/35_Roaming Bactribok.png"
@@ -354,7 +354,7 @@
 			"name": "Ruler of Cities",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Human Noble",
+			"type": "Creature â€” Human Noble",
 			"collector_number": "36",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/36_Ruler of Cities.png"
@@ -374,7 +374,7 @@
 			"name": "Serene Skies",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "38",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/38_Serene Skies.png"
@@ -384,7 +384,7 @@
 			"name": "Servant of Soul's Passage",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}",
-			"type": "Enchantment Creature — Spirit",
+			"type": "Enchantment Creature â€” Spirit",
 			"collector_number": "39",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/39_Servant of Soul's Passage.png"
@@ -414,7 +414,7 @@
 			"name": "Theocratic Magistrate",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Cleric",
+			"type": "Creature â€” Human Cleric",
 			"collector_number": "42",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/42_Theocratic Magistrate.png"
@@ -424,7 +424,7 @@
 			"name": "Toilfield Penance",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "43",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/43_Toilfield Penance.png"
@@ -444,7 +444,7 @@
 			"name": "Lammasu Surveyor",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{U}{U}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "65",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/65_Lammasu Surveyor.png"
@@ -454,7 +454,7 @@
 			"name": "Amalgam of Torrents",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Human Elemental Wizard",
+			"type": "Creature â€” Human Elemental Wizard",
 			"collector_number": "45",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/45_Amalgam of Torrents.png"
@@ -474,7 +474,7 @@
 			"name": "Awakener of Immortals",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Human Artificer",
+			"type": "Creature â€” Human Artificer",
 			"collector_number": "47",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/47_Awakener of Immortals.png"
@@ -484,7 +484,7 @@
 			"name": "Azutahn Watershaper",
 			"rarity": "common",
 			"mana_cost": "{U}",
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "48",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/48_Azutahn Watershaper.png"
@@ -534,7 +534,7 @@
 			"name": "Delta Shardseeker",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Snake Scout",
+			"type": "Creature â€” Snake Scout",
 			"collector_number": "53",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/53_Delta Shardseeker.png"
@@ -554,7 +554,7 @@
 			"name": "Ekebram of the Great Archives",
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Legendary Enchantment Creature — God",
+			"type": "Legendary Enchantment Creature â€” God",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/55_Ekebram of the Great Archives.png"
@@ -574,7 +574,7 @@
 			"name": "Empowered Clayscribe",
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "57",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/57_Empowered Clayscribe.png"
@@ -604,7 +604,7 @@
 			"name": "Haruzah Subjugator",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-			"type": "Creature — Snake Wizard",
+			"type": "Creature â€” Snake Wizard",
 			"collector_number": "60",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/60_Haruzah Subjugator.png"
@@ -624,7 +624,7 @@
 			"name": "Herald of Lethul",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Enchantment Creature — Leviathan",
+			"type": "Enchantment Creature â€” Leviathan",
 			"collector_number": "62",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/62_Herald of Lethul.png"
@@ -644,7 +644,7 @@
 			"name": "Infused Snapper",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Elemental Turtle",
+			"type": "Creature â€” Elemental Turtle",
 			"collector_number": "64",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/64_Infused Snapper.png"
@@ -654,7 +654,7 @@
 			"name": "Marilye, Got Your Back",
 			"rarity": "mythic",
 			"mana_cost": "{2}{U}",
-			"type": "Legendary Planeswalker — Marilye",
+			"type": "Legendary Planeswalker â€” Marilye",
 			"collector_number": "66",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/66_Marilye, Got Your Back.png"
@@ -674,7 +674,7 @@
 			"name": "Maw-Swallow Whale",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}{U}",
-			"type": "Creature — Whale",
+			"type": "Creature â€” Whale",
 			"collector_number": "68",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/68_Maw-Swallow Whale.png"
@@ -684,7 +684,7 @@
 			"name": "Merchant Fleet",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "69",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/69_Merchant Fleet.png"
@@ -694,7 +694,7 @@
 			"name": "Nacash's Tightening Coils",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "70",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/70_Nacash's Tightening Coils.png"
@@ -704,7 +704,7 @@
 			"name": "Namuzzar's Scion",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "71",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/71_Namuzzar's Scion.png"
@@ -714,7 +714,7 @@
 			"name": "Ordain with Gold",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "72",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/72_Ordain with Gold.png"
@@ -724,7 +724,7 @@
 			"name": "Parted Oceans",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "73",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/73_Parted Oceans.png"
@@ -734,7 +734,7 @@
 			"name": "Philosophy",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "74",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/74_Philosophy.png"
@@ -744,7 +744,7 @@
 			"name": "Pinnacle Messenger",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "75",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/75_Pinnacle Messenger.png"
@@ -754,7 +754,7 @@
 			"name": "Rabudan Overseer",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "76",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/76_Rabudan Overseer.png"
@@ -764,7 +764,7 @@
 			"name": "Remnant of Anku's Cunning",
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/77_Remnant of Anku's Cunning.png"
@@ -784,7 +784,7 @@
 			"name": "Sailing",
 			"rarity": "rare",
 			"mana_cost": "{3}{U}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "79",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/79_Sailing.png"
@@ -804,7 +804,7 @@
 			"name": "Splinter of Rising Storms",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-			"type": "Creature — Elemental",
+			"type": "Creature â€” Elemental",
 			"collector_number": "81",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/81_Splinter of Rising Storms.png"
@@ -814,7 +814,7 @@
 			"name": "Steward of Ekebram",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Human Cleric",
+			"type": "Creature â€” Human Cleric",
 			"collector_number": "82",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/82_Steward of Ekebram.png"
@@ -824,7 +824,7 @@
 			"name": "Tempestous Amalgam",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{U}",
-			"type": "Creature — Human Elemental Wizard",
+			"type": "Creature â€” Human Elemental Wizard",
 			"collector_number": "83",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/83_Tempestous Amalgam.png"
@@ -834,7 +834,7 @@
 			"name": "Torrential Eradicatus",
 			"rarity": "rare",
 			"mana_cost": "{4}{U}{U}",
-			"type": "Creature — Elemental",
+			"type": "Creature â€” Elemental",
 			"collector_number": "84",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/84_Torrential Eradicatus.png"
@@ -854,7 +854,7 @@
 			"name": "Unfathomable Leviathan",
 			"rarity": "common",
 			"mana_cost": "{5}{U}{U}",
-			"type": "Creature — Leviathan Horror",
+			"type": "Creature â€” Leviathan Horror",
 			"collector_number": "86",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/86_Unfathomable Leviathan.png"
@@ -864,7 +864,7 @@
 			"name": "Unyielding Kulilu",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Human Merfolk Spirit",
+			"type": "Creature â€” Human Merfolk Spirit",
 			"collector_number": "87",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/87_Unyielding Kulilu.png"
@@ -874,7 +874,7 @@
 			"name": "Wallowing Calf",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Hippo",
+			"type": "Creature â€” Hippo",
 			"collector_number": "88",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/88_Wallowing Calf.png"
@@ -884,7 +884,7 @@
 			"name": "Adorned Despot",
 			"rarity": "common",
 			"mana_cost": "{5}{B}",
-			"type": "Creature — Snake Noble",
+			"type": "Creature â€” Snake Noble",
 			"collector_number": "89",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/89_Adorned Despot.png"
@@ -894,7 +894,7 @@
 			"name": "Amalgamate Pariah",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Human Elemental Wizard",
+			"type": "Creature â€” Human Elemental Wizard",
 			"collector_number": "90",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/90_Amalgamate Pariah.png"
@@ -904,7 +904,7 @@
 			"name": "Autocracy",
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "91",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/91_Autocracy.png"
@@ -924,7 +924,7 @@
 			"name": "Bloodpact Sukkal",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Human Advisor",
+			"type": "Creature â€” Human Advisor",
 			"collector_number": "93",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/93_Bloodpact Sukkal.png"
@@ -934,7 +934,7 @@
 			"name": "Bone Mesa Bloodclaimer",
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-			"type": "Creature — Orc Nomad",
+			"type": "Creature â€” Orc Nomad",
 			"collector_number": "94",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/94_Bone Mesa Bloodclaimer.png"
@@ -944,7 +944,7 @@
 			"name": "Conqueror of Empires",
 			"rarity": "mythic",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature — Orc Soldier",
+			"type": "Creature â€” Orc Soldier",
 			"collector_number": "95",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/95_Conqueror of Empires.png"
@@ -954,7 +954,7 @@
 			"name": "Corpsemaker Sukur",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "96",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/96_Corpsemaker Sukur.png"
@@ -964,7 +964,7 @@
 			"name": "Death Pits Skullsplitters",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "97",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/97_Death Pits Skullsplitters.png"
@@ -974,7 +974,7 @@
 			"name": "Death Pits Trophy-Taker",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature — Rhino Warrior",
+			"type": "Creature â€” Rhino Warrior",
 			"collector_number": "98",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/98_Death Pits Trophy-Taker.png"
@@ -984,7 +984,7 @@
 			"name": "Deathless Inishtu",
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}",
-			"type": "Legendary Enchantment Creature — God",
+			"type": "Legendary Enchantment Creature â€” God",
 			"collector_number": "99",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/99_Deathless Inishtu.png"
@@ -994,7 +994,7 @@
 			"name": "Deathwake Goliath",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Enchantment Creature — Giant",
+			"type": "Enchantment Creature â€” Giant",
 			"collector_number": "100",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/100_Deathwake Goliath.png"
@@ -1004,7 +1004,7 @@
 			"name": "Den Prowler",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-			"type": "Enchantment Creature — Cat",
+			"type": "Enchantment Creature â€” Cat",
 			"collector_number": "101",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/101_Den Prowler.png"
@@ -1014,7 +1014,7 @@
 			"name": "Devouring Herald",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature — Insect Horror",
+			"type": "Creature â€” Insect Horror",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/102_Devouring Herald.png"
@@ -1024,7 +1024,7 @@
 			"name": "Disciple of Noxious Whispers",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Scorpion Cleric",
+			"type": "Creature â€” Scorpion Cleric",
 			"collector_number": "103",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/103_Disciple of Noxious Whispers.png"
@@ -1034,7 +1034,7 @@
 			"name": "Drover of the Nameless",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Creature — Human Rogue Advisor",
+			"type": "Creature â€” Human Rogue Advisor",
 			"collector_number": "104",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/104_Drover of the Nameless.png"
@@ -1044,7 +1044,7 @@
 			"name": "Duskreaper Malach",
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Creature — Angel",
+			"type": "Creature â€” Angel",
 			"collector_number": "105",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/105_Duskreaper Malach.png"
@@ -1054,7 +1054,7 @@
 			"name": "Endak City Enforcer",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "106",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/106_Endak City Enforcer.png"
@@ -1074,7 +1074,7 @@
 			"name": "Funerary Assistant",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Orc Cleric",
+			"type": "Creature â€” Orc Cleric",
 			"collector_number": "108",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/108_Funerary Assistant.png"
@@ -1094,7 +1094,7 @@
 			"name": "Goldscale Spitefang",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Snake Soldier",
+			"type": "Creature â€” Snake Soldier",
 			"collector_number": "110",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/110_Goldscale Spitefang.png"
@@ -1104,7 +1104,7 @@
 			"name": "Grinning Jackal",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Creature — Jackal",
+			"type": "Creature â€” Jackal",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/111_Grinning Jackal.png"
@@ -1114,7 +1114,7 @@
 			"name": "Gunslinger's Figment",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Enchantment Creature — Spirit Rogue",
+			"type": "Enchantment Creature â€” Spirit Rogue",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/112_Gunslinger's Figment.png"
@@ -1134,7 +1134,7 @@
 			"name": "Herald of Nacash",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
-			"type": "Enchantment Creature — Snake",
+			"type": "Enchantment Creature â€” Snake",
 			"collector_number": "114",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/114_Herald of Nacash.png"
@@ -1174,7 +1174,7 @@
 			"name": "Nameless Chattel",
 			"rarity": "common",
 			"mana_cost": "{B}",
-			"type": "Creature — Human",
+			"type": "Creature â€” Human",
 			"collector_number": "118",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/118_Nameless Chattel.png"
@@ -1194,7 +1194,7 @@
 			"name": "Necromantics",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "120",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/120_Necromantics.png"
@@ -1234,7 +1234,7 @@
 			"name": "Remnant of Anku's Sorrow",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "124",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/124_Remnant of Anku's Sorrow.png"
@@ -1254,7 +1254,7 @@
 			"name": "Scoursand Pilgrimage",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "126",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/126_Scoursand Pilgrimage.png"
@@ -1274,7 +1274,7 @@
 			"name": "Selezzar, Venomous Tyrant",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-			"type": "Legendary Creature — Snake Noble",
+			"type": "Legendary Creature â€” Snake Noble",
 			"collector_number": "128",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/128_Selezzar, Venomous Tyrant.png"
@@ -1284,7 +1284,7 @@
 			"name": "Shardclaimer's Bargain",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "129",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/129_Shardclaimer's Bargain.png"
@@ -1294,7 +1294,7 @@
 			"name": "Tyrant's Scalesworn",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Snake Advisor",
+			"type": "Creature â€” Snake Advisor",
 			"collector_number": "130",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/130_Tyrant's Scalesworn.png"
@@ -1314,7 +1314,7 @@
 			"name": "Ushem of the Lone Gun",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-			"type": "Legendary Creature — Bird Rogue",
+			"type": "Legendary Creature â€” Bird Rogue",
 			"collector_number": "132",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/132_Ushem of the Lone Gun.png"
@@ -1324,7 +1324,7 @@
 			"name": "Ankulithic Crucible",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/133_Ankulithic Crucible.png"
@@ -1334,7 +1334,7 @@
 			"name": "Ascendant Amalgam",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Human Elemental Wizard",
+			"type": "Creature â€” Human Elemental Wizard",
 			"collector_number": "134",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/134_Ascendant Amalgam.png"
@@ -1344,7 +1344,7 @@
 			"name": "Aspect of the Fallen God",
 			"rarity": "rare",
 			"mana_cost": "{5}{R}{R}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "135",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/135_Aspect of the Fallen God.png"
@@ -1354,7 +1354,7 @@
 			"name": "Bone Mesa Shardseeker",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Orc Nomad",
+			"type": "Creature â€” Orc Nomad",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/136_Bone Mesa Shardseeker.png"
@@ -1364,7 +1364,7 @@
 			"name": "Borsuppa Firefang",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Creature — Elemental Hyena",
+			"type": "Creature â€” Elemental Hyena",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/137_Borsuppa Firefang.png"
@@ -1384,7 +1384,7 @@
 			"name": "Chemistry",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "139",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/139_Chemistry.png"
@@ -1404,7 +1404,7 @@
 			"name": "Currency Broker",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Orc Rogue",
+			"type": "Creature â€” Orc Rogue",
 			"collector_number": "141",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/141_Currency Broker.png"
@@ -1414,7 +1414,7 @@
 			"name": "Death Pits Chariot",
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "142",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/142_Death Pits Chariot.png"
@@ -1444,7 +1444,7 @@
 			"name": "Dunescourge Hilakite",
 			"rarity": "mythic",
 			"mana_cost": "{3}{R}{R}",
-			"type": "Creature — Dragon",
+			"type": "Creature â€” Dragon",
 			"collector_number": "145",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/145_Dunescourge Hilakite.png"
@@ -1474,7 +1474,7 @@
 			"name": "Erupting Amalgam",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}{R}",
-			"type": "Creature — Human Elemental Wizard",
+			"type": "Creature â€” Human Elemental Wizard",
 			"collector_number": "148",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/148_Erupting Amalgam.png"
@@ -1494,7 +1494,7 @@
 			"name": "Harshapal Battlemaster",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Goat Soldier",
+			"type": "Creature â€” Goat Soldier",
 			"collector_number": "150",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/150_Harshapal Battlemaster.png"
@@ -1504,7 +1504,7 @@
 			"name": "Herald of Enkim",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Enchantment Creature — Jackal",
+			"type": "Enchantment Creature â€” Jackal",
 			"collector_number": "151",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/151_Herald of Enkim.png"
@@ -1514,7 +1514,7 @@
 			"name": "The Impassioned Lovers",
 			"rarity": "mythic",
 			"mana_cost": "{1}{R}",
-			"type": "Legendary Enchantment Creature — God",
+			"type": "Legendary Enchantment Creature â€” God",
 			"collector_number": "152",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/152_The Impassioned Lovers.png"
@@ -1524,7 +1524,7 @@
 			"name": "Inspired Seeker",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/153_Inspired Seeker.png"
@@ -1534,7 +1534,7 @@
 			"name": "Ironworking",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "154",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/154_Ironworking.png"
@@ -1544,7 +1544,7 @@
 			"name": "Lithoclad Champion",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Human Elemental Warrior",
+			"type": "Creature â€” Human Elemental Warrior",
 			"collector_number": "155",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/155_Lithoclad Champion.png"
@@ -1564,7 +1564,7 @@
 			"name": "Musha, Hila King",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Legendary Creature — Lizard Nomad",
+			"type": "Legendary Creature â€” Lizard Nomad",
 			"collector_number": "157",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/157_Musha, Hila King.png"
@@ -1574,7 +1574,7 @@
 			"name": "Pouncing Caracal",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Cat",
+			"type": "Creature â€” Cat",
 			"collector_number": "158",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/158_Pouncing Caracal.png"
@@ -1614,7 +1614,7 @@
 			"name": "Remnant of Anku's Rage",
 			"rarity": "common",
 			"mana_cost": "{5}{R}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "162",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/162_Remnant of Anku's Rage.png"
@@ -1624,7 +1624,7 @@
 			"name": "Sarrutu Shardcaster",
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-			"type": "Creature — Orc Wizard",
+			"type": "Creature â€” Orc Wizard",
 			"collector_number": "163",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/163_Sarrutu Shardcaster.png"
@@ -1634,7 +1634,7 @@
 			"name": "Sarrutu Worldshaper",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "164",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/164_Sarrutu Worldshaper.png"
@@ -1644,7 +1644,7 @@
 			"name": "Searing Annihilus",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Elemental",
+			"type": "Creature â€” Elemental",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/165_Searing Annihilus.png"
@@ -1654,7 +1654,7 @@
 			"name": "Shemesh's Spearbeater",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Creature — Human Nomad",
+			"type": "Creature â€” Human Nomad",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/166_Shemesh's Spearbeater.png"
@@ -1674,7 +1674,7 @@
 			"name": "Spineback Manticore",
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-			"type": "Creature — Manticore",
+			"type": "Creature â€” Manticore",
 			"collector_number": "168",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/168_Spineback Manticore.png"
@@ -1684,7 +1684,7 @@
 			"name": "Stonesurge Ankulim",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Creature — Elemental",
+			"type": "Creature â€” Elemental",
 			"collector_number": "169",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/169_Stonesurge Ankulim.png"
@@ -1694,7 +1694,7 @@
 			"name": "Strongarm Rhox",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature — Rhino Nomad Warrior",
+			"type": "Creature â€” Rhino Nomad Warrior",
 			"collector_number": "170",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/170_Strongarm Rhox.png"
@@ -1704,7 +1704,7 @@
 			"name": "Unshackled Flamebinder",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature — Human Elemental Shaman",
+			"type": "Creature â€” Human Elemental Shaman",
 			"collector_number": "171",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/171_Unshackled Flamebinder.png"
@@ -1714,7 +1714,7 @@
 			"name": "Urud Pathguide",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Orc Nomad",
+			"type": "Creature â€” Orc Nomad",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/172_Urud Pathguide.png"
@@ -1724,7 +1724,7 @@
 			"name": "Visage of Forsaken Destiny",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Enchantment Creature — Spirit Nomad",
+			"type": "Enchantment Creature â€” Spirit Nomad",
 			"collector_number": "173",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/173_Visage of Forsaken Destiny.png"
@@ -1734,7 +1734,7 @@
 			"name": "Wily Stingswoop",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Manticore",
+			"type": "Creature â€” Manticore",
 			"collector_number": "174",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/174_Wily Stingswoop.png"
@@ -1744,7 +1744,7 @@
 			"name": "Worldshaper's Embrace",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "175",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/175_Worldshaper's Embrace.png"
@@ -1764,7 +1764,7 @@
 			"name": "Attendant of Hasmanu",
 			"rarity": "rare",
 			"mana_cost": "{G}",
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "177",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/177_Attendant of Hasmanu.png"
@@ -1784,7 +1784,7 @@
 			"name": "Bahabu, the Last Guardian",
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}{G}",
-			"type": "Legendary Creature — Cat Antelope Snake",
+			"type": "Legendary Creature â€” Cat Antelope Snake",
 			"collector_number": "179",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/179_Bahabu, the Last Guardian.png"
@@ -1794,7 +1794,7 @@
 			"name": "Bahabu's Spawn",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-			"type": "Enchantment Creature — Beast",
+			"type": "Enchantment Creature â€” Beast",
 			"collector_number": "180",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/180_Bahabu's Spawn.png"
@@ -1814,7 +1814,7 @@
 			"name": "Blossoming Scorpion",
 			"rarity": "common",
 			"mana_cost": "{G}",
-			"type": "Creature — Scorpion",
+			"type": "Creature â€” Scorpion",
 			"collector_number": "182",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/182_Blossoming Scorpion.png"
@@ -1824,7 +1824,7 @@
 			"name": "Borsuppa Reclaimer",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Human Nomad",
+			"type": "Creature â€” Human Nomad",
 			"collector_number": "183",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/183_Borsuppa Reclaimer.png"
@@ -1834,7 +1834,7 @@
 			"name": "Bursting Dunes",
 			"rarity": "uncommon",
 			"mana_cost": "{X}{G}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "184",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/184_Bursting Dunes.png"
@@ -1844,7 +1844,7 @@
 			"name": "Carapace Scavenger",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Scorpion Warrior",
+			"type": "Creature â€” Scorpion Warrior",
 			"collector_number": "185",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/185_Carapace Scavenger.png"
@@ -1854,7 +1854,7 @@
 			"name": "Cradle of Civilization",
 			"rarity": "common",
 			"mana_cost": "{G}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "186",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/186_Cradle of Civilization.png"
@@ -1864,7 +1864,7 @@
 			"name": "Darutu's Herd",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Ox",
+			"type": "Creature â€” Ox",
 			"collector_number": "187",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/187_Darutu's Herd.png"
@@ -1874,7 +1874,7 @@
 			"name": "Dawncrest Camaar",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Creature — Antelope Camel",
+			"type": "Creature â€” Antelope Camel",
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/188_Dawncrest Camaar.png"
@@ -1894,7 +1894,7 @@
 			"name": "Dryscale Survivor",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Snake Nomad",
+			"type": "Creature â€” Snake Nomad",
 			"collector_number": "190",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/190_Dryscale Survivor.png"
@@ -1904,7 +1904,7 @@
 			"name": "Empowered Hippo",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Hippo",
+			"type": "Creature â€” Hippo",
 			"collector_number": "191",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/191_Empowered Hippo.png"
@@ -1914,7 +1914,7 @@
 			"name": "Encroaching Sirrush",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Snake Beast Dragon",
+			"type": "Creature â€” Snake Beast Dragon",
 			"collector_number": "192",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/192_Encroaching Sirrush.png"
@@ -1924,7 +1924,7 @@
 			"name": "Faithlost Wanderer",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Human Nomad",
+			"type": "Creature â€” Human Nomad",
 			"collector_number": "193",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/193_Faithlost Wanderer.png"
@@ -1934,7 +1934,7 @@
 			"name": "Forestry",
 			"rarity": "rare",
 			"mana_cost": "{4}{G}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "194",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/194_Forestry.png"
@@ -1954,7 +1954,7 @@
 			"name": "Goliathbane Sling",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "196",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/196_Goliathbane Sling.png"
@@ -1964,7 +1964,7 @@
 			"name": "Grand Hunt",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "197",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/197_Grand Hunt.png"
@@ -1984,7 +1984,7 @@
 			"name": "Heartland Grovetender",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Goat Druid",
+			"type": "Creature â€” Goat Druid",
 			"collector_number": "199",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/199_Heartland Grovetender.png"
@@ -1994,7 +1994,7 @@
 			"name": "Herald of Behama",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-			"type": "Enchantment Creature — Elephant",
+			"type": "Enchantment Creature â€” Elephant",
 			"collector_number": "200",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/200_Herald of Behama.png"
@@ -2004,7 +2004,7 @@
 			"name": "Heritage",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "201",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/201_Heritage.png"
@@ -2014,7 +2014,7 @@
 			"name": "Hila Incursion",
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "202",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/202_Hila Incursion.png"
@@ -2024,7 +2024,7 @@
 			"name": "Huntress's Echo",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Enchantment Creature — Spirit Warrior",
+			"type": "Enchantment Creature â€” Spirit Warrior",
 			"collector_number": "203",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/203_Huntress's Echo.png"
@@ -2034,7 +2034,7 @@
 			"name": "Jobiah of the Boundless Flock",
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}",
-			"type": "Legendary Enchantment Creature — God",
+			"type": "Legendary Enchantment Creature â€” God",
 			"collector_number": "204",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/204_Jobiah of the Boundless Flock.png"
@@ -2054,7 +2054,7 @@
 			"name": "Loyal Dromoryx",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Antelope Camel",
+			"type": "Creature â€” Antelope Camel",
 			"collector_number": "206",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/206_Loyal Dromoryx.png"
@@ -2064,7 +2064,7 @@
 			"name": "Mother of Stings",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Scorpion Shaman",
+			"type": "Creature â€” Scorpion Shaman",
 			"collector_number": "207",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/207_Mother of Stings.png"
@@ -2074,7 +2074,7 @@
 			"name": "Rampant Hydraffe",
 			"rarity": "rare",
 			"mana_cost": "{X}{X}{G}",
-			"type": "Creature — Giraffe Hydra",
+			"type": "Creature â€” Giraffe Hydra",
 			"collector_number": "208",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/208_Rampant Hydraffe.png"
@@ -2084,7 +2084,7 @@
 			"name": "Remnant of Anku's Might",
 			"rarity": "common",
 			"mana_cost": "{5}{G}{G}",
-			"type": "Enchantment Creature — Elemental",
+			"type": "Enchantment Creature â€” Elemental",
 			"collector_number": "209",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/209_Remnant of Anku's Might.png"
@@ -2094,7 +2094,7 @@
 			"name": "Rhudai Greensower",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Snake Druid",
+			"type": "Creature â€” Snake Druid",
 			"collector_number": "210",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/210_Rhudai Greensower.png"
@@ -2104,7 +2104,7 @@
 			"name": "Sacred Bull",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{G}",
-			"type": "Creature — Ox",
+			"type": "Creature â€” Ox",
 			"collector_number": "211",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/211_Sacred Bull.png"
@@ -2114,7 +2114,7 @@
 			"name": "Sandchurner Wurm",
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Creature — Wurm",
+			"type": "Creature â€” Wurm",
 			"collector_number": "212",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/212_Sandchurner Wurm.png"
@@ -2124,7 +2124,7 @@
 			"name": "Seeker of Nissegal",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Human Nomad",
+			"type": "Creature â€” Human Nomad",
 			"collector_number": "213",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/213_Seeker of Nissegal.png"
@@ -2154,7 +2154,7 @@
 			"name": "Stonewrecker Goliath",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
-			"type": "Creature — Giant",
+			"type": "Creature â€” Giant",
 			"collector_number": "216",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/216_Stonewrecker Goliath.png"
@@ -2164,7 +2164,7 @@
 			"name": "Tabni, Guardian of Fields",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Legendary Creature — Human Soldier",
+			"type": "Legendary Creature â€” Human Soldier",
 			"collector_number": "217",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/217_Tabni, Guardian of Fields.png"
@@ -2184,7 +2184,7 @@
 			"name": "Urmahlullu of the Cedars",
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-			"type": "Creature — Cat Centaur",
+			"type": "Creature â€” Cat Centaur",
 			"collector_number": "219",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/219_Urmahlullu of the Cedars.png"
@@ -2194,7 +2194,7 @@
 			"name": "Wasteland Solifuge",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Insect Spider",
+			"type": "Creature â€” Insect Spider",
 			"collector_number": "220",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/220_Wasteland Solifuge.png"
@@ -2204,7 +2204,7 @@
 			"name": "Ankulith Harnessing",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{R}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "221",
 			"back": {
 				"name": "",
@@ -2221,7 +2221,7 @@
 			"name": "Basking Hila",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{G}",
-			"type": "Creature — Lizard",
+			"type": "Creature â€” Lizard",
 			"collector_number": "223",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/223_Basking Hila.png"
@@ -2231,7 +2231,7 @@
 			"name": "Behama, Aspect of Might",
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{G}",
-			"type": "Legendary Enchantment Creature — Elephant God",
+			"type": "Legendary Enchantment Creature â€” Elephant God",
 			"collector_number": "224",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/224_Behama, Aspect of Might.png"
@@ -2241,7 +2241,7 @@
 			"name": "Border Besiegers",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}{B}",
-			"type": "Creature — Elephant",
+			"type": "Creature â€” Elephant",
 			"collector_number": "225",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/225_Border Besiegers.png"
@@ -2251,7 +2251,7 @@
 			"name": "Bounteous Gardener",
 			"rarity": "mythic",
 			"mana_cost": "{1}{G}{U}",
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "226",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/226_Bounteous Gardener.png"
@@ -2261,7 +2261,7 @@
 			"name": "Brood-Queen Zupiqu",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{B}{G}",
-			"type": "Legendary Creature — Scorpion Noble",
+			"type": "Legendary Creature â€” Scorpion Noble",
 			"collector_number": "227",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/227_Brood-Queen Zupiqu.png"
@@ -2271,7 +2271,7 @@
 			"name": "Carrion Herder",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{R}",
-			"type": "Creature — Human Nomad Warlock",
+			"type": "Creature â€” Human Nomad Warlock",
 			"collector_number": "228",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/228_Carrion Herder.png"
@@ -2291,7 +2291,7 @@
 			"name": "Cultivation",
 			"rarity": "rare",
 			"mana_cost": "{G}{U}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "230",
 			"back": {
 				"name": "",
@@ -2308,7 +2308,7 @@
 			"name": "Darutu, Aspect of Growth",
 			"rarity": "mythic",
 			"mana_cost": "{1}{G}{W}",
-			"type": "Legendary Enchantment Creature — Ox God",
+			"type": "Legendary Enchantment Creature â€” Ox God",
 			"collector_number": "231",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/231_Darutu, Aspect of Growth.png"
@@ -2318,7 +2318,7 @@
 			"name": "Death Pits Brutalizer",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{R}",
-			"type": "Creature — Orc Warrior",
+			"type": "Creature â€” Orc Warrior",
 			"collector_number": "232",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/232_Death Pits Brutalizer.png"
@@ -2328,7 +2328,7 @@
 			"name": "Dehmi, the Worldshaper",
 			"rarity": "mythic",
 			"mana_cost": "{2}{U}{R}",
-			"type": "Legendary Creature — Human Elemental Wizard",
+			"type": "Legendary Creature â€” Human Elemental Wizard",
 			"collector_number": "233",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/233_Dehmi, the Worldshaper.png"
@@ -2338,7 +2338,7 @@
 			"name": "Dekala, the Dripping Claw",
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{G}",
-			"type": "Legendary Planeswalker — Dekala",
+			"type": "Legendary Planeswalker â€” Dekala",
 			"collector_number": "234",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/234_Dekala, the Dripping Claw.png"
@@ -2348,7 +2348,7 @@
 			"name": "Enkim, Aspect of Mischief",
 			"rarity": "mythic",
 			"mana_cost": "{B}{R}",
-			"type": "Legendary Enchantment Creature — Jackal God",
+			"type": "Legendary Enchantment Creature â€” Jackal God",
 			"collector_number": "235",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/235_Enkim, Aspect of Mischief.png"
@@ -2368,7 +2368,7 @@
 			"name": "Esteemed Overseer",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{U}",
-			"type": "Creature — Lammasu",
+			"type": "Creature â€” Lammasu",
 			"collector_number": "237",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/237_Esteemed Overseer.png"
@@ -2378,7 +2378,7 @@
 			"name": "Haruzah District Enforcer",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{B}",
-			"type": "Creature — Bird Rogue",
+			"type": "Creature â€” Bird Rogue",
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/238_Haruzah District Enforcer.png"
@@ -2388,7 +2388,7 @@
 			"name": "Hoofprints of the Harvest",
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "239",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/239_Hoofprints of the Harvest.png"
@@ -2398,7 +2398,7 @@
 			"name": "Inhospitable Settlement",
 			"rarity": "rare",
 			"mana_cost": "{R}{G}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "240",
 			"back": {
 				"name": "",
@@ -2415,7 +2415,7 @@
 			"name": "Lethul, Aspect of Oblivion",
 			"rarity": "mythic",
 			"mana_cost": "{3}{W}{U}",
-			"type": "Legendary Enchantment Creature — Leviathan God",
+			"type": "Legendary Enchantment Creature â€” Leviathan God",
 			"collector_number": "242",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/242_Lethul, Aspect of Oblivion.png"
@@ -2425,7 +2425,7 @@
 			"name": "Lisseria, Hannaru's Chosen",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{W}",
-			"type": "Legendary Enchantment Creature — Demigod",
+			"type": "Legendary Enchantment Creature â€” Demigod",
 			"collector_number": "243",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/243_Lisseria, Hannaru's Chosen.png"
@@ -2435,7 +2435,7 @@
 			"name": "Nacash, Aspect of Secrets",
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}{B}",
-			"type": "Legendary Enchantment Creature — Snake God",
+			"type": "Legendary Enchantment Creature â€” Snake God",
 			"collector_number": "245",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/245_Nacash, Aspect of Secrets.png"
@@ -2445,7 +2445,7 @@
 			"name": "Namuzzar, One Above All",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{U}{B}",
-			"type": "Legendary Creature — Lammasu Noble",
+			"type": "Legendary Creature â€” Lammasu Noble",
 			"collector_number": "246",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/246_Namuzzar, One Above All.png"
@@ -2455,7 +2455,7 @@
 			"name": "Organized Crime",
 			"rarity": "rare",
 			"mana_cost": "{3}{U}{B}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "247",
 			"back": {
 				"name": "",
@@ -2472,7 +2472,7 @@
 			"name": "Professional Military",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{W}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "248",
 			"back": {
 				"name": "",
@@ -2489,7 +2489,7 @@
 			"name": "Rhudai Rebuilder",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}{W}",
-			"type": "Creature — Goat Druid",
+			"type": "Creature â€” Goat Druid",
 			"collector_number": "249",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/249_Rhudai Rebuilder.png"
@@ -2499,7 +2499,7 @@
 			"name": "Sarrutu Bloodbinder",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{R}",
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "250",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/250_Sarrutu Bloodbinder.png"
@@ -2509,7 +2509,7 @@
 			"name": "Shala Na, Peacemaker",
 			"rarity": "mythic",
 			"mana_cost": "{R}{W}{B}",
-			"type": "Legendary Planeswalker — Shala",
+			"type": "Legendary Planeswalker â€” Shala",
 			"collector_number": "251",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/251_Shala Na, Peacemaker.png"
@@ -2519,7 +2519,7 @@
 			"name": "Sihari of Shifting Sands",
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{G}",
-			"type": "Legendary Planeswalker — Sihari",
+			"type": "Legendary Planeswalker â€” Sihari",
 			"collector_number": "252",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/252_Sihari of Shifting Sands.png"
@@ -2529,7 +2529,7 @@
 			"name": "Sumun's Rainbringer",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{U}",
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "254",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/254_Sumun's Rainbringer.png"
@@ -2539,7 +2539,7 @@
 			"name": "Zupiqu's Scavenger",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{G}",
-			"type": "Creature — Scorpion Rogue",
+			"type": "Creature â€” Scorpion Rogue",
 			"collector_number": "255",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/255_Zupiqu's Scavenger.png"
@@ -2559,7 +2559,7 @@
 			"name": "Ankulithic Axe",
 			"rarity": "rare",
 			"mana_cost": "{2}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "257",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/257_Ankulithic Axe.png"
@@ -2569,7 +2569,7 @@
 			"name": "Balasi's Masterpiece",
 			"rarity": "common",
 			"mana_cost": "{5}",
-			"type": "Artifact Creature — Construct",
+			"type": "Artifact Creature â€” Construct",
 			"collector_number": "258",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/258_Balasi's Masterpiece.png"
@@ -2579,7 +2579,7 @@
 			"name": "Bastion of Empires",
 			"rarity": "common",
 			"mana_cost": "{2}",
-			"type": "Artifact Creature — Wall",
+			"type": "Artifact Creature â€” Wall",
 			"collector_number": "259",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/259_Bastion of Empires.png"
@@ -2599,7 +2599,7 @@
 			"name": "Duneburied Progenitor",
 			"rarity": "common",
 			"mana_cost": "{4}",
-			"type": "Artifact Creature — Elemental",
+			"type": "Artifact Creature â€” Elemental",
 			"collector_number": "261",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/261_Duneburied Progenitor.png"
@@ -2619,7 +2619,7 @@
 			"name": "Kanaan Warblades",
 			"rarity": "common",
 			"mana_cost": "{3}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "263",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/263_Kanaan Warblades.png"
@@ -2639,7 +2639,7 @@
 			"name": "Shawl of Paradise",
 			"rarity": "uncommon",
 			"mana_cost": "{0}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "266",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/266_Shawl of Paradise.png"
@@ -2649,7 +2649,7 @@
 			"name": "Primordial Servitor",
 			"rarity": "common",
 			"mana_cost": "{1}",
-			"type": "Artifact Creature — Blood Elemental",
+			"type": "Artifact Creature â€” Blood Elemental",
 			"collector_number": "265",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/265_Primordial Servitor.png"
@@ -2659,7 +2659,7 @@
 			"name": "Splintering Manifestation",
 			"rarity": "rare",
 			"mana_cost": "{3}",
-			"type": "Artifact Creature — Elemental",
+			"type": "Artifact Creature â€” Elemental",
 			"collector_number": "267",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/267_Splintering Manifestation.png"
@@ -2669,7 +2669,7 @@
 			"name": "Stonewoken Immortal",
 			"rarity": "common",
 			"mana_cost": "{7}",
-			"type": "Artifact Creature — Construct",
+			"type": "Artifact Creature â€” Construct",
 			"collector_number": "268",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/268_Stonewoken Immortal.png"
@@ -2679,7 +2679,7 @@
 			"name": "Subjugated Ankulim",
 			"rarity": "common",
 			"mana_cost": "{3}",
-			"type": "Artifact Creature — Elemental",
+			"type": "Artifact Creature â€” Elemental",
 			"collector_number": "269",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/269_Subjugated Ankulim.png"
@@ -2699,7 +2699,7 @@
 			"name": "Untempered Ankulim",
 			"rarity": "rare",
 			"mana_cost": "{X}{X}",
-			"type": "Artifact Creature — Elemental",
+			"type": "Artifact Creature â€” Elemental",
 			"collector_number": "271",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/271_Untempered Ankulim.png"
@@ -2709,7 +2709,7 @@
 			"name": "Warden of the Crucible",
 			"rarity": "uncommon",
 			"mana_cost": "{6}",
-			"type": "Artifact Creature — Elemental",
+			"type": "Artifact Creature â€” Elemental",
 			"collector_number": "272",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/272_Warden of the Crucible.png"
@@ -2719,7 +2719,7 @@
 			"name": "Behama's Sanctum",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "273",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/273_Behama's Sanctum.png"
@@ -2729,7 +2729,7 @@
 			"name": "The Crucible of Origins",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Legendary Land — Desert",
+			"type": "Legendary Land â€” Desert",
 			"collector_number": "274",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/274_The Crucible of Origins.png"
@@ -2739,7 +2739,7 @@
 			"name": "Darutu's Sanctum",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "275",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/275_Darutu's Sanctum.png"
@@ -2749,7 +2749,7 @@
 			"name": "Desolate Barracks",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "276",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/276_Desolate Barracks.png"
@@ -2759,7 +2759,7 @@
 			"name": "Desolate Foundations",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "277",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/277_Desolate Foundations.png"
@@ -2769,7 +2769,7 @@
 			"name": "Desolate Horizon",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "278",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/278_Desolate Horizon.png"
@@ -2779,7 +2779,7 @@
 			"name": "Desolate Trail",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "279",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/279_Desolate Trail.png"
@@ -2789,7 +2789,7 @@
 			"name": "Desolate Waterways",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "280",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/280_Desolate Waterways.png"
@@ -2799,7 +2799,7 @@
 			"name": "Enkim's Sanctum",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "282",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/282_Enkim's Sanctum.png"
@@ -2809,7 +2809,7 @@
 			"name": "Sandswept Ruins",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "291",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/291_Sandswept Ruins.png"
@@ -2819,7 +2819,7 @@
 			"name": "Forgotten Monument",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "284",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/284_Forgotten Monument.png"
@@ -2839,7 +2839,7 @@
 			"name": "Lethul's Sanctum",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "287",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/287_Lethul's Sanctum.png"
@@ -2849,7 +2849,7 @@
 			"name": "Nacash's Sanctum",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "288",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/288_Nacash's Sanctum.png"
@@ -2859,7 +2859,7 @@
 			"name": "Nissegal, Exodus's End",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Legendary Land — Desert",
+			"type": "Legendary Land â€” Desert",
 			"collector_number": "289",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/289_Nissegal, Exodus's End.png"
@@ -2879,7 +2879,7 @@
 			"name": "Settlement Foundations",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "293",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/293_Settlement Foundations.png"
@@ -2889,7 +2889,7 @@
 			"name": "Architecture",
 			"rarity": "rare",
 			"mana_cost": "{W}{U}",
-			"type": "Enchantment — Discovery",
+			"type": "Enchantment â€” Discovery",
 			"collector_number": "222",
 			"back": {
 				"name": "",
@@ -2906,7 +2906,7 @@
 			"name": "Madrati, Mother of Chaos",
 			"rarity": "mythic",
 			"mana_cost": "{3}{B}{R}",
-			"type": "Legendary Creature — Demon Avatar",
+			"type": "Legendary Creature â€” Demon Avatar",
 			"collector_number": "244",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/244_Madrati, Mother of Chaos.png"
@@ -2916,7 +2916,7 @@
 			"name": "Sumun, Steward of Rivers",
 			"rarity": "mythic",
 			"mana_cost": "{G}{W}{U}",
-			"type": "Legendary Creature — Goat Druid",
+			"type": "Legendary Creature â€” Goat Druid",
 			"collector_number": "253",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/253_Sumun, Steward of Rivers.png"
@@ -2926,7 +2926,7 @@
 			"name": "Kiss of the Heartstopped",
 			"rarity": "mythic",
 			"mana_cost": "{3}{R}{W}",
-			"type": "Enchantment Creature — Spirit Rogue",
+			"type": "Enchantment Creature â€” Spirit Rogue",
 			"collector_number": "241",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/241_Kiss of the Heartstopped.png"
@@ -2936,7 +2936,7 @@
 			"name": "Dusty Pathways",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land — Forest Desert",
+			"type": "Land â€” Forest Desert",
 			"collector_number": "281",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/281_Dusty Pathways.png"
@@ -2946,7 +2946,7 @@
 			"name": "Hilakite Territory",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land — Mountain Desert",
+			"type": "Land â€” Mountain Desert",
 			"collector_number": "286",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/286_Hilakite Territory.png"
@@ -2956,7 +2956,7 @@
 			"name": "Oasis Sanctum",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land — Island Desert",
+			"type": "Land â€” Island Desert",
 			"collector_number": "290",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/290_Oasis Sanctum.png"
@@ -2966,7 +2966,7 @@
 			"name": "Shadowy Approach",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land — Swamp Desert",
+			"type": "Land â€” Swamp Desert",
 			"collector_number": "294",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/294_Shadowy Approach.png"
@@ -2976,7 +2976,7 @@
 			"name": "Windbeaten Borderpost",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land — Plains Desert",
+			"type": "Land â€” Plains Desert",
 			"collector_number": "296",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/296_Windbeaten Borderpost.png"
@@ -2986,7 +2986,7 @@
 			"name": "Shemesh the Wanderer",
 			"rarity": "special",
 			"mana_cost": "{R}{G}",
-			"type": "Legendary Creature — Human Nomad",
+			"type": "Legendary Creature â€” Human Nomad",
 			"collector_number": "297",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/297_Shemesh the Wanderer.png"
@@ -2996,7 +2996,7 @@
 			"name": "Eroding Expanse",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "283",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/283_Eroding Expanse.png"
@@ -3006,12 +3006,12 @@
 			"name": "Sundered Landscape",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land — Desert",
+			"type": "Land â€” Desert",
 			"collector_number": "295",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/UCB-files/img/295_Sundered Landscape.png"
 			}
-		},
+		}
 	]
 
 [rare(1)]

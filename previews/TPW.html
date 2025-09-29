@@ -5,6 +5,10 @@
 	<link rel="stylesheet" href="/resources/header.css">
 	<title>TPW visual preview</title>
 	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('/resources/beleren.ttf');
+		}
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
@@ -82,7 +86,7 @@
 		.banner {
 			width: 100%;
 			height: auto;
-			padding-top: 20px;
+			padding-top: 80px;
 			padding-bottom: 50px;
 		}
 		.logo {
@@ -118,36 +122,49 @@
 			background-size: contain;
 			background-position: center;
 		}
-		.icon-bar {
-			display: grid;
-			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
-			gap: 1px;
-			padding-left: 5%;
-			padding-right: 5%;
-			padding-top: 2%;
-			padding-bottom: 1%;
-			justify-items: center;
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 10%;
+			width: fit-content;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: flex;
+			flex-direction: column;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
 			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
 		}
-		.icon-bar .icon img {
-			width: 90%;
-			max-width: 80px;
-			height: auto;
-			display: block;
-			padding: 5%;
-			margin: auto;
-			text-align: center;
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
 		}
-		.icon-bar .dot img {
-			width: 50%;
-			max-width: 65px;
-			height: auto;
-			display: block;
-			margin: auto;
-			text-align: center;
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
 		}
 		.preload-hidden {
 			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
 		}
 		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
 		.footer {
@@ -158,7 +175,8 @@
 <body>
 	<img class="preload-hidden" src="/img/dot.png" />
 	<img class="preload-hidden" src="/sets/TPW-files/logo.png" />
-	<img class="preload-hidden" src="/sets/TPW-files/icon.png" />
+	<img class="preload-hidden" src="/sets/IWH-files/icon.png" />
+		<img class="preload-hidden" src="/sets/TPW-files/icon.png" />
 		<img class="preload-hidden" src="/sets/UCB-files/icon.png" />
 		<div class="header">
 		<div class="search-grid">
@@ -171,364 +189,367 @@
 		</div>
 	</div>
 
-	<div class="icon-bar">
-			<div class="icon"><a href="TPW"><img src="/sets/TPW-files/icon.png"></img></a></div>
-		 <div class="dot"><img src="/img/dot.png"></img></div>
-		<div class="icon"><a href="UCB"><img src="/sets/UCB-files/icon.png"></img></a></div>
-
+	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="TPW"><img src="/sets/TPW-files/icon.png">The Petals Wilt</a>
+	
+		<a class="set-bar inactive" href="IWH"><img src="/sets/IWH-files/icon.png">Innistrad: Witching Hour</a>
+	
+		<a class="set-bar inactive" href="UCB"><img src="/sets/UCB-files/icon.png">Urshad: Covenant of Blood</a>
+	
 		</div>
 		<div class="banner">
 		<img class="logo" src="/sets/TPW-files/logo.png">
 		</div>
 		<div class="main-content" id="main-content">
 			<div class="grid-container">
-				<div class="container"><img alt="/sets\TPW-files\img\17_Horseman of Conquest.png" id="17_Horseman of Conquest" data-flag="@X" onclick="openSidebar('17_Horseman of Conquest',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\41_Ahl the Omenwing.png" id="41_Ahl the Omenwing" data-flag="@X" onclick="openSidebar('41_Ahl the Omenwing',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\81_Belmord, Bloodstained Count.png" id="81_Belmord, Bloodstained Count" data-flag="@X" onclick="openSidebar('81_Belmord, Bloodstained Count',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\123_Bloodfall.png" id="123_Bloodfall" data-flag="@X" onclick="openSidebar('123_Bloodfall',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\180_Gwynsivir, the Listener.png" id="180_Gwynsivir, the Listener" data-flag="@X" onclick="openSidebar('180_Gwynsivir, the Listener',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\28_Questant's Beginning.png" id="28_Questants Beginning" data-flag="@X" onclick="openSidebar('28_Questants Beginning',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\49_A Dark and Stormy Night.png" id="49_A Dark and Stormy Night" data-flag="@X" onclick="openSidebar('49_A Dark and Stormy Night',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\97_Horseman of Famine.png" id="97_Horseman of Famine" data-flag="@X" onclick="openSidebar('97_Horseman of Famine',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\148_Horseman of War.png" id="148_Horseman of War" data-flag="@X" onclick="openSidebar('148_Horseman of War',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\181_Horseman of Pestilence.png" id="181_Horseman of Pestilence" data-flag="@X" onclick="openSidebar('181_Horseman of Pestilence',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\1_Asamund's Final Push.png" id="1_Asamunds Final Push" data-flag="@X" onclick="openSidebar('1_Asamunds Final Push',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\43_Ashenwind Augur.png" id="43_Ashenwind Augur" data-flag="@X" onclick="openSidebar('43_Ashenwind Augur',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\85_Corpsecaster Mage.png" id="85_Corpsecaster Mage" data-flag="@X" onclick="openSidebar('85_Corpsecaster Mage',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\130_Call of the Dreadmoon.png" id="130_Call of the Dreadmoon" data-flag="@X" onclick="openSidebar('130_Call of the Dreadmoon',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\164_Apex's Prey.png" id="164_Apexs Prey" data-flag="@X" onclick="openSidebar('164_Apexs Prey',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\3_Champion of the People.png" id="3_Champion of the People" data-flag="@X" onclick="openSidebar('3_Champion of the People',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\47_Cloudstreaker.png" id="47_Cloudstreaker" data-flag="@X" onclick="openSidebar('47_Cloudstreaker',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\88_The Dreadmoon Ascendancy.png" id="88_The Dreadmoon Ascendancy" data-flag="@X" onclick="openSidebar('88_The Dreadmoon Ascendancy',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\133_Cinderfeather Phoenix.png" id="133_Cinderfeather Phoenix" data-flag="@X" onclick="openSidebar('133_Cinderfeather Phoenix',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\169_Coirchanh's Invocation.png" id="169_Coirchanhs Invocation" data-flag="@X" onclick="openSidebar('169_Coirchanhs Invocation',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\25_Procession of the Pale.png" id="25_Procession of the Pale" data-flag="@X" onclick="openSidebar('25_Procession of the Pale',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\51_Dewshaper Matriarch.png" id="51_Dewshaper Matriarch" data-flag="@X" onclick="openSidebar('51_Dewshaper Matriarch',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\95_Hemic Consummation.png" id="95_Hemic Consummation" data-flag="@X" onclick="openSidebar('95_Hemic Consummation',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\141_Entrenched Forgemaster.png" id="141_Entrenched Forgemaster" data-flag="@X" onclick="openSidebar('141_Entrenched Forgemaster',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\174_Esalia, the Enduring Root.png" id="174_Esalia, the Enduring Root" data-flag="@X" onclick="openSidebar('174_Esalia, the Enduring Root',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\27_A Queen's Duty.png" id="27_A Queens Duty" data-flag="@X" onclick="openSidebar('27_A Queens Duty',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\60_Maritou's Pride.png" id="60_Maritous Pride" data-flag="@X" onclick="openSidebar('60_Maritous Pride',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\99_Kahra's Price.png" id="99_Kahras Price" data-flag="@X" onclick="openSidebar('99_Kahras Price',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\143_Flawed Masterpiece.png" id="143_Flawed Masterpiece" data-flag="@X" onclick="openSidebar('143_Flawed Masterpiece',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\176_Esoteric Alliances.png" id="176_Esoteric Alliances" data-flag="@X" onclick="openSidebar('176_Esoteric Alliances',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\29_Rhysta's Deliverance.png" id="29_Rhystas Deliverance" data-flag="@X" onclick="openSidebar('29_Rhystas Deliverance',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\62_Mirrored Monstrosities.png" id="62_Mirrored Monstrosities" data-flag="@X" onclick="openSidebar('62_Mirrored Monstrosities',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\107_Pactwhisper Demon.png" id="107_Pactwhisper Demon" data-flag="@X" onclick="openSidebar('107_Pactwhisper Demon',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\144_Forced Conscription.png" id="144_Forced Conscription" data-flag="@X" onclick="openSidebar('144_Forced Conscription',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\178_Friendly Rivalry.png" id="178_Friendly Rivalry" data-flag="@X" onclick="openSidebar('178_Friendly Rivalry',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\30_Rose Queen's Absolution.png" id="30_Rose Queens Absolution" data-flag="@X" onclick="openSidebar('30_Rose Queens Absolution',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\71_Skyfall.png" id="71_Skyfall" data-flag="@X" onclick="openSidebar('71_Skyfall',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\111_Sanguine Chevalier.png" id="111_Sanguine Chevalier" data-flag="@X" onclick="openSidebar('111_Sanguine Chevalier',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\147_Hearthfire Disciple.png" id="147_Hearthfire Disciple" data-flag="@X" onclick="openSidebar('147_Hearthfire Disciple',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\186_Llosg Crann Quartermaster.png" id="186_Llosg Crann Quartermaster" data-flag="@X" onclick="openSidebar('186_Llosg Crann Quartermaster',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\34_Soaring Pridelord.png" id="34_Soaring Pridelord" data-flag="@X" onclick="openSidebar('34_Soaring Pridelord',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\75_Spellstrider Ettin.png" id="75_Spellstrider Ettin" data-flag="@X" onclick="openSidebar('75_Spellstrider Ettin',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\115_Voracious Dais.png" id="115_Voracious Dais" data-flag="@X" onclick="openSidebar('115_Voracious Dais',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\154_Scorching Condemnation.png" id="154_Scorching Condemnation" data-flag="@X" onclick="openSidebar('154_Scorching Condemnation',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\189_Oath of the Wildlords.png" id="189_Oath of the Wildlords" data-flag="@X" onclick="openSidebar('189_Oath of the Wildlords',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\38_Underpass Ranger.png" id="38_Underpass Ranger" data-flag="@X" onclick="openSidebar('38_Underpass Ranger',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\76_Thrashing Kelpie.png" id="76_Thrashing Kelpie" data-flag="@X" onclick="openSidebar('76_Thrashing Kelpie',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\119_Wihtfyr of the Nighthost.png" id="119_Wihtfyr of the Nighthost" data-flag="@X" onclick="openSidebar('119_Wihtfyr of the Nighthost',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\159_Undermine Guardian.png" id="159_Undermine Guardian" data-flag="@X" onclick="openSidebar('159_Undermine Guardian',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\192_The Rundfora's Last Gift.png" id="192_The Rundforas Last Gift" data-flag="@X" onclick="openSidebar('192_The Rundforas Last Gift',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\2_Byron's Reprisal.png" id="2_Byrons Reprisal" data-flag="@X" onclick="openSidebar('2_Byrons Reprisal',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\42_Asamund's Contemplation.png" id="42_Asamunds Contemplation" data-flag="@X" onclick="openSidebar('42_Asamunds Contemplation',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\83_Bleakfell Mauler.png" id="83_Bleakfell Mauler" data-flag="@X" onclick="openSidebar('83_Bleakfell Mauler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\121_Accursed Ancestor.png" id="121_Accursed Ancestor" data-flag="@X" onclick="openSidebar('121_Accursed Ancestor',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\161_Abaran's Quarry.png" id="161_Abarans Quarry" data-flag="@X" onclick="openSidebar('161_Abarans Quarry',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\6_Deepstone Fusiliers.png" id="6_Deepstone Fusiliers" data-flag="@X" onclick="openSidebar('6_Deepstone Fusiliers',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\44_Bilge Crab.png" id="44_Bilge Crab" data-flag="@X" onclick="openSidebar('44_Bilge Crab',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\84_Blighthorn Stallion.png" id="84_Blighthorn Stallion" data-flag="@X" onclick="openSidebar('84_Blighthorn Stallion',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\122_Beherzt's Squallseeker.png" id="122_Beherzts Squallseeker" data-flag="@X" onclick="openSidebar('122_Beherzts Squallseeker',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\165_Bleakfell Escort.png" id="165_Bleakfell Escort" data-flag="@X" onclick="openSidebar('165_Bleakfell Escort',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\10_Fleeting Valiant.png" id="10_Fleeting Valiant" data-flag="@X" onclick="openSidebar('10_Fleeting Valiant',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\46_Chillbone Lich.png" id="46_Chillbone Lich" data-flag="@X" onclick="openSidebar('46_Chillbone Lich',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\90_Enduring Scion.png" id="90_Enduring Scion" data-flag="@X" onclick="openSidebar('90_Enduring Scion',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\124_Bloodvenge Slayer.png" id="124_Bloodvenge Slayer" data-flag="@X" onclick="openSidebar('124_Bloodvenge Slayer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\168_Coirchanh's Herald.png" id="168_Coirchanhs Herald" data-flag="@X" onclick="openSidebar('168_Coirchanhs Herald',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\12_Frantic Harvesters.png" id="12_Frantic Harvesters" data-flag="@X" onclick="openSidebar('12_Frantic Harvesters',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\48_Compromised Sorcerer.png" id="48_Compromised Sorcerer" data-flag="@X" onclick="openSidebar('48_Compromised Sorcerer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\92_Glimpse Your Fate.png" id="92_Glimpse Your Fate" data-flag="@X" onclick="openSidebar('92_Glimpse Your Fate',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\132_Celitiene's Regret.png" id="132_Celitienes Regret" data-flag="@X" onclick="openSidebar('132_Celitienes Regret',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\171_Daring Sortie.png" id="171_Daring Sortie" data-flag="@X" onclick="openSidebar('171_Daring Sortie',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\15_Herald of Clear Skies.png" id="15_Herald of Clear Skies" data-flag="@X" onclick="openSidebar('15_Herald of Clear Skies',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\50_Dewdrop Marshal.png" id="50_Dewdrop Marshal" data-flag="@X" onclick="openSidebar('50_Dewdrop Marshal',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\94_Heedless Questant.png" id="94_Heedless Questant" data-flag="@X" onclick="openSidebar('94_Heedless Questant',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\135_Corpsefeaster Zwurg.png" id="135_Corpsefeaster Zwurg" data-flag="@X" onclick="openSidebar('135_Corpsefeaster Zwurg',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\175_Esalia's Witness.png" id="175_Esalias Witness" data-flag="@X" onclick="openSidebar('175_Esalias Witness',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\16_Heretical Prelate.png" id="16_Heretical Prelate" data-flag="@X" onclick="openSidebar('16_Heretical Prelate',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\55_Griffin Hatchlings.png" id="55_Griffin Hatchlings" data-flag="@X" onclick="openSidebar('55_Griffin Hatchlings',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\98_Indulgent Hedonist.png" id="98_Indulgent Hedonist" data-flag="@X" onclick="openSidebar('98_Indulgent Hedonist',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\137_Deathrooter.png" id="137_Deathrooter" data-flag="@X" onclick="openSidebar('137_Deathrooter',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\177_Fencas the Fallen.png" id="177_Fencas the Fallen" data-flag="@X" onclick="openSidebar('177_Fencas the Fallen',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\19_Llech Crann Ambassador.png" id="19_Llech Crann Ambassador" data-flag="@X" onclick="openSidebar('19_Llech Crann Ambassador',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\56_Illicit Spellweaver.png" id="56_Illicit Spellweaver" data-flag="@X" onclick="openSidebar('56_Illicit Spellweaver',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\101_Middenheap Uprising.png" id="101_Middenheap Uprising" data-flag="@X" onclick="openSidebar('101_Middenheap Uprising',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\145_Fortune's Fusillade.png" id="145_Fortunes Fusillade" data-flag="@X" onclick="openSidebar('145_Fortunes Fusillade',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\179_From the Treetops.png" id="179_From the Treetops" data-flag="@X" onclick="openSidebar('179_From the Treetops',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\22_Momentary Victory.png" id="22_Momentary Victory" data-flag="@X" onclick="openSidebar('22_Momentary Victory',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\59_Maritou the Strait-Drowned.png" id="59_Maritou the Strait-Drowned" data-flag="@X" onclick="openSidebar('59_Maritou the Strait-Drowned',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\105_Noxious Kiss.png" id="105_Noxious Kiss" data-flag="@X" onclick="openSidebar('105_Noxious Kiss',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\146_Gamhaugen Burns.png" id="146_Gamhaugen Burns" data-flag="@X" onclick="openSidebar('146_Gamhaugen Burns',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\188_Moontouched Courser.png" id="188_Moontouched Courser" data-flag="@X" onclick="openSidebar('188_Moontouched Courser',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\23_Monara, Pale Rider.png" id="23_Monara, Pale Rider" data-flag="@X" onclick="openSidebar('23_Monara, Pale Rider',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\64_Overwhelming March.png" id="64_Overwhelming March" data-flag="@X" onclick="openSidebar('64_Overwhelming March',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\110_Rebellious Ratkin.png" id="110_Rebellious Ratkin" data-flag="@X" onclick="openSidebar('110_Rebellious Ratkin',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\149_Hulking Fleshdebter.png" id="149_Hulking Fleshdebter" data-flag="@X" onclick="openSidebar('149_Hulking Fleshdebter',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\190_Pestilent Procession.png" id="190_Pestilent Procession" data-flag="@X" onclick="openSidebar('190_Pestilent Procession',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\24_Pale Mercies.png" id="24_Pale Mercies" data-flag="@X" onclick="openSidebar('24_Pale Mercies',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\65_Phasewalker Rake.png" id="65_Phasewalker Rake" data-flag="@X" onclick="openSidebar('65_Phasewalker Rake',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\114_The Usurper's Dark Rebirth.png" id="114_The Usurpers Dark Rebirth" data-flag="@X" onclick="openSidebar('114_The Usurpers Dark Rebirth',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\153_Pyresong Incendiary.png" id="153_Pyresong Incendiary" data-flag="@X" onclick="openSidebar('153_Pyresong Incendiary',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\191_Rundfora Trickster.png" id="191_Rundfora Trickster" data-flag="@X" onclick="openSidebar('191_Rundfora Trickster',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\37_Thanewraith.png" id="37_Thanewraith" data-flag="@X" onclick="openSidebar('37_Thanewraith',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\66_Ravings of the Damned.png" id="66_Ravings of the Damned" data-flag="@X" onclick="openSidebar('66_Ravings of the Damned',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\117_Weoran the Fleshcarver.png" id="117_Weoran the Fleshcarver" data-flag="@X" onclick="openSidebar('117_Weoran the Fleshcarver',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\158_Stonebark Invoker.png" id="158_Stonebark Invoker" data-flag="@X" onclick="openSidebar('158_Stonebark Invoker',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\196_Sheltering Gargantuan.png" id="196_Sheltering Gargantuan" data-flag="@X" onclick="openSidebar('196_Sheltering Gargantuan',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\40_Yearning Heart.png" id="40_Yearning Heart" data-flag="@X" onclick="openSidebar('40_Yearning Heart',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\80_Usurper's Will.png" id="80_Usurpers Will" data-flag="@X" onclick="openSidebar('80_Usurpers Will',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\120_Wihtfyr's Coterie.png" id="120_Wihtfyrs Coterie" data-flag="@X" onclick="openSidebar('120_Wihtfyrs Coterie',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\160_Vengeful Alchemist.png" id="160_Vengeful Alchemist" data-flag="@X" onclick="openSidebar('160_Vengeful Alchemist',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\197_Stilthorpe Memorialist.png" id="197_Stilthorpe Memorialist" data-flag="@X" onclick="openSidebar('197_Stilthorpe Memorialist',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\4_Conscripted Provisioner.png" id="4_Conscripted Provisioner" data-flag="@X" onclick="openSidebar('4_Conscripted Provisioner',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\45_Branu's Pathcutter.png" id="45_Branus Pathcutter" data-flag="@X" onclick="openSidebar('45_Branus Pathcutter',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\82_Belmord's Thirst.png" id="82_Belmords Thirst" data-flag="@X" onclick="openSidebar('82_Belmords Thirst',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\125_Brimstone Charger.png" id="125_Brimstone Charger" data-flag="@X" onclick="openSidebar('125_Brimstone Charger',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\162_Acolyte of the Rose Order.png" id="162_Acolyte of the Rose Order" data-flag="@X" onclick="openSidebar('162_Acolyte of the Rose Order',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\5_Deadhunt Mastiff.png" id="5_Deadhunt Mastiff" data-flag="@X" onclick="openSidebar('5_Deadhunt Mastiff',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\52_Dwynerloch Haunt.png" id="52_Dwynerloch Haunt" data-flag="@X" onclick="openSidebar('52_Dwynerloch Haunt',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\86_Darkheart Beckoning.png" id="86_Darkheart Beckoning" data-flag="@X" onclick="openSidebar('86_Darkheart Beckoning',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\126_Brought Together.png" id="126_Brought Together" data-flag="@X" onclick="openSidebar('126_Brought Together',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\163_Alliance's Aid.png" id="163_Alliances Aid" data-flag="@X" onclick="openSidebar('163_Alliances Aid',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\7_Edelber Frontliners.png" id="7_Edelber Frontliners" data-flag="@X" onclick="openSidebar('7_Edelber Frontliners',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\53_Flaws in the Flesh.png" id="53_Flaws in the Flesh" data-flag="@X" onclick="openSidebar('53_Flaws in the Flesh',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\87_Depraved Dreadlord.png" id="87_Depraved Dreadlord" data-flag="@X" onclick="openSidebar('87_Depraved Dreadlord',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\127_Burning Visions.png" id="127_Burning Visions" data-flag="@X" onclick="openSidebar('127_Burning Visions',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\166_Blightbound Archer.png" id="166_Blightbound Archer" data-flag="@X" onclick="openSidebar('166_Blightbound Archer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\8_Edict of the Roses.png" id="8_Edict of the Roses" data-flag="@X" onclick="openSidebar('8_Edict of the Roses',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\54_Frontline Familiar.png" id="54_Frontline Familiar" data-flag="@X" onclick="openSidebar('54_Frontline Familiar',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\89_Dreadmoon Disciple.png" id="89_Dreadmoon Disciple" data-flag="@X" onclick="openSidebar('89_Dreadmoon Disciple',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\128_By Blood and Fire.png" id="128_By Blood and Fire" data-flag="@X" onclick="openSidebar('128_By Blood and Fire',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\167_Caer Crann Survivalists.png" id="167_Caer Crann Survivalists" data-flag="@X" onclick="openSidebar('167_Caer Crann Survivalists',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\9_Esmerie's Breeze-Seeker.png" id="9_Esmeries Breeze-Seeker" data-flag="@X" onclick="openSidebar('9_Esmeries Breeze-Seeker',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\57_Kahra's Machinations.png" id="57_Kahras Machinations" data-flag="@X" onclick="openSidebar('57_Kahras Machinations',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\91_Fangmarked Neophyte.png" id="91_Fangmarked Neophyte" data-flag="@X" onclick="openSidebar('91_Fangmarked Neophyte',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\129_Calamitous Flames.png" id="129_Calamitous Flames" data-flag="@X" onclick="openSidebar('129_Calamitous Flames',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\170_Costly Ambush.png" id="170_Costly Ambush" data-flag="@X" onclick="openSidebar('170_Costly Ambush',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\11_Fortune's Mark.png" id="11_Fortunes Mark" data-flag="@X" onclick="openSidebar('11_Fortunes Mark',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\58_Lysene's Plunderer.png" id="58_Lysenes Plunderer" data-flag="@X" onclick="openSidebar('58_Lysenes Plunderer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\93_Glory in Undeath.png" id="93_Glory in Undeath" data-flag="@X" onclick="openSidebar('93_Glory in Undeath',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\131_Celitiene's Accorder.png" id="131_Celitienes Accorder" data-flag="@X" onclick="openSidebar('131_Celitienes Accorder',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\172_Deepwood Hermit.png" id="172_Deepwood Hermit" data-flag="@X" onclick="openSidebar('172_Deepwood Hermit',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\13_Gamhaugen Owlkeeper.png" id="13_Gamhaugen Owlkeeper" data-flag="@X" onclick="openSidebar('13_Gamhaugen Owlkeeper',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\61_Mellan's Tactics.png" id="61_Mellans Tactics" data-flag="@X" onclick="openSidebar('61_Mellans Tactics',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\96_Hollowmind Drudge.png" id="96_Hollowmind Drudge" data-flag="@X" onclick="openSidebar('96_Hollowmind Drudge',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\134_Cleansing Brimstone.png" id="134_Cleansing Brimstone" data-flag="@X" onclick="openSidebar('134_Cleansing Brimstone',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\173_Desperate Retreat.png" id="173_Desperate Retreat" data-flag="@X" onclick="openSidebar('173_Desperate Retreat',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\14_Glimmer of Hope.png" id="14_Glimmer of Hope" data-flag="@X" onclick="openSidebar('14_Glimmer of Hope',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\63_Necromantic Experiment.png" id="63_Necromantic Experiment" data-flag="@X" onclick="openSidebar('63_Necromantic Experiment',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\100_Marrowbound Tenacity.png" id="100_Marrowbound Tenacity" data-flag="@X" onclick="openSidebar('100_Marrowbound Tenacity',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\136_Corpsestitched Slasher.png" id="136_Corpsestitched Slasher" data-flag="@X" onclick="openSidebar('136_Corpsestitched Slasher',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\182_Joyous Reveler.png" id="182_Joyous Reveler" data-flag="@X" onclick="openSidebar('182_Joyous Reveler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\18_Hour of Greatest Need.png" id="18_Hour of Greatest Need" data-flag="@X" onclick="openSidebar('18_Hour of Greatest Need',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\67_Reagent Smuggler.png" id="67_Reagent Smuggler" data-flag="@X" onclick="openSidebar('67_Reagent Smuggler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\102_Middenswarm Rats.png" id="102_Middenswarm Rats" data-flag="@X" onclick="openSidebar('102_Middenswarm Rats',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\138_Deepstone Traitor.png" id="138_Deepstone Traitor" data-flag="@X" onclick="openSidebar('138_Deepstone Traitor',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\183_Kiss from a Rose.png" id="183_Kiss from a Rose" data-flag="@X" onclick="openSidebar('183_Kiss from a Rose',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\20_Llech Crann Paladin.png" id="20_Llech Crann Paladin" data-flag="@X" onclick="openSidebar('20_Llech Crann Paladin',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\68_Relentless Driftpicker.png" id="68_Relentless Driftpicker" data-flag="@X" onclick="openSidebar('68_Relentless Driftpicker',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\103_Moment of Mourning.png" id="103_Moment of Mourning" data-flag="@X" onclick="openSidebar('103_Moment of Mourning',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\139_Dwarven Swashbuckler.png" id="139_Dwarven Swashbuckler" data-flag="@X" onclick="openSidebar('139_Dwarven Swashbuckler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\184_Levy Bowmen.png" id="184_Levy Bowmen" data-flag="@X" onclick="openSidebar('184_Levy Bowmen',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\21_Malingering Phantom.png" id="21_Malingering Phantom" data-flag="@X" onclick="openSidebar('21_Malingering Phantom',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\69_Santriza Saltbeard.png" id="69_Santriza Saltbeard" data-flag="@X" onclick="openSidebar('69_Santriza Saltbeard',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\104_Moor-Witch's Brew.png" id="104_Moor-Witchs Brew" data-flag="@X" onclick="openSidebar('104_Moor-Witchs Brew',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\140_Edelber Foreman.png" id="140_Edelber Foreman" data-flag="@X" onclick="openSidebar('140_Edelber Foreman',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\185_Llech Crann Knight.png" id="185_Llech Crann Knight" data-flag="@X" onclick="openSidebar('185_Llech Crann Knight',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\26_Protector of Yroncaster.png" id="26_Protector of Yroncaster" data-flag="@X" onclick="openSidebar('26_Protector of Yroncaster',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\70_Scale-Slough Drake.png" id="70_Scale-Slough Drake" data-flag="@X" onclick="openSidebar('70_Scale-Slough Drake',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\106_Oathsworn Bloodsire.png" id="106_Oathsworn Bloodsire" data-flag="@X" onclick="openSidebar('106_Oathsworn Bloodsire',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\142_Fated Call.png" id="142_Fated Call" data-flag="@X" onclick="openSidebar('142_Fated Call',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\187_Militia's Charge.png" id="187_Militias Charge" data-flag="@X" onclick="openSidebar('187_Militias Charge',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\31_Rouse the Smallfolk.png" id="31_Rouse the Smallfolk" data-flag="@X" onclick="openSidebar('31_Rouse the Smallfolk',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\72_Slip Beyond Fate's Grasp.png" id="72_Slip Beyond Fates Grasp" data-flag="@X" onclick="openSidebar('72_Slip Beyond Fates Grasp',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\108_Queen's Crusader.png" id="108_Queens Crusader" data-flag="@X" onclick="openSidebar('108_Queens Crusader',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\150_Impetuous Cavalryman.png" id="150_Impetuous Cavalryman" data-flag="@X" onclick="openSidebar('150_Impetuous Cavalryman',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\193_Rundfora's Resistance.png" id="193_Rundforas Resistance" data-flag="@X" onclick="openSidebar('193_Rundforas Resistance',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\32_Scion's Sentence.png" id="32_Scions Sentence" data-flag="@X" onclick="openSidebar('32_Scions Sentence',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\73_Smuggler's Requisition.png" id="73_Smugglers Requisition" data-flag="@X" onclick="openSidebar('73_Smugglers Requisition',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\109_Rancid Plagueherald.png" id="109_Rancid Plagueherald" data-flag="@X" onclick="openSidebar('109_Rancid Plagueherald',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\151_Knives to Throats.png" id="151_Knives to Throats" data-flag="@X" onclick="openSidebar('151_Knives to Throats',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\194_Scion of Coirchanh.png" id="194_Scion of Coirchanh" data-flag="@X" onclick="openSidebar('194_Scion of Coirchanh',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\33_Skysworn Companion.png" id="33_Skysworn Companion" data-flag="@X" onclick="openSidebar('33_Skysworn Companion',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\74_Sorrows of Maritou.png" id="74_Sorrows of Maritou" data-flag="@X" onclick="openSidebar('74_Sorrows of Maritou',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\112_Skullbark Defiler.png" id="112_Skullbark Defiler" data-flag="@X" onclick="openSidebar('112_Skullbark Defiler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\152_Llosg Crann Sharpshooter.png" id="152_Llosg Crann Sharpshooter" data-flag="@X" onclick="openSidebar('152_Llosg Crann Sharpshooter',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\195_Settled Giant.png" id="195_Settled Giant" data-flag="@X" onclick="openSidebar('195_Settled Giant',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\35_Steadfast Veteran.png" id="35_Steadfast Veteran" data-flag="@X" onclick="openSidebar('35_Steadfast Veteran',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\77_Tidecrest Surger.png" id="77_Tidecrest Surger" data-flag="@X" onclick="openSidebar('77_Tidecrest Surger',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\113_Treacherous Bloodbriar.png" id="113_Treacherous Bloodbriar" data-flag="@X" onclick="openSidebar('113_Treacherous Bloodbriar',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\155_Searmelt.png" id="155_Searmelt" data-flag="@X" onclick="openSidebar('155_Searmelt',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\198_Strongarm Militia.png" id="198_Strongarm Militia" data-flag="@X" onclick="openSidebar('198_Strongarm Militia',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\36_Symbol of Tranquility.png" id="36_Symbol of Tranquility" data-flag="@X" onclick="openSidebar('36_Symbol of Tranquility',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\78_Timely Arrival.png" id="78_Timely Arrival" data-flag="@X" onclick="openSidebar('78_Timely Arrival',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\116_Warden of the Belfry.png" id="116_Warden of the Belfry" data-flag="@X" onclick="openSidebar('116_Warden of the Belfry',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\156_Sofia's Stormchaser.png" id="156_Sofias Stormchaser" data-flag="@X" onclick="openSidebar('156_Sofias Stormchaser',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\199_Surface Envoy.png" id="199_Surface Envoy" data-flag="@X" onclick="openSidebar('199_Surface Envoy',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\39_Vel's Intervention.png" id="39_Vels Intervention" data-flag="@X" onclick="openSidebar('39_Vels Intervention',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\79_Unravel the Unfathomable.png" id="79_Unravel the Unfathomable" data-flag="@X" onclick="openSidebar('79_Unravel the Unfathomable',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\118_Weoran's Hunger.png" id="118_Weorans Hunger" data-flag="@X" onclick="openSidebar('118_Weorans Hunger',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\157_Spark of Inspiration.png" id="157_Spark of Inspiration" data-flag="@X" onclick="openSidebar('157_Spark of Inspiration',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\200_Sustaining Katlig.png" id="200_Sustaining Katlig" data-flag="@X" onclick="openSidebar('200_Sustaining Katlig',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img data-alt_src="/sets\TPW-files\img\296_Bonescourge Kazadrak_back.png" alt="/sets\TPW-files\img\296_Bonescourge Kazadrak_front.png" id="296_Bonescourge Kazadrak" data-flag="@XD" onclick="openSidebar('296_Bonescourge Kazadrak',false)"><button class="flip-btn" onclick="imgFlip('296_Bonescourge Kazadrak')"></button></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="gold" class="anchor"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\231_Henrick, the Fleeting King.png" id="231_Henrick, the Fleeting King" data-flag="@X" onclick="openSidebar('231_Henrick, the Fleeting King',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\260_Yaran, Undying Usurper.png" id="260_Yaran, Undying Usurper" data-flag="@X" onclick="openSidebar('260_Yaran, Undying Usurper',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\217_Corpus, Drawn to Death.png" id="217_Corpus, Drawn to Death" data-flag="@X" onclick="openSidebar('217_Corpus, Drawn to Death',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\215_Celitiene, Wildfire.png" id="215_Celitiene, Wildfire" data-flag="@X" onclick="openSidebar('215_Celitiene, Wildfire',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\248_Rose Queen Asamund.png" id="248_Rose Queen Asamund" data-flag="@X" onclick="openSidebar('248_Rose Queen Asamund',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\229_Hark the Fleeting Host.png" id="229_Hark the Fleeting Host" data-flag="@X" onclick="openSidebar('229_Hark the Fleeting Host',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\236_Lady Kahra Belmord.png" id="236_Lady Kahra Belmord" data-flag="@X" onclick="openSidebar('236_Lady Kahra Belmord',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\220_Dreadmoon Crusader.png" id="220_Dreadmoon Crusader" data-flag="@X" onclick="openSidebar('220_Dreadmoon Crusader',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\230_Harl and Finn, Bloodbrothers.png" id="230_Harl and Finn, Bloodbrothers" data-flag="@X" onclick="openSidebar('230_Harl and Finn, Bloodbrothers',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\224_A Farmer's Life.png" id="224_A Farmers Life" data-flag="@X" onclick="openSidebar('224_A Farmers Life',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\251_Sky Commander Esmerie.png" id="251_Sky Commander Esmerie" data-flag="@X" onclick="openSidebar('251_Sky Commander Esmerie',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\246_Raven Roosts.png" id="246_Raven Roosts" data-flag="@X" onclick="openSidebar('246_Raven Roosts',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\245_Ratkin Rampage.png" id="245_Ratkin Rampage" data-flag="@X" onclick="openSidebar('245_Ratkin Rampage',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\254_Stand as One.png" id="254_Stand as One" data-flag="@X" onclick="openSidebar('254_Stand as One',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\232_Hugh, Usurper's Thorn.png" id="232_Hugh, Usurpers Thorn" data-flag="@X" onclick="openSidebar('232_Hugh, Usurpers Thorn',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\240_Mellan, Skysworn Inductee.png" id="240_Mellan, Skysworn Inductee" data-flag="@X" onclick="openSidebar('240_Mellan, Skysworn Inductee',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\222_Ebitha, Supplicant of Decay.png" id="222_Ebitha, Supplicant of Decay" data-flag="@X" onclick="openSidebar('222_Ebitha, Supplicant of Decay',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\221_Dreadmoon's Rise.png" id="221_Dreadmoons Rise" data-flag="@X" onclick="openSidebar('221_Dreadmoons Rise',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\237_Loisch, Stonebark Scorcher.png" id="237_Loisch, Stonebark Scorcher" data-flag="@X" onclick="openSidebar('237_Loisch, Stonebark Scorcher',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\214_Byron, Hero of Norwick.png" id="214_Byron, Hero of Norwick" data-flag="@X" onclick="openSidebar('214_Byron, Hero of Norwick',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\241_Moment's Reprieve.png" id="241_Moments Reprieve" data-flag="@X" onclick="openSidebar('241_Moments Reprieve',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\261_Yaran's Scheming.png" id="261_Yarans Scheming" data-flag="@X" onclick="openSidebar('261_Yarans Scheming',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\239_The Marrow Lord.png" id="239_The Marrow Lord" data-flag="@X" onclick="openSidebar('239_The Marrow Lord',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\243_Perfect Partnership.png" id="243_Perfect Partnership" data-flag="@X" onclick="openSidebar('243_Perfect Partnership',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\225_For Hearth and Home.png" id="225_For Hearth and Home" data-flag="@X" onclick="openSidebar('225_For Hearth and Home',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\223_Fading Words.png" id="223_Fading Words" data-flag="@X" onclick="openSidebar('223_Fading Words',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\235_Kahra's Prototype.png" id="235_Kahras Prototype" data-flag="@X" onclick="openSidebar('235_Kahras Prototype',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\253_Song of the Red Thirst.png" id="253_Song of the Red Thirst" data-flag="@X" onclick="openSidebar('253_Song of the Red Thirst',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\234_Invocation of Loisch.png" id="234_Invocation of Loisch" data-flag="@X" onclick="openSidebar('234_Invocation of Loisch',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\205_Assailed Farmer.png" id="205_Assailed Farmer" data-flag="@X" onclick="openSidebar('205_Assailed Farmer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\271_Harrier Corps.png" id="271_Harrier Corps" data-flag="@X" onclick="openSidebar('271_Harrier Corps',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\272_Maritou's Bane.png" id="272_Maritous Bane" data-flag="@X" onclick="openSidebar('272_Maritous Bane',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\264_Brazen Chitter-Sage.png" id="264_Brazen Chitter-Sage" data-flag="@X" onclick="openSidebar('264_Brazen Chitter-Sage',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\269_Grizzled Expeditioneer.png" id="269_Grizzled Expeditioneer" data-flag="@X" onclick="openSidebar('269_Grizzled Expeditioneer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\274_Provisions Hauler.png" id="274_Provisions Hauler" data-flag="@X" onclick="openSidebar('274_Provisions Hauler',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\247_Rhysta, Bladebound.png" id="247_Rhysta, Bladebound" data-flag="@X" onclick="openSidebar('247_Rhysta, Bladebound',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\238_Lysene, Shrewd Smuggler.png" id="238_Lysene, Shrewd Smuggler" data-flag="@X" onclick="openSidebar('238_Lysene, Shrewd Smuggler',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\216_Coirchanh Awakened.png" id="216_Coirchanh Awakened" data-flag="@X" onclick="openSidebar('216_Coirchanh Awakened',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\213_Bugrund, Firehearth's Last.png" id="213_Bugrund, Firehearths Last" data-flag="@X" onclick="openSidebar('213_Bugrund, Firehearths Last',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\255_Stirring of the Run.png" id="255_Stirring of the Run" data-flag="@X" onclick="openSidebar('255_Stirring of the Run',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\207_Bitter Defeat.png" id="207_Bitter Defeat" data-flag="@X" onclick="openSidebar('207_Bitter Defeat',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\210_Blow the Man Down.png" id="210_Blow the Man Down" data-flag="@X" onclick="openSidebar('210_Blow the Man Down',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\202_Abominable Quarry.png" id="202_Abominable Quarry" data-flag="@X" onclick="openSidebar('202_Abominable Quarry',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\256_Sunheart Greatsword.png" id="256_Sunheart Greatsword" data-flag="@X" onclick="openSidebar('256_Sunheart Greatsword',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\212_Branu of the Dewdrops.png" id="212_Branu of the Dewdrops" data-flag="@X" onclick="openSidebar('212_Branu of the Dewdrops',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\219_Desperate Commander.png" id="219_Desperate Commander" data-flag="@X" onclick="openSidebar('219_Desperate Commander',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\249_Santriza Despoilers.png" id="249_Santriza Despoilers" data-flag="@X" onclick="openSidebar('249_Santriza Despoilers',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\233_Imisti of the Rose Court.png" id="233_Imisti of the Rose Court" data-flag="@X" onclick="openSidebar('233_Imisti of the Rose Court',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\257_Thanewrought Reclaimer.png" id="257_Thanewrought Reclaimer" data-flag="@X" onclick="openSidebar('257_Thanewrought Reclaimer',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\228_Gwynsivir's Pathfinder.png" id="228_Gwynsivirs Pathfinder" data-flag="@X" onclick="openSidebar('228_Gwynsivirs Pathfinder',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\209_Bloodstained Crusade.png" id="209_Bloodstained Crusade" data-flag="@X" onclick="openSidebar('209_Bloodstained Crusade',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\203_Alchemical Warfare.png" id="203_Alchemical Warfare" data-flag="@X" onclick="openSidebar('203_Alchemical Warfare',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\201_Abaran the Haunted.png" id="201_Abaran the Haunted" data-flag="@X" onclick="openSidebar('201_Abaran the Haunted',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\211_Borohd, Wartemper Artisan.png" id="211_Borohd, Wartemper Artisan" data-flag="@X" onclick="openSidebar('211_Borohd, Wartemper Artisan',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\227_Glenach, Gossamer Monarch.png" id="227_Glenach, Gossamer Monarch" data-flag="@X" onclick="openSidebar('227_Glenach, Gossamer Monarch',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\258_Vel, the Forlorn Shield.png" id="258_Vel, the Forlorn Shield" data-flag="@X" onclick="openSidebar('258_Vel, the Forlorn Shield',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\206_Beherzt, Sofia's Second.png" id="206_Beherzt, Sofias Second" data-flag="@X" onclick="openSidebar('206_Beherzt, Sofias Second',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\259_Vernal Decay.png" id="259_Vernal Decay" data-flag="@X" onclick="openSidebar('259_Vernal Decay',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\250_Save What You Can.png" id="250_Save What You Can" data-flag="@X" onclick="openSidebar('250_Save What You Can',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\244_Petalsnare.png" id="244_Petalsnare" data-flag="@X" onclick="openSidebar('244_Petalsnare',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\242_Oathbound Scion.png" id="242_Oathbound Scion" data-flag="@X" onclick="openSidebar('242_Oathbound Scion',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\204_Aravant Welcome.png" id="204_Aravant Welcome" data-flag="@X" onclick="openSidebar('204_Aravant Welcome',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\208_Bloodbriar Bat-Rider.png" id="208_Bloodbriar Bat-Rider" data-flag="@X" onclick="openSidebar('208_Bloodbriar Bat-Rider',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\226_Gamhaugen Drillbore.png" id="226_Gamhaugen Drillbore" data-flag="@X" onclick="openSidebar('226_Gamhaugen Drillbore',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\218_Deepwilds Survivor.png" id="218_Deepwilds Survivor" data-flag="@X" onclick="openSidebar('218_Deepwilds Survivor',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\273_Pale Conquest.png" id="273_Pale Conquest" data-flag="@X" onclick="openSidebar('273_Pale Conquest',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\266_Daring Windraider.png" id="266_Daring Windraider" data-flag="@X" onclick="openSidebar('266_Daring Windraider',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\262_Awakened Hunger.png" id="262_Awakened Hunger" data-flag="@X" onclick="openSidebar('262_Awakened Hunger',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\270_Harl's Hornblower.png" id="270_Harls Hornblower" data-flag="@X" onclick="openSidebar('270_Harls Hornblower',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\267_Dewdrop Crescendo.png" id="267_Dewdrop Crescendo" data-flag="@X" onclick="openSidebar('267_Dewdrop Crescendo',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\252_Sofia, Haunted by Fortune.png" id="252_Sofia, Haunted by Fortune" data-flag="@X" onclick="openSidebar('252_Sofia, Haunted by Fortune',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\263_Belmord Collaborator.png" id="263_Belmord Collaborator" data-flag="@X" onclick="openSidebar('263_Belmord Collaborator',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\265_Caer Crann Collaborator.png" id="265_Caer Crann Collaborator" data-flag="@X" onclick="openSidebar('265_Caer Crann Collaborator',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\268_Edelber Collaborator.png" id="268_Edelber Collaborator" data-flag="@X" onclick="openSidebar('268_Edelber Collaborator',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\275_Rundfora Collaborator.png" id="275_Rundfora Collaborator" data-flag="@X" onclick="openSidebar('275_Rundfora Collaborator',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\276_Santriza Collaborator.png" id="276_Santriza Collaborator" data-flag="@X" onclick="openSidebar('276_Santriza Collaborator',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="colorless" class="anchor"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\288_Yroncaster's Empty Throne.png" id="288_Yroncasters Empty Throne" data-flag="@X" onclick="openSidebar('288_Yroncasters Empty Throne',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\281_Rallying Banners.png" id="281_Rallying Banners" data-flag="@X" onclick="openSidebar('281_Rallying Banners',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\284_The Roseblade Reforged.png" id="284_The Roseblade Reforged" data-flag="@X" onclick="openSidebar('284_The Roseblade Reforged',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\287_The Usurper's Final Rest.png" id="287_The Usurpers Final Rest" data-flag="@X" onclick="openSidebar('287_The Usurpers Final Rest',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\283_Rose Order Pactblade.png" id="283_Rose Order Pactblade" data-flag="@X" onclick="openSidebar('283_Rose Order Pactblade',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\286_Sunlit Waystone.png" id="286_Sunlit Waystone" data-flag="@X" onclick="openSidebar('286_Sunlit Waystone',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\277_Favor of Petals.png" id="277_Favor of Petals" data-flag="@X" onclick="openSidebar('277_Favor of Petals',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\278_Forsaken Mausoleum.png" id="278_Forsaken Mausoleum" data-flag="@X" onclick="openSidebar('278_Forsaken Mausoleum',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\279_Necrosis Vials.png" id="279_Necrosis Vials" data-flag="@X" onclick="openSidebar('279_Necrosis Vials',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\280_Ragtatter Collector.png" id="280_Ragtatter Collector" data-flag="@X" onclick="openSidebar('280_Ragtatter Collector',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\282_Rose Court Sentinel.png" id="282_Rose Court Sentinel" data-flag="@X" onclick="openSidebar('282_Rose Court Sentinel',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\285_Strawsewn Mentor.png" id="285_Strawsewn Mentor" data-flag="@X" onclick="openSidebar('285_Strawsewn Mentor',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="land" class="anchor"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\293_Norwick, Defiant Farmstead.png" id="293_Norwick, Defiant Farmstead" data-flag="@X" onclick="openSidebar('293_Norwick, Defiant Farmstead',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\291_The Dwynerloch.png" id="291_The Dwynerloch" data-flag="@X" onclick="openSidebar('291_The Dwynerloch',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\290_Castle Belmord.png" id="290_Castle Belmord" data-flag="@X" onclick="openSidebar('290_Castle Belmord',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\295_Undermine, the Seething Forges.png" id="295_Undermine, the Seething Forges" data-flag="@X" onclick="openSidebar('295_Undermine, the Seething Forges',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\289_Caer Crann, Forest's Heart.png" id="289_Caer Crann, Forests Heart" data-flag="@X" onclick="openSidebar('289_Caer Crann, Forests Heart',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\294_Rosewhisper Garden.png" id="294_Rosewhisper Garden" data-flag="@X" onclick="openSidebar('294_Rosewhisper Garden',false)"></div>
-			<div class="container"><img alt="/sets\TPW-files\img\292_Evolving Wilds.png" id="292_Evolving Wilds" data-flag="@X" onclick="openSidebar('292_Evolving Wilds',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+					<div class="container"><img alt="/sets\TPW-files\img\17_Horseman of Conquest.png" id="17_Horseman of Conquest" data-flag="@X" onclick="openSidebar('17_Horseman of Conquest',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\41_Ahl the Omenwing.png" id="41_Ahl the Omenwing" data-flag="@X" onclick="openSidebar('41_Ahl the Omenwing',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\81_Belmord, Bloodstained Count.png" id="81_Belmord, Bloodstained Count" data-flag="@X" onclick="openSidebar('81_Belmord, Bloodstained Count',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\123_Bloodfall.png" id="123_Bloodfall" data-flag="@X" onclick="openSidebar('123_Bloodfall',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\180_Gwynsivir, the Listener.png" id="180_Gwynsivir, the Listener" data-flag="@X" onclick="openSidebar('180_Gwynsivir, the Listener',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\28_Questant's Beginning.png" id="28_Questants Beginning" data-flag="@X" onclick="openSidebar('28_Questants Beginning',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\49_A Dark and Stormy Night.png" id="49_A Dark and Stormy Night" data-flag="@X" onclick="openSidebar('49_A Dark and Stormy Night',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\97_Horseman of Famine.png" id="97_Horseman of Famine" data-flag="@X" onclick="openSidebar('97_Horseman of Famine',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\148_Horseman of War.png" id="148_Horseman of War" data-flag="@X" onclick="openSidebar('148_Horseman of War',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\181_Horseman of Pestilence.png" id="181_Horseman of Pestilence" data-flag="@X" onclick="openSidebar('181_Horseman of Pestilence',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\1_Asamund's Final Push.png" id="1_Asamunds Final Push" data-flag="@X" onclick="openSidebar('1_Asamunds Final Push',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\43_Ashenwind Augur.png" id="43_Ashenwind Augur" data-flag="@X" onclick="openSidebar('43_Ashenwind Augur',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\85_Corpsecaster Mage.png" id="85_Corpsecaster Mage" data-flag="@X" onclick="openSidebar('85_Corpsecaster Mage',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\130_Call of the Dreadmoon.png" id="130_Call of the Dreadmoon" data-flag="@X" onclick="openSidebar('130_Call of the Dreadmoon',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\164_Apex's Prey.png" id="164_Apexs Prey" data-flag="@X" onclick="openSidebar('164_Apexs Prey',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\3_Champion of the People.png" id="3_Champion of the People" data-flag="@X" onclick="openSidebar('3_Champion of the People',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\47_Cloudstreaker.png" id="47_Cloudstreaker" data-flag="@X" onclick="openSidebar('47_Cloudstreaker',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\88_The Dreadmoon Ascendancy.png" id="88_The Dreadmoon Ascendancy" data-flag="@X" onclick="openSidebar('88_The Dreadmoon Ascendancy',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\133_Cinderfeather Phoenix.png" id="133_Cinderfeather Phoenix" data-flag="@X" onclick="openSidebar('133_Cinderfeather Phoenix',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\169_Coirchanh's Invocation.png" id="169_Coirchanhs Invocation" data-flag="@X" onclick="openSidebar('169_Coirchanhs Invocation',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\25_Procession of the Pale.png" id="25_Procession of the Pale" data-flag="@X" onclick="openSidebar('25_Procession of the Pale',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\51_Dewshaper Matriarch.png" id="51_Dewshaper Matriarch" data-flag="@X" onclick="openSidebar('51_Dewshaper Matriarch',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\95_Hemic Consummation.png" id="95_Hemic Consummation" data-flag="@X" onclick="openSidebar('95_Hemic Consummation',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\141_Entrenched Forgemaster.png" id="141_Entrenched Forgemaster" data-flag="@X" onclick="openSidebar('141_Entrenched Forgemaster',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\174_Esalia, the Enduring Root.png" id="174_Esalia, the Enduring Root" data-flag="@X" onclick="openSidebar('174_Esalia, the Enduring Root',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\27_A Queen's Duty.png" id="27_A Queens Duty" data-flag="@X" onclick="openSidebar('27_A Queens Duty',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\60_Maritou's Pride.png" id="60_Maritous Pride" data-flag="@X" onclick="openSidebar('60_Maritous Pride',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\99_Kahra's Price.png" id="99_Kahras Price" data-flag="@X" onclick="openSidebar('99_Kahras Price',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\143_Flawed Masterpiece.png" id="143_Flawed Masterpiece" data-flag="@X" onclick="openSidebar('143_Flawed Masterpiece',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\176_Esoteric Alliances.png" id="176_Esoteric Alliances" data-flag="@X" onclick="openSidebar('176_Esoteric Alliances',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\29_Rhysta's Deliverance.png" id="29_Rhystas Deliverance" data-flag="@X" onclick="openSidebar('29_Rhystas Deliverance',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\62_Mirrored Monstrosities.png" id="62_Mirrored Monstrosities" data-flag="@X" onclick="openSidebar('62_Mirrored Monstrosities',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\107_Pactwhisper Demon.png" id="107_Pactwhisper Demon" data-flag="@X" onclick="openSidebar('107_Pactwhisper Demon',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\144_Forced Conscription.png" id="144_Forced Conscription" data-flag="@X" onclick="openSidebar('144_Forced Conscription',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\178_Friendly Rivalry.png" id="178_Friendly Rivalry" data-flag="@X" onclick="openSidebar('178_Friendly Rivalry',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\30_Rose Queen's Absolution.png" id="30_Rose Queens Absolution" data-flag="@X" onclick="openSidebar('30_Rose Queens Absolution',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\71_Skyfall.png" id="71_Skyfall" data-flag="@X" onclick="openSidebar('71_Skyfall',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\111_Sanguine Chevalier.png" id="111_Sanguine Chevalier" data-flag="@X" onclick="openSidebar('111_Sanguine Chevalier',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\147_Hearthfire Disciple.png" id="147_Hearthfire Disciple" data-flag="@X" onclick="openSidebar('147_Hearthfire Disciple',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\186_Llosg Crann Quartermaster.png" id="186_Llosg Crann Quartermaster" data-flag="@X" onclick="openSidebar('186_Llosg Crann Quartermaster',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\34_Soaring Pridelord.png" id="34_Soaring Pridelord" data-flag="@X" onclick="openSidebar('34_Soaring Pridelord',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\75_Spellstrider Ettin.png" id="75_Spellstrider Ettin" data-flag="@X" onclick="openSidebar('75_Spellstrider Ettin',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\115_Voracious Dais.png" id="115_Voracious Dais" data-flag="@X" onclick="openSidebar('115_Voracious Dais',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\154_Scorching Condemnation.png" id="154_Scorching Condemnation" data-flag="@X" onclick="openSidebar('154_Scorching Condemnation',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\189_Oath of the Wildlords.png" id="189_Oath of the Wildlords" data-flag="@X" onclick="openSidebar('189_Oath of the Wildlords',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\38_Underpass Ranger.png" id="38_Underpass Ranger" data-flag="@X" onclick="openSidebar('38_Underpass Ranger',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\76_Thrashing Kelpie.png" id="76_Thrashing Kelpie" data-flag="@X" onclick="openSidebar('76_Thrashing Kelpie',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\119_Wihtfyr of the Nighthost.png" id="119_Wihtfyr of the Nighthost" data-flag="@X" onclick="openSidebar('119_Wihtfyr of the Nighthost',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\159_Undermine Guardian.png" id="159_Undermine Guardian" data-flag="@X" onclick="openSidebar('159_Undermine Guardian',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\192_The Rundfora's Last Gift.png" id="192_The Rundforas Last Gift" data-flag="@X" onclick="openSidebar('192_The Rundforas Last Gift',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\2_Byron's Reprisal.png" id="2_Byrons Reprisal" data-flag="@X" onclick="openSidebar('2_Byrons Reprisal',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\42_Asamund's Contemplation.png" id="42_Asamunds Contemplation" data-flag="@X" onclick="openSidebar('42_Asamunds Contemplation',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\83_Bleakfell Mauler.png" id="83_Bleakfell Mauler" data-flag="@X" onclick="openSidebar('83_Bleakfell Mauler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\121_Accursed Ancestor.png" id="121_Accursed Ancestor" data-flag="@X" onclick="openSidebar('121_Accursed Ancestor',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\161_Abaran's Quarry.png" id="161_Abarans Quarry" data-flag="@X" onclick="openSidebar('161_Abarans Quarry',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\6_Deepstone Fusiliers.png" id="6_Deepstone Fusiliers" data-flag="@X" onclick="openSidebar('6_Deepstone Fusiliers',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\44_Bilge Crab.png" id="44_Bilge Crab" data-flag="@X" onclick="openSidebar('44_Bilge Crab',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\84_Blighthorn Stallion.png" id="84_Blighthorn Stallion" data-flag="@X" onclick="openSidebar('84_Blighthorn Stallion',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\122_Beherzt's Squallseeker.png" id="122_Beherzts Squallseeker" data-flag="@X" onclick="openSidebar('122_Beherzts Squallseeker',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\165_Bleakfell Escort.png" id="165_Bleakfell Escort" data-flag="@X" onclick="openSidebar('165_Bleakfell Escort',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\10_Fleeting Valiant.png" id="10_Fleeting Valiant" data-flag="@X" onclick="openSidebar('10_Fleeting Valiant',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\46_Chillbone Lich.png" id="46_Chillbone Lich" data-flag="@X" onclick="openSidebar('46_Chillbone Lich',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\90_Enduring Scion.png" id="90_Enduring Scion" data-flag="@X" onclick="openSidebar('90_Enduring Scion',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\124_Bloodvenge Slayer.png" id="124_Bloodvenge Slayer" data-flag="@X" onclick="openSidebar('124_Bloodvenge Slayer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\168_Coirchanh's Herald.png" id="168_Coirchanhs Herald" data-flag="@X" onclick="openSidebar('168_Coirchanhs Herald',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\12_Frantic Harvesters.png" id="12_Frantic Harvesters" data-flag="@X" onclick="openSidebar('12_Frantic Harvesters',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\48_Compromised Sorcerer.png" id="48_Compromised Sorcerer" data-flag="@X" onclick="openSidebar('48_Compromised Sorcerer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\92_Glimpse Your Fate.png" id="92_Glimpse Your Fate" data-flag="@X" onclick="openSidebar('92_Glimpse Your Fate',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\132_Celitiene's Regret.png" id="132_Celitienes Regret" data-flag="@X" onclick="openSidebar('132_Celitienes Regret',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\171_Daring Sortie.png" id="171_Daring Sortie" data-flag="@X" onclick="openSidebar('171_Daring Sortie',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\15_Herald of Clear Skies.png" id="15_Herald of Clear Skies" data-flag="@X" onclick="openSidebar('15_Herald of Clear Skies',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\50_Dewdrop Marshal.png" id="50_Dewdrop Marshal" data-flag="@X" onclick="openSidebar('50_Dewdrop Marshal',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\94_Heedless Questant.png" id="94_Heedless Questant" data-flag="@X" onclick="openSidebar('94_Heedless Questant',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\135_Corpsefeaster Zwurg.png" id="135_Corpsefeaster Zwurg" data-flag="@X" onclick="openSidebar('135_Corpsefeaster Zwurg',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\175_Esalia's Witness.png" id="175_Esalias Witness" data-flag="@X" onclick="openSidebar('175_Esalias Witness',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\16_Heretical Prelate.png" id="16_Heretical Prelate" data-flag="@X" onclick="openSidebar('16_Heretical Prelate',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\55_Griffin Hatchlings.png" id="55_Griffin Hatchlings" data-flag="@X" onclick="openSidebar('55_Griffin Hatchlings',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\98_Indulgent Hedonist.png" id="98_Indulgent Hedonist" data-flag="@X" onclick="openSidebar('98_Indulgent Hedonist',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\137_Deathrooter.png" id="137_Deathrooter" data-flag="@X" onclick="openSidebar('137_Deathrooter',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\177_Fencas the Fallen.png" id="177_Fencas the Fallen" data-flag="@X" onclick="openSidebar('177_Fencas the Fallen',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\19_Llech Crann Ambassador.png" id="19_Llech Crann Ambassador" data-flag="@X" onclick="openSidebar('19_Llech Crann Ambassador',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\56_Illicit Spellweaver.png" id="56_Illicit Spellweaver" data-flag="@X" onclick="openSidebar('56_Illicit Spellweaver',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\101_Middenheap Uprising.png" id="101_Middenheap Uprising" data-flag="@X" onclick="openSidebar('101_Middenheap Uprising',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\145_Fortune's Fusillade.png" id="145_Fortunes Fusillade" data-flag="@X" onclick="openSidebar('145_Fortunes Fusillade',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\179_From the Treetops.png" id="179_From the Treetops" data-flag="@X" onclick="openSidebar('179_From the Treetops',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\22_Momentary Victory.png" id="22_Momentary Victory" data-flag="@X" onclick="openSidebar('22_Momentary Victory',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\59_Maritou the Strait-Drowned.png" id="59_Maritou the Strait-Drowned" data-flag="@X" onclick="openSidebar('59_Maritou the Strait-Drowned',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\105_Noxious Kiss.png" id="105_Noxious Kiss" data-flag="@X" onclick="openSidebar('105_Noxious Kiss',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\146_Gamhaugen Burns.png" id="146_Gamhaugen Burns" data-flag="@X" onclick="openSidebar('146_Gamhaugen Burns',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\188_Moontouched Courser.png" id="188_Moontouched Courser" data-flag="@X" onclick="openSidebar('188_Moontouched Courser',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\23_Monara, Pale Rider.png" id="23_Monara, Pale Rider" data-flag="@X" onclick="openSidebar('23_Monara, Pale Rider',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\64_Overwhelming March.png" id="64_Overwhelming March" data-flag="@X" onclick="openSidebar('64_Overwhelming March',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\110_Rebellious Ratkin.png" id="110_Rebellious Ratkin" data-flag="@X" onclick="openSidebar('110_Rebellious Ratkin',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\149_Hulking Fleshdebter.png" id="149_Hulking Fleshdebter" data-flag="@X" onclick="openSidebar('149_Hulking Fleshdebter',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\190_Pestilent Procession.png" id="190_Pestilent Procession" data-flag="@X" onclick="openSidebar('190_Pestilent Procession',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\24_Pale Mercies.png" id="24_Pale Mercies" data-flag="@X" onclick="openSidebar('24_Pale Mercies',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\65_Phasewalker Rake.png" id="65_Phasewalker Rake" data-flag="@X" onclick="openSidebar('65_Phasewalker Rake',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\114_The Usurper's Dark Rebirth.png" id="114_The Usurpers Dark Rebirth" data-flag="@X" onclick="openSidebar('114_The Usurpers Dark Rebirth',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\153_Pyresong Incendiary.png" id="153_Pyresong Incendiary" data-flag="@X" onclick="openSidebar('153_Pyresong Incendiary',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\191_Rundfora Trickster.png" id="191_Rundfora Trickster" data-flag="@X" onclick="openSidebar('191_Rundfora Trickster',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\37_Thanewraith.png" id="37_Thanewraith" data-flag="@X" onclick="openSidebar('37_Thanewraith',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\66_Ravings of the Damned.png" id="66_Ravings of the Damned" data-flag="@X" onclick="openSidebar('66_Ravings of the Damned',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\117_Weoran the Fleshcarver.png" id="117_Weoran the Fleshcarver" data-flag="@X" onclick="openSidebar('117_Weoran the Fleshcarver',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\158_Stonebark Invoker.png" id="158_Stonebark Invoker" data-flag="@X" onclick="openSidebar('158_Stonebark Invoker',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\196_Sheltering Gargantuan.png" id="196_Sheltering Gargantuan" data-flag="@X" onclick="openSidebar('196_Sheltering Gargantuan',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\40_Yearning Heart.png" id="40_Yearning Heart" data-flag="@X" onclick="openSidebar('40_Yearning Heart',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\80_Usurper's Will.png" id="80_Usurpers Will" data-flag="@X" onclick="openSidebar('80_Usurpers Will',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\120_Wihtfyr's Coterie.png" id="120_Wihtfyrs Coterie" data-flag="@X" onclick="openSidebar('120_Wihtfyrs Coterie',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\160_Vengeful Alchemist.png" id="160_Vengeful Alchemist" data-flag="@X" onclick="openSidebar('160_Vengeful Alchemist',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\197_Stilthorpe Memorialist.png" id="197_Stilthorpe Memorialist" data-flag="@X" onclick="openSidebar('197_Stilthorpe Memorialist',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\4_Conscripted Provisioner.png" id="4_Conscripted Provisioner" data-flag="@X" onclick="openSidebar('4_Conscripted Provisioner',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\45_Branu's Pathcutter.png" id="45_Branus Pathcutter" data-flag="@X" onclick="openSidebar('45_Branus Pathcutter',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\82_Belmord's Thirst.png" id="82_Belmords Thirst" data-flag="@X" onclick="openSidebar('82_Belmords Thirst',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\125_Brimstone Charger.png" id="125_Brimstone Charger" data-flag="@X" onclick="openSidebar('125_Brimstone Charger',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\162_Acolyte of the Rose Order.png" id="162_Acolyte of the Rose Order" data-flag="@X" onclick="openSidebar('162_Acolyte of the Rose Order',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\5_Deadhunt Mastiff.png" id="5_Deadhunt Mastiff" data-flag="@X" onclick="openSidebar('5_Deadhunt Mastiff',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\52_Dwynerloch Haunt.png" id="52_Dwynerloch Haunt" data-flag="@X" onclick="openSidebar('52_Dwynerloch Haunt',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\86_Darkheart Beckoning.png" id="86_Darkheart Beckoning" data-flag="@X" onclick="openSidebar('86_Darkheart Beckoning',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\126_Brought Together.png" id="126_Brought Together" data-flag="@X" onclick="openSidebar('126_Brought Together',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\163_Alliance's Aid.png" id="163_Alliances Aid" data-flag="@X" onclick="openSidebar('163_Alliances Aid',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\7_Edelber Frontliners.png" id="7_Edelber Frontliners" data-flag="@X" onclick="openSidebar('7_Edelber Frontliners',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\53_Flaws in the Flesh.png" id="53_Flaws in the Flesh" data-flag="@X" onclick="openSidebar('53_Flaws in the Flesh',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\87_Depraved Dreadlord.png" id="87_Depraved Dreadlord" data-flag="@X" onclick="openSidebar('87_Depraved Dreadlord',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\127_Burning Visions.png" id="127_Burning Visions" data-flag="@X" onclick="openSidebar('127_Burning Visions',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\166_Blightbound Archer.png" id="166_Blightbound Archer" data-flag="@X" onclick="openSidebar('166_Blightbound Archer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\8_Edict of the Roses.png" id="8_Edict of the Roses" data-flag="@X" onclick="openSidebar('8_Edict of the Roses',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\54_Frontline Familiar.png" id="54_Frontline Familiar" data-flag="@X" onclick="openSidebar('54_Frontline Familiar',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\89_Dreadmoon Disciple.png" id="89_Dreadmoon Disciple" data-flag="@X" onclick="openSidebar('89_Dreadmoon Disciple',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\128_By Blood and Fire.png" id="128_By Blood and Fire" data-flag="@X" onclick="openSidebar('128_By Blood and Fire',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\167_Caer Crann Survivalists.png" id="167_Caer Crann Survivalists" data-flag="@X" onclick="openSidebar('167_Caer Crann Survivalists',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\9_Esmerie's Breeze-Seeker.png" id="9_Esmeries Breeze-Seeker" data-flag="@X" onclick="openSidebar('9_Esmeries Breeze-Seeker',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\57_Kahra's Machinations.png" id="57_Kahras Machinations" data-flag="@X" onclick="openSidebar('57_Kahras Machinations',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\91_Fangmarked Neophyte.png" id="91_Fangmarked Neophyte" data-flag="@X" onclick="openSidebar('91_Fangmarked Neophyte',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\129_Calamitous Flames.png" id="129_Calamitous Flames" data-flag="@X" onclick="openSidebar('129_Calamitous Flames',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\170_Costly Ambush.png" id="170_Costly Ambush" data-flag="@X" onclick="openSidebar('170_Costly Ambush',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\11_Fortune's Mark.png" id="11_Fortunes Mark" data-flag="@X" onclick="openSidebar('11_Fortunes Mark',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\58_Lysene's Plunderer.png" id="58_Lysenes Plunderer" data-flag="@X" onclick="openSidebar('58_Lysenes Plunderer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\93_Glory in Undeath.png" id="93_Glory in Undeath" data-flag="@X" onclick="openSidebar('93_Glory in Undeath',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\131_Celitiene's Accorder.png" id="131_Celitienes Accorder" data-flag="@X" onclick="openSidebar('131_Celitienes Accorder',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\172_Deepwood Hermit.png" id="172_Deepwood Hermit" data-flag="@X" onclick="openSidebar('172_Deepwood Hermit',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\13_Gamhaugen Owlkeeper.png" id="13_Gamhaugen Owlkeeper" data-flag="@X" onclick="openSidebar('13_Gamhaugen Owlkeeper',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\61_Mellan's Tactics.png" id="61_Mellans Tactics" data-flag="@X" onclick="openSidebar('61_Mellans Tactics',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\96_Hollowmind Drudge.png" id="96_Hollowmind Drudge" data-flag="@X" onclick="openSidebar('96_Hollowmind Drudge',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\134_Cleansing Brimstone.png" id="134_Cleansing Brimstone" data-flag="@X" onclick="openSidebar('134_Cleansing Brimstone',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\173_Desperate Retreat.png" id="173_Desperate Retreat" data-flag="@X" onclick="openSidebar('173_Desperate Retreat',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\14_Glimmer of Hope.png" id="14_Glimmer of Hope" data-flag="@X" onclick="openSidebar('14_Glimmer of Hope',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\63_Necromantic Experiment.png" id="63_Necromantic Experiment" data-flag="@X" onclick="openSidebar('63_Necromantic Experiment',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\100_Marrowbound Tenacity.png" id="100_Marrowbound Tenacity" data-flag="@X" onclick="openSidebar('100_Marrowbound Tenacity',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\136_Corpsestitched Slasher.png" id="136_Corpsestitched Slasher" data-flag="@X" onclick="openSidebar('136_Corpsestitched Slasher',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\182_Joyous Reveler.png" id="182_Joyous Reveler" data-flag="@X" onclick="openSidebar('182_Joyous Reveler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\18_Hour of Greatest Need.png" id="18_Hour of Greatest Need" data-flag="@X" onclick="openSidebar('18_Hour of Greatest Need',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\67_Reagent Smuggler.png" id="67_Reagent Smuggler" data-flag="@X" onclick="openSidebar('67_Reagent Smuggler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\102_Middenswarm Rats.png" id="102_Middenswarm Rats" data-flag="@X" onclick="openSidebar('102_Middenswarm Rats',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\138_Deepstone Traitor.png" id="138_Deepstone Traitor" data-flag="@X" onclick="openSidebar('138_Deepstone Traitor',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\183_Kiss from a Rose.png" id="183_Kiss from a Rose" data-flag="@X" onclick="openSidebar('183_Kiss from a Rose',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\20_Llech Crann Paladin.png" id="20_Llech Crann Paladin" data-flag="@X" onclick="openSidebar('20_Llech Crann Paladin',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\68_Relentless Driftpicker.png" id="68_Relentless Driftpicker" data-flag="@X" onclick="openSidebar('68_Relentless Driftpicker',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\103_Moment of Mourning.png" id="103_Moment of Mourning" data-flag="@X" onclick="openSidebar('103_Moment of Mourning',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\139_Dwarven Swashbuckler.png" id="139_Dwarven Swashbuckler" data-flag="@X" onclick="openSidebar('139_Dwarven Swashbuckler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\184_Levy Bowmen.png" id="184_Levy Bowmen" data-flag="@X" onclick="openSidebar('184_Levy Bowmen',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\21_Malingering Phantom.png" id="21_Malingering Phantom" data-flag="@X" onclick="openSidebar('21_Malingering Phantom',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\69_Santriza Saltbeard.png" id="69_Santriza Saltbeard" data-flag="@X" onclick="openSidebar('69_Santriza Saltbeard',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\104_Moor-Witch's Brew.png" id="104_Moor-Witchs Brew" data-flag="@X" onclick="openSidebar('104_Moor-Witchs Brew',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\140_Edelber Foreman.png" id="140_Edelber Foreman" data-flag="@X" onclick="openSidebar('140_Edelber Foreman',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\185_Llech Crann Knight.png" id="185_Llech Crann Knight" data-flag="@X" onclick="openSidebar('185_Llech Crann Knight',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\26_Protector of Yroncaster.png" id="26_Protector of Yroncaster" data-flag="@X" onclick="openSidebar('26_Protector of Yroncaster',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\70_Scale-Slough Drake.png" id="70_Scale-Slough Drake" data-flag="@X" onclick="openSidebar('70_Scale-Slough Drake',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\106_Oathsworn Bloodsire.png" id="106_Oathsworn Bloodsire" data-flag="@X" onclick="openSidebar('106_Oathsworn Bloodsire',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\142_Fated Call.png" id="142_Fated Call" data-flag="@X" onclick="openSidebar('142_Fated Call',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\187_Militia's Charge.png" id="187_Militias Charge" data-flag="@X" onclick="openSidebar('187_Militias Charge',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\31_Rouse the Smallfolk.png" id="31_Rouse the Smallfolk" data-flag="@X" onclick="openSidebar('31_Rouse the Smallfolk',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\72_Slip Beyond Fate's Grasp.png" id="72_Slip Beyond Fates Grasp" data-flag="@X" onclick="openSidebar('72_Slip Beyond Fates Grasp',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\108_Queen's Crusader.png" id="108_Queens Crusader" data-flag="@X" onclick="openSidebar('108_Queens Crusader',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\150_Impetuous Cavalryman.png" id="150_Impetuous Cavalryman" data-flag="@X" onclick="openSidebar('150_Impetuous Cavalryman',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\193_Rundfora's Resistance.png" id="193_Rundforas Resistance" data-flag="@X" onclick="openSidebar('193_Rundforas Resistance',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\32_Scion's Sentence.png" id="32_Scions Sentence" data-flag="@X" onclick="openSidebar('32_Scions Sentence',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\73_Smuggler's Requisition.png" id="73_Smugglers Requisition" data-flag="@X" onclick="openSidebar('73_Smugglers Requisition',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\109_Rancid Plagueherald.png" id="109_Rancid Plagueherald" data-flag="@X" onclick="openSidebar('109_Rancid Plagueherald',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\151_Knives to Throats.png" id="151_Knives to Throats" data-flag="@X" onclick="openSidebar('151_Knives to Throats',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\194_Scion of Coirchanh.png" id="194_Scion of Coirchanh" data-flag="@X" onclick="openSidebar('194_Scion of Coirchanh',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\33_Skysworn Companion.png" id="33_Skysworn Companion" data-flag="@X" onclick="openSidebar('33_Skysworn Companion',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\74_Sorrows of Maritou.png" id="74_Sorrows of Maritou" data-flag="@X" onclick="openSidebar('74_Sorrows of Maritou',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\112_Skullbark Defiler.png" id="112_Skullbark Defiler" data-flag="@X" onclick="openSidebar('112_Skullbark Defiler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\152_Llosg Crann Sharpshooter.png" id="152_Llosg Crann Sharpshooter" data-flag="@X" onclick="openSidebar('152_Llosg Crann Sharpshooter',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\195_Settled Giant.png" id="195_Settled Giant" data-flag="@X" onclick="openSidebar('195_Settled Giant',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\35_Steadfast Veteran.png" id="35_Steadfast Veteran" data-flag="@X" onclick="openSidebar('35_Steadfast Veteran',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\77_Tidecrest Surger.png" id="77_Tidecrest Surger" data-flag="@X" onclick="openSidebar('77_Tidecrest Surger',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\113_Treacherous Bloodbriar.png" id="113_Treacherous Bloodbriar" data-flag="@X" onclick="openSidebar('113_Treacherous Bloodbriar',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\155_Searmelt.png" id="155_Searmelt" data-flag="@X" onclick="openSidebar('155_Searmelt',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\198_Strongarm Militia.png" id="198_Strongarm Militia" data-flag="@X" onclick="openSidebar('198_Strongarm Militia',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\36_Symbol of Tranquility.png" id="36_Symbol of Tranquility" data-flag="@X" onclick="openSidebar('36_Symbol of Tranquility',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\78_Timely Arrival.png" id="78_Timely Arrival" data-flag="@X" onclick="openSidebar('78_Timely Arrival',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\116_Warden of the Belfry.png" id="116_Warden of the Belfry" data-flag="@X" onclick="openSidebar('116_Warden of the Belfry',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\156_Sofia's Stormchaser.png" id="156_Sofias Stormchaser" data-flag="@X" onclick="openSidebar('156_Sofias Stormchaser',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\199_Surface Envoy.png" id="199_Surface Envoy" data-flag="@X" onclick="openSidebar('199_Surface Envoy',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\39_Vel's Intervention.png" id="39_Vels Intervention" data-flag="@X" onclick="openSidebar('39_Vels Intervention',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\79_Unravel the Unfathomable.png" id="79_Unravel the Unfathomable" data-flag="@X" onclick="openSidebar('79_Unravel the Unfathomable',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\118_Weoran's Hunger.png" id="118_Weorans Hunger" data-flag="@X" onclick="openSidebar('118_Weorans Hunger',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\157_Spark of Inspiration.png" id="157_Spark of Inspiration" data-flag="@X" onclick="openSidebar('157_Spark of Inspiration',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\200_Sustaining Katlig.png" id="200_Sustaining Katlig" data-flag="@X" onclick="openSidebar('200_Sustaining Katlig',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img data-alt_src="/sets\TPW-files\img\296_Bonescourge Kazadrak_back.png" alt="/sets\TPW-files\img\296_Bonescourge Kazadrak_front.png" id="296_Bonescourge Kazadrak" data-flag="@XD" onclick="openSidebar('296_Bonescourge Kazadrak',false)"><button class="flip-btn" onclick="imgFlip('296_Bonescourge Kazadrak')"></button></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\231_Henrick, the Fleeting King.png" id="231_Henrick, the Fleeting King" data-flag="@X" onclick="openSidebar('231_Henrick, the Fleeting King',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\260_Yaran, Undying Usurper.png" id="260_Yaran, Undying Usurper" data-flag="@X" onclick="openSidebar('260_Yaran, Undying Usurper',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\217_Corpus, Drawn to Death.png" id="217_Corpus, Drawn to Death" data-flag="@X" onclick="openSidebar('217_Corpus, Drawn to Death',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\215_Celitiene, Wildfire.png" id="215_Celitiene, Wildfire" data-flag="@X" onclick="openSidebar('215_Celitiene, Wildfire',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\248_Rose Queen Asamund.png" id="248_Rose Queen Asamund" data-flag="@X" onclick="openSidebar('248_Rose Queen Asamund',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\229_Hark the Fleeting Host.png" id="229_Hark the Fleeting Host" data-flag="@X" onclick="openSidebar('229_Hark the Fleeting Host',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\236_Lady Kahra Belmord.png" id="236_Lady Kahra Belmord" data-flag="@X" onclick="openSidebar('236_Lady Kahra Belmord',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\220_Dreadmoon Crusader.png" id="220_Dreadmoon Crusader" data-flag="@X" onclick="openSidebar('220_Dreadmoon Crusader',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\230_Harl and Finn, Bloodbrothers.png" id="230_Harl and Finn, Bloodbrothers" data-flag="@X" onclick="openSidebar('230_Harl and Finn, Bloodbrothers',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\224_A Farmer's Life.png" id="224_A Farmers Life" data-flag="@X" onclick="openSidebar('224_A Farmers Life',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\251_Sky Commander Esmerie.png" id="251_Sky Commander Esmerie" data-flag="@X" onclick="openSidebar('251_Sky Commander Esmerie',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\246_Raven Roosts.png" id="246_Raven Roosts" data-flag="@X" onclick="openSidebar('246_Raven Roosts',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\245_Ratkin Rampage.png" id="245_Ratkin Rampage" data-flag="@X" onclick="openSidebar('245_Ratkin Rampage',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\254_Stand as One.png" id="254_Stand as One" data-flag="@X" onclick="openSidebar('254_Stand as One',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\232_Hugh, Usurper's Thorn.png" id="232_Hugh, Usurpers Thorn" data-flag="@X" onclick="openSidebar('232_Hugh, Usurpers Thorn',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\240_Mellan, Skysworn Inductee.png" id="240_Mellan, Skysworn Inductee" data-flag="@X" onclick="openSidebar('240_Mellan, Skysworn Inductee',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\222_Ebitha, Supplicant of Decay.png" id="222_Ebitha, Supplicant of Decay" data-flag="@X" onclick="openSidebar('222_Ebitha, Supplicant of Decay',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\221_Dreadmoon's Rise.png" id="221_Dreadmoons Rise" data-flag="@X" onclick="openSidebar('221_Dreadmoons Rise',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\237_Loisch, Stonebark Scorcher.png" id="237_Loisch, Stonebark Scorcher" data-flag="@X" onclick="openSidebar('237_Loisch, Stonebark Scorcher',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\214_Byron, Hero of Norwick.png" id="214_Byron, Hero of Norwick" data-flag="@X" onclick="openSidebar('214_Byron, Hero of Norwick',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\241_Moment's Reprieve.png" id="241_Moments Reprieve" data-flag="@X" onclick="openSidebar('241_Moments Reprieve',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\261_Yaran's Scheming.png" id="261_Yarans Scheming" data-flag="@X" onclick="openSidebar('261_Yarans Scheming',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\239_The Marrow Lord.png" id="239_The Marrow Lord" data-flag="@X" onclick="openSidebar('239_The Marrow Lord',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\243_Perfect Partnership.png" id="243_Perfect Partnership" data-flag="@X" onclick="openSidebar('243_Perfect Partnership',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\225_For Hearth and Home.png" id="225_For Hearth and Home" data-flag="@X" onclick="openSidebar('225_For Hearth and Home',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\223_Fading Words.png" id="223_Fading Words" data-flag="@X" onclick="openSidebar('223_Fading Words',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\235_Kahra's Prototype.png" id="235_Kahras Prototype" data-flag="@X" onclick="openSidebar('235_Kahras Prototype',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\253_Song of the Red Thirst.png" id="253_Song of the Red Thirst" data-flag="@X" onclick="openSidebar('253_Song of the Red Thirst',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\234_Invocation of Loisch.png" id="234_Invocation of Loisch" data-flag="@X" onclick="openSidebar('234_Invocation of Loisch',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\205_Assailed Farmer.png" id="205_Assailed Farmer" data-flag="@X" onclick="openSidebar('205_Assailed Farmer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\271_Harrier Corps.png" id="271_Harrier Corps" data-flag="@X" onclick="openSidebar('271_Harrier Corps',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\272_Maritou's Bane.png" id="272_Maritous Bane" data-flag="@X" onclick="openSidebar('272_Maritous Bane',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\264_Brazen Chitter-Sage.png" id="264_Brazen Chitter-Sage" data-flag="@X" onclick="openSidebar('264_Brazen Chitter-Sage',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\269_Grizzled Expeditioneer.png" id="269_Grizzled Expeditioneer" data-flag="@X" onclick="openSidebar('269_Grizzled Expeditioneer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\274_Provisions Hauler.png" id="274_Provisions Hauler" data-flag="@X" onclick="openSidebar('274_Provisions Hauler',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\247_Rhysta, Bladebound.png" id="247_Rhysta, Bladebound" data-flag="@X" onclick="openSidebar('247_Rhysta, Bladebound',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\238_Lysene, Shrewd Smuggler.png" id="238_Lysene, Shrewd Smuggler" data-flag="@X" onclick="openSidebar('238_Lysene, Shrewd Smuggler',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\216_Coirchanh Awakened.png" id="216_Coirchanh Awakened" data-flag="@X" onclick="openSidebar('216_Coirchanh Awakened',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\213_Bugrund, Firehearth's Last.png" id="213_Bugrund, Firehearths Last" data-flag="@X" onclick="openSidebar('213_Bugrund, Firehearths Last',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\255_Stirring of the Run.png" id="255_Stirring of the Run" data-flag="@X" onclick="openSidebar('255_Stirring of the Run',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\207_Bitter Defeat.png" id="207_Bitter Defeat" data-flag="@X" onclick="openSidebar('207_Bitter Defeat',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\210_Blow the Man Down.png" id="210_Blow the Man Down" data-flag="@X" onclick="openSidebar('210_Blow the Man Down',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\202_Abominable Quarry.png" id="202_Abominable Quarry" data-flag="@X" onclick="openSidebar('202_Abominable Quarry',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\256_Sunheart Greatsword.png" id="256_Sunheart Greatsword" data-flag="@X" onclick="openSidebar('256_Sunheart Greatsword',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\212_Branu of the Dewdrops.png" id="212_Branu of the Dewdrops" data-flag="@X" onclick="openSidebar('212_Branu of the Dewdrops',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\219_Desperate Commander.png" id="219_Desperate Commander" data-flag="@X" onclick="openSidebar('219_Desperate Commander',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\249_Santriza Despoilers.png" id="249_Santriza Despoilers" data-flag="@X" onclick="openSidebar('249_Santriza Despoilers',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\233_Imisti of the Rose Court.png" id="233_Imisti of the Rose Court" data-flag="@X" onclick="openSidebar('233_Imisti of the Rose Court',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\257_Thanewrought Reclaimer.png" id="257_Thanewrought Reclaimer" data-flag="@X" onclick="openSidebar('257_Thanewrought Reclaimer',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\228_Gwynsivir's Pathfinder.png" id="228_Gwynsivirs Pathfinder" data-flag="@X" onclick="openSidebar('228_Gwynsivirs Pathfinder',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\209_Bloodstained Crusade.png" id="209_Bloodstained Crusade" data-flag="@X" onclick="openSidebar('209_Bloodstained Crusade',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\203_Alchemical Warfare.png" id="203_Alchemical Warfare" data-flag="@X" onclick="openSidebar('203_Alchemical Warfare',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\201_Abaran the Haunted.png" id="201_Abaran the Haunted" data-flag="@X" onclick="openSidebar('201_Abaran the Haunted',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\211_Borohd, Wartemper Artisan.png" id="211_Borohd, Wartemper Artisan" data-flag="@X" onclick="openSidebar('211_Borohd, Wartemper Artisan',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\227_Glenach, Gossamer Monarch.png" id="227_Glenach, Gossamer Monarch" data-flag="@X" onclick="openSidebar('227_Glenach, Gossamer Monarch',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\258_Vel, the Forlorn Shield.png" id="258_Vel, the Forlorn Shield" data-flag="@X" onclick="openSidebar('258_Vel, the Forlorn Shield',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\206_Beherzt, Sofia's Second.png" id="206_Beherzt, Sofias Second" data-flag="@X" onclick="openSidebar('206_Beherzt, Sofias Second',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\259_Vernal Decay.png" id="259_Vernal Decay" data-flag="@X" onclick="openSidebar('259_Vernal Decay',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\250_Save What You Can.png" id="250_Save What You Can" data-flag="@X" onclick="openSidebar('250_Save What You Can',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\244_Petalsnare.png" id="244_Petalsnare" data-flag="@X" onclick="openSidebar('244_Petalsnare',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\242_Oathbound Scion.png" id="242_Oathbound Scion" data-flag="@X" onclick="openSidebar('242_Oathbound Scion',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\204_Aravant Welcome.png" id="204_Aravant Welcome" data-flag="@X" onclick="openSidebar('204_Aravant Welcome',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\208_Bloodbriar Bat-Rider.png" id="208_Bloodbriar Bat-Rider" data-flag="@X" onclick="openSidebar('208_Bloodbriar Bat-Rider',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\226_Gamhaugen Drillbore.png" id="226_Gamhaugen Drillbore" data-flag="@X" onclick="openSidebar('226_Gamhaugen Drillbore',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\218_Deepwilds Survivor.png" id="218_Deepwilds Survivor" data-flag="@X" onclick="openSidebar('218_Deepwilds Survivor',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\273_Pale Conquest.png" id="273_Pale Conquest" data-flag="@X" onclick="openSidebar('273_Pale Conquest',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\266_Daring Windraider.png" id="266_Daring Windraider" data-flag="@X" onclick="openSidebar('266_Daring Windraider',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\262_Awakened Hunger.png" id="262_Awakened Hunger" data-flag="@X" onclick="openSidebar('262_Awakened Hunger',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\270_Harl's Hornblower.png" id="270_Harls Hornblower" data-flag="@X" onclick="openSidebar('270_Harls Hornblower',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\267_Dewdrop Crescendo.png" id="267_Dewdrop Crescendo" data-flag="@X" onclick="openSidebar('267_Dewdrop Crescendo',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\252_Sofia, Haunted by Fortune.png" id="252_Sofia, Haunted by Fortune" data-flag="@X" onclick="openSidebar('252_Sofia, Haunted by Fortune',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\263_Belmord Collaborator.png" id="263_Belmord Collaborator" data-flag="@X" onclick="openSidebar('263_Belmord Collaborator',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\265_Caer Crann Collaborator.png" id="265_Caer Crann Collaborator" data-flag="@X" onclick="openSidebar('265_Caer Crann Collaborator',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\268_Edelber Collaborator.png" id="268_Edelber Collaborator" data-flag="@X" onclick="openSidebar('268_Edelber Collaborator',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\275_Rundfora Collaborator.png" id="275_Rundfora Collaborator" data-flag="@X" onclick="openSidebar('275_Rundfora Collaborator',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\276_Santriza Collaborator.png" id="276_Santriza Collaborator" data-flag="@X" onclick="openSidebar('276_Santriza Collaborator',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\288_Yroncaster's Empty Throne.png" id="288_Yroncasters Empty Throne" data-flag="@X" onclick="openSidebar('288_Yroncasters Empty Throne',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\281_Rallying Banners.png" id="281_Rallying Banners" data-flag="@X" onclick="openSidebar('281_Rallying Banners',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\284_The Roseblade Reforged.png" id="284_The Roseblade Reforged" data-flag="@X" onclick="openSidebar('284_The Roseblade Reforged',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\287_The Usurper's Final Rest.png" id="287_The Usurpers Final Rest" data-flag="@X" onclick="openSidebar('287_The Usurpers Final Rest',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\283_Rose Order Pactblade.png" id="283_Rose Order Pactblade" data-flag="@X" onclick="openSidebar('283_Rose Order Pactblade',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\286_Sunlit Waystone.png" id="286_Sunlit Waystone" data-flag="@X" onclick="openSidebar('286_Sunlit Waystone',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\277_Favor of Petals.png" id="277_Favor of Petals" data-flag="@X" onclick="openSidebar('277_Favor of Petals',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\278_Forsaken Mausoleum.png" id="278_Forsaken Mausoleum" data-flag="@X" onclick="openSidebar('278_Forsaken Mausoleum',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\279_Necrosis Vials.png" id="279_Necrosis Vials" data-flag="@X" onclick="openSidebar('279_Necrosis Vials',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\280_Ragtatter Collector.png" id="280_Ragtatter Collector" data-flag="@X" onclick="openSidebar('280_Ragtatter Collector',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\282_Rose Court Sentinel.png" id="282_Rose Court Sentinel" data-flag="@X" onclick="openSidebar('282_Rose Court Sentinel',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\285_Strawsewn Mentor.png" id="285_Strawsewn Mentor" data-flag="@X" onclick="openSidebar('285_Strawsewn Mentor',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="land" class="anchor"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\293_Norwick, Defiant Farmstead.png" id="293_Norwick, Defiant Farmstead" data-flag="@X" onclick="openSidebar('293_Norwick, Defiant Farmstead',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\291_The Dwynerloch.png" id="291_The Dwynerloch" data-flag="@X" onclick="openSidebar('291_The Dwynerloch',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\290_Castle Belmord.png" id="290_Castle Belmord" data-flag="@X" onclick="openSidebar('290_Castle Belmord',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\295_Undermine, the Seething Forges.png" id="295_Undermine, the Seething Forges" data-flag="@X" onclick="openSidebar('295_Undermine, the Seething Forges',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\289_Caer Crann, Forest's Heart.png" id="289_Caer Crann, Forests Heart" data-flag="@X" onclick="openSidebar('289_Caer Crann, Forests Heart',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\294_Rosewhisper Garden.png" id="294_Rosewhisper Garden" data-flag="@X" onclick="openSidebar('294_Rosewhisper Garden',false)"></div>
+				<div class="container"><img alt="/sets\TPW-files\img\292_Evolving Wilds.png" id="292_Evolving Wilds" data-flag="@X" onclick="openSidebar('292_Evolving Wilds',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
 	</div>
-</div>
+	</div>
 	<div class="sidebar" id="sidebar">
 		<div class="sidebar-container">
 			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
@@ -559,7 +580,7 @@
 				card_list_arrayified = card_list.cards;
 
 		preloadImgs = document.getElementsByClassName('preload-hidden');
-		
+
 		let images_loaded = [];
 
 		do {
@@ -649,7 +670,7 @@
 	function openSidebar(id, h = false) {
 		horizontal = h;
 		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
-		
+
 		document.getElementById('sidebar').style.display = 'grid';
 
 		const rotated_img = document.getElementById('sidebar_h_img');
@@ -680,7 +701,7 @@
 			document.getElementById('sidebar-flip-btn').style.display = 'none';
 		}
 		document.getElementById('main-content').style.width = '60%';
-		
+
 		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
 		window.scrollTo(window.scrollX, scroll_pos);
 		setSidebarTop();
@@ -691,10 +712,28 @@
 
 		document.getElementById('sidebar').style.display = 'none';
 		document.getElementById('main-content').style.width = '100%';
-		
+
 
 		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
 		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
 	}
 
 	document.getElementById("search").addEventListener("keypress", function(event) {
@@ -711,21 +750,21 @@
 	}
 
 		function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
-				window.location.href = url;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
 			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
 	</script>
 </body>
 </html>

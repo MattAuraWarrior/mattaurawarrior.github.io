@@ -1,1 +1,19 @@
-﻿{"sets": [{"set_code": "TPW", "set_name": "The Petals Wilt", "formats": ""}, {"set_code": "UCB", "set_name": "Urshad: Covenant of Blood", "formats": ""}]}
+﻿{
+    "sets": [
+        {
+            "set_code": "IWH",
+            "set_name": "Innistrad: Witching Hour",
+            "formats": ""
+        },
+        {
+            "set_code": "TPW",
+            "set_name": "The Petals Wilt",
+            "formats": ""
+        },
+        {
+            "set_code": "UCB",
+            "set_name": "Urshad: Covenant of Blood",
+            "formats": ""
+        }
+    ]
+}

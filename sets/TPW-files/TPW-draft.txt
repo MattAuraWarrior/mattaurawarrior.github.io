@@ -1,10 +1,10 @@
-[CustomCards]
+ï»¿[CustomCards]
 	[
 		{
 			"name": "Provisions Hauler",
 			"rarity": "common",
 			"mana_cost": "{2}{G/W}{G/W}",
-			"type": "Creature — Ox",
+			"type": "Creature â€” Ox",
 			"collector_number": "274",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/274_Provisions Hauler.png"
@@ -14,7 +14,7 @@
 			"name": "Assailed Farmer",
 			"rarity": "common",
 			"mana_cost": "{G}{W}",
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "205",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/205_Assailed Farmer.png"
@@ -24,7 +24,7 @@
 			"name": "Byron, Hero of Norwick",
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
-			"type": "Legendary Creature — Human Peasant",
+			"type": "Legendary Creature â€” Human Peasant",
 			"collector_number": "214",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/214_Byron, Hero of Norwick.png"
@@ -44,7 +44,7 @@
 			"name": "Hugh, Usurper's Thorn",
 			"rarity": "rare",
 			"mana_cost": "{G}{W}",
-			"type": "Legendary Creature — Human Peasant Rogue",
+			"type": "Legendary Creature â€” Human Peasant Rogue",
 			"collector_number": "232",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/232_Hugh, Usurper's Thorn.png"
@@ -54,7 +54,7 @@
 			"name": "Rose Queen Asamund",
 			"rarity": "mythic",
 			"mana_cost": "{G}{W}",
-			"type": "Legendary Creature — Human Noble Knight",
+			"type": "Legendary Creature â€” Human Noble Knight",
 			"collector_number": "248",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/248_Rose Queen Asamund.png"
@@ -64,7 +64,7 @@
 			"name": "Grizzled Expeditioneer",
 			"rarity": "common",
 			"mana_cost": "{2}{R/G}{R/G}",
-			"type": "Creature — Dwarf Scout",
+			"type": "Creature â€” Dwarf Scout",
 			"collector_number": "269",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/269_Grizzled Expeditioneer.png"
@@ -84,7 +84,7 @@
 			"name": "Loisch, Stonebark Scorcher",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}{G}",
-			"type": "Legendary Creature — Elemental Treefolk",
+			"type": "Legendary Creature â€” Elemental Treefolk",
 			"collector_number": "237",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/237_Loisch, Stonebark Scorcher.png"
@@ -104,7 +104,7 @@
 			"name": "Harl and Finn, Bloodbrothers",
 			"rarity": "rare",
 			"mana_cost": "{6}{R}{G}",
-			"type": "Legendary Creature — Dwarf Elf Warrior",
+			"type": "Legendary Creature â€” Dwarf Elf Warrior",
 			"collector_number": "230",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/230_Harl and Finn, Bloodbrothers.png"
@@ -124,7 +124,7 @@
 			"name": "Harrier Corps",
 			"rarity": "common",
 			"mana_cost": "{2}{W/U}{W/U}",
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "271",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/271_Harrier Corps.png"
@@ -144,7 +144,7 @@
 			"name": "Mellan, Skysworn Inductee",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{U}",
-			"type": "Legendary Creature — Elf Knight",
+			"type": "Legendary Creature â€” Elf Knight",
 			"collector_number": "240",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/240_Mellan, Skysworn Inductee.png"
@@ -164,7 +164,7 @@
 			"name": "Sky Commander Esmerie",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{U}",
-			"type": "Legendary Creature — Human Knight",
+			"type": "Legendary Creature â€” Human Knight",
 			"collector_number": "251",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/251_Sky Commander Esmerie.png"
@@ -174,7 +174,7 @@
 			"name": "Henrick, the Fleeting King",
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}{U}",
-			"type": "Legendary Creature — Spirit Noble",
+			"type": "Legendary Creature â€” Spirit Noble",
 			"collector_number": "231",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/231_Henrick, the Fleeting King.png"
@@ -184,7 +184,7 @@
 			"name": "Celitiene, Wildfire",
 			"rarity": "mythic",
 			"mana_cost": "{R}{G}",
-			"type": "Legendary Creature — Elf Shaman",
+			"type": "Legendary Creature â€” Elf Shaman",
 			"collector_number": "215",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/215_Celitiene, Wildfire.png"
@@ -194,7 +194,7 @@
 			"name": "Kahra's Prototype",
 			"rarity": "common",
 			"mana_cost": "{2}{U}{B}",
-			"type": "Creature — Zombie Warlock",
+			"type": "Creature â€” Zombie Warlock",
 			"collector_number": "235",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/235_Kahra's Prototype.png"
@@ -204,7 +204,7 @@
 			"name": "Maritou's Bane",
 			"rarity": "common",
 			"mana_cost": "{3}{U/B}{U/B}",
-			"type": "Creature — Kraken",
+			"type": "Creature â€” Kraken",
 			"collector_number": "272",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/272_Maritou's Bane.png"
@@ -224,7 +224,7 @@
 			"name": "Ebitha, Supplicant of Decay",
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}",
-			"type": "Legendary Creature — Human Warlock",
+			"type": "Legendary Creature â€” Human Warlock",
 			"collector_number": "222",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/222_Ebitha, Supplicant of Decay.png"
@@ -234,7 +234,7 @@
 			"name": "Lady Kahra Belmord",
 			"rarity": "rare",
 			"mana_cost": "{U}{B}",
-			"type": "Legendary Creature — Vampire Noble Warlock",
+			"type": "Legendary Creature â€” Vampire Noble Warlock",
 			"collector_number": "236",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/236_Lady Kahra Belmord.png"
@@ -254,7 +254,7 @@
 			"name": "Yaran, Undying Usurper",
 			"rarity": "mythic",
 			"mana_cost": "{3}{U}{B}",
-			"type": "Legendary Creature — Zombie Noble Wizard",
+			"type": "Legendary Creature â€” Zombie Noble Wizard",
 			"collector_number": "260",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/260_Yaran, Undying Usurper.png"
@@ -274,7 +274,7 @@
 			"name": "Brazen Chitter-Sage",
 			"rarity": "common",
 			"mana_cost": "{2}{B/R}",
-			"type": "Creature — Rat Mutant Warlock",
+			"type": "Creature â€” Rat Mutant Warlock",
 			"collector_number": "264",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/264_Brazen Chitter-Sage.png"
@@ -284,7 +284,7 @@
 			"name": "The Marrow Lord",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{R}",
-			"type": "Legendary Creature — Skeleton Noble",
+			"type": "Legendary Creature â€” Skeleton Noble",
 			"collector_number": "239",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/239_The Marrow Lord.png"
@@ -314,7 +314,7 @@
 			"name": "Dreadmoon Crusader",
 			"rarity": "rare",
 			"mana_cost": "{B}{R}",
-			"type": "Creature — Human Warlock Knight",
+			"type": "Creature â€” Human Warlock Knight",
 			"collector_number": "220",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/220_Dreadmoon Crusader.png"
@@ -324,7 +324,7 @@
 			"name": "Corpus, Drawn to Death",
 			"rarity": "mythic",
 			"mana_cost": "{3}{B}{R}",
-			"type": "Legendary Planeswalker — Corpus",
+			"type": "Legendary Planeswalker â€” Corpus",
 			"collector_number": "217",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/217_Corpus, Drawn to Death.png"
@@ -344,7 +344,7 @@
 			"name": "Oathbound Scion",
 			"rarity": "common",
 			"mana_cost": "{2}{W}{B}",
-			"type": "Creature — Spirit Soldier",
+			"type": "Creature â€” Spirit Soldier",
 			"collector_number": "242",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/242_Oathbound Scion.png"
@@ -354,7 +354,7 @@
 			"name": "Vel, the Forlorn Shield",
 			"rarity": "uncommon",
 			"mana_cost": "{W}{B}",
-			"type": "Legendary Creature — Human Soldier",
+			"type": "Legendary Creature â€” Human Soldier",
 			"collector_number": "258",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/258_Vel, the Forlorn Shield.png"
@@ -374,7 +374,7 @@
 			"name": "Desperate Commander",
 			"rarity": "rare",
 			"mana_cost": "{W}{B}",
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "219",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/219_Desperate Commander.png"
@@ -394,7 +394,7 @@
 			"name": "Rhysta, Bladebound",
 			"rarity": "mythic",
 			"mana_cost": "{W}{W}{B}{B}",
-			"type": "Legendary Creature — Spirit Knight",
+			"type": "Legendary Creature â€” Spirit Knight",
 			"collector_number": "247",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/247_Rhysta, Bladebound.png"
@@ -404,7 +404,7 @@
 			"name": "Gamhaugen Drillbore",
 			"rarity": "common",
 			"mana_cost": "{1}{R}{W}",
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "226",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/226_Gamhaugen Drillbore.png"
@@ -414,7 +414,7 @@
 			"name": "Harl's Hornblower",
 			"rarity": "common",
 			"mana_cost": "{2}{R/W}",
-			"type": "Creature — Dwarf Warrior Bard",
+			"type": "Creature â€” Dwarf Warrior Bard",
 			"collector_number": "270",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/270_Harl's Hornblower.png"
@@ -434,7 +434,7 @@
 			"name": "Borohd, Wartemper Artisan",
 			"rarity": "uncommon",
 			"mana_cost": "{R}{W}",
-			"type": "Legendary Creature — Dwarf Artificer",
+			"type": "Legendary Creature â€” Dwarf Artificer",
 			"collector_number": "211",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/211_Borohd, Wartemper Artisan.png"
@@ -444,7 +444,7 @@
 			"name": "Sunheart Greatsword",
 			"rarity": "rare",
 			"mana_cost": "{R}{W}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "256",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/256_Sunheart Greatsword.png"
@@ -454,7 +454,7 @@
 			"name": "Thanewrought Reclaimer",
 			"rarity": "rare",
 			"mana_cost": "{3}{R}{W}",
-			"type": "Artifact Creature — Dwarf Construct",
+			"type": "Artifact Creature â€” Dwarf Construct",
 			"collector_number": "257",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/257_Thanewrought Reclaimer.png"
@@ -464,7 +464,7 @@
 			"name": "Bugrund, Firehearth's Last",
 			"rarity": "mythic",
 			"mana_cost": "{R}{W}",
-			"type": "Legendary Creature — Dwarf Noble",
+			"type": "Legendary Creature â€” Dwarf Noble",
 			"collector_number": "213",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/213_Bugrund, Firehearth's Last.png"
@@ -484,7 +484,7 @@
 			"name": "Daring Windraider",
 			"rarity": "common",
 			"mana_cost": "{3}{U/R}",
-			"type": "Creature — Human Rogue",
+			"type": "Creature â€” Human Rogue",
 			"collector_number": "266",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/266_Daring Windraider.png"
@@ -494,7 +494,7 @@
 			"name": "Beherzt, Sofia's Second",
 			"rarity": "uncommon",
 			"mana_cost": "{U}{R}",
-			"type": "Legendary Creature — Dwarf Pirate",
+			"type": "Legendary Creature â€” Dwarf Pirate",
 			"collector_number": "206",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/206_Beherzt, Sofia's Second.png"
@@ -524,7 +524,7 @@
 			"name": "Santriza Despoilers",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{R}",
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "249",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/249_Santriza Despoilers.png"
@@ -534,7 +534,7 @@
 			"name": "Lysene, Shrewd Smuggler",
 			"rarity": "mythic",
 			"mana_cost": "{U}{R}",
-			"type": "Legendary Creature — Human Rogue",
+			"type": "Legendary Creature â€” Human Rogue",
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/238_Lysene, Shrewd Smuggler.png"
@@ -554,7 +554,7 @@
 			"name": "Deepwilds Survivor",
 			"rarity": "common",
 			"mana_cost": "{2}{G}{U}",
-			"type": "Creature — Human Scout",
+			"type": "Creature â€” Human Scout",
 			"collector_number": "218",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/218_Deepwilds Survivor.png"
@@ -564,7 +564,7 @@
 			"name": "Glenach, Gossamer Monarch",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{U}",
-			"type": "Legendary Creature — Insect Noble",
+			"type": "Legendary Creature â€” Insect Noble",
 			"collector_number": "227",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/227_Glenach, Gossamer Monarch.png"
@@ -584,7 +584,7 @@
 			"name": "Gwynsivir's Pathfinder",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}{U}",
-			"type": "Creature — Elf Druid Scout",
+			"type": "Creature â€” Elf Druid Scout",
 			"collector_number": "228",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/228_Gwynsivir's Pathfinder.png"
@@ -594,7 +594,7 @@
 			"name": "Branu of the Dewdrops",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{U}",
-			"type": "Legendary Creature — Dryad Warrior Bard",
+			"type": "Legendary Creature â€” Dryad Warrior Bard",
 			"collector_number": "212",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/212_Branu of the Dewdrops.png"
@@ -624,7 +624,7 @@
 			"name": "Bloodbriar Bat-Rider",
 			"rarity": "common",
 			"mana_cost": "{5}{B}{G}",
-			"type": "Creature — Elf Warrior",
+			"type": "Creature â€” Elf Warrior",
 			"collector_number": "208",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/208_Bloodbriar Bat-Rider.png"
@@ -644,7 +644,7 @@
 			"name": "Abaran the Haunted",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{G}",
-			"type": "Legendary Creature — Human Ranger",
+			"type": "Legendary Creature â€” Human Ranger",
 			"collector_number": "201",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/201_Abaran the Haunted.png"
@@ -654,7 +654,7 @@
 			"name": "Abominable Quarry",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{G}",
-			"type": "Creature — Skeleton Horror",
+			"type": "Creature â€” Skeleton Horror",
 			"collector_number": "202",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/202_Abominable Quarry.png"
@@ -664,7 +664,7 @@
 			"name": "Imisti of the Rose Court",
 			"rarity": "rare",
 			"mana_cost": "{B}{G}",
-			"type": "Legendary Creature — Elf Rogue",
+			"type": "Legendary Creature â€” Elf Rogue",
 			"collector_number": "233",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/233_Imisti of the Rose Court.png"
@@ -674,7 +674,7 @@
 			"name": "Coirchanh Awakened",
 			"rarity": "mythic",
 			"mana_cost": "{3}{B}{G}",
-			"type": "Legendary Creature — Elder Skeleton Horror",
+			"type": "Legendary Creature â€” Elder Skeleton Horror",
 			"collector_number": "216",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/216_Coirchanh Awakened.png"
@@ -684,7 +684,7 @@
 			"name": "Belmord Collaborator",
 			"rarity": "rare",
 			"mana_cost": "{W/B}{U}",
-			"type": "Creature — Vampire Soldier Wizard",
+			"type": "Creature â€” Vampire Soldier Wizard",
 			"collector_number": "263",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/263_Belmord Collaborator.png"
@@ -694,7 +694,7 @@
 			"name": "Caer Crann Collaborator",
 			"rarity": "rare",
 			"mana_cost": "{2}{B/G}{W}",
-			"type": "Creature — Elf Noble Knight",
+			"type": "Creature â€” Elf Noble Knight",
 			"collector_number": "265",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/265_Caer Crann Collaborator.png"
@@ -704,7 +704,7 @@
 			"name": "Edelber Collaborator",
 			"rarity": "rare",
 			"mana_cost": "{1}{R/W}{G}",
-			"type": "Creature — Dwarf Artificer Druid",
+			"type": "Creature â€” Dwarf Artificer Druid",
 			"collector_number": "268",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/268_Edelber Collaborator.png"
@@ -714,7 +714,7 @@
 			"name": "Rundfora Collaborator",
 			"rarity": "rare",
 			"mana_cost": "{4}{G/U}{R}",
-			"type": "Creature — Dryad Druid Berserker",
+			"type": "Creature â€” Dryad Druid Berserker",
 			"collector_number": "275",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/275_Rundfora Collaborator.png"
@@ -724,7 +724,7 @@
 			"name": "Santriza Collaborator",
 			"rarity": "rare",
 			"mana_cost": "{1}{U/R}{B}",
-			"type": "Creature — Human Pirate Warlock",
+			"type": "Creature â€” Human Pirate Warlock",
 			"collector_number": "276",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/276_Santriza Collaborator.png"
@@ -734,7 +734,7 @@
 			"name": "Bonescourge Kazadrak",
 			"rarity": "special",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Legendary Creature — Skeleton Dragon",
+			"type": "Legendary Creature â€” Skeleton Dragon",
 			"collector_number": "296",
 			"back": {
 				"name": "",
@@ -821,7 +821,7 @@
 			"name": "The Roseblade Reforged",
 			"rarity": "rare",
 			"mana_cost": "{2}",
-			"type": "Legendary Artifact — Equipment",
+			"type": "Legendary Artifact â€” Equipment",
 			"collector_number": "284",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/284_The Roseblade Reforged.png"
@@ -851,7 +851,7 @@
 			"name": "Rose Order Pactblade",
 			"rarity": "uncommon",
 			"mana_cost": "{2}",
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "283",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/283_Rose Order Pactblade.png"
@@ -901,7 +901,7 @@
 			"name": "Ragtatter Collector",
 			"rarity": "common",
 			"mana_cost": "{3}",
-			"type": "Artifact Creature — Scarecrow",
+			"type": "Artifact Creature â€” Scarecrow",
 			"collector_number": "280",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/280_Ragtatter Collector.png"
@@ -911,7 +911,7 @@
 			"name": "Strawsewn Mentor",
 			"rarity": "common",
 			"mana_cost": "{5}",
-			"type": "Artifact Creature — Scarecrow",
+			"type": "Artifact Creature â€” Scarecrow",
 			"collector_number": "285",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/285_Strawsewn Mentor.png"
@@ -941,7 +941,7 @@
 			"name": "Champion of the People",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/3_Champion of the People.png"
@@ -951,7 +951,7 @@
 			"name": "Conscripted Provisioner",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Human Citizen",
+			"type": "Creature â€” Human Citizen",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/4_Conscripted Provisioner.png"
@@ -961,7 +961,7 @@
 			"name": "Deadhunt Mastiff",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Dog",
+			"type": "Creature â€” Dog",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/5_Deadhunt Mastiff.png"
@@ -971,7 +971,7 @@
 			"name": "Deepstone Fusiliers",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Dwarf Warrior Artificer",
+			"type": "Creature â€” Dwarf Warrior Artificer",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/6_Deepstone Fusiliers.png"
@@ -981,7 +981,7 @@
 			"name": "Edelber Frontliners",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Dwarf Soldier",
+			"type": "Creature â€” Dwarf Soldier",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/7_Edelber Frontliners.png"
@@ -991,7 +991,7 @@
 			"name": "Esmerie's Breeze-Seeker",
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/9_Esmerie's Breeze-Seeker.png"
@@ -1001,7 +1001,7 @@
 			"name": "Fleeting Valiant",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Spirit Soldier",
+			"type": "Creature â€” Spirit Soldier",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/10_Fleeting Valiant.png"
@@ -1011,7 +1011,7 @@
 			"name": "Fortune's Mark",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/11_Fortune's Mark.png"
@@ -1021,7 +1021,7 @@
 			"name": "Frantic Harvesters",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/12_Frantic Harvesters.png"
@@ -1031,7 +1031,7 @@
 			"name": "Gamhaugen Owlkeeper",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Dwarf Citizen",
+			"type": "Creature â€” Dwarf Citizen",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/13_Gamhaugen Owlkeeper.png"
@@ -1051,7 +1051,7 @@
 			"name": "Herald of Clear Skies",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}{W}",
-			"type": "Creature — Angel",
+			"type": "Creature â€” Angel",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/15_Herald of Clear Skies.png"
@@ -1061,7 +1061,7 @@
 			"name": "Heretical Prelate",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Human Cleric Soldier",
+			"type": "Creature â€” Human Cleric Soldier",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/16_Heretical Prelate.png"
@@ -1071,7 +1071,7 @@
 			"name": "Horseman of Conquest",
 			"rarity": "mythic",
 			"mana_cost": "{3}{W}{W}",
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "17",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/17_Horseman of Conquest.png"
@@ -1091,7 +1091,7 @@
 			"name": "Llech Crann Ambassador",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Elf Soldier Advisor",
+			"type": "Creature â€” Elf Soldier Advisor",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/19_Llech Crann Ambassador.png"
@@ -1101,7 +1101,7 @@
 			"name": "Llech Crann Paladin",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Elf Knight",
+			"type": "Creature â€” Elf Knight",
 			"collector_number": "20",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/20_Llech Crann Paladin.png"
@@ -1111,7 +1111,7 @@
 			"name": "Malingering Phantom",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature — Spirit Knight",
+			"type": "Creature â€” Spirit Knight",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/21_Malingering Phantom.png"
@@ -1131,7 +1131,7 @@
 			"name": "Monara, Pale Rider",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{W}",
-			"type": "Legendary Creature — Zombie Knight",
+			"type": "Legendary Creature â€” Zombie Knight",
 			"collector_number": "23",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/23_Monara, Pale Rider.png"
@@ -1161,7 +1161,7 @@
 			"name": "Protector of Yroncaster",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature — Cat",
+			"type": "Creature â€” Cat",
 			"collector_number": "26",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/26_Protector of Yroncaster.png"
@@ -1221,7 +1221,7 @@
 			"name": "Skysworn Companion",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Griffin",
+			"type": "Creature â€” Griffin",
 			"collector_number": "33",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/33_Skysworn Companion.png"
@@ -1231,7 +1231,7 @@
 			"name": "Soaring Pridelord",
 			"rarity": "rare",
 			"mana_cost": "{3}{W}{W}",
-			"type": "Creature — Cat",
+			"type": "Creature â€” Cat",
 			"collector_number": "34",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/34_Soaring Pridelord.png"
@@ -1241,7 +1241,7 @@
 			"name": "Steadfast Veteran",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "35",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/35_Steadfast Veteran.png"
@@ -1251,7 +1251,7 @@
 			"name": "Symbol of Tranquility",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Creature — Bird",
+			"type": "Creature â€” Bird",
 			"collector_number": "36",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/36_Symbol of Tranquility.png"
@@ -1261,7 +1261,7 @@
 			"name": "Thanewraith",
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-			"type": "Creature — Dwarf Spirit Warrior",
+			"type": "Creature â€” Dwarf Spirit Warrior",
 			"collector_number": "37",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/37_Thanewraith.png"
@@ -1271,7 +1271,7 @@
 			"name": "Underpass Ranger",
 			"rarity": "rare",
 			"mana_cost": "{3}{W}",
-			"type": "Creature — Dwarf Ranger",
+			"type": "Creature â€” Dwarf Ranger",
 			"collector_number": "38",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/38_Underpass Ranger.png"
@@ -1331,7 +1331,7 @@
 			"name": "Llosg Crann Quartermaster",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Elf Citizen",
+			"type": "Creature â€” Elf Citizen",
 			"collector_number": "186",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/186_Llosg Crann Quartermaster.png"
@@ -1341,7 +1341,7 @@
 			"name": "Ahl the Omenwing",
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}",
-			"type": "Legendary Planeswalker — Ahl",
+			"type": "Legendary Planeswalker â€” Ahl",
 			"collector_number": "41",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/41_Ahl the Omenwing.png"
@@ -1361,7 +1361,7 @@
 			"name": "Ashenwind Augur",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Zombie Wizard",
+			"type": "Creature â€” Zombie Wizard",
 			"collector_number": "43",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/43_Ashenwind Augur.png"
@@ -1371,7 +1371,7 @@
 			"name": "Bilge Crab",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-			"type": "Creature — Crab Pirate",
+			"type": "Creature â€” Crab Pirate",
 			"collector_number": "44",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/44_Bilge Crab.png"
@@ -1381,7 +1381,7 @@
 			"name": "Branu's Pathcutter",
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-			"type": "Creature — Dryad Rogue",
+			"type": "Creature â€” Dryad Rogue",
 			"collector_number": "45",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/45_Branu's Pathcutter.png"
@@ -1391,7 +1391,7 @@
 			"name": "Chillbone Lich",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{U}",
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "46",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/46_Chillbone Lich.png"
@@ -1401,7 +1401,7 @@
 			"name": "Cloudstreaker",
 			"rarity": "rare",
 			"mana_cost": "{U}{U}",
-			"type": "Creature — Griffin",
+			"type": "Creature â€” Griffin",
 			"collector_number": "47",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/47_Cloudstreaker.png"
@@ -1411,7 +1411,7 @@
 			"name": "Compromised Sorcerer",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Shapeshifter Warlock",
+			"type": "Creature â€” Shapeshifter Warlock",
 			"collector_number": "48",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/48_Compromised Sorcerer.png"
@@ -1431,7 +1431,7 @@
 			"name": "Dewdrop Marshal",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-			"type": "Creature — Dryad Warrior",
+			"type": "Creature â€” Dryad Warrior",
 			"collector_number": "50",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/50_Dewdrop Marshal.png"
@@ -1441,7 +1441,7 @@
 			"name": "Dewshaper Matriarch",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Dryad Druid",
+			"type": "Creature â€” Dryad Druid",
 			"collector_number": "51",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/51_Dewshaper Matriarch.png"
@@ -1451,7 +1451,7 @@
 			"name": "Dwynerloch Haunt",
 			"rarity": "common",
 			"mana_cost": "{U}",
-			"type": "Creature — Elemental Horse",
+			"type": "Creature â€” Elemental Horse",
 			"collector_number": "52",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/52_Dwynerloch Haunt.png"
@@ -1471,7 +1471,7 @@
 			"name": "Frontline Familiar",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Bird",
+			"type": "Creature â€” Bird",
 			"collector_number": "54",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/54_Frontline Familiar.png"
@@ -1481,7 +1481,7 @@
 			"name": "Griffin Hatchlings",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-			"type": "Creature — Griffin",
+			"type": "Creature â€” Griffin",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/55_Griffin Hatchlings.png"
@@ -1491,7 +1491,7 @@
 			"name": "Illicit Spellweaver",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Creature — Human Rogue Wizard",
+			"type": "Creature â€” Human Rogue Wizard",
 			"collector_number": "56",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/56_Illicit Spellweaver.png"
@@ -1511,7 +1511,7 @@
 			"name": "Maritou the Strait-Drowned",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Legendary Creature — Zombie Pirate",
+			"type": "Legendary Creature â€” Zombie Pirate",
 			"collector_number": "59",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/59_Maritou the Strait-Drowned.png"
@@ -1541,7 +1541,7 @@
 			"name": "Necromantic Experiment",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Zombie",
+			"type": "Creature â€” Zombie",
 			"collector_number": "63",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/63_Necromantic Experiment.png"
@@ -1561,7 +1561,7 @@
 			"name": "Lysene's Plunderer",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "58",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/58_Lysene's Plunderer.png"
@@ -1571,7 +1571,7 @@
 			"name": "Phasewalker Rake",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{U}",
-			"type": "Creature — Spirit Rogue",
+			"type": "Creature â€” Spirit Rogue",
 			"collector_number": "65",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/65_Phasewalker Rake.png"
@@ -1581,7 +1581,7 @@
 			"name": "Ravings of the Damned",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "66",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/66_Ravings of the Damned.png"
@@ -1591,7 +1591,7 @@
 			"name": "Reagent Smuggler",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature — Dwarf Rogue Wizard",
+			"type": "Creature â€” Dwarf Rogue Wizard",
 			"collector_number": "67",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/67_Reagent Smuggler.png"
@@ -1601,7 +1601,7 @@
 			"name": "Relentless Driftpicker",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-			"type": "Creature — Crab Mutant",
+			"type": "Creature â€” Crab Mutant",
 			"collector_number": "68",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/68_Relentless Driftpicker.png"
@@ -1611,7 +1611,7 @@
 			"name": "Santriza Saltbeard",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Dwarf Pirate",
+			"type": "Creature â€” Dwarf Pirate",
 			"collector_number": "69",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/69_Santriza Saltbeard.png"
@@ -1621,7 +1621,7 @@
 			"name": "Scale-Slough Drake",
 			"rarity": "common",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Creature — Zombie Drake",
+			"type": "Creature â€” Zombie Drake",
 			"collector_number": "70",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/70_Scale-Slough Drake.png"
@@ -1661,7 +1661,7 @@
 			"name": "Sorrows of Maritou",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "74",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/74_Sorrows of Maritou.png"
@@ -1671,7 +1671,7 @@
 			"name": "Thrashing Kelpie",
 			"rarity": "rare",
 			"mana_cost": "{3}{U}{U}",
-			"type": "Creature — Elemental Horse",
+			"type": "Creature â€” Elemental Horse",
 			"collector_number": "76",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/76_Thrashing Kelpie.png"
@@ -1681,7 +1681,7 @@
 			"name": "Tidecrest Surger",
 			"rarity": "common",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Creature — Elemental",
+			"type": "Creature â€” Elemental",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/77_Tidecrest Surger.png"
@@ -1721,7 +1721,7 @@
 			"name": "Belmord, Bloodstained Count",
 			"rarity": "mythic",
 			"mana_cost": "{B}",
-			"type": "Legendary Creature — Vampire Noble",
+			"type": "Legendary Creature â€” Vampire Noble",
 			"collector_number": "81",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/81_Belmord, Bloodstained Count.png"
@@ -1741,7 +1741,7 @@
 			"name": "Bleakfell Mauler",
 			"rarity": "uncommon",
 			"mana_cost": "{7}{B}",
-			"type": "Creature — Bear",
+			"type": "Creature â€” Bear",
 			"collector_number": "83",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/83_Bleakfell Mauler.png"
@@ -1751,7 +1751,7 @@
 			"name": "Blighthorn Stallion",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Demon Unicorn",
+			"type": "Creature â€” Demon Unicorn",
 			"collector_number": "84",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/84_Blighthorn Stallion.png"
@@ -1761,7 +1761,7 @@
 			"name": "Corpsecaster Mage",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Human Warlock",
+			"type": "Creature â€” Human Warlock",
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/85_Corpsecaster Mage.png"
@@ -1781,7 +1781,7 @@
 			"name": "Depraved Dreadlord",
 			"rarity": "common",
 			"mana_cost": "{4}{B}{B}",
-			"type": "Creature — Demon Noble Knight",
+			"type": "Creature â€” Demon Noble Knight",
 			"collector_number": "87",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/87_Depraved Dreadlord.png"
@@ -1791,7 +1791,7 @@
 			"name": "Dreadmoon Disciple",
 			"rarity": "common",
 			"mana_cost": "{B}",
-			"type": "Creature — Human Warlock",
+			"type": "Creature â€” Human Warlock",
 			"collector_number": "89",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/89_Dreadmoon Disciple.png"
@@ -1801,7 +1801,7 @@
 			"name": "Enduring Scion",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Spirit Knight",
+			"type": "Creature â€” Spirit Knight",
 			"collector_number": "90",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/90_Enduring Scion.png"
@@ -1811,7 +1811,7 @@
 			"name": "Fangmarked Neophyte",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Vampire",
+			"type": "Creature â€” Vampire",
 			"collector_number": "91",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/91_Fangmarked Neophyte.png"
@@ -1841,7 +1841,7 @@
 			"name": "Heedless Questant",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "94",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/94_Heedless Questant.png"
@@ -1861,7 +1861,7 @@
 			"name": "Hollowmind Drudge",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Zombie Soldier",
+			"type": "Creature â€” Zombie Soldier",
 			"collector_number": "96",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/96_Hollowmind Drudge.png"
@@ -1871,7 +1871,7 @@
 			"name": "Horseman of Famine",
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{B}",
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "97",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/97_Horseman of Famine.png"
@@ -1881,7 +1881,7 @@
 			"name": "Indulgent Hedonist",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Vampire Soldier",
+			"type": "Creature â€” Vampire Soldier",
 			"collector_number": "98",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/98_Indulgent Hedonist.png"
@@ -1921,7 +1921,7 @@
 			"name": "Middenswarm Rats",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Rat",
+			"type": "Creature â€” Rat",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/102_Middenswarm Rats.png"
@@ -1961,7 +1961,7 @@
 			"name": "Oathsworn Bloodsire",
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-			"type": "Creature — Vampire Knight",
+			"type": "Creature â€” Vampire Knight",
 			"collector_number": "106",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/106_Oathsworn Bloodsire.png"
@@ -1971,7 +1971,7 @@
 			"name": "Pactwhisper Demon",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature — Demon Noble Knight",
+			"type": "Creature â€” Demon Noble Knight",
 			"collector_number": "107",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/107_Pactwhisper Demon.png"
@@ -1981,7 +1981,7 @@
 			"name": "Queen's Crusader",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "108",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/108_Queen's Crusader.png"
@@ -1991,7 +1991,7 @@
 			"name": "Rancid Plagueherald",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Rat Mutant",
+			"type": "Creature â€” Rat Mutant",
 			"collector_number": "109",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/109_Rancid Plagueherald.png"
@@ -2001,7 +2001,7 @@
 			"name": "Rebellious Ratkin",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Rat Warrior",
+			"type": "Creature â€” Rat Warrior",
 			"collector_number": "110",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/110_Rebellious Ratkin.png"
@@ -2011,7 +2011,7 @@
 			"name": "Sanguine Chevalier",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-			"type": "Creature — Vampire Knight",
+			"type": "Creature â€” Vampire Knight",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/111_Sanguine Chevalier.png"
@@ -2021,7 +2021,7 @@
 			"name": "Skullbark Defiler",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Creature — Skeleton Horror",
+			"type": "Creature â€” Skeleton Horror",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/112_Skullbark Defiler.png"
@@ -2031,7 +2031,7 @@
 			"name": "Treacherous Bloodbriar",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature — Elf Rogue",
+			"type": "Creature â€” Elf Rogue",
 			"collector_number": "113",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/113_Treacherous Bloodbriar.png"
@@ -2051,7 +2051,7 @@
 			"name": "Warden of the Belfry",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Creature — Vampire Warlock",
+			"type": "Creature â€” Vampire Warlock",
 			"collector_number": "116",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/116_Warden of the Belfry.png"
@@ -2061,7 +2061,7 @@
 			"name": "Weoran the Fleshcarver",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
-			"type": "Legendary Creature — Zombie Soldier",
+			"type": "Legendary Creature â€” Zombie Soldier",
 			"collector_number": "117",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/117_Weoran the Fleshcarver.png"
@@ -2081,7 +2081,7 @@
 			"name": "Wihtfyr of the Nighthost",
 			"rarity": "rare",
 			"mana_cost": "{4}{B}{B}{B}",
-			"type": "Legendary Creature — Skeleton Knight",
+			"type": "Legendary Creature â€” Skeleton Knight",
 			"collector_number": "119",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/119_Wihtfyr of the Nighthost.png"
@@ -2091,7 +2091,7 @@
 			"name": "Wihtfyr's Coterie",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Creature — Skeleton Knight Army",
+			"type": "Creature â€” Skeleton Knight Army",
 			"collector_number": "120",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/120_Wihtfyr's Coterie.png"
@@ -2101,7 +2101,7 @@
 			"name": "Accursed Ancestor",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Dwarf Vampire Noble",
+			"type": "Creature â€” Dwarf Vampire Noble",
 			"collector_number": "121",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/121_Accursed Ancestor.png"
@@ -2111,7 +2111,7 @@
 			"name": "Beherzt's Squallseeker",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Dwarf Pirate",
+			"type": "Creature â€” Dwarf Pirate",
 			"collector_number": "122",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/122_Beherzt's Squallseeker.png"
@@ -2131,7 +2131,7 @@
 			"name": "Bloodvenge Slayer",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Creature — Elf Rogue Berserker",
+			"type": "Creature â€” Elf Rogue Berserker",
 			"collector_number": "124",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/124_Bloodvenge Slayer.png"
@@ -2141,7 +2141,7 @@
 			"name": "Brimstone Charger",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Elemental Horse",
+			"type": "Creature â€” Elemental Horse",
 			"collector_number": "125",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/125_Brimstone Charger.png"
@@ -2191,7 +2191,7 @@
 			"name": "Celitiene's Accorder",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Elf Soldier",
+			"type": "Creature â€” Elf Soldier",
 			"collector_number": "131",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/131_Celitiene's Accorder.png"
@@ -2211,7 +2211,7 @@
 			"name": "Cinderfeather Phoenix",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature — Phoenix",
+			"type": "Creature â€” Phoenix",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/133_Cinderfeather Phoenix.png"
@@ -2231,7 +2231,7 @@
 			"name": "Corpsefeaster Zwurg",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}",
-			"type": "Legendary Creature — Zombie Dwarf",
+			"type": "Legendary Creature â€” Zombie Dwarf",
 			"collector_number": "135",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/135_Corpsefeaster Zwurg.png"
@@ -2241,7 +2241,7 @@
 			"name": "Corpsestitched Slasher",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Creature — Zombie Scarecrow",
+			"type": "Creature â€” Zombie Scarecrow",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/136_Corpsestitched Slasher.png"
@@ -2251,7 +2251,7 @@
 			"name": "Deathrooter",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Zombie Boar",
+			"type": "Creature â€” Zombie Boar",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/137_Deathrooter.png"
@@ -2261,7 +2261,7 @@
 			"name": "Deepstone Traitor",
 			"rarity": "common",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature — Dwarf Rogue Warlock",
+			"type": "Creature â€” Dwarf Rogue Warlock",
 			"collector_number": "138",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/138_Deepstone Traitor.png"
@@ -2271,7 +2271,7 @@
 			"name": "Dwarven Swashbuckler",
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-			"type": "Creature — Dwarf Pirate",
+			"type": "Creature â€” Dwarf Pirate",
 			"collector_number": "139",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/139_Dwarven Swashbuckler.png"
@@ -2281,7 +2281,7 @@
 			"name": "Edelber Foreman",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Dwarf Artificer",
+			"type": "Creature â€” Dwarf Artificer",
 			"collector_number": "140",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/140_Edelber Foreman.png"
@@ -2291,7 +2291,7 @@
 			"name": "Entrenched Forgemaster",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Dwarf Artificer",
+			"type": "Creature â€” Dwarf Artificer",
 			"collector_number": "141",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/141_Entrenched Forgemaster.png"
@@ -2321,7 +2321,7 @@
 			"name": "Forced Conscription",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "144",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/144_Forced Conscription.png"
@@ -2351,7 +2351,7 @@
 			"name": "Hearthfire Disciple",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Elf Shaman",
+			"type": "Creature â€” Elf Shaman",
 			"collector_number": "147",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/147_Hearthfire Disciple.png"
@@ -2361,7 +2361,7 @@
 			"name": "Horseman of War",
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "148",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/148_Horseman of War.png"
@@ -2371,7 +2371,7 @@
 			"name": "Hulking Fleshdebter",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}{R}",
-			"type": "Creature — Giant Rogue Warlock",
+			"type": "Creature â€” Giant Rogue Warlock",
 			"collector_number": "149",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/149_Hulking Fleshdebter.png"
@@ -2381,7 +2381,7 @@
 			"name": "Impetuous Cavalryman",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "150",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/150_Impetuous Cavalryman.png"
@@ -2401,7 +2401,7 @@
 			"name": "Llosg Crann Sharpshooter",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Creature — Elf Archer",
+			"type": "Creature â€” Elf Archer",
 			"collector_number": "152",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/152_Llosg Crann Sharpshooter.png"
@@ -2411,7 +2411,7 @@
 			"name": "Pyresong Incendiary",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-			"type": "Creature — Elf Shaman",
+			"type": "Creature â€” Elf Shaman",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/153_Pyresong Incendiary.png"
@@ -2431,7 +2431,7 @@
 			"name": "Sofia's Stormchaser",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "156",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/156_Sofia's Stormchaser.png"
@@ -2451,7 +2451,7 @@
 			"name": "Stonebark Invoker",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Elemental Treefolk",
+			"type": "Creature â€” Elemental Treefolk",
 			"collector_number": "158",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/158_Stonebark Invoker.png"
@@ -2461,7 +2461,7 @@
 			"name": "Undermine Guardian",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{R}{R}",
-			"type": "Creature — Elemental Giant Warrior",
+			"type": "Creature â€” Elemental Giant Warrior",
 			"collector_number": "159",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/159_Undermine Guardian.png"
@@ -2471,7 +2471,7 @@
 			"name": "Vengeful Alchemist",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-			"type": "Creature — Human Rogue Wizard",
+			"type": "Creature â€” Human Rogue Wizard",
 			"collector_number": "160",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/160_Vengeful Alchemist.png"
@@ -2491,7 +2491,7 @@
 			"name": "Acolyte of the Rose Order",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Elf Druid",
+			"type": "Creature â€” Elf Druid",
 			"collector_number": "162",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/162_Acolyte of the Rose Order.png"
@@ -2521,7 +2521,7 @@
 			"name": "Bleakfell Escort",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Human Citizen Ranger",
+			"type": "Creature â€” Human Citizen Ranger",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/165_Bleakfell Escort.png"
@@ -2531,7 +2531,7 @@
 			"name": "Blightbound Archer",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Zombie Elf Archer",
+			"type": "Creature â€” Zombie Elf Archer",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/166_Blightbound Archer.png"
@@ -2541,7 +2541,7 @@
 			"name": "Caer Crann Survivalists",
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Creature — Elf Warrior",
+			"type": "Creature â€” Elf Warrior",
 			"collector_number": "167",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/167_Caer Crann Survivalists.png"
@@ -2551,7 +2551,7 @@
 			"name": "Coirchanh's Herald",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-			"type": "Creature — Skeleton Horror",
+			"type": "Creature â€” Skeleton Horror",
 			"collector_number": "168",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/168_Coirchanh's Herald.png"
@@ -2591,7 +2591,7 @@
 			"name": "Deepwood Hermit",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/172_Deepwood Hermit.png"
@@ -2611,7 +2611,7 @@
 			"name": "Esalia, the Enduring Root",
 			"rarity": "rare",
 			"mana_cost": "{G}",
-			"type": "Legendary Creature — Elf Druid",
+			"type": "Legendary Creature â€” Elf Druid",
 			"collector_number": "174",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/174_Esalia, the Enduring Root.png"
@@ -2621,7 +2621,7 @@
 			"name": "Esalia's Witness",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Elf Ranger",
+			"type": "Creature â€” Elf Ranger",
 			"collector_number": "175",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/175_Esalia's Witness.png"
@@ -2631,7 +2631,7 @@
 			"name": "Fencas the Fallen",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-			"type": "Legendary Creature — Zombie Elf Druid",
+			"type": "Legendary Creature â€” Zombie Elf Druid",
 			"collector_number": "177",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/177_Fencas the Fallen.png"
@@ -2661,7 +2661,7 @@
 			"name": "Gwynsivir, the Listener",
 			"rarity": "mythic",
 			"mana_cost": "{4}{G}",
-			"type": "Legendary Creature — Elf Druid Ranger",
+			"type": "Legendary Creature â€” Elf Druid Ranger",
 			"collector_number": "180",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/180_Gwynsivir, the Listener.png"
@@ -2671,7 +2671,7 @@
 			"name": "Horseman of Pestilence",
 			"rarity": "mythic",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "181",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/181_Horseman of Pestilence.png"
@@ -2681,7 +2681,7 @@
 			"name": "Joyous Reveler",
 			"rarity": "common",
 			"mana_cost": "{G}",
-			"type": "Creature — Elf Citizen",
+			"type": "Creature â€” Elf Citizen",
 			"collector_number": "182",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/182_Joyous Reveler.png"
@@ -2701,7 +2701,7 @@
 			"name": "Levy Bowmen",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Human Peasant Archer",
+			"type": "Creature â€” Human Peasant Archer",
 			"collector_number": "184",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/184_Levy Bowmen.png"
@@ -2711,7 +2711,7 @@
 			"name": "Llech Crann Knight",
 			"rarity": "common",
 			"mana_cost": "{3}{G}{G}",
-			"type": "Creature — Elf Knight",
+			"type": "Creature â€” Elf Knight",
 			"collector_number": "185",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/185_Llech Crann Knight.png"
@@ -2721,7 +2721,7 @@
 			"name": "Militia's Charge",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "187",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/187_Militia's Charge.png"
@@ -2731,7 +2731,7 @@
 			"name": "Moontouched Courser",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{G}",
-			"type": "Creature — Elk Spirit",
+			"type": "Creature â€” Elk Spirit",
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/188_Moontouched Courser.png"
@@ -2761,7 +2761,7 @@
 			"name": "Rundfora Trickster",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Creature — Faerie Rogue",
+			"type": "Creature â€” Faerie Rogue",
 			"collector_number": "191",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/191_Rundfora Trickster.png"
@@ -2791,7 +2791,7 @@
 			"name": "Scion of Coirchanh",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Elk Horror",
+			"type": "Creature â€” Elk Horror",
 			"collector_number": "194",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/194_Scion of Coirchanh.png"
@@ -2801,7 +2801,7 @@
 			"name": "Settled Giant",
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-			"type": "Creature — Giant Peasant",
+			"type": "Creature â€” Giant Peasant",
 			"collector_number": "195",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/195_Settled Giant.png"
@@ -2811,7 +2811,7 @@
 			"name": "Sheltering Gargantuan",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
-			"type": "Creature — Beast",
+			"type": "Creature â€” Beast",
 			"collector_number": "196",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/196_Sheltering Gargantuan.png"
@@ -2821,7 +2821,7 @@
 			"name": "Stilthorpe Memorialist",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "197",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/197_Stilthorpe Memorialist.png"
@@ -2831,7 +2831,7 @@
 			"name": "Strongarm Militia",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature — Human Peasant Warrior",
+			"type": "Creature â€” Human Peasant Warrior",
 			"collector_number": "198",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/198_Strongarm Militia.png"
@@ -2841,7 +2841,7 @@
 			"name": "Surface Envoy",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature — Dwarf Ranger",
+			"type": "Creature â€” Dwarf Ranger",
 			"collector_number": "199",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/199_Surface Envoy.png"
@@ -2851,7 +2851,7 @@
 			"name": "Sustaining Katlig",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature — Cat Elk Plant",
+			"type": "Creature â€” Cat Elk Plant",
 			"collector_number": "200",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/200_Sustaining Katlig.png"
@@ -2861,7 +2861,7 @@
 			"name": "Sofia, Haunted by Fortune",
 			"rarity": "mythic",
 			"mana_cost": "{R}{W}{B}",
-			"type": "Legendary Creature — Human Pirate",
+			"type": "Legendary Creature â€” Human Pirate",
 			"collector_number": "252",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/252_Sofia, Haunted by Fortune.png"
@@ -2881,7 +2881,7 @@
 			"name": "Rose Court Sentinel",
 			"rarity": "common",
 			"mana_cost": "{2}",
-			"type": "Artifact Creature — Skeleton Soldier",
+			"type": "Artifact Creature â€” Skeleton Soldier",
 			"collector_number": "282",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/282_Rose Court Sentinel.png"
@@ -2911,7 +2911,7 @@
 			"name": "Maritou's Pride",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Creature — Spirit Pirate",
+			"type": "Creature â€” Spirit Pirate",
 			"collector_number": "60",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/60_Maritou's Pride.png"
@@ -2931,7 +2931,7 @@
 			"name": "Spellstrider Ettin",
 			"rarity": "rare",
 			"mana_cost": "{5}{U}{U}{U}",
-			"type": "Creature — Giant Wizard",
+			"type": "Creature â€” Giant Wizard",
 			"collector_number": "75",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/75_Spellstrider Ettin.png"
@@ -2966,7 +2966,7 @@
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/TPW-files/img/88_The Dreadmoon Ascendancy.png"
 			}
-		},
+		}
 	]
 
 [rare(1)]
