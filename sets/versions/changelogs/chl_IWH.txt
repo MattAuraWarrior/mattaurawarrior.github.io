@@ -1,4 +1,185 @@
-﻿VERSION 1 CHANGELOG
+﻿VERSION 2 CHANGELOG
+====================
+
+Scourge of Drunau Port added.
+
+
+The Haunting of Silbern
+type: Enchantment => Legendary Enchantment
+
+Blood Bank
+rules_text: When this enchantment enters, create a tapped Treasure token.
+Once each turn, if you'd sacrifice a creature to pay a cost or an effect you control would cause you to sacrifice a creature, you may sacrifice an artifact or enchantment instead. => When this enchantment enters, create a tapped Treasure token.
+Once each turn, if you would sacrifice a creature to pay a cost or an effect you control would cause you to sacrifice a creature, you may sacrifice an artifact or enchantment instead.
+
+Elgaud Dawnrider
+rules_text: Haste
+Whenever this creature attacks, choose one. If you control four or more creatures, you may choose both instead.
+• Create a 1/1 white Soldier creature token with vigilance that's attacking.
+• Other attacking creatures get +1/+0 and gain lifelink until end of turn. => Lifelink, haste
+Whenever this creature attacks, choose one. If you control four or more creatures, you may choose both instead.
+• Create a 1/1 white Soldier creature token with vigilance that's attacking.
+• Other attacking creatures get +1/+0 and gain trample until end of turn.
+pt: 3/4 => 3/3
+
+Geist Marshal
+pt: 2/2 => 2/1
+
+Herghast, Niblis Magister
+rules_text: Flash
+Flying, ward {2}
+{U}: Attach target Aura you control to target permanent it could enchant. Activate only once each turn. => Flash
+Flying, ward {1}
+{U}: Attach target Aura you control to target permanent it could enchant. Activate only once each turn.
+
+Secrets of the Forbidden
+rules_text: Look at the top X cards of your library, where X is one plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If X is thirteen or more, you may put all of those cards into your hand instead.
+Flashback {2}{U} => Look at the top X cards of your library, where X is one plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If you look at thirteen or more cards this way, you may put all of those cards into your hand instead.
+Flashback {3}{U}
+
+Gravebutcher
+rules_text: This creature enters tapped.
+When this creature dies, you may return target creature card not named Gravebutcher from your graveyard to your hand. If you return a Zombie card this way, return this card from your graveyard to your hand. => This creature can't block.
+When this creature dies, you may return target creature card not named Gravebutcher from your graveyard to your hand. If you return a Zombie card this way, return this card from your graveyard to your hand.
+
+Indulgent Patrician
+rules_text: When this creature enters, you may have target player discard a card. If you discard a card this way, you gain 5 life.
+Whenever a player discards one or more cards, put a +1/+1 counter on each Vampire you control. => When this creature enters, you may have target player discard a card. If you discard a card this way, you gain 5 life.
+Once each turn, when a player discards one or more cards, you may put a +1/+1 counter on each Vampire you control.
+
+Thirsting Duelist
+rules_text: Menace
+{T}, Pay 2 life: Target creature gains haste until end of turn.
+{3}{R}, Sacrifice this creature: It deals damage equal to the amount of life you lost this turn to any target. => Menace
+{T}, Pay 2 life: Target creature gains haste until end of turn.
+{4}{R}, Sacrifice this creature: It deals damage equal to the amount of life you lost this turn to any target.
+
+Geistblaster's Breakthrough
+rules_text: Geistblaster's Breakthrough deals damage to target creature or planeswalker equal to the number of differently named instant and sorcery cards in your graveyard plus 1.
+When you discard this card, you may pay {4}{R}{R}. If you do, create a 6/6 red Spirit creature token with haste. => Geistblaster's Breakthrough deals damage to target creature or planeswalker equal to the number of differently named instant and sorcery cards in your graveyard plus 1.
+When you discard this card, you may pay {3}{R}{R}. If you do, create a 5/5 red Spirit creature token with haste.
+
+Griffin's Blessing
+rules_text: Choose up to two —
+• Put a +1/+1 counter on target creature.
+• Target creature gains hexproof until end of turn
+• Target creature you control fights target creature an opponent controls.
+• Target player sacrifices an artifact. => Choose up to two —
+• Put a +1/+1 counter on target creature.
+• Target creature gains hexproof until end of turn.
+• Target creature you control fights target creature an opponent controls.
+• Target player sacrifices an artifact.
+
+Gavony Watchman
+rules_text: Vigilance, trample
+When this creature dies, target opponent chooses one, then you choose one that hasn't been chosen this way —
+• Create a tapped Treasure token.
+• Create a 1/1 white Human creature token. => Vigilance, trample
+When this creature dies, target opponent chooses one, then you choose one that hasn't been chosen this way —
+• That player creates a tapped Treasure token.
+• That player creates a 1/1 white Human creature token.
+
+Desolate Pinnacle
+rules_text: This land enters tapped unless you control two or fewer other lands. When it enters, surveil 1.
+{T}: Add {R}.
+{1}{R}, {T}, Sacrifice this land: It deals 3 damage to any target. Activate only if there are seven or more cards in your graveyard. => This land enters tapped unless you control two or fewer other lands. When it enters, surveil 1.
+{T}: Add {R}.
+{2}{R}, {T}, Sacrifice this land: It deals 3 damage to any target. Activate only if there are seven or more cards in your graveyard.
+
+Desolate Thicket
+rules_text: This land enters tapped unless you control two or fewer other lands. When it enters, surveil 1.
+{T}: Add {G}.
+{1}{G}, {T}, Sacrifice this land: Put a +1/+1 counter on each creature you control. Activate only if there are seven or more cards in your graveyard. => This land enters tapped unless you control two or fewer other lands. When it enters, surveil 1.
+{T}: Add {G}.
+{2}{G}, {T}, Sacrifice this land: Put a +1/+1 counter on each creature you control. Activate only if there are seven or more cards in your graveyard.
+
+Ash-Addled Pyromaniac
+rules_text: When this creature dies, choose one —
+• Create a 1/1 red Devil creature token with “When this creature dies, it deals 1 damage to any target.
+• Until the end of your next turn, whenever a creature you control enters, it gets +1/+0 and gains haste until end of turn.
+• The next red instant or sorcery spell you cast costs {R}{R} [i](or {2})[/i] less to cast. => When this creature dies, choose one —
+• Create a 1/1 red Devil creature token with “When this creature dies, it deals 1 damage to any target.
+• Until the end of your next turn, whenever a creature you control enters, it gets +1/+0 and gains haste until end of turn.
+• Until the end of your next turn, the next red instant or sorcery spell you cast costs {R}{R} [i](or {2})[/i] less to cast.
+
+Ashiok, Your Worst Fear
+loyalty: 5 => 4
+
+Sorin, Forsaken Bloodlord
+special_text: [+2]: You may have up to one target creature you control gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i]
+[-2]: Create a 2/2 black Vampire creature token with flying and lifelink.
+[-7]: Sorin deals X damage divided among any number of targets and you gain X life, where X is the number of cards in your graveyard. => [+2]: You may have up to one target creature you control gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i]
+[-2]: Create a 2/2 black Vampire creature token with flying and lifelink.
+[-8]: Sorin deals X damage divided among any number of targets and you gain X life, where X is the number of cards in your graveyard.
+
+Gnarlwood's Claim
+cost: {X}{1}{B}{G} => {X}{2}{B}{G}
+
+Olivia, Sanguine Reveler
+rules_text: Flying, haste
+Whenever a Vampire you control attacks, you may have it gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i] => Flying, haste
+Whenever a Vampire you control attacks, you may have it gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i]
+
+Ominous Frogs
+rules_text: Whenever you cast an instant or sorcery spell, this creature deals 1 damage to each opponent. Put a croak counter on it. Then if it has three or more croak counters on it, you may remove them all and transform it. => Whenever you cast an instant or sorcery spell, this creature deals 1 damage to each opponent. Put a croak counter on it. Then if it has three or more croak counters on it, remove them all and transform it.
+
+Overlord of Ashmouth
+pt: 4/6 => 5/5
+
+Hedonistic Revelry
+type: Instant => Sorcery
+
+Curse of Eerie Streets
+cost: {1}{W} => {2}{W}
+rules_text: Enchant player
+Whenever enchanted player casts their first noncreature spell each turn, each of that player's opponents draw a card and gain 2 life. => Enchant player
+Whenever enchanted player casts their first noncreature spell each turn, that player may pay {2}. If they don't, each of that player's opponents draws a card and gains 2 life.
+
+Prayer of Banishing
+cost: {W} => {1}{W}
+rules_text: Exile target creature, then return that card to the battlefield under its owner's control.
+[i]Concord [/i]— If there are four or more card types among permanents you control, you may exile that creature instead [i](and not return it to the battlefield)[/i]. => Exile target creature or planeswalker, then return that card to the battlefield under its owner's control.
+[i]Concord [/i]— If there are four or more card types among permanents you control, you may exile that permanent instead [i](and not return it to the battlefield)[/i].
+
+Grizzled Pyro-Alchemist
+rules_text: Whenever you cast an instant or sorcery spell, create a 1/1 red Elemental creature token with flying and “This creature can't block.”
+{R}: Creatures you control with power 2 or less gain haste until end of turn. => Whenever you cast an instant or sorcery spell, create a 1/1 red Elemental creature token with flying and “This creature can't block.”
+{1}{R}: Creatures you control with power 2 or less gain haste until end of turn.
+pt: 2/1 => 1/1
+
+Learn the Steps
+rules_text: Mill two cards, then exile any number of cards from your graveyard. Counter target spell unless its controller pays {X}, where X is the number of cards exiled this way. => Mill a card, then exile any number of cards from your graveyard. Counter target spell unless its controller pays {X}, where X is the number of cards exiled this way.
+
+Plunder the Grafs
+rules_text: Any number of target players each mill twice X cards, then infuse X. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create an X/X blue Zombie creature token.)[/i] => Any number of target players each mill twice X cards.
+Infuse X. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create an X/X blue Zombie creature token.)[/i]
+
+Anje's Thirst
+rules_text: Target creature gets -4/-4 until end of turn. You may have up to one target creature you control gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i] => Target creature gets -4/-4 until end of turn. You may have up to one target creature you control gorge. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i]
+
+Bloodsire's Herald
+rules_text: Flying, lifelink
+When this creature enters, look at the top six cards of your library. You may put a Vampire or Sorin card from among them into your hand. Put the rest on the bottom of your library in a random order. => Flying, lifelink
+When this creature enters, look at the top six cards of your library. You reveal a Vampire or Sorin card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+
+Darkthicket Hermit
+rules_text: When this creature enters, surveil 2.
+{G}, {T}, Exile a land card from your graveyard: Search your library for a land card, reveal it, put it into your hand, then shuffle. => When this creature enters, surveil 2.
+{1}{G}, {T}, Exile a land card from your graveyard: Search your library for a land card, reveal it, put it into your hand, then shuffle.
+
+Farbog Invocation
+cost: {B} => {1}{B}
+
+Consuming Grounds
+rules_text: Mill two cards, then you may return a permanent card from your graveyard to your hand. You gain 2 life.
+{4}{G}: Return this card from your graveyard to the battlefield transformed. Activate only as a sorcery. => Mill two cards, then you may return a permanent card from your graveyard to your hand.
+{4}{G}: Return this card from your graveyard to the battlefield transformed. Activate only as a sorcery.
+
+Unstable Experimentation
+rules_text: Draw a card, then you may discard a card. If you don't, scry 1. When you discard a card this way, Unstable Experimentation deals 3 damage to any target. => Draw a card, then you may discard a card. If you don't, surveil 1. When you discard a card this way, Unstable Experimentation deals 3 damage to any target.
+
+
+VERSION 1 CHANGELOG
 ====================
 
 First version published.

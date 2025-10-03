@@ -25,9 +25,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
 			"type": "Creature — Ooze",
-			"collector_number": "80",
+			"collector_number": "81",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/80_Subsuming Sludge.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/81_Subsuming Sludge.png"
 			}
 		},
 		{
@@ -35,19 +35,19 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{B}",
 			"type": "Creature — Angel",
-			"collector_number": "90",
+			"collector_number": "91",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/90_Angel of Fading Dusk.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/91_Angel of Fading Dusk.png"
 			}
 		},
 		{
 			"name": "The Haunting of Silbern",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
-			"type": "Enchantment",
-			"collector_number": "160",
+			"type": "Legendary Enchantment",
+			"collector_number": "161",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/160_The Haunting of Silbern.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/161_The Haunting of Silbern.png"
 			}
 		},
 		{
@@ -55,9 +55,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Spider Horror",
-			"collector_number": "202",
+			"collector_number": "203",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/202_Malignant Entangler.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/203_Malignant Entangler.png"
 			}
 		},
 		{
@@ -65,9 +65,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}{B}",
 			"type": "Sorcery",
-			"collector_number": "221",
+			"collector_number": "222",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/221_Beckon the Drowntide.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/222_Beckon the Drowntide.png"
 			}
 		},
 		{
@@ -75,9 +75,9 @@
 			"rarity": "rare",
 			"mana_cost": "{B}{R}",
 			"type": "Enchantment",
-			"collector_number": "222",
+			"collector_number": "223",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/222_Blood Bank.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/223_Blood Bank.png"
 			}
 		},
 		{
@@ -85,9 +85,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}{U}",
 			"type": "Enchantment — Aura Curse",
-			"collector_number": "224",
+			"collector_number": "225",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/224_Curse of Entomophobia.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/225_Curse of Entomophobia.png"
 			}
 		},
 		{
@@ -95,9 +95,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{G}{W}",
 			"type": "Creature — Human Warlock Druid",
-			"collector_number": "225",
+			"collector_number": "226",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/225_Dawnheart Augur.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/226_Dawnheart Augur.png"
 			}
 		},
 		{
@@ -105,9 +105,9 @@
 			"rarity": "rare",
 			"mana_cost": "{W}{U}",
 			"type": "Instant",
-			"collector_number": "226",
+			"collector_number": "227",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/226_Desperate Exorcism.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/227_Desperate Exorcism.png"
 			}
 		},
 		{
@@ -115,9 +115,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{W}",
 			"type": "Creature — Human Cleric Knight",
-			"collector_number": "227",
+			"collector_number": "228",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/227_Elgaud Dawnrider.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/228_Elgaud Dawnrider.png"
 			}
 		},
 		{
@@ -125,9 +125,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{G}",
 			"type": "Creature — Skeleton Fungus",
-			"collector_number": "232",
+			"collector_number": "233",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/232_Gravespore Guardian.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/233_Gravespore Guardian.png"
 			}
 		},
 		{
@@ -135,9 +135,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}{W}",
 			"type": "Artifact — Equipment",
-			"collector_number": "235",
+			"collector_number": "236",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/235_Hope-Blessed Bow.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/236_Hope-Blessed Bow.png"
 			}
 		},
 		{
@@ -145,9 +145,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{G}{G}",
 			"type": "Sorcery",
-			"collector_number": "236",
+			"collector_number": "237",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/236_Hour of the Wolf.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/237_Hour of the Wolf.png"
 			}
 		},
 		{
@@ -155,16 +155,16 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{G}",
 			"type": "Creature — Human Werewolf",
-			"collector_number": "237",
+			"collector_number": "238",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/237_Huntmaster of the Fells_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/238_Huntmaster of the Fells_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/237_Huntmaster of the Fells_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/238_Huntmaster of the Fells_front.png"
 			}
 		},
 		{
@@ -172,9 +172,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{R}",
 			"type": "Creature — Vampire Warlock",
-			"collector_number": "238",
+			"collector_number": "239",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/238_Insaitiable Elder.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/239_Insaitiable Elder.png"
 			}
 		},
 		{
@@ -182,9 +182,9 @@
 			"rarity": "rare",
 			"mana_cost": "{U}{B}",
 			"type": "Creature — Human Warlock Scientist",
-			"collector_number": "240",
+			"collector_number": "241",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/240_Nephalia Heartsewer.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/241_Nephalia Heartsewer.png"
 			}
 		},
 		{
@@ -192,9 +192,9 @@
 			"rarity": "rare",
 			"mana_cost": "{W}{B}",
 			"type": "Enchantment",
-			"collector_number": "247",
+			"collector_number": "248",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/247_Sermons of Ormendahl.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/248_Sermons of Ormendahl.png"
 			}
 		},
 		{
@@ -202,9 +202,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Creature — Spirit",
-			"collector_number": "251",
+			"collector_number": "252",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/251_Tethered Fettergeists.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/252_Tethered Fettergeists.png"
 			}
 		},
 		{
@@ -212,9 +212,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{R}",
 			"type": "Creature — Devil",
-			"collector_number": "257",
+			"collector_number": "258",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/257_Wildcaster Devils.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/258_Wildcaster Devils.png"
 			}
 		},
 		{
@@ -309,9 +309,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
 			"type": "Creature — Zombie Horror",
-			"collector_number": "85",
+			"collector_number": "86",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/85_Unstable Masterpiece.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/86_Unstable Masterpiece.png"
 			}
 		},
 		{
@@ -319,9 +319,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
-			"collector_number": "77",
+			"collector_number": "78",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/77_Secrets of the Forbidden.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/78_Secrets of the Forbidden.png"
 			}
 		},
 		{
@@ -339,9 +339,9 @@
 			"rarity": "rare",
 			"mana_cost": "{B}",
 			"type": "Legendary Creature — Zombie Knight",
-			"collector_number": "98",
+			"collector_number": "99",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/98_Captain Faulmorr.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/99_Captain Faulmorr.png"
 			}
 		},
 		{
@@ -349,9 +349,9 @@
 			"rarity": "rare",
 			"mana_cost": "{B}{B}",
 			"type": "Creature — Zombie",
-			"collector_number": "109",
+			"collector_number": "110",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/109_Gravebutcher.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/110_Gravebutcher.png"
 			}
 		},
 		{
@@ -359,9 +359,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
 			"type": "Sorcery",
-			"collector_number": "110",
+			"collector_number": "111",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/110_Horrific Stitching.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/111_Horrific Stitching.png"
 			}
 		},
 		{
@@ -369,9 +369,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{B}",
 			"type": "Creature — Vampire Noble",
-			"collector_number": "113",
+			"collector_number": "114",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/113_Indulgent Patrician.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/114_Indulgent Patrician.png"
 			}
 		},
 		{
@@ -379,9 +379,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
 			"type": "Instant",
-			"collector_number": "92",
+			"collector_number": "93",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/92_Beckon the Beyond.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/93_Beckon the Beyond.png"
 			}
 		},
 		{
@@ -389,9 +389,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{R}",
 			"type": "Legendary Creature — Vampire Noble",
-			"collector_number": "141",
+			"collector_number": "142",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/141_Cordelia Falkenrath.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/142_Cordelia Falkenrath.png"
 			}
 		},
 		{
@@ -399,9 +399,9 @@
 			"rarity": "rare",
 			"mana_cost": "{X}{R}",
 			"type": "Sorcery",
-			"collector_number": "166",
+			"collector_number": "167",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/166_Olivia's Debauchery.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/167_Olivia's Debauchery.png"
 			}
 		},
 		{
@@ -409,16 +409,16 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Human Shaman Werewolf",
-			"collector_number": "167",
+			"collector_number": "168",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/167_Profane Invoker_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/168_Profane Invoker_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/167_Profane Invoker_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/168_Profane Invoker_front.png"
 			}
 		},
 		{
@@ -426,9 +426,9 @@
 			"rarity": "rare",
 			"mana_cost": "{R}",
 			"type": "Creature — Vampire Warrior",
-			"collector_number": "176",
+			"collector_number": "177",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/176_Thirsting Duelist.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/177_Thirsting Duelist.png"
 			}
 		},
 		{
@@ -436,16 +436,16 @@
 			"rarity": "rare",
 			"mana_cost": "{B}",
 			"type": "Enchantment",
-			"collector_number": "95",
+			"collector_number": "96",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/95_Bloodstarved Slumber_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/96_Bloodstarved Slumber_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/95_Bloodstarved Slumber_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/96_Bloodstarved Slumber_front.png"
 			}
 		},
 		{
@@ -453,9 +453,9 @@
 			"rarity": "rare",
 			"mana_cost": "{R}",
 			"type": "Instant",
-			"collector_number": "154",
+			"collector_number": "155",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/154_Geistblaster's Breakthrough.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/155_Geistblaster's Breakthrough.png"
 			}
 		},
 		{
@@ -463,16 +463,16 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{G}{G}",
 			"type": "Creature — Human Warrior Werewolf",
-			"collector_number": "189",
+			"collector_number": "190",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/189_Estwald Brigands_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/190_Estwald Brigands_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/189_Estwald Brigands_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/190_Estwald Brigands_front.png"
 			}
 		},
 		{
@@ -480,9 +480,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{G}",
 			"type": "Enchantment",
-			"collector_number": "195",
+			"collector_number": "196",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/195_Harvesttide Procession.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/196_Harvesttide Procession.png"
 			}
 		},
 		{
@@ -490,9 +490,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Human Scout",
-			"collector_number": "200",
+			"collector_number": "201",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/200_Kessig Wildtracker.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/201_Kessig Wildtracker.png"
 			}
 		},
 		{
@@ -500,9 +500,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Legendary Creature — Wolf",
-			"collector_number": "212",
+			"collector_number": "213",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/212_The Ulvenvater.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/213_The Ulvenvater.png"
 			}
 		},
 		{
@@ -510,9 +510,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
-			"collector_number": "193",
+			"collector_number": "194",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/193_Griffin's Blessing.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/194_Griffin's Blessing.png"
 			}
 		},
 		{
@@ -520,9 +520,9 @@
 			"rarity": "rare",
 			"mana_cost": "{4}{G}{G}{G}",
 			"type": "Sorcery",
-			"collector_number": "213",
+			"collector_number": "214",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/213_Vile Resurgence.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/214_Vile Resurgence.png"
 			}
 		},
 		{
@@ -530,9 +530,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{G}",
 			"type": "Instant",
-			"collector_number": "180",
+			"collector_number": "181",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/180_Call of the Ulvenvater.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/181_Call of the Ulvenvater.png"
 			}
 		},
 		{
@@ -540,9 +540,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}",
 			"type": "Creature — Human Soldier",
-			"collector_number": "191",
+			"collector_number": "192",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/191_Gavony Watchman.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/192_Gavony Watchman.png"
 			}
 		},
 		{
@@ -550,9 +550,9 @@
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "265",
+			"collector_number": "266",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/265_Desolate Cemetery.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/266_Desolate Cemetery.png"
 			}
 		},
 		{
@@ -560,9 +560,9 @@
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "266",
+			"collector_number": "267",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/266_Desolate Garrison.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/267_Desolate Garrison.png"
 			}
 		},
 		{
@@ -570,9 +570,9 @@
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "267",
+			"collector_number": "268",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/267_Desolate Harbor.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/268_Desolate Harbor.png"
 			}
 		},
 		{
@@ -580,9 +580,9 @@
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "268",
+			"collector_number": "269",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/268_Desolate Pinnacle.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/269_Desolate Pinnacle.png"
 			}
 		},
 		{
@@ -590,9 +590,9 @@
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "269",
+			"collector_number": "270",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/269_Desolate Thicket.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/270_Desolate Thicket.png"
 			}
 		},
 		{
@@ -600,9 +600,9 @@
 			"rarity": "rare",
 			"mana_cost": "{4}{B}{B}",
 			"type": "Creature — Vampire Soldier",
-			"collector_number": "115",
+			"collector_number": "116",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/115_Markov Imperator.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/116_Markov Imperator.png"
 			}
 		},
 		{
@@ -610,9 +610,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{U}{U}{U}",
 			"type": "Creature — Kraken Horror",
-			"collector_number": "81",
+			"collector_number": "82",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/81_Thing from the Deep.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/82_Thing from the Deep.png"
 			}
 		},
 		{
@@ -637,9 +637,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Wolf Horror",
-			"collector_number": "155",
+			"collector_number": "156",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/155_Gorehowl Abomination.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/156_Gorehowl Abomination.png"
 			}
 		},
 		{
@@ -647,16 +647,16 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{R}",
 			"type": "Artifact",
-			"collector_number": "175",
+			"collector_number": "176",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/175_Tempting Puzzlebox_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/176_Tempting Puzzlebox_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/175_Tempting Puzzlebox_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/176_Tempting Puzzlebox_front.png"
 			}
 		},
 		{
@@ -664,9 +664,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Peasant",
-			"collector_number": "133",
+			"collector_number": "134",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/133_Ash-Addled Pyromaniac.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/134_Ash-Addled Pyromaniac.png"
 			}
 		},
 		{
@@ -694,9 +694,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
 			"type": "Enchantment — Aura Curse Saga",
-			"collector_number": "101",
+			"collector_number": "102",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/101_Curse of the Unlucky Thirteenth.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/102_Curse of the Unlucky Thirteenth.png"
 			}
 		},
 		{
@@ -704,9 +704,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Enchantment — Aura Curse Saga",
-			"collector_number": "145",
+			"collector_number": "146",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/145_Curse of the Goremoon.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/146_Curse of the Goremoon.png"
 			}
 		},
 		{
@@ -714,9 +714,9 @@
 			"rarity": "rare",
 			"mana_cost": "{4}{G}{G}",
 			"type": "Enchantment — Aura Curse Saga",
-			"collector_number": "183",
+			"collector_number": "184",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/183_Curse of the Deep Woods.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/184_Curse of the Deep Woods.png"
 			}
 		},
 		{
@@ -724,16 +724,16 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
 			"type": "Sorcery",
-			"collector_number": "105",
+			"collector_number": "106",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/105_Drawn to Blasphemy_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/106_Drawn to Blasphemy_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/105_Drawn to Blasphemy_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/106_Drawn to Blasphemy_front.png"
 			}
 		},
 		{
@@ -831,9 +831,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{B}{B}",
 			"type": "Creature — Demon",
-			"collector_number": "108",
+			"collector_number": "109",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/108_Gloaming Demon.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/109_Gloaming Demon.png"
 			}
 		},
 		{
@@ -841,9 +841,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{B}",
 			"type": "Legendary Planeswalker — Sorin",
-			"collector_number": "126",
+			"collector_number": "127",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/126_Sorin, Forsaken Bloodlord.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/127_Sorin, Forsaken Bloodlord.png"
 			}
 		},
 		{
@@ -851,9 +851,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{X}{B}{B}{B}",
 			"type": "Sorcery",
-			"collector_number": "132",
+			"collector_number": "133",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/132_Witching Hour.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/133_Witching Hour.png"
 			}
 		},
 		{
@@ -861,9 +861,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{7}{R}{R}",
 			"type": "Creature — Vampire Berserker",
-			"collector_number": "142",
+			"collector_number": "143",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/142_Cordelia's Ripper.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/143_Cordelia's Ripper.png"
 			}
 		},
 		{
@@ -871,9 +871,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{R}{R}",
 			"type": "Legendary Creature — Dragon",
-			"collector_number": "150",
+			"collector_number": "151",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/150_Feudrach of Ashmouth.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/151_Feudrach of Ashmouth.png"
 			}
 		},
 		{
@@ -881,9 +881,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{1}{R}",
 			"type": "Legendary Enchantment",
-			"collector_number": "157",
+			"collector_number": "158",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/157_The Goremoon's Call.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/158_The Goremoon's Call.png"
 			}
 		},
 		{
@@ -891,16 +891,16 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}",
 			"type": "Legendary Enchantment",
-			"collector_number": "187",
+			"collector_number": "188",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/187_Devotion to Ghrin-Danu_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/188_Devotion to Ghrin-Danu_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/187_Devotion to Ghrin-Danu_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/188_Devotion to Ghrin-Danu_front.png"
 			}
 		},
 		{
@@ -908,9 +908,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Human Soldier Ranger",
-			"collector_number": "198",
+			"collector_number": "199",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/198_Hope's Trail Ranger.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/199_Hope's Trail Ranger.png"
 			}
 		},
 		{
@@ -918,9 +918,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}{G}{G}",
 			"type": "Creature — Eye Hydra",
-			"collector_number": "203",
+			"collector_number": "204",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/203_Prying Eyedra.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/204_Prying Eyedra.png"
 			}
 		},
 		{
@@ -928,19 +928,19 @@
 			"rarity": "mythic",
 			"mana_cost": "{3}{U}{B}",
 			"type": "Legendary Creature — Zombie",
-			"collector_number": "223",
+			"collector_number": "224",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/223_The Collabomination.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/224_The Collabomination.png"
 			}
 		},
 		{
 			"name": "Gnarlwood's Claim",
 			"rarity": "mythic",
-			"mana_cost": "{X}{1}{B}{G}",
+			"mana_cost": "{X}{2}{B}{G}",
 			"type": "Sorcery",
-			"collector_number": "230",
+			"collector_number": "231",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/230_Gnarlwood's Claim.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/231_Gnarlwood's Claim.png"
 			}
 		},
 		{
@@ -948,9 +948,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{1}{R}{W}",
 			"type": "Creature — Angel",
-			"collector_number": "231",
+			"collector_number": "232",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/231_Goldnight Purgeblade.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/232_Goldnight Purgeblade.png"
 			}
 		},
 		{
@@ -958,9 +958,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{R}{R}",
 			"type": "Legendary Creature — Vampire Noble",
-			"collector_number": "241",
+			"collector_number": "242",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/241_Olivia, Sanguine Reveler.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/242_Olivia, Sanguine Reveler.png"
 			}
 		},
 		{
@@ -968,16 +968,16 @@
 			"rarity": "mythic",
 			"mana_cost": "{U}{R}",
 			"type": "Creature — Frog",
-			"collector_number": "242",
+			"collector_number": "243",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/242_Ominous Frogs_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/243_Ominous Frogs_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/242_Ominous Frogs_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/243_Ominous Frogs_front.png"
 			}
 		},
 		{
@@ -985,9 +985,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{W}{B}",
 			"type": "Creature — Human Cleric",
-			"collector_number": "243",
+			"collector_number": "244",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/243_Preacher of Whispered Pains.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/244_Preacher of Whispered Pains.png"
 			}
 		},
 		{
@@ -995,9 +995,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}{W}",
 			"type": "Legendary Creature — Angel",
-			"collector_number": "248",
+			"collector_number": "249",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/248_Sigarda, Hope's Accord.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/249_Sigarda, Hope's Accord.png"
 			}
 		},
 		{
@@ -1005,9 +1005,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{R}{G}",
 			"type": "Legendary Creature — Werewolf",
-			"collector_number": "252",
+			"collector_number": "253",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/252_Tovolar Wolfbound.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/253_Tovolar Wolfbound.png"
 			}
 		},
 		{
@@ -1015,9 +1015,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}{U}",
 			"type": "Legendary Creature — Spirit Cleric",
-			"collector_number": "254",
+			"collector_number": "255",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/254_Traft, Aiding the Worthy.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/255_Traft, Aiding the Worthy.png"
 			}
 		},
 		{
@@ -1025,9 +1025,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}{G}{U}",
 			"type": "Creature — Elk Plant Spirit",
-			"collector_number": "258",
+			"collector_number": "259",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/258_Winterthorn Creeper.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/259_Winterthorn Creeper.png"
 			}
 		},
 		{
@@ -1035,9 +1035,9 @@
 			"rarity": "special",
 			"mana_cost": "{1}{R}{W}",
 			"type": "Legendary Creature — Vampire Soldier",
-			"collector_number": "271",
+			"collector_number": "272",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/271_Odric, Accursed Slayer.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/272_Odric, Accursed Slayer.png"
 			}
 		},
 		{
@@ -1373,9 +1373,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{U}{U}",
 			"type": "Instant",
-			"collector_number": "79",
+			"collector_number": "80",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/79_Storms over Nephalia.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/80_Storms over Nephalia.png"
 			}
 		},
 		{
@@ -1383,9 +1383,9 @@
 			"rarity": "common",
 			"mana_cost": "{U}",
 			"type": "Instant",
-			"collector_number": "82",
+			"collector_number": "83",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/82_Thought Scour.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/83_Thought Scour.png"
 			}
 		},
 		{
@@ -1393,9 +1393,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
 			"type": "Creature — Spirit",
-			"collector_number": "83",
+			"collector_number": "84",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/83_Tormented Bride.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/84_Tormented Bride.png"
 			}
 		},
 		{
@@ -1403,9 +1403,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
 			"type": "Enchantment — Aura",
-			"collector_number": "84",
+			"collector_number": "85",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/84_Trapped in the Mirror.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/85_Trapped in the Mirror.png"
 			}
 		},
 		{
@@ -1413,9 +1413,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
 			"type": "Creature — Spirit",
-			"collector_number": "87",
+			"collector_number": "88",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/87_Wailing Apparition.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/88_Wailing Apparition.png"
 			}
 		},
 		{
@@ -1423,9 +1423,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Mutant Zombie",
-			"collector_number": "88",
+			"collector_number": "89",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/88_Wretched Experiment.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/89_Wretched Experiment.png"
 			}
 		},
 		{
@@ -1433,9 +1433,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
 			"type": "Instant",
-			"collector_number": "93",
+			"collector_number": "94",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/93_Bittersweet Parting.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/94_Bittersweet Parting.png"
 			}
 		},
 		{
@@ -1443,9 +1443,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
 			"type": "Sorcery",
-			"collector_number": "96",
+			"collector_number": "97",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/96_Bounty of the Dead.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/97_Bounty of the Dead.png"
 			}
 		},
 		{
@@ -1453,16 +1453,16 @@
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Human Rogue",
-			"collector_number": "97",
+			"collector_number": "98",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/97_Callous Killer_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/98_Callous Killer_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/97_Callous Killer_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/98_Callous Killer_front.png"
 			}
 		},
 		{
@@ -1470,9 +1470,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Sorcery",
-			"collector_number": "99",
+			"collector_number": "100",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/99_Cornered by the Dead.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/100_Cornered by the Dead.png"
 			}
 		},
 		{
@@ -1480,9 +1480,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Vampire",
-			"collector_number": "103",
+			"collector_number": "104",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/103_Deranged Ravager.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/104_Deranged Ravager.png"
 			}
 		},
 		{
@@ -1490,9 +1490,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Rat Horror",
-			"collector_number": "107",
+			"collector_number": "108",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/107_Festering Rats.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/108_Festering Rats.png"
 			}
 		},
 		{
@@ -1500,9 +1500,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Vampire Zombie Warlock",
-			"collector_number": "111",
+			"collector_number": "112",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/111_Hungering Assembly.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/112_Hungering Assembly.png"
 			}
 		},
 		{
@@ -1510,9 +1510,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Instant",
-			"collector_number": "116",
+			"collector_number": "117",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/116_Mortis Infusion.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/117_Mortis Infusion.png"
 			}
 		},
 		{
@@ -1520,16 +1520,16 @@
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Skeleton Soldier",
-			"collector_number": "117",
+			"collector_number": "118",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/117_Ossuary Guardian_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/118_Ossuary Guardian_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/117_Ossuary Guardian_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/118_Ossuary Guardian_front.png"
 			}
 		},
 		{
@@ -1537,9 +1537,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
 			"type": "Creature — Zombie Mutant",
-			"collector_number": "118",
+			"collector_number": "119",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/118_Overfueled Abomination.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/119_Overfueled Abomination.png"
 			}
 		},
 		{
@@ -1547,9 +1547,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{B}{B}",
 			"type": "Creature — Demon",
-			"collector_number": "119",
+			"collector_number": "120",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/119_Overlord of Ashmouth.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/120_Overlord of Ashmouth.png"
 			}
 		},
 		{
@@ -1557,9 +1557,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
 			"type": "Instant",
-			"collector_number": "120",
+			"collector_number": "121",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/120_Profane Sustenance.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/121_Profane Sustenance.png"
 			}
 		},
 		{
@@ -1567,9 +1567,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Zombie Bear",
-			"collector_number": "122",
+			"collector_number": "123",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/122_Rotjaw Predator.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/123_Rotjaw Predator.png"
 			}
 		},
 		{
@@ -1577,9 +1577,9 @@
 			"rarity": "common",
 			"mana_cost": "{B}",
 			"type": "Creature — Sheep",
-			"collector_number": "123",
+			"collector_number": "124",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/123_Sacrificial Lamb.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/124_Sacrificial Lamb.png"
 			}
 		},
 		{
@@ -1587,9 +1587,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Zombie",
-			"collector_number": "124",
+			"collector_number": "125",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/124_Scorned Zombie.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/125_Scorned Zombie.png"
 			}
 		},
 		{
@@ -1597,9 +1597,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
 			"type": "Sorcery",
-			"collector_number": "127",
+			"collector_number": "128",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/127_Sorin's Yearning.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/128_Sorin's Yearning.png"
 			}
 		},
 		{
@@ -1607,9 +1607,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Vampire Soldier",
-			"collector_number": "128",
+			"collector_number": "129",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/128_Stromkirk Vanguard.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/129_Stromkirk Vanguard.png"
 			}
 		},
 		{
@@ -1617,9 +1617,9 @@
 			"rarity": "common",
 			"mana_cost": "{B}",
 			"type": "Instant",
-			"collector_number": "130",
+			"collector_number": "131",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/130_Thirsty Work.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/131_Thirsty Work.png"
 			}
 		},
 		{
@@ -1627,9 +1627,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Wolf",
-			"collector_number": "135",
+			"collector_number": "136",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/135_Ashmouth Wolf.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/136_Ashmouth Wolf.png"
 			}
 		},
 		{
@@ -1637,9 +1637,9 @@
 			"rarity": "common",
 			"mana_cost": "{R}",
 			"type": "Sorcery",
-			"collector_number": "138",
+			"collector_number": "139",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/138_Bloody Indulgence.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/139_Bloody Indulgence.png"
 			}
 		},
 		{
@@ -1647,16 +1647,16 @@
 			"rarity": "common",
 			"mana_cost": "{R}",
 			"type": "Creature — Devil",
-			"collector_number": "139",
+			"collector_number": "140",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/139_Cackling Pyromaniac_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/140_Cackling Pyromaniac_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/139_Cackling Pyromaniac_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/140_Cackling Pyromaniac_front.png"
 			}
 		},
 		{
@@ -1664,9 +1664,9 @@
 			"rarity": "common",
 			"mana_cost": "{R}",
 			"type": "Creature — Vampire Rogue",
-			"collector_number": "143",
+			"collector_number": "144",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/143_Covetous Initiate.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/144_Covetous Initiate.png"
 			}
 		},
 		{
@@ -1674,9 +1674,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
 			"type": "Creature — Vampire",
-			"collector_number": "147",
+			"collector_number": "148",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/147_Erdwal Fangseeker.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/148_Erdwal Fangseeker.png"
 			}
 		},
 		{
@@ -1684,9 +1684,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Vampire Warrior",
-			"collector_number": "148",
+			"collector_number": "149",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/148_Falkenrath Executor.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/149_Falkenrath Executor.png"
 			}
 		},
 		{
@@ -1694,9 +1694,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
 			"type": "Instant",
-			"collector_number": "151",
+			"collector_number": "152",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/151_Feudrach's Hunger.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/152_Feudrach's Hunger.png"
 			}
 		},
 		{
@@ -1704,9 +1704,9 @@
 			"rarity": "common",
 			"mana_cost": "{R}",
 			"type": "Sorcery",
-			"collector_number": "152",
+			"collector_number": "153",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/152_Full-Moon Assault.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/153_Full-Moon Assault.png"
 			}
 		},
 		{
@@ -1714,9 +1714,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Horse Horror",
-			"collector_number": "156",
+			"collector_number": "157",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/156_Goremare.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/157_Goremare.png"
 			}
 		},
 		{
@@ -1724,26 +1724,26 @@
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
 			"type": "Creature — Human Archer Werewolf",
-			"collector_number": "158",
+			"collector_number": "159",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/158_Guardpost Sentries_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/159_Guardpost Sentries_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/158_Guardpost Sentries_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/159_Guardpost Sentries_front.png"
 			}
 		},
 		{
 			"name": "Hedonistic Revelry",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Instant",
-			"collector_number": "161",
+			"type": "Sorcery",
+			"collector_number": "162",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/161_Hedonistic Revelry.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/162_Hedonistic Revelry.png"
 			}
 		},
 		{
@@ -1751,9 +1751,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{R}{R}",
 			"type": "Creature — Elemental Horror",
-			"collector_number": "162",
+			"collector_number": "163",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/162_Herald of Ashmouth.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/163_Herald of Ashmouth.png"
 			}
 		},
 		{
@@ -1761,16 +1761,16 @@
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Human Ranger Werewolf",
-			"collector_number": "164",
+			"collector_number": "165",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/164_Moonlight Firemaker_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/165_Moonlight Firemaker_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/164_Moonlight Firemaker_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/165_Moonlight Firemaker_front.png"
 			}
 		},
 		{
@@ -1778,9 +1778,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Vampire Wolf Berserker",
-			"collector_number": "168",
+			"collector_number": "169",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/168_Ravenous Companions.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/169_Ravenous Companions.png"
 			}
 		},
 		{
@@ -1788,9 +1788,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Wolf",
-			"collector_number": "169",
+			"collector_number": "170",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/169_Russetpack Predator.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/170_Russetpack Predator.png"
 			}
 		},
 		{
@@ -1798,9 +1798,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
-			"collector_number": "172",
+			"collector_number": "173",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/172_Stain with Crimson.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/173_Stain with Crimson.png"
 			}
 		},
 		{
@@ -1808,16 +1808,16 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Wizard",
-			"collector_number": "173",
+			"collector_number": "174",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/173_Stormbrewer Alchemist_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/174_Stormbrewer Alchemist_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/173_Stormbrewer Alchemist_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/174_Stormbrewer Alchemist_front.png"
 			}
 		},
 		{
@@ -1825,9 +1825,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Vampire Soldier",
-			"collector_number": "174",
+			"collector_number": "175",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/174_Stromkirk Warlord.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/175_Stromkirk Warlord.png"
 			}
 		},
 		{
@@ -1835,9 +1835,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "178",
+			"collector_number": "179",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/178_Backroads Intrusion.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/179_Backroads Intrusion.png"
 			}
 		},
 		{
@@ -1845,9 +1845,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Human Ranger",
-			"collector_number": "179",
+			"collector_number": "180",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/179_Bloodtrail Reclaimer.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/180_Bloodtrail Reclaimer.png"
 			}
 		},
 		{
@@ -1855,9 +1855,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
 			"type": "Creature — Elk",
-			"collector_number": "184",
+			"collector_number": "185",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/184_Dawnhart Familiar.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/185_Dawnhart Familiar.png"
 			}
 		},
 		{
@@ -1865,16 +1865,16 @@
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Human Rogue Werewolf",
-			"collector_number": "188",
+			"collector_number": "189",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/188_Dire-Strain Imbuer_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/189_Dire-Strain Imbuer_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/188_Dire-Strain Imbuer_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/189_Dire-Strain Imbuer_front.png"
 			}
 		},
 		{
@@ -1882,9 +1882,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Instant",
-			"collector_number": "190",
+			"collector_number": "191",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/190_Foray into Stensia.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/191_Foray into Stensia.png"
 			}
 		},
 		{
@@ -1892,9 +1892,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Frog",
-			"collector_number": "192",
+			"collector_number": "193",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/192_Gitrog's Spawn.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/193_Gitrog's Spawn.png"
 			}
 		},
 		{
@@ -1902,16 +1902,16 @@
 			"rarity": "common",
 			"mana_cost": "{5}{G}{G}",
 			"type": "Artifact Creature — Treefolk Scarecrow",
-			"collector_number": "196",
+			"collector_number": "197",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/196_Harvestwood Effigy_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/197_Harvestwood Effigy_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/196_Harvestwood Effigy_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/197_Harvestwood Effigy_front.png"
 			}
 		},
 		{
@@ -1919,9 +1919,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Peasant",
-			"collector_number": "197",
+			"collector_number": "198",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/197_Hope's Trail Pilgrim.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/198_Hope's Trail Pilgrim.png"
 			}
 		},
 		{
@@ -1929,9 +1929,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Spider Horror",
-			"collector_number": "201",
+			"collector_number": "202",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/201_Looming Grafspider.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/202_Looming Grafspider.png"
 			}
 		},
 		{
@@ -1939,9 +1939,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Instant",
-			"collector_number": "204",
+			"collector_number": "205",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/204_Rabid Mauling.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/205_Rabid Mauling.png"
 			}
 		},
 		{
@@ -1949,16 +1949,16 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Boar",
-			"collector_number": "206",
+			"collector_number": "207",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/206_Somberwald Boar_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/207_Somberwald Boar_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/206_Somberwald Boar_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/207_Somberwald Boar_front.png"
 			}
 		},
 		{
@@ -1966,9 +1966,9 @@
 			"rarity": "common",
 			"mana_cost": "{G}",
 			"type": "Creature — Human Druid",
-			"collector_number": "207",
+			"collector_number": "208",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/207_Speaker of Ghrin-Danu.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/208_Speaker of Ghrin-Danu.png"
 			}
 		},
 		{
@@ -1976,16 +1976,16 @@
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
 			"type": "Creature — Human Druid Werewolf",
-			"collector_number": "209",
+			"collector_number": "210",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/209_Stewards of Ulvenwald_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/210_Stewards of Ulvenwald_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/209_Stewards of Ulvenwald_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/210_Stewards of Ulvenwald_front.png"
 			}
 		},
 		{
@@ -1993,9 +1993,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
-			"collector_number": "211",
+			"collector_number": "212",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/211_Tovolar's Proclamation.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/212_Tovolar's Proclamation.png"
 			}
 		},
 		{
@@ -2003,16 +2003,16 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Warrior Werewolf",
-			"collector_number": "214",
+			"collector_number": "215",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/214_Village Bruiser_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/215_Village Bruiser_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/214_Village Bruiser_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/215_Village Bruiser_front.png"
 			}
 		},
 		{
@@ -2020,9 +2020,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Wolf",
-			"collector_number": "216",
+			"collector_number": "217",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/216_Waldshadow Ambusher.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/217_Waldshadow Ambusher.png"
 			}
 		},
 		{
@@ -2030,9 +2030,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "217",
+			"collector_number": "218",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/217_Watching the Trails.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/218_Watching the Trails.png"
 			}
 		},
 		{
@@ -2040,9 +2040,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
 			"type": "Creature — Human Wolf Ranger",
-			"collector_number": "218",
+			"collector_number": "219",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/218_Wilderhunt Companions.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/219_Wilderhunt Companions.png"
 			}
 		},
 		{
@@ -2058,7 +2058,7 @@
 		{
 			"name": "Curse of Eerie Streets",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
+			"mana_cost": "{2}{W}",
 			"type": "Enchantment — Aura Curse",
 			"collector_number": "11",
 			"image_uris": {
@@ -2158,7 +2158,7 @@
 		{
 			"name": "Prayer of Banishing",
 			"rarity": "uncommon",
-			"mana_cost": "{W}",
+			"mana_cost": "{1}{W}",
 			"type": "Instant",
 			"collector_number": "34",
 			"image_uris": {
@@ -2193,6 +2193,16 @@
 			"collector_number": "50",
 			"image_uris": {
 				"en": "https://MattAuraWarrior/sets/IWH-files/img/50_Cultist of the Drowntide.png"
+			}
+		},
+		{
+			"name": "Scourge of Drunau Port",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Spirit",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/77_Scourge of Drunau Port.png"
 			}
 		},
 		{
@@ -2280,9 +2290,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Spirit",
-			"collector_number": "78",
+			"collector_number": "79",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/78_Spectral Insurgent.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/79_Spectral Insurgent.png"
 			}
 		},
 		{
@@ -2290,9 +2300,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
 			"type": "Creature — Spirit",
-			"collector_number": "86",
+			"collector_number": "87",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/86_Unwelcome Host.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/87_Unwelcome Host.png"
 			}
 		},
 		{
@@ -2300,9 +2310,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{5}{B}",
 			"type": "Sorcery",
-			"collector_number": "114",
+			"collector_number": "115",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/114_It's Alive!.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/115_It's Alive!.png"
 			}
 		},
 		{
@@ -2310,9 +2320,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Human Scientist",
-			"collector_number": "89",
+			"collector_number": "90",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/89_Ambitious Necrologist.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/90_Ambitious Necrologist.png"
 			}
 		},
 		{
@@ -2320,9 +2330,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
 			"type": "Sorcery",
-			"collector_number": "91",
+			"collector_number": "92",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/91_Anje's Thirst.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/92_Anje's Thirst.png"
 			}
 		},
 		{
@@ -2330,9 +2340,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Bat",
-			"collector_number": "94",
+			"collector_number": "95",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/94_Bloodsire's Herald.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/95_Bloodsire's Herald.png"
 			}
 		},
 		{
@@ -2340,9 +2350,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Enchantment — Aura Curse",
-			"collector_number": "100",
+			"collector_number": "101",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/100_Curse of Profane Offerings.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/101_Curse of Profane Offerings.png"
 			}
 		},
 		{
@@ -2350,9 +2360,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Human Warlock",
-			"collector_number": "102",
+			"collector_number": "103",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/102_Darkthicket Hermit.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/103_Darkthicket Hermit.png"
 			}
 		},
 		{
@@ -2360,19 +2370,19 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Instant",
-			"collector_number": "104",
+			"collector_number": "105",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/104_Dirge of the Drowned.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/105_Dirge of the Drowned.png"
 			}
 		},
 		{
 			"name": "Farbog Invocation",
 			"rarity": "uncommon",
-			"mana_cost": "{B}",
+			"mana_cost": "{1}{B}",
 			"type": "Sorcery",
-			"collector_number": "106",
+			"collector_number": "107",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/106_Farbog Invocation.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/107_Farbog Invocation.png"
 			}
 		},
 		{
@@ -2380,9 +2390,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Human Rogue Scientist",
-			"collector_number": "112",
+			"collector_number": "113",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/112_Illicit Mortician.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/113_Illicit Mortician.png"
 			}
 		},
 		{
@@ -2390,9 +2400,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
 			"type": "Creature — Vampire Warlock",
-			"collector_number": "121",
+			"collector_number": "122",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/121_Ravenous Attendant.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/122_Ravenous Attendant.png"
 			}
 		},
 		{
@@ -2400,9 +2410,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Fungus Horror",
-			"collector_number": "125",
+			"collector_number": "126",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/125_Shambling Rotcap.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/126_Shambling Rotcap.png"
 			}
 		},
 		{
@@ -2410,16 +2420,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
 			"type": "Artifact — Vehicle",
-			"collector_number": "129",
+			"collector_number": "130",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/129_Suspicious Carriage_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/130_Suspicious Carriage_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/129_Suspicious Carriage_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/130_Suspicious Carriage_front.png"
 			}
 		},
 		{
@@ -2427,9 +2437,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{B}",
 			"type": "Creature — Vampire Noble",
-			"collector_number": "131",
+			"collector_number": "132",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/131_Voldaren Magister.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/132_Voldaren Magister.png"
 			}
 		},
 		{
@@ -2437,9 +2447,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Devil",
-			"collector_number": "134",
+			"collector_number": "135",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/134_Ashmouth Intruders.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/135_Ashmouth Intruders.png"
 			}
 		},
 		{
@@ -2447,9 +2457,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
 			"type": "Sorcery",
-			"collector_number": "136",
+			"collector_number": "137",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/136_Bleeding Tithe.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/137_Bleeding Tithe.png"
 			}
 		},
 		{
@@ -2457,16 +2467,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Human Berserker Werewolf",
-			"collector_number": "137",
+			"collector_number": "138",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/137_Bloodspill Ruffian_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/138_Bloodspill Ruffian_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/137_Bloodspill Ruffian_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/138_Bloodspill Ruffian_front.png"
 			}
 		},
 		{
@@ -2474,9 +2484,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
-			"collector_number": "140",
+			"collector_number": "141",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/140_Claret Ascendance.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/141_Claret Ascendance.png"
 			}
 		},
 		{
@@ -2484,9 +2494,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
 			"type": "Enchantment — Aura Curse",
-			"collector_number": "144",
+			"collector_number": "145",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/144_Curse of Devilish Ire.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/145_Curse of Devilish Ire.png"
 			}
 		},
 		{
@@ -2494,9 +2504,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Elemental Wolf",
-			"collector_number": "146",
+			"collector_number": "147",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/146_Devil's Breach Prowler.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/147_Devil's Breach Prowler.png"
 			}
 		},
 		{
@@ -2504,9 +2514,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
 			"type": "Enchantment",
-			"collector_number": "149",
+			"collector_number": "150",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/149_Feasting Ceremony.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/150_Feasting Ceremony.png"
 			}
 		},
 		{
@@ -2514,16 +2524,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Citizen Werewolf",
-			"collector_number": "153",
+			"collector_number": "154",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/153_Gatstaf Butcher_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/154_Gatstaf Butcher_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/153_Gatstaf Butcher_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/154_Gatstaf Butcher_front.png"
 			}
 		},
 		{
@@ -2531,9 +2541,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Vampire Rogue",
-			"collector_number": "159",
+			"collector_number": "160",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/159_Haughty Connoisseur.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/160_Haughty Connoisseur.png"
 			}
 		},
 		{
@@ -2541,16 +2551,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Human Rogue Werewolf",
-			"collector_number": "163",
+			"collector_number": "164",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/163_Hinterland Bandits_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/164_Hinterland Bandits_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/163_Hinterland Bandits_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/164_Hinterland Bandits_front.png"
 			}
 		},
 		{
@@ -2558,9 +2568,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
 			"type": "Creature — Wolf",
-			"collector_number": "165",
+			"collector_number": "166",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/165_Nightpack Alpha.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/166_Nightpack Alpha.png"
 			}
 		},
 		{
@@ -2568,9 +2578,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Vampire Wizard",
-			"collector_number": "170",
+			"collector_number": "171",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/170_Sanguinary Hexcaster.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/171_Sanguinary Hexcaster.png"
 			}
 		},
 		{
@@ -2578,9 +2588,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Soldier",
-			"collector_number": "171",
+			"collector_number": "172",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/171_Silverflame Cathar.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/172_Silverflame Cathar.png"
 			}
 		},
 		{
@@ -2588,9 +2598,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{G}",
 			"type": "Creature — Human Warlock Druid",
-			"collector_number": "185",
+			"collector_number": "186",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/185_Dawnhart Shepherd.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/186_Dawnhart Shepherd.png"
 			}
 		},
 		{
@@ -2598,9 +2608,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Wolf",
-			"collector_number": "181",
+			"collector_number": "182",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/181_Chainbreaker Alpha.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/182_Chainbreaker Alpha.png"
 			}
 		},
 		{
@@ -2608,16 +2618,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "182",
+			"collector_number": "183",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/182_Consuming Grounds_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/183_Consuming Grounds_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/182_Consuming Grounds_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/183_Consuming Grounds_front.png"
 			}
 		},
 		{
@@ -2625,9 +2635,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
-			"collector_number": "186",
+			"collector_number": "187",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/186_Descent of the Fog.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/187_Descent of the Fog.png"
 			}
 		},
 		{
@@ -2635,9 +2645,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Wolf",
-			"collector_number": "177",
+			"collector_number": "178",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/177_Arlinn's Kindred.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/178_Arlinn's Kindred.png"
 			}
 		},
 		{
@@ -2645,9 +2655,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Human Warrior",
-			"collector_number": "194",
+			"collector_number": "195",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/194_Hamlet Guardians.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/195_Hamlet Guardians.png"
 			}
 		},
 		{
@@ -2655,16 +2665,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{G}",
 			"type": "Creature — Human Scout Werewolf",
-			"collector_number": "199",
+			"collector_number": "200",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/199_Kessig Pathkeeper_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/200_Kessig Pathkeeper_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/199_Kessig Pathkeeper_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/200_Kessig Pathkeeper_front.png"
 			}
 		},
 		{
@@ -2672,16 +2682,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
 			"type": "Creature — Human Druid Werewolf",
-			"collector_number": "205",
+			"collector_number": "206",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/205_Secluded Recluse_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/206_Secluded Recluse_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/205_Secluded Recluse_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/206_Secluded Recluse_front.png"
 			}
 		},
 		{
@@ -2689,9 +2699,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Fungus Frog",
-			"collector_number": "208",
+			"collector_number": "209",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/208_Sporecyst Toad.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/209_Sporecyst Toad.png"
 			}
 		},
 		{
@@ -2699,9 +2709,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
 			"type": "Sorcery",
-			"collector_number": "210",
+			"collector_number": "211",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/210_Tovolar's Ambush.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/211_Tovolar's Ambush.png"
 			}
 		},
 		{
@@ -2709,16 +2719,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Peasant Werewolf",
-			"collector_number": "215",
+			"collector_number": "216",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/215_Wald-Cottage Crone_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/216_Wald-Cottage Crone_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/215_Wald-Cottage Crone_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/216_Wald-Cottage Crone_front.png"
 			}
 		},
 		{
@@ -2726,9 +2736,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}",
 			"type": "Instant",
-			"collector_number": "219",
+			"collector_number": "220",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/219_Addled Psyche.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/220_Addled Psyche.png"
 			}
 		},
 		{
@@ -2736,9 +2746,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
 			"type": "Enchantment — Aura",
-			"collector_number": "220",
+			"collector_number": "221",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/220_Avacyn's Legacy.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/221_Avacyn's Legacy.png"
 			}
 		},
 		{
@@ -2746,9 +2756,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{B}{R}",
 			"type": "Creature — Vampire Noble",
-			"collector_number": "228",
+			"collector_number": "229",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/228_Envoy of the Red Court.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/229_Envoy of the Red Court.png"
 			}
 		},
 		{
@@ -2756,16 +2766,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{G}",
 			"type": "Creature — Human Shaman Werewolf",
-			"collector_number": "229",
+			"collector_number": "230",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://MattAuraWarrior/sets/IWH-files/img/229_Fangrite Mistress_back.png"
+					"en": "https://MattAuraWarrior/sets/IWH-files/img/230_Fangrite Mistress_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/229_Fangrite Mistress_front.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/230_Fangrite Mistress_front.png"
 			}
 		},
 		{
@@ -2773,9 +2783,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
 			"type": "Creature — Human Citizen",
-			"collector_number": "233",
+			"collector_number": "234",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/233_Grizzled Ironwright.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/234_Grizzled Ironwright.png"
 			}
 		},
 		{
@@ -2783,9 +2793,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{W}{U}",
 			"type": "Creature — Spirit Cleric",
-			"collector_number": "234",
+			"collector_number": "235",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/234_Guide of Faith.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/235_Guide of Faith.png"
 			}
 		},
 		{
@@ -2793,9 +2803,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{G}",
 			"type": "Enchantment — Aura",
-			"collector_number": "239",
+			"collector_number": "240",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/239_Moonlit Revelry.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/240_Moonlit Revelry.png"
 			}
 		},
 		{
@@ -2803,9 +2813,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{X}{R}{W}",
 			"type": "Sorcery",
-			"collector_number": "244",
+			"collector_number": "245",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/244_Rally to Thraben.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/245_Rally to Thraben.png"
 			}
 		},
 		{
@@ -2813,9 +2823,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Enchantment",
-			"collector_number": "245",
+			"collector_number": "246",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/245_Riding the Geistroads.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/246_Riding the Geistroads.png"
 			}
 		},
 		{
@@ -2823,9 +2833,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{R}",
 			"type": "Instant",
-			"collector_number": "246",
+			"collector_number": "247",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/246_Sanguine Sacrament.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/247_Sanguine Sacrament.png"
 			}
 		},
 		{
@@ -2833,9 +2843,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{B}",
 			"type": "Creature — Zombie",
-			"collector_number": "249",
+			"collector_number": "250",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/249_Stonegraf Awakener.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/250_Stonegraf Awakener.png"
 			}
 		},
 		{
@@ -2843,9 +2853,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{G}{U}",
 			"type": "Instant",
-			"collector_number": "250",
+			"collector_number": "251",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/250_Teeming Secrets.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/251_Teeming Secrets.png"
 			}
 		},
 		{
@@ -2853,9 +2863,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{G}",
 			"type": "Creature — Ooze",
-			"collector_number": "253",
+			"collector_number": "254",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/253_Townblight Ooze.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/254_Townblight Ooze.png"
 			}
 		},
 		{
@@ -2863,9 +2873,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{U}{R}",
 			"type": "Instant",
-			"collector_number": "255",
+			"collector_number": "256",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/255_Unstable Experimentation.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/256_Unstable Experimentation.png"
 			}
 		},
 		{
@@ -2873,9 +2883,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}",
 			"type": "Creature — Human Cleric",
-			"collector_number": "256",
+			"collector_number": "257",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/256_Westvale Adherant.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/257_Westvale Adherant.png"
 			}
 		},
 		{
@@ -2883,9 +2893,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}",
 			"type": "Artifact",
-			"collector_number": "259",
+			"collector_number": "260",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/259_Fleshwrithe Apparatus.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/260_Fleshwrithe Apparatus.png"
 			}
 		},
 		{
@@ -2893,9 +2903,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}",
 			"type": "Artifact",
-			"collector_number": "260",
+			"collector_number": "261",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/260_Harvesttide Effigies.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/261_Harvesttide Effigies.png"
 			}
 		},
 		{
@@ -2903,9 +2913,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{4}",
 			"type": "Artifact Creature — Construct Spirit",
-			"collector_number": "261",
+			"collector_number": "262",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/261_Tarnished Swordsuit.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/262_Tarnished Swordsuit.png"
 			}
 		},
 		{
@@ -2913,9 +2923,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}",
 			"type": "Artifact — Equipment",
-			"collector_number": "262",
+			"collector_number": "263",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/262_Thirsting Dagger.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/263_Thirsting Dagger.png"
 			}
 		},
 		{
@@ -2923,9 +2933,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}",
 			"type": "Artifact",
-			"collector_number": "263",
+			"collector_number": "264",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/263_Wolf-Fang Talisman.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/264_Wolf-Fang Talisman.png"
 			}
 		},
 		{
@@ -2933,9 +2943,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "264",
+			"collector_number": "265",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/264_Abandoned Memorial.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/265_Abandoned Memorial.png"
 			}
 		},
 		{
@@ -2943,9 +2953,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "270",
+			"collector_number": "271",
 			"image_uris": {
-				"en": "https://MattAuraWarrior/sets/IWH-files/img/270_Secluded Courtyard.png"
+				"en": "https://MattAuraWarrior/sets/IWH-files/img/271_Secluded Courtyard.png"
 			}
 		}
 	]
@@ -3063,6 +3073,7 @@
 	5 Ritual Preparations
 	5 Saintly Embrace
 	5 Cultist of the Drowntide
+	5 Scourge of Drunau Port
 	5 Curse of Insidious Thoughts
 	5 Drogskol Duelist
 	5 Grand Necrotect
