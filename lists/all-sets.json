@@ -1,11 +1,6 @@
 ﻿{
     "sets": [
         {
-            "set_code": "IWH",
-            "set_name": "Innistrad: Witching Hour",
-            "formats": ""
-        },
-        {
             "set_code": "TPW",
             "set_name": "The Petals Wilt",
             "formats": ""
