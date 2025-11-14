@@ -1,4 +1,342 @@
-﻿VERSION 5 CHANGELOG
+﻿VERSION 6 CHANGELOG
+====================
+
+Guardian's Charm added.
+Moldgraf Stewards added.
+Nearheath Disciples added.
+Ashiok's Intrusion added.
+Distilled Essence added.
+Lingering Presence added.
+Looming Serpent added.
+Nebelghast Retainer added.
+Play on Their Fears added.
+Selhoff Conduit added.
+Bounty of Trostad added.
+Deadly Invitation added.
+Shadowgrange Tormenter added.
+Sorin, Errant Bloodlord added.
+Sorin's Interrogation added.
+Warped Mind added.
+Cackling Igniter added.
+Calamitous Parade added.
+Hanweir Sentries added.
+Lunarblind Packmaster added.
+Boughbreak Lumberknot added.
+Lambholt Hunting Grounds added.
+Backroads Incursion added.
+Getander Wildlander added.
+In the Face of Darkness added.
+Relentless Dire Swine added.
+Ulrich's Proclamation added.
+Insatiable Elder added.
+Westvale Adherent added.
+Unmarked Headstones added.
+Drowned Homestead added.
+
+Sorin, Forsaken Bloodlord removed.
+Thalia's Charm removed.
+Drogskol Retainer removed.
+Insaitiable Elder removed.
+Westvale Adherant removed.
+Moorhaunt Disciples removed.
+Distill Essence removed.
+Looming Presence removed.
+Bounty of the Dead removed.
+Sorin's Yearning removed.
+Cackling Pyromaniac removed.
+Guardpost Sentries removed.
+Backroads Intrusion removed.
+Tovolar's Proclamation removed.
+
+Bewitching Hagmother
+
+Beyond Comprehension
+
+Bleachbark Dryad
+
+Cathar's Charm
+rules_text: Choose one —
+• Cathar's Charm deals 2 damage to target attacking or blocking creature.
+• Exile target card from a graveyard. Draw a card.
+• Destroy target enchantment. => Choose one —
+• Cathar's Charm deals 2 damage to target attacking or blocking creature.
+• Exile target card from a graveyard. Draw a card.
+• Destroy target enchantment with mana value 3 or less.
+
+Chapel Soulguide
+
+Curse of Eerie Streets
+rules_text: Enchant player
+Whenever enchanted player casts their first noncreature spell each turn, that player may pay {2}. If they don't, each of that player's opponents draws a card and gains 2 life. => Enchant player
+Whenever enchanted player casts their first noncreature spell each turn, that player may pay {2}. If they don't, each of that player's opponents draws a card and creates a 1/1 white Spirit creature token with flying.
+
+Dawnsmite Cavalier
+pt: 3/1 => 3/2
+
+Gavony Trapper
+
+Geist Marshal
+pt: 2/1 => 1/1
+
+Haunted Doll
+
+Inciting Gossip
+
+Katilda's Dawning Rites
+
+Moonrapture
+
+Mournwraith
+
+Parish Slayer
+
+Practiced Occultist
+
+Restoring Presence
+rules_text: Exile up to X target creatures you control. Return the exiled cards to the battlefield under their owners' control at the beginning of the next end step.
+{3}{W}, Exile this card from your graveyard: Create a 3/4 white Angel creature token with flying. Activate only as a sorcery. => Exile up to X target creatures you control. Return the exiled cards to the battlefield under their owners' control at the beginning of the next end step.
+{3}{W}, Exile this card from your graveyard: Create a tapped 3/4 white Angel creature token with flying.
+
+Sacred Stag
+
+Saint-Blessed Priest
+
+Westvale Cult Induction
+
+Ashiok, Your Worst Fear
+special_text: [+1]: Tap up to one target nonland permanent and put a stun counter on it. It loses all abilities for as long as it has a stun counter on it.
+[-2]: Search your library for an instant, sorcery or Curse card, exile it, then shuffle. Put that card into your hand unless an opponent has you draw two cards.
+[-8]: You get an emblem with “During each opponent's turn, until the end of that player's first main phase, you control that player. When you lose control of that player, they untap each land they control.” => [+1]: Tap up to one target nonland permanent and put a stun counter on it. It loses all abilities for as long as it remains tapped.
+[-2]: Search your library for an instant, sorcery or Curse card, exile it, then shuffle. Put that card into your hand unless an opponent has you draw two cards.
+[-8]: You get an emblem with “During each opponent's turn, until the end of that player's first main phase, you control that player. When you lose control of that player, they untap each land they control.”
+
+Drogskol Duelist
+
+Enthralled Alchemist
+
+Geist Researcher
+
+Havengul Prodigy
+rules_text: When this creature enters, infuse 2. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 2/2 blue Zombie creature token.)[/i]
+Whenever you cast an instant or sorcery spell, you may put a +1/+1 counter on target Zombie you control. => When this creature enters, infuse 2. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 2/2 blue Zombie creature token.)[/i]
+Whenever you cast an instant or sorcery spell, put a +1/+1 counter on target Zombie you control.
+
+Learn the Steps
+rules_text: Mill a card, then exile any number of cards from your graveyard. Counter target spell unless its controller pays {X}, where X is the number of cards exiled this way. => Mill two cards, then exile any number of cards from your graveyard. Counter target spell unless its controller pays {X}, where X is the number of card types among cards exiled this way.
+
+March of the Drowntide
+
+Master Skaabstitcher
+pt: 2/3 => 2/4
+
+Nightfright
+
+Scions of Flesh and Spirit
+
+Scourge of Drunau Port
+cost: {4}{U}{U} => {3}{U}{U}
+rules_text: Flying
+Other Spirits you control get +1/+1.
+{2}{U}, Discard this card: Create two 1/1 white Spirit creature tokens with flying. Surveil 2. => Flying
+Other Spirits you control get +1/+1.
+{2}{U}, Discard this card: Create two 1/1 white Spirit creature tokens with flying. Surveil 2. [i](Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i]
+pt: 4/6 => 4/4
+
+Secrets of the Forbidden
+rules_text: Look at the top X cards of your library, where X is one plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If you look at thirteen or more cards this way, you may put all of those cards into your hand instead.
+Flashback {3}{U} => Look at the top X cards of your library, where X is 1 plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If you look at thirteen or more cards this way, you may put all of those cards into your hand instead.
+Flashback {3}{U}
+
+Storms over Nephalia
+
+Thing from the Deep
+
+Thought Scour
+
+Unwelcome Host
+type: Creature — Spirit => Creature — Spirit Horror
+
+Wailing Apparition
+
+Wretched Experiment
+
+Angel of Fading Dusk
+rules_text: Flying
+When this creature enters, you may sacrifice another creature. If you do, each opponent loses 3 life and you gain 3 life.
+{3}{W}, Exile target creature card with mana value 2 or less from your graveyard: Create tapped token that's a copy of the exiled card. => Flying
+When this creature enters, you may sacrifice another creature. If you do, each opponent loses 3 life and you gain 3 life.
+{2}{W}: Exile target creature card with mana value 2 or less from your graveyard. Create tapped token that's a copy of the exiled card.
+
+Bittersweet Parting
+
+Callous Killer
+
+Gisa's Breakthrough
+
+Greedy Duelist
+
+Hungering Assembly
+
+Mortis Infusion
+
+Voldaren Magister
+
+Witching Hour
+
+Ashmouth Intruders
+
+Ashmouth Wolf
+
+Claret Ascendance
+rules_text: Claret Ascendance deals 3 damage to any target. If a creature dealt damage this way would die this turn, exile it instead.
+{2}{R}, Exile this card from your graveyard: You may have target creature you control gorge. Activate only as a sorcery. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i] => Claret Ascendance deals 3 damage to any target. If a permanent dealt damage this way would die this turn, exile it instead.
+{3}{R}, Exile this card from your graveyard: You may have target creature you control gorge. Activate only as a sorcery. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on that creature and draw a card.)[/i]
+
+Falkenrath Executor
+
+Full-Moon Assault
+type: Instant => Sorcery
+rules_text: Full-Moon Assault deals 2 damage to any target. It deals 3 damage instead if you control a savage creature. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => If you control two or more savage creatures, you may cast this spell as though it had flash. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+Full-Moon Assault deals 3 damage to target creature or planeswalker.
+
+Goremare
+rules_text: Ward—Pay 2 life.
+Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature. It gains menace until end of turn. => Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature. It gains menace until end of turn.
+
+The Goremoon's Call
+
+The Haunting of Silbern
+
+Hedonistic Revelry
+
+Herald of Ashmouth
+
+Moonlight Firemaker
+
+Nightpack Alpha
+
+Repressed Aristocrat
+
+Russetpack Predator
+rules_text: When this creature enters, it deals X damage to each opponent, where X is the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => When this creature enters, it deals damage to each opponent equal to the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+
+Silverflame Cathar
+
+Stormbrewer Alchemist
+
+Wanton Display
+
+Arlinn's Kindred
+rules_text: Flash
+When this creature enters, target Wolf or Werewolf you control gains hexproof until end of turn. You may transform it. => Flash
+When this creature enters, up to one other target Wolf or Werewolf you control gains hexproof until end of turn. You may transform it.
+
+Call of the Ulvenvater
+rules_text: This spell costs {X} less to cast, where X is the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+Search your library for a creature card and/or a land card, reveal them, put them into your hand, then shuffle. => This spell costs {X} less to cast, where X is the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+Look at the top eight cards of your library. You may reveal a creature and/or a land card from among them, put them into your hand, then put the rest on the bottom in a random order.
+
+Curse of the Deep Woods
+
+Dawnhart Familiar
+
+Dawnhart Shepherd
+rules_text: Ward {2}
+[i]Concord — [/i]Whenever this creature enters or attacks, target creature you control gets +2/+2 until end of turn. If there are four or more card types among permanents you control, untap that creature. It gains trample until end of turn. => Ward {2}
+[i]Concord — [/i]Whenever this creature enters or attacks, target creature you control gets +2/+2 until end of turn. If there are four or more card types among permanents you control, untap that creature and it gains trample until end of turn.
+
+Descent of the Fog
+rules_text: Choose one —
+• Choose up to one target creature you control. Prevent all combat damage that would be dealt this turn except by the chosen creature.
+• Exile target creature with flying. => Choose one —
+• Choose up to one target creature you control. Prevent all combat damage that would be dealt this turn except by the chosen creature.
+• Descent of the Fog deals 2 damage to each creature with flying. If a creature dealt damage this way would die this turn, exile it instead.
+
+Devotion to Ghrin-Danu
+rules_text: When Devotion to Ghrin-Danu enters, mill two cards and you gain 2 life. When you do, you may return target land card from your graveyard to the battlefield.
+{3}{G}{G}: Transform Devotion to Ghrin-Danu. Activate only if there are thirteen or more cards in your graveyard and only as a sorcery. => When Devotion to Ghrin-Danu enters, mill two cards and you gain 3 life. When you do, you may return target land card from your graveyard to the battlefield.
+{3}{G}{G}: Transform Devotion to Ghrin-Danu. Activate only if there are thirteen or more cards in your graveyard and only as a sorcery.
+
+Foray into Stensia
+
+Gitrog's Spawn
+
+Harvestwood Effigy
+
+Hope's Trail Pilgrim
+pt: 2/1 => 1/2
+
+Looming Grafspider
+type: Creature — Spider Horror => Creature — Spider
+
+Malignant Entangler
+cost: {2}{G} => {1}{G}{G}
+rules_text: Reach
+When this creature enters, surveil 2. Then if there are seven or more cards in your graveyard, you may pay {1}{B}. If you do, destroy target creature or planeswalker. => Reach, deathtouch
+When this creature enters, surveil 2. Then if there are seven or more cards in your graveyard, you may pay {1}{B}. If you do, destroy target nonland permanent.
+
+Prying Eyedra
+rules_text: Reach, trample
+This creature's power and toughness are each equal to the number of cards in your hand.
+Whenever this creature enters or attacks, you may sacrifice another creature. If you do, You draw X cards and gain X life, where X is the sacrificed creature's power. => Reach, trample
+This creature's power and toughness are each equal to the number of cards in your hand.
+Whenever this creature enters or attacks, you may sacrifice another creature. If you do, You draw X cards and gain X life, where X is the sacrificed creature's toughness.
+
+Rabid Mauling
+
+Secluded Recluse
+
+Somberwald Boar
+
+Sporecyst Toad
+rules_text: Vigilance
+You may play an additional land during each of your turns.
+{3}{U}: Draw a card. => Vigilance
+You may play an additional land during each of your turns.
+{3}{U}: Surveil 1, then draw a card.
+pt: 2/1 => 2/2
+
+Vile Resurgence
+
+Village Bruiser
+
+Addled Psyche
+rules_text: Choose one —
+• Exile target creature with power 2 or less.
+• Exile target spell with mana value 2 or less. => Choose one —
+• Exile target spell with mana value 2 or less.
+• Exile target creature with power 2 or less.
+• Exile target planeswalker with two or fewer loyalty counters on it.
+
+Blood Bank
+rules_text: When this enchantment enters, create a tapped Treasure token.
+Once each turn, if you would sacrifice a creature to pay a cost or an effect you control would cause you to sacrifice a creature, you may sacrifice an artifact or enchantment instead. => When this enchantment enters, create a Blood token. [i](It's an artifact with “{1}, {T}, Discard a card, Sacrifice this artifact: Draw a card.”)[/i]
+Once each turn, if you would sacrifice a creature to pay a cost or an effect you control would cause you to sacrifice a creature, you may sacrifice an artifact or enchantment instead.
+
+Gravespore Guardian
+
+Rally to Thraben
+
+Sanguine Sacrament
+type: Instant => Sorcery
+rules_text: You may have target creature you control gorge. It deals damage equal to its power to up to one target creature or planeswalker you don't control. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i] => You may have target creature you control gorge. When it does, you may destroy target artifact or creature with mana value less than or equal to its power. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i]
+
+Stonegraf Awakener
+
+Teeming Secrets
+
+Unstable Experimentation
+
+Wolf-Fang Talisman
+cost: {3} => {2}
+rules_text: {T}: Add one mana of any color. Spend this mana only to cast creature spells.
+{X}, {T}: Target savage creature you control gets +X/+0 and gains trample until end of turn. Activate only as a sorcery. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => {T}: Add {C}. Spend this mana only to cast creature spells.
+{X}, {T}: Target savage creature you control gets +X/+0 and gains trample until end of turn. Activate only as a sorcery. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+
+Evolving Wilds
+
+
+VERSION 5 CHANGELOG
 ====================
 
 Tinua, of Whispered Pains added.

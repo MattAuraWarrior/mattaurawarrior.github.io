@@ -1,7 +1,7 @@
 ﻿{
     "name": "Innistrad: Witching Hour",
     "formats": "",
-    "trimmed": "y",
+    "trimmed": "n",
     "image_type": "png",
     "draft_structure": "play booster",
     "cards": [
@@ -5703,6 +5703,5 @@
             "artist": "Vincent Proce",
             "notes": ""
         }
-    ],
-    "version": 6
+    ]
 }
