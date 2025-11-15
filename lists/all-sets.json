@@ -1,6 +1,11 @@
 ﻿{
     "sets": [
         {
+            "set_code": "DRT",
+            "set_name": "",
+            "formats": ""
+        },
+        {
             "set_code": "IWH",
             "set_name": "Innistrad: Witching Hour",
             "formats": ""

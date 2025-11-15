@@ -1,0 +1,3931 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Dragonstorm Harbinger",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Creature — Spirit Monk",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/1_Dragonstorm Harbinger.png"
+			}
+		},
+		{
+			"name": "Ghostfire Practitioner",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Creature — Spirit Monk",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/2_Ghostfire Practitioner.png"
+			}
+		},
+		{
+			"name": "Ugin's Guardian",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Creature — Dragon Spirit",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/3_Ugin's Guardian.png"
+			}
+		},
+		{
+			"name": "Alabaster Cloudhoof",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Kirin",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/4_Alabaster Cloudhoof.png"
+			}
+		},
+		{
+			"name": "Amirah the Heartpiercer",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Creature — Human Warrior",
+			"collector_number": "5",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://MattAuraWarrior/sets/DRT-files/img/5_Amirah the Heartpiercer_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/5_Amirah the Heartpiercer_front.png"
+			}
+		},
+		{
+			"name": "Arashin Sentinels",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Dog Soldier",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/6_Arashin Sentinels.png"
+			}
+		},
+		{
+			"name": "Armored Elephant",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Elephant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/7_Armored Elephant.png"
+			}
+		},
+		{
+			"name": "Battlefield Glory",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/8_Battlefield Glory.png"
+			}
+		},
+		{
+			"name": "Breakneck Charge",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/9_Breakneck Charge.png"
+			}
+		},
+		{
+			"name": "By Anafenza's Will",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Instant",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/10_By Anafenza's Will.png"
+			}
+		},
+		{
+			"name": "Disciple of the First Tree",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Cleric",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/11_Disciple of the First Tree.png"
+			}
+		},
+		{
+			"name": "Dragon's Eye Disciples",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/12_Dragon's Eye Disciples.png"
+			}
+		},
+		{
+			"name": "Dromoka Battlemaster",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/13_Dromoka Battlemaster.png"
+			}
+		},
+		{
+			"name": "Dromoka Trailscout",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Scout",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/14_Dromoka Trailscout.png"
+			}
+		},
+		{
+			"name": "Fist of the Dragonlord",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/15_Fist of the Dragonlord.png"
+			}
+		},
+		{
+			"name": "Glory of the Mardu",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/16_Glory of the Mardu.png"
+			}
+		},
+		{
+			"name": "Humbling Skywise",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Dragon",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/17_Humbling Skywise.png"
+			}
+		},
+		{
+			"name": "Leave for the Dunes",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/18_Leave for the Dunes.png"
+			}
+		},
+		{
+			"name": "Loyal Hordemate",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/19_Loyal Hordemate.png"
+			}
+		},
+		{
+			"name": "Monastery Master",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/20_Monastery Master.png"
+			}
+		},
+		{
+			"name": "Orator of Winds",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Bird Monk",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/21_Orator of Winds.png"
+			}
+		},
+		{
+			"name": "Salt Road Dragonrider",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/22_Salt Road Dragonrider.png"
+			}
+		},
+		{
+			"name": "Sandbind",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/23_Sandbind.png"
+			}
+		},
+		{
+			"name": "Scaleclad Stalwart",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/24_Scaleclad Stalwart.png"
+			}
+		},
+		{
+			"name": "Scalelord Guardian",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Dragon",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/25_Scalelord Guardian.png"
+			}
+		},
+		{
+			"name": "Scouring Sandcrafter",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Hound Wizard",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/26_Scouring Sandcrafter.png"
+			}
+		},
+		{
+			"name": "Separ, Bulwark of Arashin",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Legendary Creature — Bird Soldier",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/27_Separ, Bulwark of Arashin.png"
+			}
+		},
+		{
+			"name": "Siege of the Scale",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/28_Siege of the Scale.png"
+			}
+		},
+		{
+			"name": "Skywise Reinforcements",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Instant",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/29_Skywise Reinforcements.png"
+			}
+		},
+		{
+			"name": "Teacher of New Generations",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/30_Teacher of New Generations.png"
+			}
+		},
+		{
+			"name": "Whirlkick Exemplar",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/32_Whirlkick Exemplar.png"
+			}
+		},
+		{
+			"name": "Zealous Hordechief",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/33_Zealous Hordechief.png"
+			}
+		},
+		{
+			"name": "Arel's Wing-Seer",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Bird",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/34_Arel's Wing-Seer.png"
+			}
+		},
+		{
+			"name": "Arel's Wisdom",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/35_Arel's Wisdom.png"
+			}
+		},
+		{
+			"name": "Call of the Dragonstorms",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/36_Call of the Dragonstorms.png"
+			}
+		},
+		{
+			"name": "Communer of Qal Sisma",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/37_Communer of Qal Sisma.png"
+			}
+		},
+		{
+			"name": "Dirgur Deepcoiler",
+			"rarity": "common",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Serpent",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/38_Dirgur Deepcoiler.png"
+			}
+		},
+		{
+			"name": "Domineering Regent",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Creature — Dragon",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/39_Domineering Regent.png"
+			}
+		},
+		{
+			"name": "Glacial Pummeler",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Elemental",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/40_Glacial Pummeler.png"
+			}
+		},
+		{
+			"name": "Interceptor Initiate",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Bird Soldier",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/41_Interceptor Initiate.png"
+			}
+		},
+		{
+			"name": "Invoke the Wide Whisper",
+			"rarity": "uncommon",
+			"mana_cost": "{6}{U}",
+			"type": "Instant",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/42_Invoke the Wide Whisper.png"
+			}
+		},
+		{
+			"name": "Kadena's Banisher",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{U}",
+			"type": "Creature — Naga Wizard",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/43_Kadena's Banisher.png"
+			}
+		},
+		{
+			"name": "Lead Astray",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Instant",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/44_Lead Astray.png"
+			}
+		},
+		{
+			"name": "Loremaster of Inner Secrets",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/45_Loremaster of Inner Secrets.png"
+			}
+		},
+		{
+			"name": "Lost in Time",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/46_Lost in Time.png"
+			}
+		},
+		{
+			"name": "Majestic Breezedancer",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Dragon",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/47_Majestic Breezedancer.png"
+			}
+		},
+		{
+			"name": "Mindflitter Monk",
+			"rarity": "mythic",
+			"mana_cost": "{X}{X}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/48_Mindflitter Monk.png"
+			}
+		},
+		{
+			"name": "Minister's Machinations",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/49_Minister's Machinations.png"
+			}
+		},
+		{
+			"name": "Mistfire Elder",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/50_Mistfire Elder.png"
+			}
+		},
+		{
+			"name": "Narset's Assistance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/51_Narset's Assistance.png"
+			}
+		},
+		{
+			"name": "Ojutai Featherblade",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Bird Monk",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/52_Ojutai Featherblade.png"
+			}
+		},
+		{
+			"name": "Ojutai Mistweaver",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/53_Ojutai Mistweaver.png"
+			}
+		},
+		{
+			"name": "Pearl Lake Dragonrider",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/54_Pearl Lake Dragonrider.png"
+			}
+		},
+		{
+			"name": "Rakshasa's Scorn",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/55_Rakshasa's Scorn.png"
+			}
+		},
+		{
+			"name": "Sage of the Inner Sanctum",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/56_Sage of the Inner Sanctum.png"
+			}
+		},
+		{
+			"name": "Siege of the Eye",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/57_Siege of the Eye.png"
+			}
+		},
+		{
+			"name": "Silencer's Strike",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/58_Silencer's Strike.png"
+			}
+		},
+		{
+			"name": "Silumgar Debilitator",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Naga Wizard",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/59_Silumgar Debilitator.png"
+			}
+		},
+		{
+			"name": "Sirmi, Frozen Sage",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Human Shaman",
+			"collector_number": "60",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://MattAuraWarrior/sets/DRT-files/img/60_Sirmi, Frozen Sage_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/60_Sirmi, Frozen Sage_front.png"
+			}
+		},
+		{
+			"name": "Temporal Wanderer",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Djinn Wizard",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/61_Temporal Wanderer.png"
+			}
+		},
+		{
+			"name": "Through the Marang",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/62_Through the Marang.png"
+			}
+		},
+		{
+			"name": "Unleash the Archives",
+			"rarity": "mythic",
+			"mana_cost": "{5}{U}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/63_Unleash the Archives.png"
+			}
+		},
+		{
+			"name": "Vulturous Cunning",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/64_Vulturous Cunning.png"
+			}
+		},
+		{
+			"name": "Anafenza's Ancestor",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Spirit Warrior",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/65_Anafenza's Ancestor.png"
+			}
+		},
+		{
+			"name": "Blood-Chin Cannibals",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Orc Warrior",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/66_Blood-Chin Cannibals.png"
+			}
+		},
+		{
+			"name": "Blood-Chin Enforcer",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Orc Warrior",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/67_Blood-Chin Enforcer.png"
+			}
+		},
+		{
+			"name": "Blood-Chin Ripper",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Orc Berserker",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/68_Blood-Chin Ripper.png"
+			}
+		},
+		{
+			"name": "Blood-Trophy Marauder",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/69_Blood-Trophy Marauder.png"
+			}
+		},
+		{
+			"name": "Boltwing Predator",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Dragon",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/70_Boltwing Predator.png"
+			}
+		},
+		{
+			"name": "Conniving Deathfang",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Dragon",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/71_Conniving Deathfang.png"
+			}
+		},
+		{
+			"name": "Corpsedrove",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/72_Corpsedrove.png"
+			}
+		},
+		{
+			"name": "Demon of Darkest Depths",
+			"rarity": "mythic",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Creature — Demon",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/73_Demon of Darkest Depths.png"
+			}
+		},
+		{
+			"name": "Devouring Thunder",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Instant",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/74_Devouring Thunder.png"
+			}
+		},
+		{
+			"name": "Dragonlord's Demise",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/75_Dragonlord's Demise.png"
+			}
+		},
+		{
+			"name": "Elder of Withered Branches",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spirit Cleric",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/76_Elder of Withered Branches.png"
+			}
+		},
+		{
+			"name": "Gravecaller's Will",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/77_Gravecaller's Will.png"
+			}
+		},
+		{
+			"name": "Guardian of the Kin-Trees",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/78_Guardian of the Kin-Trees.png"
+			}
+		},
+		{
+			"name": "Gurmag Dragonrider",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/79_Gurmag Dragonrider.png"
+			}
+		},
+		{
+			"name": "Hewn-Wood Retribution",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/80_Hewn-Wood Retribution.png"
+			}
+		},
+		{
+			"name": "Kolaghan Smokeweaver",
+			"rarity": "common",
+			"mana_cost": "{5}{B}",
+			"type": "Creature — Orc Shaman",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/81_Kolaghan Smokeweaver.png"
+			}
+		},
+		{
+			"name": "Lust for Flesh",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/82_Lust for Flesh.png"
+			}
+		},
+		{
+			"name": "Necromaster's Attendant",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/83_Necromaster's Attendant.png"
+			}
+		},
+		{
+			"name": "Pillage the Aeries",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/84_Pillage the Aeries.png"
+			}
+		},
+		{
+			"name": "Retribution of the Horde",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/85_Retribution of the Horde.png"
+			}
+		},
+		{
+			"name": "Ride Again",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/86_Ride Again.png"
+			}
+		},
+		{
+			"name": "Risen Warshrieker",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie Orc Shaman",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/87_Risen Warshrieker.png"
+			}
+		},
+		{
+			"name": "Rotting Imp",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Zombie Imp",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/88_Rotting Imp.png"
+			}
+		},
+		{
+			"name": "Siege of the Fang",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/89_Siege of the Fang.png"
+			}
+		},
+		{
+			"name": "Silumgar Sluice-Stalker",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/90_Silumgar Sluice-Stalker.png"
+			}
+		},
+		{
+			"name": "Silumgar Soulslasher",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Assassin",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/91_Silumgar Soulslasher.png"
+			}
+		},
+		{
+			"name": "Trials of the Past",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/93_Trials of the Past.png"
+			}
+		},
+		{
+			"name": "Vizier's Scheming",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/94_Vizier's Scheming.png"
+			}
+		},
+		{
+			"name": "Zahmur, Krumar Outcast",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Legendary Creature — Orc Warrior",
+			"collector_number": "95",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://MattAuraWarrior/sets/DRT-files/img/95_Zahmur, Krumar Outcast_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/95_Zahmur, Krumar Outcast_front.png"
+			}
+		},
+		{
+			"name": "Ancient Mantis",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Insect",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/96_Ancient Mantis.png"
+			}
+		},
+		{
+			"name": "Ashes of Truth",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/97_Ashes of Truth.png"
+			}
+		},
+		{
+			"name": "Atarka Battle Rage",
+			"rarity": "rare",
+			"mana_cost": "{X}{R}{R}",
+			"type": "Instant",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/98_Atarka Battle Rage.png"
+			}
+		},
+		{
+			"name": "Atarka's Toothpicker",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Goblin Scout",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/99_Atarka's Toothpicker.png"
+			}
+		},
+		{
+			"name": "Blazing Wanderlust",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/100_Blazing Wanderlust.png"
+			}
+		},
+		{
+			"name": "Blood-Chin Pillager",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Berserker",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/101_Blood-Chin Pillager.png"
+			}
+		},
+		{
+			"name": "Bloodfire Ascendant",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Efreet Monk",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/102_Bloodfire Ascendant.png"
+			}
+		},
+		{
+			"name": "Canyon Marauder",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Orc Warrior",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/103_Canyon Marauder.png"
+			}
+		},
+		{
+			"name": "Close Connection",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/104_Close Connection.png"
+			}
+		},
+		{
+			"name": "Crackling Swoop",
+			"rarity": "common",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/105_Crackling Swoop.png"
+			}
+		},
+		{
+			"name": "Crushing Blow",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/106_Crushing Blow.png"
+			}
+		},
+		{
+			"name": "Dragon's Bowl Igniter",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/107_Dragon's Bowl Igniter.png"
+			}
+		},
+		{
+			"name": "Dragonspeaker's Call",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/108_Dragonspeaker's Call.png"
+			}
+		},
+		{
+			"name": "Flamerush Fusillade",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Enchantment",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/109_Flamerush Fusillade.png"
+			}
+		},
+		{
+			"name": "Flamespew",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/110_Flamespew.png"
+			}
+		},
+		{
+			"name": "Gorefeaster",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Creature — Orc Berserker",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/111_Gorefeaster.png"
+			}
+		},
+		{
+			"name": "Herdchaser Whelp",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/112_Herdchaser Whelp.png"
+			}
+		},
+		{
+			"name": "Knuckleblade Mob-Caller",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Creature — Ogre Warrior",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/113_Knuckleblade Mob-Caller.png"
+			}
+		},
+		{
+			"name": "Kolaghan Fireslinger",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Goblin Shaman",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/114_Kolaghan Fireslinger.png"
+			}
+		},
+		{
+			"name": "Kolaghan Heelcutter",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Goblin Warrior",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/115_Kolaghan Heelcutter.png"
+			}
+		},
+		{
+			"name": "Lost Hordemate",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Wolf",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/116_Lost Hordemate.png"
+			}
+		},
+		{
+			"name": "Maisham, Firebrand",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Efreet Monk",
+			"collector_number": "117",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://MattAuraWarrior/sets/DRT-files/img/117_Maisham, Firebrand_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/117_Maisham, Firebrand_front.png"
+			}
+		},
+		{
+			"name": "Qal Sisma Berserker",
+			"rarity": "common",
+			"mana_cost": "{5}{R}",
+			"type": "Creature — Human Berserker",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/118_Qal Sisma Berserker.png"
+			}
+		},
+		{
+			"name": "Sarkhan, Savior of Tarkir",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Legendary Planeswalker — Sarkhan",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/119_Sarkhan, Savior of Tarkir.png"
+			}
+		},
+		{
+			"name": "Scale-Piercer Hordechief",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Archer",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/120_Scale-Piercer Hordechief.png"
+			}
+		},
+		{
+			"name": "Scorchbellow Warbrute",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Ogre Shaman",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/121_Scorchbellow Warbrute.png"
+			}
+		},
+		{
+			"name": "Screamreach Dragonrider",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/122_Screamreach Dragonrider.png"
+			}
+		},
+		{
+			"name": "Siege of the Wing",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/123_Siege of the Wing.png"
+			}
+		},
+		{
+			"name": "Stormwing Onslaught",
+			"rarity": "mythic",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/124_Stormwing Onslaught.png"
+			}
+		},
+		{
+			"name": "Thunderous Warcaller",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/125_Thunderous Warcaller.png"
+			}
+		},
+		{
+			"name": "Thundersculpt Warkite",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/126_Thundersculpt Warkite.png"
+			}
+		},
+		{
+			"name": "Aerie Conquerors",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/127_Aerie Conquerors.png"
+			}
+		},
+		{
+			"name": "Ainok Flamebearer",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Dog Shaman",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/128_Ainok Flamebearer.png"
+			}
+		},
+		{
+			"name": "Ainok Hunt-Mate",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Dog Warrior",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/129_Ainok Hunt-Mate.png"
+			}
+		},
+		{
+			"name": "Arashin Nestwarden",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/130_Arashin Nestwarden.png"
+			}
+		},
+		{
+			"name": "Atarka Cinderhoof",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Elk",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/131_Atarka Cinderhoof.png"
+			}
+		},
+		{
+			"name": "Barkclad Elder",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Dog Shaman",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/132_Barkclad Elder.png"
+			}
+		},
+		{
+			"name": "Bolstering Shieldhide",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Dragon",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/133_Bolstering Shieldhide.png"
+			}
+		},
+		{
+			"name": "Branchbearer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Dog Shaman",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/134_Branchbearer.png"
+			}
+		},
+		{
+			"name": "Bulwark Stance",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/135_Bulwark Stance.png"
+			}
+		},
+		{
+			"name": "Caravan Guardian",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Dog Warrior",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/136_Caravan Guardian.png"
+			}
+		},
+		{
+			"name": "Caravan Ibex",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Creature — Goat",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/137_Caravan Ibex.png"
+			}
+		},
+		{
+			"name": "Conifer Colossus",
+			"rarity": "rare",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Creature — Elemental",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/138_Conifer Colossus.png"
+			}
+		},
+		{
+			"name": "Disdainful Kartoka",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}",
+			"type": "Legendary Creature — Cat Demon",
+			"collector_number": "139",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://MattAuraWarrior/sets/DRT-files/img/139_Disdainful Kartoka_back.png"
+				}
+			},
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/139_Disdainful Kartoka_front.png"
+			}
+		},
+		{
+			"name": "Dragonlord's Prey",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/140_Dragonlord's Prey.png"
+			}
+		},
+		{
+			"name": "Dromoka Beastdrover",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Scout",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/141_Dromoka Beastdrover.png"
+			}
+		},
+		{
+			"name": "Enduring Loxodon",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Elephant Warrior",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/142_Enduring Loxodon.png"
+			}
+		},
+		{
+			"name": "Guardian Sabertooth",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Cat",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/143_Guardian Sabertooth.png"
+			}
+		},
+		{
+			"name": "Into Sagu Jungle",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/144_Into Sagu Jungle.png"
+			}
+		},
+		{
+			"name": "Lowland Sambar",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Elk",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/145_Lowland Sambar.png"
+			}
+		},
+		{
+			"name": "Necropolis Mandrill",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Ape",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/146_Necropolis Mandrill.png"
+			}
+		},
+		{
+			"name": "Perplexing Path",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/147_Perplexing Path.png"
+			}
+		},
+		{
+			"name": "Qal Sisma Dragonrider",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/148_Qal Sisma Dragonrider.png"
+			}
+		},
+		{
+			"name": "Qal Sisma Huntmaster",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Creature — Human Scout",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/149_Qal Sisma Huntmaster.png"
+			}
+		},
+		{
+			"name": "Salt Road Rhinoceros",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Rhino",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/150_Salt Road Rhinoceros.png"
+			}
+		},
+		{
+			"name": "Scour the Jungles",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/151_Scour the Jungles.png"
+			}
+		},
+		{
+			"name": "Sidisi's Scalecutter",
+			"rarity": "common",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Creature — Naga Warrior",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/152_Sidisi's Scalecutter.png"
+			}
+		},
+		{
+			"name": "Siege of the Claw",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/153_Siege of the Claw.png"
+			}
+		},
+		{
+			"name": "Territorial Ventmaw",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Dragon",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/154_Territorial Ventmaw.png"
+			}
+		},
+		{
+			"name": "Tsan Kosag, the Timetorn",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Legendary Planeswalker — Tsan",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/155_Tsan Kosag, the Timetorn.png"
+			}
+		},
+		{
+			"name": "Ursine Battlerage",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/156_Ursine Battlerage.png"
+			}
+		},
+		{
+			"name": "Abzan Command",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/157_Abzan Command.png"
+			}
+		},
+		{
+			"name": "Abzan Scalebreaker",
+			"rarity": "common",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/158_Abzan Scalebreaker.png"
+			}
+		},
+		{
+			"name": "Advocate of the Bear",
+			"rarity": "mythic",
+			"mana_cost": "{G}{U}{R}",
+			"type": "Creature — Human Warrior Shaman",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/159_Advocate of the Bear.png"
+			}
+		},
+		{
+			"name": "Aggressive Defense",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}",
+			"type": "Enchantment",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/160_Aggressive Defense.png"
+			}
+		},
+		{
+			"name": "Amirah's Bond",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Instant",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/161_Amirah's Bond.png"
+			}
+		},
+		{
+			"name": "Anafenza, Ancestral Warden",
+			"rarity": "rare",
+			"mana_cost": "{W}{B}",
+			"type": "Legendary Creature — Spirit Soldier",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/162_Anafenza, Ancestral Warden.png"
+			}
+		},
+		{
+			"name": "Arel, Unseen Whisperer",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}",
+			"type": "Legendary Creature — Human Shaman",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/163_Arel, Unseen Whisperer.png"
+			}
+		},
+		{
+			"name": "Atarka, All-Consuming",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}{G}{G}",
+			"type": "Legendary Creature — Elder Dragon",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/164_Atarka, All-Consuming.png"
+			}
+		},
+		{
+			"name": "Atarka's Broodkin",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{G}",
+			"type": "Creature — Dragon",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/165_Atarka's Broodkin.png"
+			}
+		},
+		{
+			"name": "Ayagor, the Dragon's Bowl",
+			"rarity": "rare",
+			"mana_cost": "{R}{G}",
+			"type": "Legendary Enchantment",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/166_Ayagor, the Dragon's Bowl.png"
+			}
+		},
+		{
+			"name": "Batama, Alesha's Heir",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Creature — Orc Warrior",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/167_Batama, Alesha's Heir.png"
+			}
+		},
+		{
+			"name": "Batama's Battle Cry",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Sorcery",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/168_Batama's Battle Cry.png"
+			}
+		},
+		{
+			"name": "Blitzsurge Warkite",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/169_Blitzsurge Warkite.png"
+			}
+		},
+		{
+			"name": "Bloodfire Backlasher",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}",
+			"type": "Creature — Djinn Monk",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/170_Bloodfire Backlasher.png"
+			}
+		},
+		{
+			"name": "Bloodfire Veins",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Enchantment",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/171_Bloodfire Veins.png"
+			}
+		},
+		{
+			"name": "Boltwing Blitz",
+			"rarity": "common",
+			"mana_cost": "{B}{R}",
+			"type": "Instant",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/172_Boltwing Blitz.png"
+			}
+		},
+		{
+			"name": "Calling the All-Hunt",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}{R}",
+			"type": "Legendary Enchantment",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/173_Calling the All-Hunt.png"
+			}
+		},
+		{
+			"name": "Chianul's Companion",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}{R}",
+			"type": "Creature — Bear",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/174_Chianul's Companion.png"
+			}
+		},
+		{
+			"name": "Colossal Might",
+			"rarity": "common",
+			"mana_cost": "{R}{G}",
+			"type": "Instant",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/175_Colossal Might.png"
+			}
+		},
+		{
+			"name": "Corpse-Pit Descent",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{G}{U}",
+			"type": "Enchantment",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/176_Corpse-Pit Descent.png"
+			}
+		},
+		{
+			"name": "Decadent Opulence",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/177_Decadent Opulence.png"
+			}
+		},
+		{
+			"name": "Draconic Denial",
+			"rarity": "common",
+			"mana_cost": "{W}{U}",
+			"type": "Instant",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/178_Draconic Denial.png"
+			}
+		},
+		{
+			"name": "Draconic Majesty",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Enchantment",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/179_Draconic Majesty.png"
+			}
+		},
+		{
+			"name": "Dragonflayer Sidisi",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Legendary Creature — Zombie Naga",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/180_Dragonflayer Sidisi.png"
+			}
+		},
+		{
+			"name": "Dragonlord's Disciple",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Creature — Djinn Monk",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/181_Dragonlord's Disciple.png"
+			}
+		},
+		{
+			"name": "Dragonlord's Scorn",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/182_Dragonlord's Scorn.png"
+			}
+		},
+		{
+			"name": "Dragonmaul Bear",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{G}",
+			"type": "Creature — Bear",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/183_Dragonmaul Bear.png"
+			}
+		},
+		{
+			"name": "Dragon's Eye Instructor",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/184_Dragon's Eye Instructor.png"
+			}
+		},
+		{
+			"name": "Dragonscale Cavalry",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/185_Dragonscale Cavalry.png"
+			}
+		},
+		{
+			"name": "Dromoka Aerie-Guard",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/186_Dromoka Aerie-Guard.png"
+			}
+		},
+		{
+			"name": "Dromoka, All-Enduring",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{G}{W}{W}",
+			"type": "Legendary Creature — Elder Dragon",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/187_Dromoka, All-Enduring.png"
+			}
+		},
+		{
+			"name": "Dromoka's Broodkin",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}{W}",
+			"type": "Creature — Dragon",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/188_Dromoka's Broodkin.png"
+			}
+		},
+		{
+			"name": "The Edicts of Ilagra",
+			"rarity": "mythic",
+			"mana_cost": "{X}{R}{W}{B}",
+			"type": "Legendary Enchantment",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/189_The Edicts of Ilagra.png"
+			}
+		},
+		{
+			"name": "Empty the Wats",
+			"rarity": "mythic",
+			"mana_cost": "{X}{B}{G}{U}",
+			"type": "Instant",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/190_Empty the Wats.png"
+			}
+		},
+		{
+			"name": "Eternal-Pyre Efreet",
+			"rarity": "mythic",
+			"mana_cost": "{R}{G}",
+			"type": "Creature — Efreet Shaman",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/191_Eternal-Pyre Efreet.png"
+			}
+		},
+		{
+			"name": "Fangborn Schemers",
+			"rarity": "common",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Creature — Naga Rogue Warrior",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/192_Fangborn Schemers.png"
+			}
+		},
+		{
+			"name": "Firehoof Arrowslinger",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/193_Firehoof Arrowslinger.png"
+			}
+		},
+		{
+			"name": "Ghostbark Ancestor",
+			"rarity": "rare",
+			"mana_cost": "{W}{B}{G}",
+			"type": "Creature — Spirit Cleric",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/194_Ghostbark Ancestor.png"
+			}
+		},
+		{
+			"name": "Gifts of the Whisperers",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{U}{R}",
+			"type": "Instant",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/195_Gifts of the Whisperers.png"
+			}
+		},
+		{
+			"name": "Gore Frenzy",
+			"rarity": "rare",
+			"mana_cost": "{B}{R}",
+			"type": "Enchantment",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/196_Gore Frenzy.png"
+			}
+		},
+		{
+			"name": "Grim Exhumation",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/197_Grim Exhumation.png"
+			}
+		},
+		{
+			"name": "Hewn-Wood Revenant",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{B}{G}",
+			"type": "Creature — Spirit Warrior",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/198_Hewn-Wood Revenant.png"
+			}
+		},
+		{
+			"name": "Hordebutcher's Bargain",
+			"rarity": "rare",
+			"mana_cost": "{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/199_Hordebutcher's Bargain.png"
+			}
+		},
+		{
+			"name": "Hordechief's Challenge",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/200_Hordechief's Challenge.png"
+			}
+		},
+		{
+			"name": "Hordechief's Scorn",
+			"rarity": "common",
+			"mana_cost": "{W}{B}",
+			"type": "Instant",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/201_Hordechief's Scorn.png"
+			}
+		},
+		{
+			"name": "Howling-Wind Mystic",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{G}{U}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/202_Howling-Wind Mystic.png"
+			}
+		},
+		{
+			"name": "Iceshaper Shaman",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/203_Iceshaper Shaman.png"
+			}
+		},
+		{
+			"name": "Innerflame Master",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}{W}",
+			"type": "Creature — Efreet Monk",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/204_Innerflame Master.png"
+			}
+		},
+		{
+			"name": "Ivorytusk Worldshaker",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{B}{G}",
+			"type": "Creature — Elephant",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/205_Ivorytusk Worldshaker.png"
+			}
+		},
+		{
+			"name": "Jeskai Command",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}{W}",
+			"type": "Instant",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/206_Jeskai Command.png"
+			}
+		},
+		{
+			"name": "Jeskai Heartstoker",
+			"rarity": "common",
+			"mana_cost": "{U}{R}",
+			"type": "Creature — Efreet Monk",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/207_Jeskai Heartstoker.png"
+			}
+		},
+		{
+			"name": "Jungle Ambush",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}",
+			"type": "Instant",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/208_Jungle Ambush.png"
+			}
+		},
+		{
+			"name": "Kartoka's Bond",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/209_Kartoka's Bond.png"
+			}
+		},
+		{
+			"name": "Kin-Tree Tenacity",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/210_Kin-Tree Tenacity.png"
+			}
+		},
+		{
+			"name": "Kolaghan, All-Inciting",
+			"rarity": "mythic",
+			"mana_cost": "{B}{B}{R}{R}",
+			"type": "Legendary Creature — Elder Dragon",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/211_Kolaghan, All-Inciting.png"
+			}
+		},
+		{
+			"name": "Kolaghan Gate-Smasher",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Creature — Ogre Warrior",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/212_Kolaghan Gate-Smasher.png"
+			}
+		},
+		{
+			"name": "Kolaghan's Broodkin",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{R}",
+			"type": "Creature — Dragon",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/213_Kolaghan's Broodkin.png"
+			}
+		},
+		{
+			"name": "Krumar Veteran",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Creature — Orc Warrior",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/214_Krumar Veteran.png"
+			}
+		},
+		{
+			"name": "Last Whispers",
+			"rarity": "common",
+			"mana_cost": "{U}{B}",
+			"type": "Instant",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/215_Last Whispers.png"
+			}
+		},
+		{
+			"name": "Light the Way",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/216_Light the Way.png"
+			}
+		},
+		{
+			"name": "Living Kin-Tree",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{B}{G}",
+			"type": "Creature — Treefolk",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/217_Living Kin-Tree.png"
+			}
+		},
+		{
+			"name": "Maisham's Bond",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Sorcery",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/218_Maisham's Bond.png"
+			}
+		},
+		{
+			"name": "Mantis Keeper",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/219_Mantis Keeper.png"
+			}
+		},
+		{
+			"name": "Many-Form Mystic",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Creature — Shapeshifter",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/220_Many-Form Mystic.png"
+			}
+		},
+		{
+			"name": "Mardu Command",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/221_Mardu Command.png"
+			}
+		},
+		{
+			"name": "Mardu Warmaster",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/222_Mardu Warmaster.png"
+			}
+		},
+		{
+			"name": "Mastery of Meditation",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}{W}",
+			"type": "Enchantment",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/223_Mastery of Meditation.png"
+			}
+		},
+		{
+			"name": "Maulclaw Ursa",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}{R}",
+			"type": "Creature — Bear",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/224_Maulclaw Ursa.png"
+			}
+		},
+		{
+			"name": "Naga's Cruelty",
+			"rarity": "rare",
+			"mana_cost": "{B}{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/225_Naga's Cruelty.png"
+			}
+		},
+		{
+			"name": "Narset, Seeker of Truth",
+			"rarity": "mythic",
+			"mana_cost": "{U}{R}{W}",
+			"type": "Legendary Planeswalker — Narset",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/226_Narset, Seeker of Truth.png"
+			}
+		},
+		{
+			"name": "Necropolis Flenser",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{G}{U}",
+			"type": "Creature — Demon",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/227_Necropolis Flenser.png"
+			}
+		},
+		{
+			"name": "Ojutai, All-Knowing",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{W}{U}{U}",
+			"type": "Legendary Creature — Elder Dragon",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/228_Ojutai, All-Knowing.png"
+			}
+		},
+		{
+			"name": "Ojutai's Broodkin",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{U}",
+			"type": "Creature — Dragon",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/229_Ojutai's Broodkin.png"
+			}
+		},
+		{
+			"name": "One with the Way",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}{W}",
+			"type": "Instant",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/230_One with the Way.png"
+			}
+		},
+		{
+			"name": "Qarsi Depths Prowler",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{U}",
+			"type": "Creature — Human Rogue",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/231_Qarsi Depths Prowler.png"
+			}
+		},
+		{
+			"name": "Reduce to Dust",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}{G}",
+			"type": "Instant",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/232_Reduce to Dust.png"
+			}
+		},
+		{
+			"name": "Roughrider Krushok",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Creature — Beast",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/233_Roughrider Krushok.png"
+			}
+		},
+		{
+			"name": "Saddlebrute's Steed",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Ox Beast",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/234_Saddlebrute's Steed.png"
+			}
+		},
+		{
+			"name": "Scaleborn Barricade",
+			"rarity": "common",
+			"mana_cost": "{G}{W}",
+			"type": "Sorcery",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/235_Scaleborn Barricade.png"
+			}
+		},
+		{
+			"name": "Scaleclad Cataphract",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/236_Scaleclad Cataphract.png"
+			}
+		},
+		{
+			"name": "Scalelord's Presence",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/237_Scalelord's Presence.png"
+			}
+		},
+		{
+			"name": "Screamreach Outrider",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/238_Screamreach Outrider.png"
+			}
+		},
+		{
+			"name": "Shaman of the Claw",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/239_Shaman of the Claw.png"
+			}
+		},
+		{
+			"name": "Sharphide Stalwart",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Creature — Orc Warrior",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/240_Sharphide Stalwart.png"
+			}
+		},
+		{
+			"name": "Sibsig Murk-Dredger",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Creature — Zombie Ogre",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/241_Sibsig Murk-Dredger.png"
+			}
+		},
+		{
+			"name": "Sidisi's Envoy",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{G}",
+			"type": "Creature — Naga Rogue",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/242_Sidisi's Envoy.png"
+			}
+		},
+		{
+			"name": "Silumgar, All-Swaying",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}{U}{B}{B}",
+			"type": "Legendary Creature — Elder Dragon",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/243_Silumgar, All-Swaying.png"
+			}
+		},
+		{
+			"name": "Silumgar Familiar",
+			"rarity": "common",
+			"mana_cost": "{U}{B}",
+			"type": "Creature — Zombie Bird",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/244_Silumgar Familiar.png"
+			}
+		},
+		{
+			"name": "Silumgar's Broodkin",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{B}",
+			"type": "Creature — Dragon",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/245_Silumgar's Broodkin.png"
+			}
+		},
+		{
+			"name": "Sirmi's Bond",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Instant",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/246_Sirmi's Bond.png"
+			}
+		},
+		{
+			"name": "Skinslitherer",
+			"rarity": "mythic",
+			"mana_cost": "{G}{U}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/247_Skinslitherer.png"
+			}
+		},
+		{
+			"name": "Sleetstrike",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Sorcery",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/248_Sleetstrike.png"
+			}
+		},
+		{
+			"name": "Soulclaimer Rakshasa",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{G}{U}",
+			"type": "Creature — Cat Demon Warrior",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/249_Soulclaimer Rakshasa.png"
+			}
+		},
+		{
+			"name": "Stormsinger's Song",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/250_Stormsinger's Song.png"
+			}
+		},
+		{
+			"name": "Style of the Great Teacher",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Enchantment",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/251_Style of the Great Teacher.png"
+			}
+		},
+		{
+			"name": "Sultai Command",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{G}{U}",
+			"type": "Instant",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/252_Sultai Command.png"
+			}
+		},
+		{
+			"name": "Sultai Skullspeaker",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Creature — Naga Shaman",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/253_Sultai Skullspeaker.png"
+			}
+		},
+		{
+			"name": "Sunfire Eruption",
+			"rarity": "common",
+			"mana_cost": "{R}{W}",
+			"type": "Sorcery",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/254_Sunfire Eruption.png"
+			}
+		},
+		{
+			"name": "Surrak's Pulverizer",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/255_Surrak's Pulverizer.png"
+			}
+		},
+		{
+			"name": "Swathe of Dragonfire",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/256_Swathe of Dragonfire.png"
+			}
+		},
+		{
+			"name": "Taigam, Firebrand Speaker",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Legendary Creature — Human Monk",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/257_Taigam, Firebrand Speaker.png"
+			}
+		},
+		{
+			"name": "Taigam's Skirmisher",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Creature — Bird Warrior",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/258_Taigam's Skirmisher.png"
+			}
+		},
+		{
+			"name": "Temur Command",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}{R}",
+			"type": "Sorcery",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/259_Temur Command.png"
+			}
+		},
+		{
+			"name": "Temur Frostwalker",
+			"rarity": "common",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Creature — Elemental",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/260_Temur Frostwalker.png"
+			}
+		},
+		{
+			"name": "Timeline Schism",
+			"rarity": "mythic",
+			"mana_cost": "{4}{U}{R}",
+			"type": "Sorcery",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/261_Timeline Schism.png"
+			}
+		},
+		{
+			"name": "War-Horde Chieftain",
+			"rarity": "mythic",
+			"mana_cost": "{W}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/263_War-Horde Chieftain.png"
+			}
+		},
+		{
+			"name": "Unforgiving Climate",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/262_Unforgiving Climate.png"
+			}
+		},
+		{
+			"name": "Zahmur's Bond",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Instant",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/264_Zahmur's Bond.png"
+			}
+		},
+		{
+			"name": "Zephyr Assembly",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/265_Zephyr Assembly.png"
+			}
+		},
+		{
+			"name": "Zurgo's Vanguard",
+			"rarity": "mythic",
+			"mana_cost": "{R}{W}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/266_Zurgo's Vanguard.png"
+			}
+		},
+		{
+			"name": "Abzan Insignia",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/267_Abzan Insignia.png"
+			}
+		},
+		{
+			"name": "Bottled Dragonfire",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/268_Bottled Dragonfire.png"
+			}
+		},
+		{
+			"name": "Dragonhunter's Bow",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/269_Dragonhunter's Bow.png"
+			}
+		},
+		{
+			"name": "Dragonloft Sentry",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Gargoyle",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/270_Dragonloft Sentry.png"
+			}
+		},
+		{
+			"name": "Jeskai Insignia",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/271_Jeskai Insignia.png"
+			}
+		},
+		{
+			"name": "Lanterns of Clarity",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/272_Lanterns of Clarity.png"
+			}
+		},
+		{
+			"name": "Mardu Insignia",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/273_Mardu Insignia.png"
+			}
+		},
+		{
+			"name": "Sultai Insignia",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/274_Sultai Insignia.png"
+			}
+		},
+		{
+			"name": "Temur Insignia",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/275_Temur Insignia.png"
+			}
+		},
+		{
+			"name": "Totem of the Spirit Dragon",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/276_Totem of the Spirit Dragon.png"
+			}
+		},
+		{
+			"name": "Witness of the Long Forgotten",
+			"rarity": "common",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Golem",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/277_Witness of the Long Forgotten.png"
+			}
+		},
+		{
+			"name": "Ancient Boneyard",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/278_Ancient Boneyard.png"
+			}
+		},
+		{
+			"name": "Bloodfell Caves",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/279_Bloodfell Caves.png"
+			}
+		},
+		{
+			"name": "Blossoming Sands",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/280_Blossoming Sands.png"
+			}
+		},
+		{
+			"name": "Dismal Backwater",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "281",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/281_Dismal Backwater.png"
+			}
+		},
+		{
+			"name": "Frontier Bivouac",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "282",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/282_Frontier Bivouac.png"
+			}
+		},
+		{
+			"name": "Frostpeak Grotto",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "283",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/283_Frostpeak Grotto.png"
+			}
+		},
+		{
+			"name": "Ghostbark Dunes",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Swamp",
+			"collector_number": "284",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/284_Ghostbark Dunes.png"
+			}
+		},
+		{
+			"name": "Highspire Sanctuary",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Mountain",
+			"collector_number": "285",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/285_Highspire Sanctuary.png"
+			}
+		},
+		{
+			"name": "Hoofbeaten Expanse",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Plains",
+			"collector_number": "286",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/286_Hoofbeaten Expanse.png"
+			}
+		},
+		{
+			"name": "Jungle Hollow",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "287",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/287_Jungle Hollow.png"
+			}
+		},
+		{
+			"name": "Mystic Monastery",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "288",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/288_Mystic Monastery.png"
+			}
+		},
+		{
+			"name": "Nomad Outpost",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "289",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/289_Nomad Outpost.png"
+			}
+		},
+		{
+			"name": "Opulent Palace",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "290",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/290_Opulent Palace.png"
+			}
+		},
+		{
+			"name": "Overgrown Wats",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land — Forest",
+			"collector_number": "291",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/291_Overgrown Wats.png"
+			}
+		},
+		{
+			"name": "Rugged Highlands",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "292",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/292_Rugged Highlands.png"
+			}
+		},
+		{
+			"name": "Sandsteppe Citadel",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "293",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/293_Sandsteppe Citadel.png"
+			}
+		},
+		{
+			"name": "Scoured Barrens",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "294",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/294_Scoured Barrens.png"
+			}
+		},
+		{
+			"name": "Swiftwater Cliffs",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "295",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/295_Swiftwater Cliffs.png"
+			}
+		},
+		{
+			"name": "Thornwood Falls",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "296",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/296_Thornwood Falls.png"
+			}
+		},
+		{
+			"name": "Tranquil Cove",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "297",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/297_Tranquil Cove.png"
+			}
+		},
+		{
+			"name": "Uncharted Haven",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "298",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/298_Uncharted Haven.png"
+			}
+		},
+		{
+			"name": "Wind-Scarred Crag",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "299",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/299_Wind-Scarred Crag.png"
+			}
+		},
+		{
+			"name": "Trial of Many Paths",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/31_Trial of Many Paths.png"
+			}
+		},
+		{
+			"name": "Solidarity of the Houses",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}",
+			"type": "Legendary Enchantment",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://MattAuraWarrior/sets/DRT-files/img/92_Solidarity of the Houses.png"
+			}
+		}
+	]
+
+[rare(1)]
+	2 Dragonstorm Harbinger
+	2 Amirah the Heartpiercer
+	2 Disciple of the First Tree
+	1 Glory of the Mardu
+	1 Monastery Master
+	2 Scalelord Guardian
+	2 Scouring Sandcrafter
+	1 Separ, Bulwark of Arashin
+	2 Siege of the Scale
+	2 Skywise Reinforcements
+	2 Teacher of New Generations
+	2 Arel's Wisdom
+	2 Call of the Dragonstorms
+	1 Communer of Qal Sisma
+	2 Majestic Breezedancer
+	1 Mindflitter Monk
+	2 Minister's Machinations
+	2 Siege of the Eye
+	2 Sirmi, Frozen Sage
+	2 Temporal Wanderer
+	1 Unleash the Archives
+	2 Blood-Trophy Marauder
+	2 Conniving Deathfang
+	1 Demon of Darkest Depths
+	2 Dragonlord's Demise
+	2 Risen Warshrieker
+	2 Siege of the Fang
+	1 Silumgar Soulslasher
+	2 Vizier's Scheming
+	2 Zahmur, Krumar Outcast
+	2 Atarka Battle Rage
+	1 Dragon's Bowl Igniter
+	2 Flamerush Fusillade
+	2 Gorefeaster
+	2 Maisham, Firebrand
+	1 Sarkhan, Savior of Tarkir
+	2 Scorchbellow Warbrute
+	2 Siege of the Wing
+	1 Stormwing Onslaught
+	2 Thundersculpt Warkite
+	1 Aerie Conquerors
+	2 Barkclad Elder
+	2 Caravan Ibex
+	2 Conifer Colossus
+	2 Disdainful Kartoka
+	1 Guardian Sabertooth
+	2 Qal Sisma Huntmaster
+	2 Siege of the Claw
+	2 Territorial Ventmaw
+	1 Tsan Kosag, the Timetorn
+	2 Abzan Command
+	1 Advocate of the Bear
+	2 Anafenza, Ancestral Warden
+	2 Arel, Unseen Whisperer
+	1 Atarka, All-Consuming
+	2 Ayagor, the Dragon's Bowl
+	2 Batama, Alesha's Heir
+	2 Blitzsurge Warkite
+	2 Bloodfire Veins
+	2 Calling the All-Hunt
+	2 Dragonflayer Sidisi
+	2 Dragonlord's Scorn
+	1 Dromoka, All-Enduring
+	1 The Edicts of Ilagra
+	1 Empty the Wats
+	1 Eternal-Pyre Efreet
+	2 Firehoof Arrowslinger
+	2 Ghostbark Ancestor
+	2 Gore Frenzy
+	1 Hewn-Wood Revenant
+	2 Hordebutcher's Bargain
+	2 Ivorytusk Worldshaker
+	2 Jeskai Command
+	2 Jungle Ambush
+	1 Kolaghan, All-Inciting
+	2 Light the Way
+	2 Mantis Keeper
+	2 Many-Form Mystic
+	2 Mardu Command
+	2 Maulclaw Ursa
+	2 Naga's Cruelty
+	1 Narset, Seeker of Truth
+	1 Ojutai, All-Knowing
+	2 One with the Way
+	2 Scaleclad Cataphract
+	2 Scalelord's Presence
+	2 Shaman of the Claw
+	2 Sibsig Murk-Dredger
+	1 Silumgar, All-Swaying
+	1 Skinslitherer
+	2 Soulclaimer Rakshasa
+	2 Style of the Great Teacher
+	2 Sultai Command
+	2 Surrak's Pulverizer
+	2 Taigam, Firebrand Speaker
+	2 Temur Command
+	1 Timeline Schism
+	1 War-Horde Chieftain
+	2 Unforgiving Climate
+	1 Zurgo's Vanguard
+	2 Frostpeak Grotto
+	2 Ghostbark Dunes
+	2 Highspire Sanctuary
+	2 Hoofbeaten Expanse
+	2 Overgrown Wats
+	1 Solidarity of the Houses
+[uncommon(3)]
+	4 Ghostfire Practitioner
+	4 Alabaster Cloudhoof
+	4 Battlefield Glory
+	4 By Anafenza's Will
+	4 Dragon's Eye Disciples
+	4 Dromoka Battlemaster
+	4 Dromoka Trailscout
+	4 Humbling Skywise
+	4 Domineering Regent
+	4 Interceptor Initiate
+	4 Invoke the Wide Whisper
+	4 Kadena's Banisher
+	4 Mistfire Elder
+	4 Narset's Assistance
+	4 Ojutai Featherblade
+	4 Silencer's Strike
+	4 Blood-Chin Cannibals
+	4 Boltwing Predator
+	4 Elder of Withered Branches
+	4 Lust for Flesh
+	4 Retribution of the Horde
+	4 Rotting Imp
+	4 Silumgar Sluice-Stalker
+	4 Trials of the Past
+	4 Ashes of Truth
+	4 Close Connection
+	4 Dragonspeaker's Call
+	4 Herdchaser Whelp
+	4 Knuckleblade Mob-Caller
+	4 Kolaghan Heelcutter
+	4 Scale-Piercer Hordechief
+	4 Thunderous Warcaller
+	4 Ainok Hunt-Mate
+	4 Atarka Cinderhoof
+	4 Bolstering Shieldhide
+	4 Branchbearer
+	4 Perplexing Path
+	4 Salt Road Rhinoceros
+	4 Scour the Jungles
+	4 Aggressive Defense
+	4 Amirah's Bond
+	4 Atarka's Broodkin
+	4 Batama's Battle Cry
+	4 Bloodfire Backlasher
+	4 Chianul's Companion
+	4 Corpse-Pit Descent
+	4 Decadent Opulence
+	4 Draconic Majesty
+	4 Dragon's Eye Instructor
+	4 Dragonscale Cavalry
+	4 Dromoka's Broodkin
+	4 Gifts of the Whisperers
+	4 Grim Exhumation
+	4 Hordechief's Challenge
+	4 Howling-Wind Mystic
+	4 Iceshaper Shaman
+	4 Innerflame Master
+	4 Kartoka's Bond
+	4 Kolaghan's Broodkin
+	4 Krumar Veteran
+	4 Living Kin-Tree
+	4 Maisham's Bond
+	4 Mastery of Meditation
+	4 Necropolis Flenser
+	4 Ojutai's Broodkin
+	4 Qarsi Depths Prowler
+	4 Reduce to Dust
+	4 Roughrider Krushok
+	4 Saddlebrute's Steed
+	4 Screamreach Outrider
+	4 Sharphide Stalwart
+	4 Sidisi's Envoy
+	4 Silumgar's Broodkin
+	4 Sirmi's Bond
+	4 Stormsinger's Song
+	4 Swathe of Dragonfire
+	4 Taigam's Skirmisher
+	4 Zahmur's Bond
+	4 Zephyr Assembly
+	4 Dragonhunter's Bow
+	4 Totem of the Spirit Dragon
+	4 Ancient Boneyard
+	4 Frontier Bivouac
+	4 Mystic Monastery
+	4 Nomad Outpost
+	4 Opulent Palace
+	4 Sandsteppe Citadel
+	4 Trial of Many Paths
+[common(7)]
+	8 Ugin's Guardian
+	8 Arashin Sentinels
+	8 Armored Elephant
+	8 Breakneck Charge
+	8 Fist of the Dragonlord
+	8 Leave for the Dunes
+	8 Loyal Hordemate
+	8 Orator of Winds
+	8 Salt Road Dragonrider
+	8 Sandbind
+	8 Scaleclad Stalwart
+	8 Whirlkick Exemplar
+	8 Zealous Hordechief
+	8 Arel's Wing-Seer
+	8 Dirgur Deepcoiler
+	8 Glacial Pummeler
+	8 Lead Astray
+	8 Loremaster of Inner Secrets
+	8 Lost in Time
+	8 Ojutai Mistweaver
+	8 Pearl Lake Dragonrider
+	8 Rakshasa's Scorn
+	8 Sage of the Inner Sanctum
+	8 Silumgar Debilitator
+	8 Through the Marang
+	8 Vulturous Cunning
+	8 Anafenza's Ancestor
+	8 Blood-Chin Enforcer
+	8 Blood-Chin Ripper
+	8 Corpsedrove
+	8 Devouring Thunder
+	8 Gravecaller's Will
+	8 Guardian of the Kin-Trees
+	8 Gurmag Dragonrider
+	8 Hewn-Wood Retribution
+	8 Kolaghan Smokeweaver
+	8 Necromaster's Attendant
+	8 Pillage the Aeries
+	8 Ride Again
+	8 Ancient Mantis
+	8 Atarka's Toothpicker
+	8 Blazing Wanderlust
+	8 Blood-Chin Pillager
+	8 Bloodfire Ascendant
+	8 Canyon Marauder
+	8 Crackling Swoop
+	8 Crushing Blow
+	8 Flamespew
+	8 Kolaghan Fireslinger
+	8 Lost Hordemate
+	8 Qal Sisma Berserker
+	8 Screamreach Dragonrider
+	8 Ainok Flamebearer
+	8 Arashin Nestwarden
+	8 Bulwark Stance
+	8 Caravan Guardian
+	8 Dragonlord's Prey
+	8 Dromoka Beastdrover
+	8 Enduring Loxodon
+	8 Into Sagu Jungle
+	8 Lowland Sambar
+	8 Necropolis Mandrill
+	8 Qal Sisma Dragonrider
+	8 Sidisi's Scalecutter
+	8 Ursine Battlerage
+	8 Abzan Scalebreaker
+	8 Boltwing Blitz
+	8 Colossal Might
+	8 Draconic Denial
+	8 Dragonlord's Disciple
+	8 Dragonmaul Bear
+	8 Dromoka Aerie-Guard
+	8 Fangborn Schemers
+	8 Hordechief's Scorn
+	8 Jeskai Heartstoker
+	8 Kin-Tree Tenacity
+	8 Kolaghan Gate-Smasher
+	8 Last Whispers
+	8 Mardu Warmaster
+	8 Scaleborn Barricade
+	8 Silumgar Familiar
+	8 Sleetstrike
+	8 Sultai Skullspeaker
+	8 Sunfire Eruption
+	8 Temur Frostwalker
+	8 Abzan Insignia
+	8 Bottled Dragonfire
+	8 Dragonloft Sentry
+	8 Jeskai Insignia
+	8 Lanterns of Clarity
+	8 Mardu Insignia
+	8 Sultai Insignia
+	8 Temur Insignia
+	8 Witness of the Long Forgotten
+	8 Bloodfell Caves
+	8 Blossoming Sands
+	8 Dismal Backwater
+	8 Jungle Hollow
+	8 Rugged Highlands
+	8 Scoured Barrens
+	8 Swiftwater Cliffs
+	8 Thornwood Falls
+	8 Tranquil Cove
+	8 Uncharted Haven
+	8 Wind-Scarred Crag
+[foil(1)]
+	2 Dragonstorm Harbinger
+	6 Ghostfire Practitioner
+	12 Ugin's Guardian
+	6 Alabaster Cloudhoof
+	2 Amirah the Heartpiercer
+	12 Arashin Sentinels
+	12 Armored Elephant
+	6 Battlefield Glory
+	12 Breakneck Charge
+	6 By Anafenza's Will
+	2 Disciple of the First Tree
+	6 Dragon's Eye Disciples
+	6 Dromoka Battlemaster
+	6 Dromoka Trailscout
+	12 Fist of the Dragonlord
+	1 Glory of the Mardu
+	6 Humbling Skywise
+	12 Leave for the Dunes
+	12 Loyal Hordemate
+	1 Monastery Master
+	12 Orator of Winds
+	12 Salt Road Dragonrider
+	12 Sandbind
+	12 Scaleclad Stalwart
+	2 Scalelord Guardian
+	2 Scouring Sandcrafter
+	1 Separ, Bulwark of Arashin
+	2 Siege of the Scale
+	2 Skywise Reinforcements
+	2 Teacher of New Generations
+	12 Whirlkick Exemplar
+	12 Zealous Hordechief
+	12 Arel's Wing-Seer
+	2 Arel's Wisdom
+	2 Call of the Dragonstorms
+	1 Communer of Qal Sisma
+	12 Dirgur Deepcoiler
+	6 Domineering Regent
+	12 Glacial Pummeler
+	6 Interceptor Initiate
+	6 Invoke the Wide Whisper
+	6 Kadena's Banisher
+	12 Lead Astray
+	12 Loremaster of Inner Secrets
+	12 Lost in Time
+	2 Majestic Breezedancer
+	1 Mindflitter Monk
+	2 Minister's Machinations
+	6 Mistfire Elder
+	6 Narset's Assistance
+	6 Ojutai Featherblade
+	12 Ojutai Mistweaver
+	12 Pearl Lake Dragonrider
+	12 Rakshasa's Scorn
+	12 Sage of the Inner Sanctum
+	2 Siege of the Eye
+	6 Silencer's Strike
+	12 Silumgar Debilitator
+	2 Sirmi, Frozen Sage
+	2 Temporal Wanderer
+	12 Through the Marang
+	1 Unleash the Archives
+	12 Vulturous Cunning
+	12 Anafenza's Ancestor
+	6 Blood-Chin Cannibals
+	12 Blood-Chin Enforcer
+	12 Blood-Chin Ripper
+	2 Blood-Trophy Marauder
+	6 Boltwing Predator
+	2 Conniving Deathfang
+	12 Corpsedrove
+	1 Demon of Darkest Depths
+	12 Devouring Thunder
+	2 Dragonlord's Demise
+	6 Elder of Withered Branches
+	12 Gravecaller's Will
+	12 Guardian of the Kin-Trees
+	12 Gurmag Dragonrider
+	12 Hewn-Wood Retribution
+	12 Kolaghan Smokeweaver
+	6 Lust for Flesh
+	12 Necromaster's Attendant
+	12 Pillage the Aeries
+	6 Retribution of the Horde
+	12 Ride Again
+	2 Risen Warshrieker
+	6 Rotting Imp
+	2 Siege of the Fang
+	6 Silumgar Sluice-Stalker
+	1 Silumgar Soulslasher
+	6 Trials of the Past
+	2 Vizier's Scheming
+	2 Zahmur, Krumar Outcast
+	12 Ancient Mantis
+	6 Ashes of Truth
+	2 Atarka Battle Rage
+	12 Atarka's Toothpicker
+	12 Blazing Wanderlust
+	12 Blood-Chin Pillager
+	12 Bloodfire Ascendant
+	12 Canyon Marauder
+	6 Close Connection
+	12 Crackling Swoop
+	12 Crushing Blow
+	1 Dragon's Bowl Igniter
+	6 Dragonspeaker's Call
+	2 Flamerush Fusillade
+	12 Flamespew
+	2 Gorefeaster
+	6 Herdchaser Whelp
+	6 Knuckleblade Mob-Caller
+	12 Kolaghan Fireslinger
+	6 Kolaghan Heelcutter
+	12 Lost Hordemate
+	2 Maisham, Firebrand
+	12 Qal Sisma Berserker
+	1 Sarkhan, Savior of Tarkir
+	6 Scale-Piercer Hordechief
+	2 Scorchbellow Warbrute
+	12 Screamreach Dragonrider
+	2 Siege of the Wing
+	1 Stormwing Onslaught
+	6 Thunderous Warcaller
+	2 Thundersculpt Warkite
+	1 Aerie Conquerors
+	12 Ainok Flamebearer
+	6 Ainok Hunt-Mate
+	12 Arashin Nestwarden
+	6 Atarka Cinderhoof
+	2 Barkclad Elder
+	6 Bolstering Shieldhide
+	6 Branchbearer
+	12 Bulwark Stance
+	12 Caravan Guardian
+	2 Caravan Ibex
+	2 Conifer Colossus
+	2 Disdainful Kartoka
+	12 Dragonlord's Prey
+	12 Dromoka Beastdrover
+	12 Enduring Loxodon
+	1 Guardian Sabertooth
+	12 Into Sagu Jungle
+	12 Lowland Sambar
+	12 Necropolis Mandrill
+	6 Perplexing Path
+	12 Qal Sisma Dragonrider
+	2 Qal Sisma Huntmaster
+	6 Salt Road Rhinoceros
+	6 Scour the Jungles
+	12 Sidisi's Scalecutter
+	2 Siege of the Claw
+	2 Territorial Ventmaw
+	1 Tsan Kosag, the Timetorn
+	12 Ursine Battlerage
+	2 Abzan Command
+	12 Abzan Scalebreaker
+	1 Advocate of the Bear
+	6 Aggressive Defense
+	6 Amirah's Bond
+	2 Anafenza, Ancestral Warden
+	2 Arel, Unseen Whisperer
+	1 Atarka, All-Consuming
+	6 Atarka's Broodkin
+	2 Ayagor, the Dragon's Bowl
+	2 Batama, Alesha's Heir
+	6 Batama's Battle Cry
+	2 Blitzsurge Warkite
+	6 Bloodfire Backlasher
+	2 Bloodfire Veins
+	12 Boltwing Blitz
+	2 Calling the All-Hunt
+	6 Chianul's Companion
+	12 Colossal Might
+	6 Corpse-Pit Descent
+	6 Decadent Opulence
+	12 Draconic Denial
+	6 Draconic Majesty
+	2 Dragonflayer Sidisi
+	12 Dragonlord's Disciple
+	2 Dragonlord's Scorn
+	12 Dragonmaul Bear
+	6 Dragon's Eye Instructor
+	6 Dragonscale Cavalry
+	12 Dromoka Aerie-Guard
+	1 Dromoka, All-Enduring
+	6 Dromoka's Broodkin
+	1 The Edicts of Ilagra
+	1 Empty the Wats
+	1 Eternal-Pyre Efreet
+	12 Fangborn Schemers
+	2 Firehoof Arrowslinger
+	2 Ghostbark Ancestor
+	6 Gifts of the Whisperers
+	2 Gore Frenzy
+	6 Grim Exhumation
+	1 Hewn-Wood Revenant
+	2 Hordebutcher's Bargain
+	6 Hordechief's Challenge
+	12 Hordechief's Scorn
+	6 Howling-Wind Mystic
+	6 Iceshaper Shaman
+	6 Innerflame Master
+	2 Ivorytusk Worldshaker
+	2 Jeskai Command
+	12 Jeskai Heartstoker
+	2 Jungle Ambush
+	6 Kartoka's Bond
+	12 Kin-Tree Tenacity
+	1 Kolaghan, All-Inciting
+	12 Kolaghan Gate-Smasher
+	6 Kolaghan's Broodkin
+	6 Krumar Veteran
+	12 Last Whispers
+	2 Light the Way
+	6 Living Kin-Tree
+	6 Maisham's Bond
+	2 Mantis Keeper
+	2 Many-Form Mystic
+	2 Mardu Command
+	12 Mardu Warmaster
+	6 Mastery of Meditation
+	2 Maulclaw Ursa
+	2 Naga's Cruelty
+	1 Narset, Seeker of Truth
+	6 Necropolis Flenser
+	1 Ojutai, All-Knowing
+	6 Ojutai's Broodkin
+	2 One with the Way
+	6 Qarsi Depths Prowler
+	6 Reduce to Dust
+	6 Roughrider Krushok
+	6 Saddlebrute's Steed
+	12 Scaleborn Barricade
+	2 Scaleclad Cataphract
+	2 Scalelord's Presence
+	6 Screamreach Outrider
+	2 Shaman of the Claw
+	6 Sharphide Stalwart
+	2 Sibsig Murk-Dredger
+	6 Sidisi's Envoy
+	1 Silumgar, All-Swaying
+	12 Silumgar Familiar
+	6 Silumgar's Broodkin
+	6 Sirmi's Bond
+	1 Skinslitherer
+	12 Sleetstrike
+	2 Soulclaimer Rakshasa
+	6 Stormsinger's Song
+	2 Style of the Great Teacher
+	2 Sultai Command
+	12 Sultai Skullspeaker
+	12 Sunfire Eruption
+	2 Surrak's Pulverizer
+	6 Swathe of Dragonfire
+	2 Taigam, Firebrand Speaker
+	6 Taigam's Skirmisher
+	2 Temur Command
+	12 Temur Frostwalker
+	1 Timeline Schism
+	1 War-Horde Chieftain
+	2 Unforgiving Climate
+	6 Zahmur's Bond
+	6 Zephyr Assembly
+	1 Zurgo's Vanguard
+	12 Abzan Insignia
+	12 Bottled Dragonfire
+	6 Dragonhunter's Bow
+	12 Dragonloft Sentry
+	12 Jeskai Insignia
+	12 Lanterns of Clarity
+	12 Mardu Insignia
+	12 Sultai Insignia
+	12 Temur Insignia
+	6 Totem of the Spirit Dragon
+	12 Witness of the Long Forgotten
+	6 Ancient Boneyard
+	12 Bloodfell Caves
+	12 Blossoming Sands
+	12 Dismal Backwater
+	6 Frontier Bivouac
+	2 Frostpeak Grotto
+	2 Ghostbark Dunes
+	2 Highspire Sanctuary
+	2 Hoofbeaten Expanse
+	12 Jungle Hollow
+	6 Mystic Monastery
+	6 Nomad Outpost
+	6 Opulent Palace
+	2 Overgrown Wats
+	12 Rugged Highlands
+	6 Sandsteppe Citadel
+	12 Scoured Barrens
+	12 Swiftwater Cliffs
+	12 Thornwood Falls
+	12 Tranquil Cove
+	12 Uncharted Haven
+	12 Wind-Scarred Crag
+	6 Trial of Many Paths
+	1 Solidarity of the Houses
+[wildcard(1)]
+	7 Dragonstorm Harbinger
+	15 Ghostfire Practitioner
+	6 Ugin's Guardian
+	15 Alabaster Cloudhoof
+	7 Amirah the Heartpiercer
+	6 Arashin Sentinels
+	6 Armored Elephant
+	15 Battlefield Glory
+	6 Breakneck Charge
+	15 By Anafenza's Will
+	7 Disciple of the First Tree
+	15 Dragon's Eye Disciples
+	15 Dromoka Battlemaster
+	15 Dromoka Trailscout
+	6 Fist of the Dragonlord
+	4 Glory of the Mardu
+	15 Humbling Skywise
+	6 Leave for the Dunes
+	6 Loyal Hordemate
+	4 Monastery Master
+	6 Orator of Winds
+	6 Salt Road Dragonrider
+	6 Sandbind
+	6 Scaleclad Stalwart
+	7 Scalelord Guardian
+	7 Scouring Sandcrafter
+	4 Separ, Bulwark of Arashin
+	7 Siege of the Scale
+	7 Skywise Reinforcements
+	7 Teacher of New Generations
+	6 Whirlkick Exemplar
+	6 Zealous Hordechief
+	6 Arel's Wing-Seer
+	7 Arel's Wisdom
+	7 Call of the Dragonstorms
+	4 Communer of Qal Sisma
+	6 Dirgur Deepcoiler
+	15 Domineering Regent
+	6 Glacial Pummeler
+	15 Interceptor Initiate
+	15 Invoke the Wide Whisper
+	15 Kadena's Banisher
+	6 Lead Astray
+	6 Loremaster of Inner Secrets
+	6 Lost in Time
+	7 Majestic Breezedancer
+	4 Mindflitter Monk
+	7 Minister's Machinations
+	15 Mistfire Elder
+	15 Narset's Assistance
+	15 Ojutai Featherblade
+	6 Ojutai Mistweaver
+	6 Pearl Lake Dragonrider
+	6 Rakshasa's Scorn
+	6 Sage of the Inner Sanctum
+	7 Siege of the Eye
+	15 Silencer's Strike
+	6 Silumgar Debilitator
+	7 Sirmi, Frozen Sage
+	7 Temporal Wanderer
+	6 Through the Marang
+	4 Unleash the Archives
+	6 Vulturous Cunning
+	6 Anafenza's Ancestor
+	15 Blood-Chin Cannibals
+	6 Blood-Chin Enforcer
+	6 Blood-Chin Ripper
+	7 Blood-Trophy Marauder
+	15 Boltwing Predator
+	7 Conniving Deathfang
+	6 Corpsedrove
+	4 Demon of Darkest Depths
+	6 Devouring Thunder
+	7 Dragonlord's Demise
+	15 Elder of Withered Branches
+	6 Gravecaller's Will
+	6 Guardian of the Kin-Trees
+	6 Gurmag Dragonrider
+	6 Hewn-Wood Retribution
+	6 Kolaghan Smokeweaver
+	15 Lust for Flesh
+	6 Necromaster's Attendant
+	6 Pillage the Aeries
+	15 Retribution of the Horde
+	6 Ride Again
+	7 Risen Warshrieker
+	15 Rotting Imp
+	7 Siege of the Fang
+	15 Silumgar Sluice-Stalker
+	4 Silumgar Soulslasher
+	15 Trials of the Past
+	7 Vizier's Scheming
+	7 Zahmur, Krumar Outcast
+	6 Ancient Mantis
+	15 Ashes of Truth
+	7 Atarka Battle Rage
+	6 Atarka's Toothpicker
+	6 Blazing Wanderlust
+	6 Blood-Chin Pillager
+	6 Bloodfire Ascendant
+	6 Canyon Marauder
+	15 Close Connection
+	6 Crackling Swoop
+	6 Crushing Blow
+	4 Dragon's Bowl Igniter
+	15 Dragonspeaker's Call
+	7 Flamerush Fusillade
+	6 Flamespew
+	7 Gorefeaster
+	15 Herdchaser Whelp
+	15 Knuckleblade Mob-Caller
+	6 Kolaghan Fireslinger
+	15 Kolaghan Heelcutter
+	6 Lost Hordemate
+	7 Maisham, Firebrand
+	6 Qal Sisma Berserker
+	4 Sarkhan, Savior of Tarkir
+	15 Scale-Piercer Hordechief
+	7 Scorchbellow Warbrute
+	6 Screamreach Dragonrider
+	7 Siege of the Wing
+	4 Stormwing Onslaught
+	15 Thunderous Warcaller
+	7 Thundersculpt Warkite
+	4 Aerie Conquerors
+	6 Ainok Flamebearer
+	15 Ainok Hunt-Mate
+	6 Arashin Nestwarden
+	15 Atarka Cinderhoof
+	7 Barkclad Elder
+	15 Bolstering Shieldhide
+	15 Branchbearer
+	6 Bulwark Stance
+	6 Caravan Guardian
+	7 Caravan Ibex
+	7 Conifer Colossus
+	7 Disdainful Kartoka
+	6 Dragonlord's Prey
+	6 Dromoka Beastdrover
+	6 Enduring Loxodon
+	4 Guardian Sabertooth
+	6 Into Sagu Jungle
+	6 Lowland Sambar
+	6 Necropolis Mandrill
+	15 Perplexing Path
+	6 Qal Sisma Dragonrider
+	7 Qal Sisma Huntmaster
+	15 Salt Road Rhinoceros
+	15 Scour the Jungles
+	6 Sidisi's Scalecutter
+	7 Siege of the Claw
+	7 Territorial Ventmaw
+	4 Tsan Kosag, the Timetorn
+	6 Ursine Battlerage
+	7 Abzan Command
+	6 Abzan Scalebreaker
+	4 Advocate of the Bear
+	15 Aggressive Defense
+	15 Amirah's Bond
+	7 Anafenza, Ancestral Warden
+	7 Arel, Unseen Whisperer
+	4 Atarka, All-Consuming
+	15 Atarka's Broodkin
+	7 Ayagor, the Dragon's Bowl
+	7 Batama, Alesha's Heir
+	15 Batama's Battle Cry
+	7 Blitzsurge Warkite
+	15 Bloodfire Backlasher
+	7 Bloodfire Veins
+	6 Boltwing Blitz
+	7 Calling the All-Hunt
+	15 Chianul's Companion
+	6 Colossal Might
+	15 Corpse-Pit Descent
+	15 Decadent Opulence
+	6 Draconic Denial
+	15 Draconic Majesty
+	7 Dragonflayer Sidisi
+	6 Dragonlord's Disciple
+	7 Dragonlord's Scorn
+	6 Dragonmaul Bear
+	15 Dragon's Eye Instructor
+	15 Dragonscale Cavalry
+	6 Dromoka Aerie-Guard
+	4 Dromoka, All-Enduring
+	15 Dromoka's Broodkin
+	4 The Edicts of Ilagra
+	4 Empty the Wats
+	4 Eternal-Pyre Efreet
+	6 Fangborn Schemers
+	7 Firehoof Arrowslinger
+	7 Ghostbark Ancestor
+	15 Gifts of the Whisperers
+	7 Gore Frenzy
+	15 Grim Exhumation
+	4 Hewn-Wood Revenant
+	7 Hordebutcher's Bargain
+	15 Hordechief's Challenge
+	6 Hordechief's Scorn
+	15 Howling-Wind Mystic
+	15 Iceshaper Shaman
+	15 Innerflame Master
+	7 Ivorytusk Worldshaker
+	7 Jeskai Command
+	6 Jeskai Heartstoker
+	7 Jungle Ambush
+	15 Kartoka's Bond
+	6 Kin-Tree Tenacity
+	4 Kolaghan, All-Inciting
+	6 Kolaghan Gate-Smasher
+	15 Kolaghan's Broodkin
+	15 Krumar Veteran
+	6 Last Whispers
+	7 Light the Way
+	15 Living Kin-Tree
+	15 Maisham's Bond
+	7 Mantis Keeper
+	7 Many-Form Mystic
+	7 Mardu Command
+	6 Mardu Warmaster
+	15 Mastery of Meditation
+	7 Maulclaw Ursa
+	7 Naga's Cruelty
+	4 Narset, Seeker of Truth
+	15 Necropolis Flenser
+	4 Ojutai, All-Knowing
+	15 Ojutai's Broodkin
+	7 One with the Way
+	15 Qarsi Depths Prowler
+	15 Reduce to Dust
+	15 Roughrider Krushok
+	15 Saddlebrute's Steed
+	6 Scaleborn Barricade
+	7 Scaleclad Cataphract
+	7 Scalelord's Presence
+	15 Screamreach Outrider
+	7 Shaman of the Claw
+	15 Sharphide Stalwart
+	7 Sibsig Murk-Dredger
+	15 Sidisi's Envoy
+	4 Silumgar, All-Swaying
+	6 Silumgar Familiar
+	15 Silumgar's Broodkin
+	15 Sirmi's Bond
+	4 Skinslitherer
+	6 Sleetstrike
+	7 Soulclaimer Rakshasa
+	15 Stormsinger's Song
+	7 Style of the Great Teacher
+	7 Sultai Command
+	6 Sultai Skullspeaker
+	6 Sunfire Eruption
+	7 Surrak's Pulverizer
+	15 Swathe of Dragonfire
+	7 Taigam, Firebrand Speaker
+	15 Taigam's Skirmisher
+	7 Temur Command
+	6 Temur Frostwalker
+	4 Timeline Schism
+	4 War-Horde Chieftain
+	7 Unforgiving Climate
+	15 Zahmur's Bond
+	15 Zephyr Assembly
+	4 Zurgo's Vanguard
+	6 Abzan Insignia
+	6 Bottled Dragonfire
+	15 Dragonhunter's Bow
+	6 Dragonloft Sentry
+	6 Jeskai Insignia
+	6 Lanterns of Clarity
+	6 Mardu Insignia
+	6 Sultai Insignia
+	6 Temur Insignia
+	15 Totem of the Spirit Dragon
+	6 Witness of the Long Forgotten
+	15 Ancient Boneyard
+	6 Bloodfell Caves
+	6 Blossoming Sands
+	6 Dismal Backwater
+	15 Frontier Bivouac
+	7 Frostpeak Grotto
+	7 Ghostbark Dunes
+	7 Highspire Sanctuary
+	7 Hoofbeaten Expanse
+	6 Jungle Hollow
+	15 Mystic Monastery
+	15 Nomad Outpost
+	15 Opulent Palace
+	7 Overgrown Wats
+	6 Rugged Highlands
+	15 Sandsteppe Citadel
+	6 Scoured Barrens
+	6 Swiftwater Cliffs
+	6 Thornwood Falls
+	6 Tranquil Cove
+	6 Uncharted Haven
+	6 Wind-Scarred Crag
+	15 Trial of Many Paths
+	4 Solidarity of the Houses
