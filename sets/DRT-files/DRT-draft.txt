@@ -3223,7 +3223,113 @@
 	4 Opulent Palace
 	4 Sandsteppe Citadel
 	4 Trial of Many Paths
-[common(7)]
+[common(6)]
+	8 Ugin's Guardian
+	8 Arashin Sentinels
+	8 Armored Elephant
+	8 Breakneck Charge
+	8 Fist of the Dragonlord
+	8 Leave for the Dunes
+	8 Loyal Hordemate
+	8 Orator of Winds
+	8 Salt Road Dragonrider
+	8 Sandbind
+	8 Scaleclad Stalwart
+	8 Whirlkick Exemplar
+	8 Zealous Hordechief
+	8 Arel's Wing-Seer
+	8 Dirgur Deepcoiler
+	8 Glacial Pummeler
+	8 Lead Astray
+	8 Loremaster of Inner Secrets
+	8 Lost in Time
+	8 Ojutai Mistweaver
+	8 Pearl Lake Dragonrider
+	8 Rakshasa's Scorn
+	8 Sage of the Inner Sanctum
+	8 Silumgar Debilitator
+	8 Through the Marang
+	8 Vulturous Cunning
+	8 Anafenza's Ancestor
+	8 Blood-Chin Enforcer
+	8 Blood-Chin Ripper
+	8 Corpsedrove
+	8 Devouring Thunder
+	8 Gravecaller's Will
+	8 Guardian of the Kin-Trees
+	8 Gurmag Dragonrider
+	8 Hewn-Wood Retribution
+	8 Kolaghan Smokeweaver
+	8 Necromaster's Attendant
+	8 Pillage the Aeries
+	8 Ride Again
+	8 Ancient Mantis
+	8 Atarka's Toothpicker
+	8 Blazing Wanderlust
+	8 Blood-Chin Pillager
+	8 Bloodfire Ascendant
+	8 Canyon Marauder
+	8 Crackling Swoop
+	8 Crushing Blow
+	8 Flamespew
+	8 Kolaghan Fireslinger
+	8 Lost Hordemate
+	8 Qal Sisma Berserker
+	8 Screamreach Dragonrider
+	8 Ainok Flamebearer
+	8 Arashin Nestwarden
+	8 Bulwark Stance
+	8 Caravan Guardian
+	8 Dragonlord's Prey
+	8 Dromoka Beastdrover
+	8 Enduring Loxodon
+	8 Into Sagu Jungle
+	8 Lowland Sambar
+	8 Necropolis Mandrill
+	8 Qal Sisma Dragonrider
+	8 Sidisi's Scalecutter
+	8 Ursine Battlerage
+	8 Abzan Scalebreaker
+	8 Boltwing Blitz
+	8 Colossal Might
+	8 Draconic Denial
+	8 Dragonlord's Disciple
+	8 Dragonmaul Bear
+	8 Dromoka Aerie-Guard
+	8 Fangborn Schemers
+	8 Hordechief's Scorn
+	8 Jeskai Heartstoker
+	8 Kin-Tree Tenacity
+	8 Kolaghan Gate-Smasher
+	8 Last Whispers
+	8 Mardu Warmaster
+	8 Scaleborn Barricade
+	8 Silumgar Familiar
+	8 Sleetstrike
+	8 Sultai Skullspeaker
+	8 Sunfire Eruption
+	8 Temur Frostwalker
+	8 Abzan Insignia
+	8 Bottled Dragonfire
+	8 Dragonloft Sentry
+	8 Jeskai Insignia
+	8 Lanterns of Clarity
+	8 Mardu Insignia
+	8 Sultai Insignia
+	8 Temur Insignia
+	8 Witness of the Long Forgotten
+	8 Bloodfell Caves
+	8 Blossoming Sands
+	8 Dismal Backwater
+	8 Jungle Hollow
+	8 Rugged Highlands
+	8 Scoured Barrens
+	8 Swiftwater Cliffs
+	8 Thornwood Falls
+	8 Tranquil Cove
+	8 Uncharted Haven
+	8 Wind-Scarred Crag
+[common | masterpiece(1)]
 	8 Ugin's Guardian
 	8 Arashin Sentinels
 	8 Armored Elephant

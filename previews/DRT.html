@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" type="image/png" href="/sets/DRT-files/icon.png"/>
-	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="icon" type="image/png" href="../sets/DRT-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
 	<title>DRT visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
 	<style>
 		@font-face {
 			font-family: Beleren;
-			src: url('/resources/beleren.ttf');
+			src: url('../resources/beleren.ttf');
 		}
 		body {
 			font-family: Arial, sans-serif;
@@ -39,19 +42,21 @@
 			position: relative;
 		}
 		.sidebar-h-img {
-			display: none;
-			transform: rotate(90deg);
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
 			position: absolute;
 			left: 10%;
 			top: 10%;
 			width: 85%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.sidebar-img {
 			vertical-align: middle;
 			width: 100%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.close-btn {
-			background: url('/img/close.png') no-repeat;
+			background: url('../img/close.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 10%;
@@ -62,7 +67,7 @@
 			right: 4%;
 		}
 		.close-btn:hover {
-			background: url('/img/close-hover.png') no-repeat;
+			background: url('../img/close-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
@@ -82,6 +87,7 @@
 			display: block;
 			visibility: hidden;
 			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
 		}
 		.banner {
 			width: 100%;
@@ -102,9 +108,10 @@
 		.container img {
 			width: 100%;
 			height: auto;
+			border-radius: 3.733% / 2.677%;
 		}
 		.flip-btn {
-			background: url('/img/flip.png') no-repeat;
+			background: url('../img/flip.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 15%;
@@ -118,7 +125,7 @@
 			opacity: 0.5;
 		}
 		.flip-btn:hover {
-			background: url('/img/flip-hover.png') no-repeat;
+			background: url('../img/flip-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
@@ -126,12 +133,13 @@
 			background: rgba(23, 23, 23, 0.8);
 			border-radius: 8px;
 			position: absolute;
-			left: 10%;
+			left: 5%;
 			width: fit-content;
+			max-width: 90%;
 			margin: 20px 0;
 			padding: 5px 0;
-			display: flex;
-			flex-direction: column;
+			display: grid;
+			grid-template-columns: 1fr;
 			z-index: 3;
 		}
 		.dropdown .set-bar {
@@ -173,394 +181,410 @@
 	</style>
 </head>
 <body>
-	<img class="preload-hidden" src="/img/dot.png" />
-	<img class="preload-hidden" src="/sets/DRT-files/logo.png" />
-	<img class="preload-hidden" src="/sets/DRT-files/icon.png" />
-		<img class="preload-hidden" src="/sets/IWH-files/icon.png" />
-		<img class="preload-hidden" src="/sets/TPW-files/icon.png" />
-		<img class="preload-hidden" src="/sets/UCB-files/icon.png" />
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/DRT-files/logo.png" />
+	<img class="preload-hidden" src="../sets/DRT-files/icon.png" />
+		<img class="preload-hidden" src="../sets/IWH-files/icon.png" />
+		<img class="preload-hidden" src="../sets/TPW-files/icon.png" />
+		<img class="preload-hidden" src="../sets/UCB-files/icon.png" />
 		<div class="header">
 		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
 		</div>
 	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
 
-	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
+
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
 	
-		<a class="set-bar" href="DRT"><img src="/sets/DRT-files/icon.png"></a>
+		<a class="set-bar" href="../previews/DRT"><img src="../sets/DRT-files/icon.png"></a>
 	
-		<a class="set-bar inactive" href="IWH"><img src="/sets/IWH-files/icon.png">Innistrad: Witching Hour</a>
+		<a class="set-bar inactive" href="../previews/IWH"><img src="../sets/IWH-files/icon.png">Innistrad: Witching Hour</a>
 	
-		<a class="set-bar inactive" href="TPW"><img src="/sets/TPW-files/icon.png">The Petals Wilt</a>
+		<a class="set-bar inactive" href="../previews/TPW"><img src="../sets/TPW-files/icon.png">The Petals Wilt</a>
 	
-		<a class="set-bar inactive" href="UCB"><img src="/sets/UCB-files/icon.png">Urshad: Covenant of Blood</a>
+		<a class="set-bar inactive" href="../previews/UCB"><img src="../sets/UCB-files/icon.png">Urshad: Covenant of Blood</a>
 	
 		</div>
 		<div class="banner">
-		<img class="logo" src="/sets/DRT-files/logo.png">
+		<img class="logo" src="../sets/DRT-files/logo.png">
 		</div>
 		<div class="main-content" id="main-content">
 			<div class="grid-container">
-					<div class="container"><img alt="/sets\DRT-files\img\16_Glory of the Mardu.png" id="16_Glory of the Mardu" data-flag="@X" onclick="openSidebar('16_Glory of the Mardu',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\37_Communer of Qal Sisma.png" id="37_Communer of Qal Sisma" data-flag="@X" onclick="openSidebar('37_Communer of Qal Sisma',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\73_Demon of Darkest Depths.png" id="73_Demon of Darkest Depths" data-flag="@X" onclick="openSidebar('73_Demon of Darkest Depths',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\107_Dragon's Bowl Igniter.png" id="107_Dragons Bowl Igniter" data-flag="@X" onclick="openSidebar('107_Dragons Bowl Igniter',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\127_Aerie Conquerors.png" id="127_Aerie Conquerors" data-flag="@X" onclick="openSidebar('127_Aerie Conquerors',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\20_Monastery Master.png" id="20_Monastery Master" data-flag="@X" onclick="openSidebar('20_Monastery Master',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\48_Mindflitter Monk.png" id="48_Mindflitter Monk" data-flag="@X" onclick="openSidebar('48_Mindflitter Monk',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\91_Silumgar Soulslasher.png" id="91_Silumgar Soulslasher" data-flag="@X" onclick="openSidebar('91_Silumgar Soulslasher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\119_Sarkhan, Savior of Tarkir.png" id="119_Sarkhan, Savior of Tarkir" data-flag="@X" onclick="openSidebar('119_Sarkhan, Savior of Tarkir',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\143_Guardian Sabertooth.png" id="143_Guardian Sabertooth" data-flag="@X" onclick="openSidebar('143_Guardian Sabertooth',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\27_Separ, Bulwark of Arashin.png" id="27_Separ, Bulwark of Arashin" data-flag="@X" onclick="openSidebar('27_Separ, Bulwark of Arashin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\63_Unleash the Archives.png" id="63_Unleash the Archives" data-flag="@X" onclick="openSidebar('63_Unleash the Archives',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\92_Solidarity of the Houses.png" id="92_Solidarity of the Houses" data-flag="@X" onclick="openSidebar('92_Solidarity of the Houses',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\124_Stormwing Onslaught.png" id="124_Stormwing Onslaught" data-flag="@X" onclick="openSidebar('124_Stormwing Onslaught',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\155_Tsan Kosag, the Timetorn.png" id="155_Tsan Kosag, the Timetorn" data-flag="@X" onclick="openSidebar('155_Tsan Kosag, the Timetorn',false)"></div>
-				<div class="container"><img data-alt_src="/sets\DRT-files\img\5_Amirah the Heartpiercer_back.png" alt="/sets\DRT-files\img\5_Amirah the Heartpiercer_front.png" id="5_Amirah the Heartpiercer" data-flag="@XD" onclick="openSidebar('5_Amirah the Heartpiercer',false)"><button class="flip-btn" onclick="imgFlip('5_Amirah the Heartpiercer')"></button></div>
-				<div class="container"><img alt="/sets\DRT-files\img\35_Arel's Wisdom.png" id="35_Arels Wisdom" data-flag="@X" onclick="openSidebar('35_Arels Wisdom',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\69_Blood-Trophy Marauder.png" id="69_Blood-Trophy Marauder" data-flag="@X" onclick="openSidebar('69_Blood-Trophy Marauder',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\98_Atarka Battle Rage.png" id="98_Atarka Battle Rage" data-flag="@X" onclick="openSidebar('98_Atarka Battle Rage',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\132_Barkclad Elder.png" id="132_Barkclad Elder" data-flag="@X" onclick="openSidebar('132_Barkclad Elder',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\11_Disciple of the First Tree.png" id="11_Disciple of the First Tree" data-flag="@X" onclick="openSidebar('11_Disciple of the First Tree',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\36_Call of the Dragonstorms.png" id="36_Call of the Dragonstorms" data-flag="@X" onclick="openSidebar('36_Call of the Dragonstorms',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\71_Conniving Deathfang.png" id="71_Conniving Deathfang" data-flag="@X" onclick="openSidebar('71_Conniving Deathfang',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\109_Flamerush Fusillade.png" id="109_Flamerush Fusillade" data-flag="@X" onclick="openSidebar('109_Flamerush Fusillade',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\137_Caravan Ibex.png" id="137_Caravan Ibex" data-flag="@X" onclick="openSidebar('137_Caravan Ibex',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\25_Scalelord Guardian.png" id="25_Scalelord Guardian" data-flag="@X" onclick="openSidebar('25_Scalelord Guardian',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\47_Majestic Breezedancer.png" id="47_Majestic Breezedancer" data-flag="@X" onclick="openSidebar('47_Majestic Breezedancer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\75_Dragonlord's Demise.png" id="75_Dragonlords Demise" data-flag="@X" onclick="openSidebar('75_Dragonlords Demise',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\111_Gorefeaster.png" id="111_Gorefeaster" data-flag="@X" onclick="openSidebar('111_Gorefeaster',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\138_Conifer Colossus.png" id="138_Conifer Colossus" data-flag="@X" onclick="openSidebar('138_Conifer Colossus',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\26_Scouring Sandcrafter.png" id="26_Scouring Sandcrafter" data-flag="@X" onclick="openSidebar('26_Scouring Sandcrafter',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\49_Minister's Machinations.png" id="49_Ministers Machinations" data-flag="@X" onclick="openSidebar('49_Ministers Machinations',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\87_Risen Warshrieker.png" id="87_Risen Warshrieker" data-flag="@X" onclick="openSidebar('87_Risen Warshrieker',false)"></div>
-				<div class="container"><img data-alt_src="/sets\DRT-files\img\117_Maisham, Firebrand_back.png" alt="/sets\DRT-files\img\117_Maisham, Firebrand_front.png" id="117_Maisham, Firebrand" data-flag="@XD" onclick="openSidebar('117_Maisham, Firebrand',false)"><button class="flip-btn" onclick="imgFlip('117_Maisham, Firebrand')"></button></div>
-				<div class="container"><img data-alt_src="/sets\DRT-files\img\139_Disdainful Kartoka_back.png" alt="/sets\DRT-files\img\139_Disdainful Kartoka_front.png" id="139_Disdainful Kartoka" data-flag="@XD" onclick="openSidebar('139_Disdainful Kartoka',false)"><button class="flip-btn" onclick="imgFlip('139_Disdainful Kartoka')"></button></div>
-				<div class="container"><img alt="/sets\DRT-files\img\28_Siege of the Scale.png" id="28_Siege of the Scale" data-flag="@X" onclick="openSidebar('28_Siege of the Scale',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\57_Siege of the Eye.png" id="57_Siege of the Eye" data-flag="@X" onclick="openSidebar('57_Siege of the Eye',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\89_Siege of the Fang.png" id="89_Siege of the Fang" data-flag="@X" onclick="openSidebar('89_Siege of the Fang',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\121_Scorchbellow Warbrute.png" id="121_Scorchbellow Warbrute" data-flag="@X" onclick="openSidebar('121_Scorchbellow Warbrute',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\149_Qal Sisma Huntmaster.png" id="149_Qal Sisma Huntmaster" data-flag="@X" onclick="openSidebar('149_Qal Sisma Huntmaster',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\29_Skywise Reinforcements.png" id="29_Skywise Reinforcements" data-flag="@X" onclick="openSidebar('29_Skywise Reinforcements',false)"></div>
-				<div class="container"><img data-alt_src="/sets\DRT-files\img\60_Sirmi, Frozen Sage_back.png" alt="/sets\DRT-files\img\60_Sirmi, Frozen Sage_front.png" id="60_Sirmi, Frozen Sage" data-flag="@XD" onclick="openSidebar('60_Sirmi, Frozen Sage',false)"><button class="flip-btn" onclick="imgFlip('60_Sirmi, Frozen Sage')"></button></div>
-				<div class="container"><img alt="/sets\DRT-files\img\94_Vizier's Scheming.png" id="94_Viziers Scheming" data-flag="@X" onclick="openSidebar('94_Viziers Scheming',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\123_Siege of the Wing.png" id="123_Siege of the Wing" data-flag="@X" onclick="openSidebar('123_Siege of the Wing',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\153_Siege of the Claw.png" id="153_Siege of the Claw" data-flag="@X" onclick="openSidebar('153_Siege of the Claw',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\30_Teacher of New Generations.png" id="30_Teacher of New Generations" data-flag="@X" onclick="openSidebar('30_Teacher of New Generations',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\61_Temporal Wanderer.png" id="61_Temporal Wanderer" data-flag="@X" onclick="openSidebar('61_Temporal Wanderer',false)"></div>
-				<div class="container"><img data-alt_src="/sets\DRT-files\img\95_Zahmur, Krumar Outcast_back.png" alt="/sets\DRT-files\img\95_Zahmur, Krumar Outcast_front.png" id="95_Zahmur, Krumar Outcast" data-flag="@XD" onclick="openSidebar('95_Zahmur, Krumar Outcast',false)"><button class="flip-btn" onclick="imgFlip('95_Zahmur, Krumar Outcast')"></button></div>
-				<div class="container"><img alt="/sets\DRT-files\img\126_Thundersculpt Warkite.png" id="126_Thundersculpt Warkite" data-flag="@X" onclick="openSidebar('126_Thundersculpt Warkite',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\154_Territorial Ventmaw.png" id="154_Territorial Ventmaw" data-flag="@X" onclick="openSidebar('154_Territorial Ventmaw',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\4_Alabaster Cloudhoof.png" id="4_Alabaster Cloudhoof" data-flag="@X" onclick="openSidebar('4_Alabaster Cloudhoof',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\39_Domineering Regent.png" id="39_Domineering Regent" data-flag="@X" onclick="openSidebar('39_Domineering Regent',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\66_Blood-Chin Cannibals.png" id="66_Blood-Chin Cannibals" data-flag="@X" onclick="openSidebar('66_Blood-Chin Cannibals',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\97_Ashes of Truth.png" id="97_Ashes of Truth" data-flag="@X" onclick="openSidebar('97_Ashes of Truth',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\129_Ainok Hunt-Mate.png" id="129_Ainok Hunt-Mate" data-flag="@X" onclick="openSidebar('129_Ainok Hunt-Mate',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\8_Battlefield Glory.png" id="8_Battlefield Glory" data-flag="@X" onclick="openSidebar('8_Battlefield Glory',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\41_Interceptor Initiate.png" id="41_Interceptor Initiate" data-flag="@X" onclick="openSidebar('41_Interceptor Initiate',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\70_Boltwing Predator.png" id="70_Boltwing Predator" data-flag="@X" onclick="openSidebar('70_Boltwing Predator',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\104_Close Connection.png" id="104_Close Connection" data-flag="@X" onclick="openSidebar('104_Close Connection',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\131_Atarka Cinderhoof.png" id="131_Atarka Cinderhoof" data-flag="@X" onclick="openSidebar('131_Atarka Cinderhoof',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\10_By Anafenza's Will.png" id="10_By Anafenzas Will" data-flag="@X" onclick="openSidebar('10_By Anafenzas Will',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\42_Invoke the Wide Whisper.png" id="42_Invoke the Wide Whisper" data-flag="@X" onclick="openSidebar('42_Invoke the Wide Whisper',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\76_Elder of Withered Branches.png" id="76_Elder of Withered Branches" data-flag="@X" onclick="openSidebar('76_Elder of Withered Branches',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\108_Dragonspeaker's Call.png" id="108_Dragonspeakers Call" data-flag="@X" onclick="openSidebar('108_Dragonspeakers Call',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\133_Bolstering Shieldhide.png" id="133_Bolstering Shieldhide" data-flag="@X" onclick="openSidebar('133_Bolstering Shieldhide',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\12_Dragon's Eye Disciples.png" id="12_Dragons Eye Disciples" data-flag="@X" onclick="openSidebar('12_Dragons Eye Disciples',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\43_Kadena's Banisher.png" id="43_Kadenas Banisher" data-flag="@X" onclick="openSidebar('43_Kadenas Banisher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\82_Lust for Flesh.png" id="82_Lust for Flesh" data-flag="@X" onclick="openSidebar('82_Lust for Flesh',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\112_Herdchaser Whelp.png" id="112_Herdchaser Whelp" data-flag="@X" onclick="openSidebar('112_Herdchaser Whelp',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\134_Branchbearer.png" id="134_Branchbearer" data-flag="@X" onclick="openSidebar('134_Branchbearer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\13_Dromoka Battlemaster.png" id="13_Dromoka Battlemaster" data-flag="@X" onclick="openSidebar('13_Dromoka Battlemaster',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\50_Mistfire Elder.png" id="50_Mistfire Elder" data-flag="@X" onclick="openSidebar('50_Mistfire Elder',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\85_Retribution of the Horde.png" id="85_Retribution of the Horde" data-flag="@X" onclick="openSidebar('85_Retribution of the Horde',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\113_Knuckleblade Mob-Caller.png" id="113_Knuckleblade Mob-Caller" data-flag="@X" onclick="openSidebar('113_Knuckleblade Mob-Caller',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\147_Perplexing Path.png" id="147_Perplexing Path" data-flag="@X" onclick="openSidebar('147_Perplexing Path',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\14_Dromoka Trailscout.png" id="14_Dromoka Trailscout" data-flag="@X" onclick="openSidebar('14_Dromoka Trailscout',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\51_Narset's Assistance.png" id="51_Narsets Assistance" data-flag="@X" onclick="openSidebar('51_Narsets Assistance',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\88_Rotting Imp.png" id="88_Rotting Imp" data-flag="@X" onclick="openSidebar('88_Rotting Imp',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\115_Kolaghan Heelcutter.png" id="115_Kolaghan Heelcutter" data-flag="@X" onclick="openSidebar('115_Kolaghan Heelcutter',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\150_Salt Road Rhinoceros.png" id="150_Salt Road Rhinoceros" data-flag="@X" onclick="openSidebar('150_Salt Road Rhinoceros',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\17_Humbling Skywise.png" id="17_Humbling Skywise" data-flag="@X" onclick="openSidebar('17_Humbling Skywise',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\52_Ojutai Featherblade.png" id="52_Ojutai Featherblade" data-flag="@X" onclick="openSidebar('52_Ojutai Featherblade',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\90_Silumgar Sluice-Stalker.png" id="90_Silumgar Sluice-Stalker" data-flag="@X" onclick="openSidebar('90_Silumgar Sluice-Stalker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\120_Scale-Piercer Hordechief.png" id="120_Scale-Piercer Hordechief" data-flag="@X" onclick="openSidebar('120_Scale-Piercer Hordechief',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\151_Scour the Jungles.png" id="151_Scour the Jungles" data-flag="@X" onclick="openSidebar('151_Scour the Jungles',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\31_Trial of Many Paths.png" id="31_Trial of Many Paths" data-flag="@X" onclick="openSidebar('31_Trial of Many Paths',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\58_Silencer's Strike.png" id="58_Silencers Strike" data-flag="@X" onclick="openSidebar('58_Silencers Strike',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\93_Trials of the Past.png" id="93_Trials of the Past" data-flag="@X" onclick="openSidebar('93_Trials of the Past',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\125_Thunderous Warcaller.png" id="125_Thunderous Warcaller" data-flag="@X" onclick="openSidebar('125_Thunderous Warcaller',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\128_Ainok Flamebearer.png" id="128_Ainok Flamebearer" data-flag="@X" onclick="openSidebar('128_Ainok Flamebearer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\6_Arashin Sentinels.png" id="6_Arashin Sentinels" data-flag="@X" onclick="openSidebar('6_Arashin Sentinels',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\34_Arel's Wing-Seer.png" id="34_Arels Wing-Seer" data-flag="@X" onclick="openSidebar('34_Arels Wing-Seer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\65_Anafenza's Ancestor.png" id="65_Anafenzas Ancestor" data-flag="@X" onclick="openSidebar('65_Anafenzas Ancestor',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\96_Ancient Mantis.png" id="96_Ancient Mantis" data-flag="@X" onclick="openSidebar('96_Ancient Mantis',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\130_Arashin Nestwarden.png" id="130_Arashin Nestwarden" data-flag="@X" onclick="openSidebar('130_Arashin Nestwarden',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\7_Armored Elephant.png" id="7_Armored Elephant" data-flag="@X" onclick="openSidebar('7_Armored Elephant',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\38_Dirgur Deepcoiler.png" id="38_Dirgur Deepcoiler" data-flag="@X" onclick="openSidebar('38_Dirgur Deepcoiler',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\67_Blood-Chin Enforcer.png" id="67_Blood-Chin Enforcer" data-flag="@X" onclick="openSidebar('67_Blood-Chin Enforcer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\99_Atarka's Toothpicker.png" id="99_Atarkas Toothpicker" data-flag="@X" onclick="openSidebar('99_Atarkas Toothpicker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\135_Bulwark Stance.png" id="135_Bulwark Stance" data-flag="@X" onclick="openSidebar('135_Bulwark Stance',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\9_Breakneck Charge.png" id="9_Breakneck Charge" data-flag="@X" onclick="openSidebar('9_Breakneck Charge',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\40_Glacial Pummeler.png" id="40_Glacial Pummeler" data-flag="@X" onclick="openSidebar('40_Glacial Pummeler',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\68_Blood-Chin Ripper.png" id="68_Blood-Chin Ripper" data-flag="@X" onclick="openSidebar('68_Blood-Chin Ripper',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\100_Blazing Wanderlust.png" id="100_Blazing Wanderlust" data-flag="@X" onclick="openSidebar('100_Blazing Wanderlust',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\136_Caravan Guardian.png" id="136_Caravan Guardian" data-flag="@X" onclick="openSidebar('136_Caravan Guardian',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\15_Fist of the Dragonlord.png" id="15_Fist of the Dragonlord" data-flag="@X" onclick="openSidebar('15_Fist of the Dragonlord',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\44_Lead Astray.png" id="44_Lead Astray" data-flag="@X" onclick="openSidebar('44_Lead Astray',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\72_Corpsedrove.png" id="72_Corpsedrove" data-flag="@X" onclick="openSidebar('72_Corpsedrove',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\101_Blood-Chin Pillager.png" id="101_Blood-Chin Pillager" data-flag="@X" onclick="openSidebar('101_Blood-Chin Pillager',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\140_Dragonlord's Prey.png" id="140_Dragonlords Prey" data-flag="@X" onclick="openSidebar('140_Dragonlords Prey',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\18_Leave for the Dunes.png" id="18_Leave for the Dunes" data-flag="@X" onclick="openSidebar('18_Leave for the Dunes',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\45_Loremaster of Inner Secrets.png" id="45_Loremaster of Inner Secrets" data-flag="@X" onclick="openSidebar('45_Loremaster of Inner Secrets',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\74_Devouring Thunder.png" id="74_Devouring Thunder" data-flag="@X" onclick="openSidebar('74_Devouring Thunder',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\102_Bloodfire Ascendant.png" id="102_Bloodfire Ascendant" data-flag="@X" onclick="openSidebar('102_Bloodfire Ascendant',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\141_Dromoka Beastdrover.png" id="141_Dromoka Beastdrover" data-flag="@X" onclick="openSidebar('141_Dromoka Beastdrover',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\19_Loyal Hordemate.png" id="19_Loyal Hordemate" data-flag="@X" onclick="openSidebar('19_Loyal Hordemate',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\46_Lost in Time.png" id="46_Lost in Time" data-flag="@X" onclick="openSidebar('46_Lost in Time',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\77_Gravecaller's Will.png" id="77_Gravecallers Will" data-flag="@X" onclick="openSidebar('77_Gravecallers Will',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\103_Canyon Marauder.png" id="103_Canyon Marauder" data-flag="@X" onclick="openSidebar('103_Canyon Marauder',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\142_Enduring Loxodon.png" id="142_Enduring Loxodon" data-flag="@X" onclick="openSidebar('142_Enduring Loxodon',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\21_Orator of Winds.png" id="21_Orator of Winds" data-flag="@X" onclick="openSidebar('21_Orator of Winds',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\53_Ojutai Mistweaver.png" id="53_Ojutai Mistweaver" data-flag="@X" onclick="openSidebar('53_Ojutai Mistweaver',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\78_Guardian of the Kin-Trees.png" id="78_Guardian of the Kin-Trees" data-flag="@X" onclick="openSidebar('78_Guardian of the Kin-Trees',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\105_Crackling Swoop.png" id="105_Crackling Swoop" data-flag="@X" onclick="openSidebar('105_Crackling Swoop',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\144_Into Sagu Jungle.png" id="144_Into Sagu Jungle" data-flag="@X" onclick="openSidebar('144_Into Sagu Jungle',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\22_Salt Road Dragonrider.png" id="22_Salt Road Dragonrider" data-flag="@X" onclick="openSidebar('22_Salt Road Dragonrider',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\54_Pearl Lake Dragonrider.png" id="54_Pearl Lake Dragonrider" data-flag="@X" onclick="openSidebar('54_Pearl Lake Dragonrider',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\79_Gurmag Dragonrider.png" id="79_Gurmag Dragonrider" data-flag="@X" onclick="openSidebar('79_Gurmag Dragonrider',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\106_Crushing Blow.png" id="106_Crushing Blow" data-flag="@X" onclick="openSidebar('106_Crushing Blow',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\145_Lowland Sambar.png" id="145_Lowland Sambar" data-flag="@X" onclick="openSidebar('145_Lowland Sambar',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\23_Sandbind.png" id="23_Sandbind" data-flag="@X" onclick="openSidebar('23_Sandbind',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\55_Rakshasa's Scorn.png" id="55_Rakshasas Scorn" data-flag="@X" onclick="openSidebar('55_Rakshasas Scorn',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\80_Hewn-Wood Retribution.png" id="80_Hewn-Wood Retribution" data-flag="@X" onclick="openSidebar('80_Hewn-Wood Retribution',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\110_Flamespew.png" id="110_Flamespew" data-flag="@X" onclick="openSidebar('110_Flamespew',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\146_Necropolis Mandrill.png" id="146_Necropolis Mandrill" data-flag="@X" onclick="openSidebar('146_Necropolis Mandrill',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\24_Scaleclad Stalwart.png" id="24_Scaleclad Stalwart" data-flag="@X" onclick="openSidebar('24_Scaleclad Stalwart',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\56_Sage of the Inner Sanctum.png" id="56_Sage of the Inner Sanctum" data-flag="@X" onclick="openSidebar('56_Sage of the Inner Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\81_Kolaghan Smokeweaver.png" id="81_Kolaghan Smokeweaver" data-flag="@X" onclick="openSidebar('81_Kolaghan Smokeweaver',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\114_Kolaghan Fireslinger.png" id="114_Kolaghan Fireslinger" data-flag="@X" onclick="openSidebar('114_Kolaghan Fireslinger',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\148_Qal Sisma Dragonrider.png" id="148_Qal Sisma Dragonrider" data-flag="@X" onclick="openSidebar('148_Qal Sisma Dragonrider',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\32_Whirlkick Exemplar.png" id="32_Whirlkick Exemplar" data-flag="@X" onclick="openSidebar('32_Whirlkick Exemplar',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\59_Silumgar Debilitator.png" id="59_Silumgar Debilitator" data-flag="@X" onclick="openSidebar('59_Silumgar Debilitator',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\83_Necromaster's Attendant.png" id="83_Necromasters Attendant" data-flag="@X" onclick="openSidebar('83_Necromasters Attendant',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\116_Lost Hordemate.png" id="116_Lost Hordemate" data-flag="@X" onclick="openSidebar('116_Lost Hordemate',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\152_Sidisi's Scalecutter.png" id="152_Sidisis Scalecutter" data-flag="@X" onclick="openSidebar('152_Sidisis Scalecutter',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\33_Zealous Hordechief.png" id="33_Zealous Hordechief" data-flag="@X" onclick="openSidebar('33_Zealous Hordechief',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\62_Through the Marang.png" id="62_Through the Marang" data-flag="@X" onclick="openSidebar('62_Through the Marang',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\84_Pillage the Aeries.png" id="84_Pillage the Aeries" data-flag="@X" onclick="openSidebar('84_Pillage the Aeries',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\118_Qal Sisma Berserker.png" id="118_Qal Sisma Berserker" data-flag="@X" onclick="openSidebar('118_Qal Sisma Berserker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\156_Ursine Battlerage.png" id="156_Ursine Battlerage" data-flag="@X" onclick="openSidebar('156_Ursine Battlerage',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\64_Vulturous Cunning.png" id="64_Vulturous Cunning" data-flag="@X" onclick="openSidebar('64_Vulturous Cunning',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\86_Ride Again.png" id="86_Ride Again" data-flag="@X" onclick="openSidebar('86_Ride Again',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\122_Screamreach Dragonrider.png" id="122_Screamreach Dragonrider" data-flag="@X" onclick="openSidebar('122_Screamreach Dragonrider',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+					<div class="container"><img loading="lazy" alt="sets\DRT-files\img\16_Glory of the Mardu.png" id="DRT_16_Glory of the Mardu" data-flag="@X" onclick="openSidebar('DRT_16_Glory of the Mardu',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\37_Communer of Qal Sisma.png" id="DRT_37_Communer of Qal Sisma" data-flag="@X" onclick="openSidebar('DRT_37_Communer of Qal Sisma',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\73_Demon of Darkest Depths.png" id="DRT_73_Demon of Darkest Depths" data-flag="@X" onclick="openSidebar('DRT_73_Demon of Darkest Depths',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\107_Dragon's Bowl Igniter.png" id="DRT_107_Dragons Bowl Igniter" data-flag="@X" onclick="openSidebar('DRT_107_Dragons Bowl Igniter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\127_Aerie Conquerors.png" id="DRT_127_Aerie Conquerors" data-flag="@X" onclick="openSidebar('DRT_127_Aerie Conquerors',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\20_Monastery Master.png" id="DRT_20_Monastery Master" data-flag="@X" onclick="openSidebar('DRT_20_Monastery Master',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\48_Mindflitter Monk.png" id="DRT_48_Mindflitter Monk" data-flag="@X" onclick="openSidebar('DRT_48_Mindflitter Monk',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\91_Silumgar Soulslasher.png" id="DRT_91_Silumgar Soulslasher" data-flag="@X" onclick="openSidebar('DRT_91_Silumgar Soulslasher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\119_Sarkhan, Savior of Tarkir.png" id="DRT_119_Sarkhan, Savior of Tarkir" data-flag="@X" onclick="openSidebar('DRT_119_Sarkhan, Savior of Tarkir',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\143_Guardian Sabertooth.png" id="DRT_143_Guardian Sabertooth" data-flag="@X" onclick="openSidebar('DRT_143_Guardian Sabertooth',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\27_Separ, Bulwark of Arashin.png" id="DRT_27_Separ, Bulwark of Arashin" data-flag="@X" onclick="openSidebar('DRT_27_Separ, Bulwark of Arashin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\63_Unleash the Archives.png" id="DRT_63_Unleash the Archives" data-flag="@X" onclick="openSidebar('DRT_63_Unleash the Archives',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\92_Solidarity of the Houses.png" id="DRT_92_Solidarity of the Houses" data-flag="@X" onclick="openSidebar('DRT_92_Solidarity of the Houses',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\124_Stormwing Onslaught.png" id="DRT_124_Stormwing Onslaught" data-flag="@X" onclick="openSidebar('DRT_124_Stormwing Onslaught',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\155_Tsan Kosag, the Timetorn.png" id="DRT_155_Tsan Kosag, the Timetorn" data-flag="@X" onclick="openSidebar('DRT_155_Tsan Kosag, the Timetorn',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\DRT-files\img\5_Amirah the Heartpiercer_back.png" alt="sets\DRT-files\img\5_Amirah the Heartpiercer_front.png" id="DRT_5_Amirah the Heartpiercer" data-flag="@XD" onclick="openSidebar('DRT_5_Amirah the Heartpiercer',false)"><button class="flip-btn" onclick="imgFlip('DRT_5_Amirah the Heartpiercer')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\35_Arel's Wisdom.png" id="DRT_35_Arels Wisdom" data-flag="@X" onclick="openSidebar('DRT_35_Arels Wisdom',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\69_Blood-Trophy Marauder.png" id="DRT_69_Blood-Trophy Marauder" data-flag="@X" onclick="openSidebar('DRT_69_Blood-Trophy Marauder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\98_Atarka Battle Rage.png" id="DRT_98_Atarka Battle Rage" data-flag="@X" onclick="openSidebar('DRT_98_Atarka Battle Rage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\132_Barkclad Elder.png" id="DRT_132_Barkclad Elder" data-flag="@X" onclick="openSidebar('DRT_132_Barkclad Elder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\11_Disciple of the First Tree.png" id="DRT_11_Disciple of the First Tree" data-flag="@X" onclick="openSidebar('DRT_11_Disciple of the First Tree',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\36_Call of the Dragonstorms.png" id="DRT_36_Call of the Dragonstorms" data-flag="@X" onclick="openSidebar('DRT_36_Call of the Dragonstorms',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\71_Conniving Deathfang.png" id="DRT_71_Conniving Deathfang" data-flag="@X" onclick="openSidebar('DRT_71_Conniving Deathfang',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\109_Flamerush Fusillade.png" id="DRT_109_Flamerush Fusillade" data-flag="@X" onclick="openSidebar('DRT_109_Flamerush Fusillade',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\137_Caravan Ibex.png" id="DRT_137_Caravan Ibex" data-flag="@X" onclick="openSidebar('DRT_137_Caravan Ibex',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\25_Scalelord Guardian.png" id="DRT_25_Scalelord Guardian" data-flag="@X" onclick="openSidebar('DRT_25_Scalelord Guardian',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\47_Majestic Breezedancer.png" id="DRT_47_Majestic Breezedancer" data-flag="@X" onclick="openSidebar('DRT_47_Majestic Breezedancer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\75_Dragonlord's Demise.png" id="DRT_75_Dragonlords Demise" data-flag="@X" onclick="openSidebar('DRT_75_Dragonlords Demise',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\111_Gorefeaster.png" id="DRT_111_Gorefeaster" data-flag="@X" onclick="openSidebar('DRT_111_Gorefeaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\138_Conifer Colossus.png" id="DRT_138_Conifer Colossus" data-flag="@X" onclick="openSidebar('DRT_138_Conifer Colossus',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\26_Scouring Sandcrafter.png" id="DRT_26_Scouring Sandcrafter" data-flag="@X" onclick="openSidebar('DRT_26_Scouring Sandcrafter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\49_Minister's Machinations.png" id="DRT_49_Ministers Machinations" data-flag="@X" onclick="openSidebar('DRT_49_Ministers Machinations',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\87_Risen Warshrieker.png" id="DRT_87_Risen Warshrieker" data-flag="@X" onclick="openSidebar('DRT_87_Risen Warshrieker',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\DRT-files\img\117_Maisham, Firebrand_back.png" alt="sets\DRT-files\img\117_Maisham, Firebrand_front.png" id="DRT_117_Maisham, Firebrand" data-flag="@XD" onclick="openSidebar('DRT_117_Maisham, Firebrand',false)"><button class="flip-btn" onclick="imgFlip('DRT_117_Maisham, Firebrand')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\DRT-files\img\139_Disdainful Kartoka_back.png" alt="sets\DRT-files\img\139_Disdainful Kartoka_front.png" id="DRT_139_Disdainful Kartoka" data-flag="@XD" onclick="openSidebar('DRT_139_Disdainful Kartoka',false)"><button class="flip-btn" onclick="imgFlip('DRT_139_Disdainful Kartoka')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\28_Siege of the Scale.png" id="DRT_28_Siege of the Scale" data-flag="@X" onclick="openSidebar('DRT_28_Siege of the Scale',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\57_Siege of the Eye.png" id="DRT_57_Siege of the Eye" data-flag="@X" onclick="openSidebar('DRT_57_Siege of the Eye',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\89_Siege of the Fang.png" id="DRT_89_Siege of the Fang" data-flag="@X" onclick="openSidebar('DRT_89_Siege of the Fang',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\121_Scorchbellow Warbrute.png" id="DRT_121_Scorchbellow Warbrute" data-flag="@X" onclick="openSidebar('DRT_121_Scorchbellow Warbrute',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\149_Qal Sisma Huntmaster.png" id="DRT_149_Qal Sisma Huntmaster" data-flag="@X" onclick="openSidebar('DRT_149_Qal Sisma Huntmaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\29_Skywise Reinforcements.png" id="DRT_29_Skywise Reinforcements" data-flag="@X" onclick="openSidebar('DRT_29_Skywise Reinforcements',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\DRT-files\img\60_Sirmi, Frozen Sage_back.png" alt="sets\DRT-files\img\60_Sirmi, Frozen Sage_front.png" id="DRT_60_Sirmi, Frozen Sage" data-flag="@XD" onclick="openSidebar('DRT_60_Sirmi, Frozen Sage',false)"><button class="flip-btn" onclick="imgFlip('DRT_60_Sirmi, Frozen Sage')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\94_Vizier's Scheming.png" id="DRT_94_Viziers Scheming" data-flag="@X" onclick="openSidebar('DRT_94_Viziers Scheming',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\123_Siege of the Wing.png" id="DRT_123_Siege of the Wing" data-flag="@X" onclick="openSidebar('DRT_123_Siege of the Wing',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\153_Siege of the Claw.png" id="DRT_153_Siege of the Claw" data-flag="@X" onclick="openSidebar('DRT_153_Siege of the Claw',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\30_Teacher of New Generations.png" id="DRT_30_Teacher of New Generations" data-flag="@X" onclick="openSidebar('DRT_30_Teacher of New Generations',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\61_Temporal Wanderer.png" id="DRT_61_Temporal Wanderer" data-flag="@X" onclick="openSidebar('DRT_61_Temporal Wanderer',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\DRT-files\img\95_Zahmur, Krumar Outcast_back.png" alt="sets\DRT-files\img\95_Zahmur, Krumar Outcast_front.png" id="DRT_95_Zahmur, Krumar Outcast" data-flag="@XD" onclick="openSidebar('DRT_95_Zahmur, Krumar Outcast',false)"><button class="flip-btn" onclick="imgFlip('DRT_95_Zahmur, Krumar Outcast')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\126_Thundersculpt Warkite.png" id="DRT_126_Thundersculpt Warkite" data-flag="@X" onclick="openSidebar('DRT_126_Thundersculpt Warkite',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\154_Territorial Ventmaw.png" id="DRT_154_Territorial Ventmaw" data-flag="@X" onclick="openSidebar('DRT_154_Territorial Ventmaw',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\4_Alabaster Cloudhoof.png" id="DRT_4_Alabaster Cloudhoof" data-flag="@X" onclick="openSidebar('DRT_4_Alabaster Cloudhoof',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\39_Domineering Regent.png" id="DRT_39_Domineering Regent" data-flag="@X" onclick="openSidebar('DRT_39_Domineering Regent',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\66_Blood-Chin Cannibals.png" id="DRT_66_Blood-Chin Cannibals" data-flag="@X" onclick="openSidebar('DRT_66_Blood-Chin Cannibals',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\97_Ashes of Truth.png" id="DRT_97_Ashes of Truth" data-flag="@X" onclick="openSidebar('DRT_97_Ashes of Truth',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\129_Ainok Hunt-Mate.png" id="DRT_129_Ainok Hunt-Mate" data-flag="@X" onclick="openSidebar('DRT_129_Ainok Hunt-Mate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\8_Battlefield Glory.png" id="DRT_8_Battlefield Glory" data-flag="@X" onclick="openSidebar('DRT_8_Battlefield Glory',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\41_Interceptor Initiate.png" id="DRT_41_Interceptor Initiate" data-flag="@X" onclick="openSidebar('DRT_41_Interceptor Initiate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\70_Boltwing Predator.png" id="DRT_70_Boltwing Predator" data-flag="@X" onclick="openSidebar('DRT_70_Boltwing Predator',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\104_Close Connection.png" id="DRT_104_Close Connection" data-flag="@X" onclick="openSidebar('DRT_104_Close Connection',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\131_Atarka Cinderhoof.png" id="DRT_131_Atarka Cinderhoof" data-flag="@X" onclick="openSidebar('DRT_131_Atarka Cinderhoof',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\10_By Anafenza's Will.png" id="DRT_10_By Anafenzas Will" data-flag="@X" onclick="openSidebar('DRT_10_By Anafenzas Will',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\42_Invoke the Wide Whisper.png" id="DRT_42_Invoke the Wide Whisper" data-flag="@X" onclick="openSidebar('DRT_42_Invoke the Wide Whisper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\76_Elder of Withered Branches.png" id="DRT_76_Elder of Withered Branches" data-flag="@X" onclick="openSidebar('DRT_76_Elder of Withered Branches',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\108_Dragonspeaker's Call.png" id="DRT_108_Dragonspeakers Call" data-flag="@X" onclick="openSidebar('DRT_108_Dragonspeakers Call',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\133_Bolstering Shieldhide.png" id="DRT_133_Bolstering Shieldhide" data-flag="@X" onclick="openSidebar('DRT_133_Bolstering Shieldhide',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\12_Dragon's Eye Disciples.png" id="DRT_12_Dragons Eye Disciples" data-flag="@X" onclick="openSidebar('DRT_12_Dragons Eye Disciples',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\43_Kadena's Banisher.png" id="DRT_43_Kadenas Banisher" data-flag="@X" onclick="openSidebar('DRT_43_Kadenas Banisher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\82_Lust for Flesh.png" id="DRT_82_Lust for Flesh" data-flag="@X" onclick="openSidebar('DRT_82_Lust for Flesh',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\112_Herdchaser Whelp.png" id="DRT_112_Herdchaser Whelp" data-flag="@X" onclick="openSidebar('DRT_112_Herdchaser Whelp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\134_Branchbearer.png" id="DRT_134_Branchbearer" data-flag="@X" onclick="openSidebar('DRT_134_Branchbearer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\13_Dromoka Battlemaster.png" id="DRT_13_Dromoka Battlemaster" data-flag="@X" onclick="openSidebar('DRT_13_Dromoka Battlemaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\50_Mistfire Elder.png" id="DRT_50_Mistfire Elder" data-flag="@X" onclick="openSidebar('DRT_50_Mistfire Elder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\85_Retribution of the Horde.png" id="DRT_85_Retribution of the Horde" data-flag="@X" onclick="openSidebar('DRT_85_Retribution of the Horde',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\113_Knuckleblade Mob-Caller.png" id="DRT_113_Knuckleblade Mob-Caller" data-flag="@X" onclick="openSidebar('DRT_113_Knuckleblade Mob-Caller',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\147_Perplexing Path.png" id="DRT_147_Perplexing Path" data-flag="@X" onclick="openSidebar('DRT_147_Perplexing Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\14_Dromoka Trailscout.png" id="DRT_14_Dromoka Trailscout" data-flag="@X" onclick="openSidebar('DRT_14_Dromoka Trailscout',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\51_Narset's Assistance.png" id="DRT_51_Narsets Assistance" data-flag="@X" onclick="openSidebar('DRT_51_Narsets Assistance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\88_Rotting Imp.png" id="DRT_88_Rotting Imp" data-flag="@X" onclick="openSidebar('DRT_88_Rotting Imp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\115_Kolaghan Heelcutter.png" id="DRT_115_Kolaghan Heelcutter" data-flag="@X" onclick="openSidebar('DRT_115_Kolaghan Heelcutter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\150_Salt Road Rhinoceros.png" id="DRT_150_Salt Road Rhinoceros" data-flag="@X" onclick="openSidebar('DRT_150_Salt Road Rhinoceros',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\17_Humbling Skywise.png" id="DRT_17_Humbling Skywise" data-flag="@X" onclick="openSidebar('DRT_17_Humbling Skywise',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\52_Ojutai Featherblade.png" id="DRT_52_Ojutai Featherblade" data-flag="@X" onclick="openSidebar('DRT_52_Ojutai Featherblade',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\90_Silumgar Sluice-Stalker.png" id="DRT_90_Silumgar Sluice-Stalker" data-flag="@X" onclick="openSidebar('DRT_90_Silumgar Sluice-Stalker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\120_Scale-Piercer Hordechief.png" id="DRT_120_Scale-Piercer Hordechief" data-flag="@X" onclick="openSidebar('DRT_120_Scale-Piercer Hordechief',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\151_Scour the Jungles.png" id="DRT_151_Scour the Jungles" data-flag="@X" onclick="openSidebar('DRT_151_Scour the Jungles',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\31_Trial of Many Paths.png" id="DRT_31_Trial of Many Paths" data-flag="@X" onclick="openSidebar('DRT_31_Trial of Many Paths',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\58_Silencer's Strike.png" id="DRT_58_Silencers Strike" data-flag="@X" onclick="openSidebar('DRT_58_Silencers Strike',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\93_Trials of the Past.png" id="DRT_93_Trials of the Past" data-flag="@X" onclick="openSidebar('DRT_93_Trials of the Past',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\125_Thunderous Warcaller.png" id="DRT_125_Thunderous Warcaller" data-flag="@X" onclick="openSidebar('DRT_125_Thunderous Warcaller',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\128_Ainok Flamebearer.png" id="DRT_128_Ainok Flamebearer" data-flag="@X" onclick="openSidebar('DRT_128_Ainok Flamebearer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\6_Arashin Sentinels.png" id="DRT_6_Arashin Sentinels" data-flag="@X" onclick="openSidebar('DRT_6_Arashin Sentinels',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\34_Arel's Wing-Seer.png" id="DRT_34_Arels Wing-Seer" data-flag="@X" onclick="openSidebar('DRT_34_Arels Wing-Seer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\65_Anafenza's Ancestor.png" id="DRT_65_Anafenzas Ancestor" data-flag="@X" onclick="openSidebar('DRT_65_Anafenzas Ancestor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\96_Ancient Mantis.png" id="DRT_96_Ancient Mantis" data-flag="@X" onclick="openSidebar('DRT_96_Ancient Mantis',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\130_Arashin Nestwarden.png" id="DRT_130_Arashin Nestwarden" data-flag="@X" onclick="openSidebar('DRT_130_Arashin Nestwarden',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\7_Armored Elephant.png" id="DRT_7_Armored Elephant" data-flag="@X" onclick="openSidebar('DRT_7_Armored Elephant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\38_Dirgur Deepcoiler.png" id="DRT_38_Dirgur Deepcoiler" data-flag="@X" onclick="openSidebar('DRT_38_Dirgur Deepcoiler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\67_Blood-Chin Enforcer.png" id="DRT_67_Blood-Chin Enforcer" data-flag="@X" onclick="openSidebar('DRT_67_Blood-Chin Enforcer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\99_Atarka's Toothpicker.png" id="DRT_99_Atarkas Toothpicker" data-flag="@X" onclick="openSidebar('DRT_99_Atarkas Toothpicker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\135_Bulwark Stance.png" id="DRT_135_Bulwark Stance" data-flag="@X" onclick="openSidebar('DRT_135_Bulwark Stance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\9_Breakneck Charge.png" id="DRT_9_Breakneck Charge" data-flag="@X" onclick="openSidebar('DRT_9_Breakneck Charge',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\40_Glacial Pummeler.png" id="DRT_40_Glacial Pummeler" data-flag="@X" onclick="openSidebar('DRT_40_Glacial Pummeler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\68_Blood-Chin Ripper.png" id="DRT_68_Blood-Chin Ripper" data-flag="@X" onclick="openSidebar('DRT_68_Blood-Chin Ripper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\100_Blazing Wanderlust.png" id="DRT_100_Blazing Wanderlust" data-flag="@X" onclick="openSidebar('DRT_100_Blazing Wanderlust',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\136_Caravan Guardian.png" id="DRT_136_Caravan Guardian" data-flag="@X" onclick="openSidebar('DRT_136_Caravan Guardian',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\15_Fist of the Dragonlord.png" id="DRT_15_Fist of the Dragonlord" data-flag="@X" onclick="openSidebar('DRT_15_Fist of the Dragonlord',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\44_Lead Astray.png" id="DRT_44_Lead Astray" data-flag="@X" onclick="openSidebar('DRT_44_Lead Astray',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\72_Corpsedrove.png" id="DRT_72_Corpsedrove" data-flag="@X" onclick="openSidebar('DRT_72_Corpsedrove',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\101_Blood-Chin Pillager.png" id="DRT_101_Blood-Chin Pillager" data-flag="@X" onclick="openSidebar('DRT_101_Blood-Chin Pillager',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\140_Dragonlord's Prey.png" id="DRT_140_Dragonlords Prey" data-flag="@X" onclick="openSidebar('DRT_140_Dragonlords Prey',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\18_Leave for the Dunes.png" id="DRT_18_Leave for the Dunes" data-flag="@X" onclick="openSidebar('DRT_18_Leave for the Dunes',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\45_Loremaster of Inner Secrets.png" id="DRT_45_Loremaster of Inner Secrets" data-flag="@X" onclick="openSidebar('DRT_45_Loremaster of Inner Secrets',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\74_Devouring Thunder.png" id="DRT_74_Devouring Thunder" data-flag="@X" onclick="openSidebar('DRT_74_Devouring Thunder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\102_Bloodfire Ascendant.png" id="DRT_102_Bloodfire Ascendant" data-flag="@X" onclick="openSidebar('DRT_102_Bloodfire Ascendant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\141_Dromoka Beastdrover.png" id="DRT_141_Dromoka Beastdrover" data-flag="@X" onclick="openSidebar('DRT_141_Dromoka Beastdrover',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\19_Loyal Hordemate.png" id="DRT_19_Loyal Hordemate" data-flag="@X" onclick="openSidebar('DRT_19_Loyal Hordemate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\46_Lost in Time.png" id="DRT_46_Lost in Time" data-flag="@X" onclick="openSidebar('DRT_46_Lost in Time',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\77_Gravecaller's Will.png" id="DRT_77_Gravecallers Will" data-flag="@X" onclick="openSidebar('DRT_77_Gravecallers Will',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\103_Canyon Marauder.png" id="DRT_103_Canyon Marauder" data-flag="@X" onclick="openSidebar('DRT_103_Canyon Marauder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\142_Enduring Loxodon.png" id="DRT_142_Enduring Loxodon" data-flag="@X" onclick="openSidebar('DRT_142_Enduring Loxodon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\21_Orator of Winds.png" id="DRT_21_Orator of Winds" data-flag="@X" onclick="openSidebar('DRT_21_Orator of Winds',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\53_Ojutai Mistweaver.png" id="DRT_53_Ojutai Mistweaver" data-flag="@X" onclick="openSidebar('DRT_53_Ojutai Mistweaver',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\78_Guardian of the Kin-Trees.png" id="DRT_78_Guardian of the Kin-Trees" data-flag="@X" onclick="openSidebar('DRT_78_Guardian of the Kin-Trees',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\105_Crackling Swoop.png" id="DRT_105_Crackling Swoop" data-flag="@X" onclick="openSidebar('DRT_105_Crackling Swoop',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\144_Into Sagu Jungle.png" id="DRT_144_Into Sagu Jungle" data-flag="@X" onclick="openSidebar('DRT_144_Into Sagu Jungle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\22_Salt Road Dragonrider.png" id="DRT_22_Salt Road Dragonrider" data-flag="@X" onclick="openSidebar('DRT_22_Salt Road Dragonrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\54_Pearl Lake Dragonrider.png" id="DRT_54_Pearl Lake Dragonrider" data-flag="@X" onclick="openSidebar('DRT_54_Pearl Lake Dragonrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\79_Gurmag Dragonrider.png" id="DRT_79_Gurmag Dragonrider" data-flag="@X" onclick="openSidebar('DRT_79_Gurmag Dragonrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\106_Crushing Blow.png" id="DRT_106_Crushing Blow" data-flag="@X" onclick="openSidebar('DRT_106_Crushing Blow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\145_Lowland Sambar.png" id="DRT_145_Lowland Sambar" data-flag="@X" onclick="openSidebar('DRT_145_Lowland Sambar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\23_Sandbind.png" id="DRT_23_Sandbind" data-flag="@X" onclick="openSidebar('DRT_23_Sandbind',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\55_Rakshasa's Scorn.png" id="DRT_55_Rakshasas Scorn" data-flag="@X" onclick="openSidebar('DRT_55_Rakshasas Scorn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\80_Hewn-Wood Retribution.png" id="DRT_80_Hewn-Wood Retribution" data-flag="@X" onclick="openSidebar('DRT_80_Hewn-Wood Retribution',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\110_Flamespew.png" id="DRT_110_Flamespew" data-flag="@X" onclick="openSidebar('DRT_110_Flamespew',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\146_Necropolis Mandrill.png" id="DRT_146_Necropolis Mandrill" data-flag="@X" onclick="openSidebar('DRT_146_Necropolis Mandrill',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\24_Scaleclad Stalwart.png" id="DRT_24_Scaleclad Stalwart" data-flag="@X" onclick="openSidebar('DRT_24_Scaleclad Stalwart',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\56_Sage of the Inner Sanctum.png" id="DRT_56_Sage of the Inner Sanctum" data-flag="@X" onclick="openSidebar('DRT_56_Sage of the Inner Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\81_Kolaghan Smokeweaver.png" id="DRT_81_Kolaghan Smokeweaver" data-flag="@X" onclick="openSidebar('DRT_81_Kolaghan Smokeweaver',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\114_Kolaghan Fireslinger.png" id="DRT_114_Kolaghan Fireslinger" data-flag="@X" onclick="openSidebar('DRT_114_Kolaghan Fireslinger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\148_Qal Sisma Dragonrider.png" id="DRT_148_Qal Sisma Dragonrider" data-flag="@X" onclick="openSidebar('DRT_148_Qal Sisma Dragonrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\32_Whirlkick Exemplar.png" id="DRT_32_Whirlkick Exemplar" data-flag="@X" onclick="openSidebar('DRT_32_Whirlkick Exemplar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\59_Silumgar Debilitator.png" id="DRT_59_Silumgar Debilitator" data-flag="@X" onclick="openSidebar('DRT_59_Silumgar Debilitator',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\83_Necromaster's Attendant.png" id="DRT_83_Necromasters Attendant" data-flag="@X" onclick="openSidebar('DRT_83_Necromasters Attendant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\116_Lost Hordemate.png" id="DRT_116_Lost Hordemate" data-flag="@X" onclick="openSidebar('DRT_116_Lost Hordemate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\152_Sidisi's Scalecutter.png" id="DRT_152_Sidisis Scalecutter" data-flag="@X" onclick="openSidebar('DRT_152_Sidisis Scalecutter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\33_Zealous Hordechief.png" id="DRT_33_Zealous Hordechief" data-flag="@X" onclick="openSidebar('DRT_33_Zealous Hordechief',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\62_Through the Marang.png" id="DRT_62_Through the Marang" data-flag="@X" onclick="openSidebar('DRT_62_Through the Marang',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\84_Pillage the Aeries.png" id="DRT_84_Pillage the Aeries" data-flag="@X" onclick="openSidebar('DRT_84_Pillage the Aeries',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\118_Qal Sisma Berserker.png" id="DRT_118_Qal Sisma Berserker" data-flag="@X" onclick="openSidebar('DRT_118_Qal Sisma Berserker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\156_Ursine Battlerage.png" id="DRT_156_Ursine Battlerage" data-flag="@X" onclick="openSidebar('DRT_156_Ursine Battlerage',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\64_Vulturous Cunning.png" id="DRT_64_Vulturous Cunning" data-flag="@X" onclick="openSidebar('DRT_64_Vulturous Cunning',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\86_Ride Again.png" id="DRT_86_Ride Again" data-flag="@X" onclick="openSidebar('DRT_86_Ride Again',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\122_Screamreach Dragonrider.png" id="DRT_122_Screamreach Dragonrider" data-flag="@X" onclick="openSidebar('DRT_122_Screamreach Dragonrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
 				<div id="gold" class="anchor"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\228_Ojutai, All-Knowing.png" id="228_Ojutai, All-Knowing" data-flag="@X" onclick="openSidebar('228_Ojutai, All-Knowing',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\243_Silumgar, All-Swaying.png" id="243_Silumgar, All-Swaying" data-flag="@X" onclick="openSidebar('243_Silumgar, All-Swaying',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\211_Kolaghan, All-Inciting.png" id="211_Kolaghan, All-Inciting" data-flag="@X" onclick="openSidebar('211_Kolaghan, All-Inciting',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\164_Atarka, All-Consuming.png" id="164_Atarka, All-Consuming" data-flag="@X" onclick="openSidebar('164_Atarka, All-Consuming',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\187_Dromoka, All-Enduring.png" id="187_Dromoka, All-Enduring" data-flag="@X" onclick="openSidebar('187_Dromoka, All-Enduring',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\220_Many-Form Mystic.png" id="220_Many-Form Mystic" data-flag="@X" onclick="openSidebar('220_Many-Form Mystic',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\182_Dragonlord's Scorn.png" id="182_Dragonlords Scorn" data-flag="@X" onclick="openSidebar('182_Dragonlords Scorn',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\169_Blitzsurge Warkite.png" id="169_Blitzsurge Warkite" data-flag="@X" onclick="openSidebar('169_Blitzsurge Warkite',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\191_Eternal-Pyre Efreet.png" id="191_Eternal-Pyre Efreet" data-flag="@X" onclick="openSidebar('191_Eternal-Pyre Efreet',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\236_Scaleclad Cataphract.png" id="236_Scaleclad Cataphract" data-flag="@X" onclick="openSidebar('236_Scaleclad Cataphract',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\251_Style of the Great Teacher.png" id="251_Style of the Great Teacher" data-flag="@X" onclick="openSidebar('251_Style of the Great Teacher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\241_Sibsig Murk-Dredger.png" id="241_Sibsig Murk-Dredger" data-flag="@X" onclick="openSidebar('241_Sibsig Murk-Dredger',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\196_Gore Frenzy.png" id="196_Gore Frenzy" data-flag="@X" onclick="openSidebar('196_Gore Frenzy',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\166_Ayagor, the Dragon's Bowl.png" id="166_Ayagor, the Dragons Bowl" data-flag="@X" onclick="openSidebar('166_Ayagor, the Dragons Bowl',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\237_Scalelord's Presence.png" id="237_Scalelords Presence" data-flag="@X" onclick="openSidebar('237_Scalelords Presence',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\184_Dragon's Eye Instructor.png" id="184_Dragons Eye Instructor" data-flag="@X" onclick="openSidebar('184_Dragons Eye Instructor',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\177_Decadent Opulence.png" id="177_Decadent Opulence" data-flag="@X" onclick="openSidebar('177_Decadent Opulence',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\213_Kolaghan's Broodkin.png" id="213_Kolaghans Broodkin" data-flag="@X" onclick="openSidebar('213_Kolaghans Broodkin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\255_Surrak's Pulverizer.png" id="255_Surraks Pulverizer" data-flag="@X" onclick="openSidebar('255_Surraks Pulverizer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\160_Aggressive Defense.png" id="160_Aggressive Defense" data-flag="@X" onclick="openSidebar('160_Aggressive Defense',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\229_Ojutai's Broodkin.png" id="229_Ojutais Broodkin" data-flag="@X" onclick="openSidebar('229_Ojutais Broodkin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\197_Grim Exhumation.png" id="197_Grim Exhumation" data-flag="@X" onclick="openSidebar('197_Grim Exhumation',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\238_Screamreach Outrider.png" id="238_Screamreach Outrider" data-flag="@X" onclick="openSidebar('238_Screamreach Outrider',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\165_Atarka's Broodkin.png" id="165_Atarkas Broodkin" data-flag="@X" onclick="openSidebar('165_Atarkas Broodkin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\185_Dragonscale Cavalry.png" id="185_Dragonscale Cavalry" data-flag="@X" onclick="openSidebar('185_Dragonscale Cavalry',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\265_Zephyr Assembly.png" id="265_Zephyr Assembly" data-flag="@X" onclick="openSidebar('265_Zephyr Assembly',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\245_Silumgar's Broodkin.png" id="245_Silumgars Broodkin" data-flag="@X" onclick="openSidebar('245_Silumgars Broodkin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\250_Stormsinger's Song.png" id="250_Stormsingers Song" data-flag="@X" onclick="openSidebar('250_Stormsingers Song',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\179_Draconic Majesty.png" id="179_Draconic Majesty" data-flag="@X" onclick="openSidebar('179_Draconic Majesty',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\188_Dromoka's Broodkin.png" id="188_Dromokas Broodkin" data-flag="@X" onclick="openSidebar('188_Dromokas Broodkin',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\178_Draconic Denial.png" id="178_Draconic Denial" data-flag="@X" onclick="openSidebar('178_Draconic Denial',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\215_Last Whispers.png" id="215_Last Whispers" data-flag="@X" onclick="openSidebar('215_Last Whispers',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\172_Boltwing Blitz.png" id="172_Boltwing Blitz" data-flag="@X" onclick="openSidebar('172_Boltwing Blitz',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\256_Swathe of Dragonfire.png" id="256_Swathe of Dragonfire" data-flag="@X" onclick="openSidebar('256_Swathe of Dragonfire',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\186_Dromoka Aerie-Guard.png" id="186_Dromoka Aerie-Guard" data-flag="@X" onclick="openSidebar('186_Dromoka Aerie-Guard',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\181_Dragonlord's Disciple.png" id="181_Dragonlords Disciple" data-flag="@X" onclick="openSidebar('181_Dragonlords Disciple',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\244_Silumgar Familiar.png" id="244_Silumgar Familiar" data-flag="@X" onclick="openSidebar('244_Silumgar Familiar',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\212_Kolaghan Gate-Smasher.png" id="212_Kolaghan Gate-Smasher" data-flag="@X" onclick="openSidebar('212_Kolaghan Gate-Smasher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\175_Colossal Might.png" id="175_Colossal Might" data-flag="@X" onclick="openSidebar('175_Colossal Might',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\235_Scaleborn Barricade.png" id="235_Scaleborn Barricade" data-flag="@X" onclick="openSidebar('235_Scaleborn Barricade',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\183_Dragonmaul Bear.png" id="183_Dragonmaul Bear" data-flag="@X" onclick="openSidebar('183_Dragonmaul Bear',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\263_War-Horde Chieftain.png" id="263_War-Horde Chieftain" data-flag="@X" onclick="openSidebar('263_War-Horde Chieftain',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\261_Timeline Schism.png" id="261_Timeline Schism" data-flag="@X" onclick="openSidebar('261_Timeline Schism',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\180_Dragonflayer Sidisi.png" id="180_Dragonflayer Sidisi" data-flag="@X" onclick="openSidebar('180_Dragonflayer Sidisi',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\266_Zurgo's Vanguard.png" id="266_Zurgos Vanguard" data-flag="@X" onclick="openSidebar('266_Zurgos Vanguard',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\247_Skinslitherer.png" id="247_Skinslitherer" data-flag="@X" onclick="openSidebar('247_Skinslitherer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\162_Anafenza, Ancestral Warden.png" id="162_Anafenza, Ancestral Warden" data-flag="@X" onclick="openSidebar('162_Anafenza, Ancestral Warden',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\239_Shaman of the Claw.png" id="239_Shaman of the Claw" data-flag="@X" onclick="openSidebar('239_Shaman of the Claw',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\262_Unforgiving Climate.png" id="262_Unforgiving Climate" data-flag="@X" onclick="openSidebar('262_Unforgiving Climate',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\167_Batama, Alesha's Heir.png" id="167_Batama, Aleshas Heir" data-flag="@X" onclick="openSidebar('167_Batama, Aleshas Heir',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\163_Arel, Unseen Whisperer.png" id="163_Arel, Unseen Whisperer" data-flag="@X" onclick="openSidebar('163_Arel, Unseen Whisperer',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\199_Hordebutcher's Bargain.png" id="199_Hordebutchers Bargain" data-flag="@X" onclick="openSidebar('199_Hordebutchers Bargain',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\257_Taigam, Firebrand Speaker.png" id="257_Taigam, Firebrand Speaker" data-flag="@X" onclick="openSidebar('257_Taigam, Firebrand Speaker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\209_Kartoka's Bond.png" id="209_Kartokas Bond" data-flag="@X" onclick="openSidebar('209_Kartokas Bond',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\171_Bloodfire Veins.png" id="171_Bloodfire Veins" data-flag="@X" onclick="openSidebar('171_Bloodfire Veins',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\208_Jungle Ambush.png" id="208_Jungle Ambush" data-flag="@X" onclick="openSidebar('208_Jungle Ambush',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\234_Saddlebrute's Steed.png" id="234_Saddlebrutes Steed" data-flag="@X" onclick="openSidebar('234_Saddlebrutes Steed',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\170_Bloodfire Backlasher.png" id="170_Bloodfire Backlasher" data-flag="@X" onclick="openSidebar('170_Bloodfire Backlasher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\214_Krumar Veteran.png" id="214_Krumar Veteran" data-flag="@X" onclick="openSidebar('214_Krumar Veteran',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\161_Amirah's Bond.png" id="161_Amirahs Bond" data-flag="@X" onclick="openSidebar('161_Amirahs Bond',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\202_Howling-Wind Mystic.png" id="202_Howling-Wind Mystic" data-flag="@X" onclick="openSidebar('202_Howling-Wind Mystic',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\240_Sharphide Stalwart.png" id="240_Sharphide Stalwart" data-flag="@X" onclick="openSidebar('240_Sharphide Stalwart',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\203_Iceshaper Shaman.png" id="203_Iceshaper Shaman" data-flag="@X" onclick="openSidebar('203_Iceshaper Shaman',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\242_Sidisi's Envoy.png" id="242_Sidisis Envoy" data-flag="@X" onclick="openSidebar('242_Sidisis Envoy',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\168_Batama's Battle Cry.png" id="168_Batamas Battle Cry" data-flag="@X" onclick="openSidebar('168_Batamas Battle Cry',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\231_Qarsi Depths Prowler.png" id="231_Qarsi Depths Prowler" data-flag="@X" onclick="openSidebar('231_Qarsi Depths Prowler',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\264_Zahmur's Bond.png" id="264_Zahmurs Bond" data-flag="@X" onclick="openSidebar('264_Zahmurs Bond',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\218_Maisham's Bond.png" id="218_Maishams Bond" data-flag="@X" onclick="openSidebar('218_Maishams Bond',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\210_Kin-Tree Tenacity.png" id="210_Kin-Tree Tenacity" data-flag="@X" onclick="openSidebar('210_Kin-Tree Tenacity',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\258_Taigam's Skirmisher.png" id="258_Taigams Skirmisher" data-flag="@X" onclick="openSidebar('258_Taigams Skirmisher',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\246_Sirmi's Bond.png" id="246_Sirmis Bond" data-flag="@X" onclick="openSidebar('246_Sirmis Bond',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\158_Abzan Scalebreaker.png" id="158_Abzan Scalebreaker" data-flag="@X" onclick="openSidebar('158_Abzan Scalebreaker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\207_Jeskai Heartstoker.png" id="207_Jeskai Heartstoker" data-flag="@X" onclick="openSidebar('207_Jeskai Heartstoker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\253_Sultai Skullspeaker.png" id="253_Sultai Skullspeaker" data-flag="@X" onclick="openSidebar('253_Sultai Skullspeaker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\222_Mardu Warmaster.png" id="222_Mardu Warmaster" data-flag="@X" onclick="openSidebar('222_Mardu Warmaster',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\192_Fangborn Schemers.png" id="192_Fangborn Schemers" data-flag="@X" onclick="openSidebar('192_Fangborn Schemers',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\201_Hordechief's Scorn.png" id="201_Hordechiefs Scorn" data-flag="@X" onclick="openSidebar('201_Hordechiefs Scorn',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\248_Sleetstrike.png" id="248_Sleetstrike" data-flag="@X" onclick="openSidebar('248_Sleetstrike',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\254_Sunfire Eruption.png" id="254_Sunfire Eruption" data-flag="@X" onclick="openSidebar('254_Sunfire Eruption',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\260_Temur Frostwalker.png" id="260_Temur Frostwalker" data-flag="@X" onclick="openSidebar('260_Temur Frostwalker',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\189_The Edicts of Ilagra.png" id="189_The Edicts of Ilagra" data-flag="@X" onclick="openSidebar('189_The Edicts of Ilagra',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\159_Advocate of the Bear.png" id="159_Advocate of the Bear" data-flag="@X" onclick="openSidebar('159_Advocate of the Bear',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\198_Hewn-Wood Revenant.png" id="198_Hewn-Wood Revenant" data-flag="@X" onclick="openSidebar('198_Hewn-Wood Revenant',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\226_Narset, Seeker of Truth.png" id="226_Narset, Seeker of Truth" data-flag="@X" onclick="openSidebar('226_Narset, Seeker of Truth',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\190_Empty the Wats.png" id="190_Empty the Wats" data-flag="@X" onclick="openSidebar('190_Empty the Wats',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\193_Firehoof Arrowslinger.png" id="193_Firehoof Arrowslinger" data-flag="@X" onclick="openSidebar('193_Firehoof Arrowslinger',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\173_Calling the All-Hunt.png" id="173_Calling the All-Hunt" data-flag="@X" onclick="openSidebar('173_Calling the All-Hunt',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\157_Abzan Command.png" id="157_Abzan Command" data-flag="@X" onclick="openSidebar('157_Abzan Command',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\206_Jeskai Command.png" id="206_Jeskai Command" data-flag="@X" onclick="openSidebar('206_Jeskai Command',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\225_Naga's Cruelty.png" id="225_Nagas Cruelty" data-flag="@X" onclick="openSidebar('225_Nagas Cruelty',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\216_Light the Way.png" id="216_Light the Way" data-flag="@X" onclick="openSidebar('216_Light the Way',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\224_Maulclaw Ursa.png" id="224_Maulclaw Ursa" data-flag="@X" onclick="openSidebar('224_Maulclaw Ursa',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\194_Ghostbark Ancestor.png" id="194_Ghostbark Ancestor" data-flag="@X" onclick="openSidebar('194_Ghostbark Ancestor',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\219_Mantis Keeper.png" id="219_Mantis Keeper" data-flag="@X" onclick="openSidebar('219_Mantis Keeper',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\249_Soulclaimer Rakshasa.png" id="249_Soulclaimer Rakshasa" data-flag="@X" onclick="openSidebar('249_Soulclaimer Rakshasa',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\221_Mardu Command.png" id="221_Mardu Command" data-flag="@X" onclick="openSidebar('221_Mardu Command',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\259_Temur Command.png" id="259_Temur Command" data-flag="@X" onclick="openSidebar('259_Temur Command',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\205_Ivorytusk Worldshaker.png" id="205_Ivorytusk Worldshaker" data-flag="@X" onclick="openSidebar('205_Ivorytusk Worldshaker',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\230_One with the Way.png" id="230_One with the Way" data-flag="@X" onclick="openSidebar('230_One with the Way',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\252_Sultai Command.png" id="252_Sultai Command" data-flag="@X" onclick="openSidebar('252_Sultai Command',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\200_Hordechief's Challenge.png" id="200_Hordechiefs Challenge" data-flag="@X" onclick="openSidebar('200_Hordechiefs Challenge',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\174_Chianul's Companion.png" id="174_Chianuls Companion" data-flag="@X" onclick="openSidebar('174_Chianuls Companion',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\217_Living Kin-Tree.png" id="217_Living Kin-Tree" data-flag="@X" onclick="openSidebar('217_Living Kin-Tree',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\204_Innerflame Master.png" id="204_Innerflame Master" data-flag="@X" onclick="openSidebar('204_Innerflame Master',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\176_Corpse-Pit Descent.png" id="176_Corpse-Pit Descent" data-flag="@X" onclick="openSidebar('176_Corpse-Pit Descent',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\233_Roughrider Krushok.png" id="233_Roughrider Krushok" data-flag="@X" onclick="openSidebar('233_Roughrider Krushok',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\195_Gifts of the Whisperers.png" id="195_Gifts of the Whisperers" data-flag="@X" onclick="openSidebar('195_Gifts of the Whisperers',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\232_Reduce to Dust.png" id="232_Reduce to Dust" data-flag="@X" onclick="openSidebar('232_Reduce to Dust',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\223_Mastery of Meditation.png" id="223_Mastery of Meditation" data-flag="@X" onclick="openSidebar('223_Mastery of Meditation',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\227_Necropolis Flenser.png" id="227_Necropolis Flenser" data-flag="@X" onclick="openSidebar('227_Necropolis Flenser',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\228_Ojutai, All-Knowing.png" id="DRT_228_Ojutai, All-Knowing" data-flag="@X" onclick="openSidebar('DRT_228_Ojutai, All-Knowing',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\243_Silumgar, All-Swaying.png" id="DRT_243_Silumgar, All-Swaying" data-flag="@X" onclick="openSidebar('DRT_243_Silumgar, All-Swaying',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\211_Kolaghan, All-Inciting.png" id="DRT_211_Kolaghan, All-Inciting" data-flag="@X" onclick="openSidebar('DRT_211_Kolaghan, All-Inciting',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\164_Atarka, All-Consuming.png" id="DRT_164_Atarka, All-Consuming" data-flag="@X" onclick="openSidebar('DRT_164_Atarka, All-Consuming',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\187_Dromoka, All-Enduring.png" id="DRT_187_Dromoka, All-Enduring" data-flag="@X" onclick="openSidebar('DRT_187_Dromoka, All-Enduring',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\220_Many-Form Mystic.png" id="DRT_220_Many-Form Mystic" data-flag="@X" onclick="openSidebar('DRT_220_Many-Form Mystic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\182_Dragonlord's Scorn.png" id="DRT_182_Dragonlords Scorn" data-flag="@X" onclick="openSidebar('DRT_182_Dragonlords Scorn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\169_Blitzsurge Warkite.png" id="DRT_169_Blitzsurge Warkite" data-flag="@X" onclick="openSidebar('DRT_169_Blitzsurge Warkite',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\191_Eternal-Pyre Efreet.png" id="DRT_191_Eternal-Pyre Efreet" data-flag="@X" onclick="openSidebar('DRT_191_Eternal-Pyre Efreet',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\236_Scaleclad Cataphract.png" id="DRT_236_Scaleclad Cataphract" data-flag="@X" onclick="openSidebar('DRT_236_Scaleclad Cataphract',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\251_Style of the Great Teacher.png" id="DRT_251_Style of the Great Teacher" data-flag="@X" onclick="openSidebar('DRT_251_Style of the Great Teacher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\241_Sibsig Murk-Dredger.png" id="DRT_241_Sibsig Murk-Dredger" data-flag="@X" onclick="openSidebar('DRT_241_Sibsig Murk-Dredger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\196_Gore Frenzy.png" id="DRT_196_Gore Frenzy" data-flag="@X" onclick="openSidebar('DRT_196_Gore Frenzy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\166_Ayagor, the Dragon's Bowl.png" id="DRT_166_Ayagor, the Dragons Bowl" data-flag="@X" onclick="openSidebar('DRT_166_Ayagor, the Dragons Bowl',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\237_Scalelord's Presence.png" id="DRT_237_Scalelords Presence" data-flag="@X" onclick="openSidebar('DRT_237_Scalelords Presence',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\184_Dragon's Eye Instructor.png" id="DRT_184_Dragons Eye Instructor" data-flag="@X" onclick="openSidebar('DRT_184_Dragons Eye Instructor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\177_Decadent Opulence.png" id="DRT_177_Decadent Opulence" data-flag="@X" onclick="openSidebar('DRT_177_Decadent Opulence',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\213_Kolaghan's Broodkin.png" id="DRT_213_Kolaghans Broodkin" data-flag="@X" onclick="openSidebar('DRT_213_Kolaghans Broodkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\255_Surrak's Pulverizer.png" id="DRT_255_Surraks Pulverizer" data-flag="@X" onclick="openSidebar('DRT_255_Surraks Pulverizer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\160_Aggressive Defense.png" id="DRT_160_Aggressive Defense" data-flag="@X" onclick="openSidebar('DRT_160_Aggressive Defense',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\229_Ojutai's Broodkin.png" id="DRT_229_Ojutais Broodkin" data-flag="@X" onclick="openSidebar('DRT_229_Ojutais Broodkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\197_Grim Exhumation.png" id="DRT_197_Grim Exhumation" data-flag="@X" onclick="openSidebar('DRT_197_Grim Exhumation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\238_Screamreach Outrider.png" id="DRT_238_Screamreach Outrider" data-flag="@X" onclick="openSidebar('DRT_238_Screamreach Outrider',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\165_Atarka's Broodkin.png" id="DRT_165_Atarkas Broodkin" data-flag="@X" onclick="openSidebar('DRT_165_Atarkas Broodkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\185_Dragonscale Cavalry.png" id="DRT_185_Dragonscale Cavalry" data-flag="@X" onclick="openSidebar('DRT_185_Dragonscale Cavalry',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\265_Zephyr Assembly.png" id="DRT_265_Zephyr Assembly" data-flag="@X" onclick="openSidebar('DRT_265_Zephyr Assembly',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\245_Silumgar's Broodkin.png" id="DRT_245_Silumgars Broodkin" data-flag="@X" onclick="openSidebar('DRT_245_Silumgars Broodkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\250_Stormsinger's Song.png" id="DRT_250_Stormsingers Song" data-flag="@X" onclick="openSidebar('DRT_250_Stormsingers Song',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\179_Draconic Majesty.png" id="DRT_179_Draconic Majesty" data-flag="@X" onclick="openSidebar('DRT_179_Draconic Majesty',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\188_Dromoka's Broodkin.png" id="DRT_188_Dromokas Broodkin" data-flag="@X" onclick="openSidebar('DRT_188_Dromokas Broodkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\178_Draconic Denial.png" id="DRT_178_Draconic Denial" data-flag="@X" onclick="openSidebar('DRT_178_Draconic Denial',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\215_Last Whispers.png" id="DRT_215_Last Whispers" data-flag="@X" onclick="openSidebar('DRT_215_Last Whispers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\172_Boltwing Blitz.png" id="DRT_172_Boltwing Blitz" data-flag="@X" onclick="openSidebar('DRT_172_Boltwing Blitz',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\256_Swathe of Dragonfire.png" id="DRT_256_Swathe of Dragonfire" data-flag="@X" onclick="openSidebar('DRT_256_Swathe of Dragonfire',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\186_Dromoka Aerie-Guard.png" id="DRT_186_Dromoka Aerie-Guard" data-flag="@X" onclick="openSidebar('DRT_186_Dromoka Aerie-Guard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\181_Dragonlord's Disciple.png" id="DRT_181_Dragonlords Disciple" data-flag="@X" onclick="openSidebar('DRT_181_Dragonlords Disciple',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\244_Silumgar Familiar.png" id="DRT_244_Silumgar Familiar" data-flag="@X" onclick="openSidebar('DRT_244_Silumgar Familiar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\212_Kolaghan Gate-Smasher.png" id="DRT_212_Kolaghan Gate-Smasher" data-flag="@X" onclick="openSidebar('DRT_212_Kolaghan Gate-Smasher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\175_Colossal Might.png" id="DRT_175_Colossal Might" data-flag="@X" onclick="openSidebar('DRT_175_Colossal Might',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\235_Scaleborn Barricade.png" id="DRT_235_Scaleborn Barricade" data-flag="@X" onclick="openSidebar('DRT_235_Scaleborn Barricade',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\183_Dragonmaul Bear.png" id="DRT_183_Dragonmaul Bear" data-flag="@X" onclick="openSidebar('DRT_183_Dragonmaul Bear',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\263_War-Horde Chieftain.png" id="DRT_263_War-Horde Chieftain" data-flag="@X" onclick="openSidebar('DRT_263_War-Horde Chieftain',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\261_Timeline Schism.png" id="DRT_261_Timeline Schism" data-flag="@X" onclick="openSidebar('DRT_261_Timeline Schism',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\180_Dragonflayer Sidisi.png" id="DRT_180_Dragonflayer Sidisi" data-flag="@X" onclick="openSidebar('DRT_180_Dragonflayer Sidisi',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\266_Zurgo's Vanguard.png" id="DRT_266_Zurgos Vanguard" data-flag="@X" onclick="openSidebar('DRT_266_Zurgos Vanguard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\247_Skinslitherer.png" id="DRT_247_Skinslitherer" data-flag="@X" onclick="openSidebar('DRT_247_Skinslitherer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\162_Anafenza, Ancestral Warden.png" id="DRT_162_Anafenza, Ancestral Warden" data-flag="@X" onclick="openSidebar('DRT_162_Anafenza, Ancestral Warden',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\239_Shaman of the Claw.png" id="DRT_239_Shaman of the Claw" data-flag="@X" onclick="openSidebar('DRT_239_Shaman of the Claw',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\262_Unforgiving Climate.png" id="DRT_262_Unforgiving Climate" data-flag="@X" onclick="openSidebar('DRT_262_Unforgiving Climate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\167_Batama, Alesha's Heir.png" id="DRT_167_Batama, Aleshas Heir" data-flag="@X" onclick="openSidebar('DRT_167_Batama, Aleshas Heir',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\163_Arel, Unseen Whisperer.png" id="DRT_163_Arel, Unseen Whisperer" data-flag="@X" onclick="openSidebar('DRT_163_Arel, Unseen Whisperer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\199_Hordebutcher's Bargain.png" id="DRT_199_Hordebutchers Bargain" data-flag="@X" onclick="openSidebar('DRT_199_Hordebutchers Bargain',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\257_Taigam, Firebrand Speaker.png" id="DRT_257_Taigam, Firebrand Speaker" data-flag="@X" onclick="openSidebar('DRT_257_Taigam, Firebrand Speaker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\209_Kartoka's Bond.png" id="DRT_209_Kartokas Bond" data-flag="@X" onclick="openSidebar('DRT_209_Kartokas Bond',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\171_Bloodfire Veins.png" id="DRT_171_Bloodfire Veins" data-flag="@X" onclick="openSidebar('DRT_171_Bloodfire Veins',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\208_Jungle Ambush.png" id="DRT_208_Jungle Ambush" data-flag="@X" onclick="openSidebar('DRT_208_Jungle Ambush',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\234_Saddlebrute's Steed.png" id="DRT_234_Saddlebrutes Steed" data-flag="@X" onclick="openSidebar('DRT_234_Saddlebrutes Steed',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\170_Bloodfire Backlasher.png" id="DRT_170_Bloodfire Backlasher" data-flag="@X" onclick="openSidebar('DRT_170_Bloodfire Backlasher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\214_Krumar Veteran.png" id="DRT_214_Krumar Veteran" data-flag="@X" onclick="openSidebar('DRT_214_Krumar Veteran',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\161_Amirah's Bond.png" id="DRT_161_Amirahs Bond" data-flag="@X" onclick="openSidebar('DRT_161_Amirahs Bond',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\202_Howling-Wind Mystic.png" id="DRT_202_Howling-Wind Mystic" data-flag="@X" onclick="openSidebar('DRT_202_Howling-Wind Mystic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\240_Sharphide Stalwart.png" id="DRT_240_Sharphide Stalwart" data-flag="@X" onclick="openSidebar('DRT_240_Sharphide Stalwart',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\203_Iceshaper Shaman.png" id="DRT_203_Iceshaper Shaman" data-flag="@X" onclick="openSidebar('DRT_203_Iceshaper Shaman',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\242_Sidisi's Envoy.png" id="DRT_242_Sidisis Envoy" data-flag="@X" onclick="openSidebar('DRT_242_Sidisis Envoy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\168_Batama's Battle Cry.png" id="DRT_168_Batamas Battle Cry" data-flag="@X" onclick="openSidebar('DRT_168_Batamas Battle Cry',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\231_Qarsi Depths Prowler.png" id="DRT_231_Qarsi Depths Prowler" data-flag="@X" onclick="openSidebar('DRT_231_Qarsi Depths Prowler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\264_Zahmur's Bond.png" id="DRT_264_Zahmurs Bond" data-flag="@X" onclick="openSidebar('DRT_264_Zahmurs Bond',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\218_Maisham's Bond.png" id="DRT_218_Maishams Bond" data-flag="@X" onclick="openSidebar('DRT_218_Maishams Bond',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\210_Kin-Tree Tenacity.png" id="DRT_210_Kin-Tree Tenacity" data-flag="@X" onclick="openSidebar('DRT_210_Kin-Tree Tenacity',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\258_Taigam's Skirmisher.png" id="DRT_258_Taigams Skirmisher" data-flag="@X" onclick="openSidebar('DRT_258_Taigams Skirmisher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\246_Sirmi's Bond.png" id="DRT_246_Sirmis Bond" data-flag="@X" onclick="openSidebar('DRT_246_Sirmis Bond',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\158_Abzan Scalebreaker.png" id="DRT_158_Abzan Scalebreaker" data-flag="@X" onclick="openSidebar('DRT_158_Abzan Scalebreaker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\207_Jeskai Heartstoker.png" id="DRT_207_Jeskai Heartstoker" data-flag="@X" onclick="openSidebar('DRT_207_Jeskai Heartstoker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\253_Sultai Skullspeaker.png" id="DRT_253_Sultai Skullspeaker" data-flag="@X" onclick="openSidebar('DRT_253_Sultai Skullspeaker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\222_Mardu Warmaster.png" id="DRT_222_Mardu Warmaster" data-flag="@X" onclick="openSidebar('DRT_222_Mardu Warmaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\192_Fangborn Schemers.png" id="DRT_192_Fangborn Schemers" data-flag="@X" onclick="openSidebar('DRT_192_Fangborn Schemers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\201_Hordechief's Scorn.png" id="DRT_201_Hordechiefs Scorn" data-flag="@X" onclick="openSidebar('DRT_201_Hordechiefs Scorn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\248_Sleetstrike.png" id="DRT_248_Sleetstrike" data-flag="@X" onclick="openSidebar('DRT_248_Sleetstrike',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\254_Sunfire Eruption.png" id="DRT_254_Sunfire Eruption" data-flag="@X" onclick="openSidebar('DRT_254_Sunfire Eruption',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\260_Temur Frostwalker.png" id="DRT_260_Temur Frostwalker" data-flag="@X" onclick="openSidebar('DRT_260_Temur Frostwalker',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\189_The Edicts of Ilagra.png" id="DRT_189_The Edicts of Ilagra" data-flag="@X" onclick="openSidebar('DRT_189_The Edicts of Ilagra',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\159_Advocate of the Bear.png" id="DRT_159_Advocate of the Bear" data-flag="@X" onclick="openSidebar('DRT_159_Advocate of the Bear',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\198_Hewn-Wood Revenant.png" id="DRT_198_Hewn-Wood Revenant" data-flag="@X" onclick="openSidebar('DRT_198_Hewn-Wood Revenant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\226_Narset, Seeker of Truth.png" id="DRT_226_Narset, Seeker of Truth" data-flag="@X" onclick="openSidebar('DRT_226_Narset, Seeker of Truth',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\190_Empty the Wats.png" id="DRT_190_Empty the Wats" data-flag="@X" onclick="openSidebar('DRT_190_Empty the Wats',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\193_Firehoof Arrowslinger.png" id="DRT_193_Firehoof Arrowslinger" data-flag="@X" onclick="openSidebar('DRT_193_Firehoof Arrowslinger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\173_Calling the All-Hunt.png" id="DRT_173_Calling the All-Hunt" data-flag="@X" onclick="openSidebar('DRT_173_Calling the All-Hunt',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\157_Abzan Command.png" id="DRT_157_Abzan Command" data-flag="@X" onclick="openSidebar('DRT_157_Abzan Command',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\206_Jeskai Command.png" id="DRT_206_Jeskai Command" data-flag="@X" onclick="openSidebar('DRT_206_Jeskai Command',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\225_Naga's Cruelty.png" id="DRT_225_Nagas Cruelty" data-flag="@X" onclick="openSidebar('DRT_225_Nagas Cruelty',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\216_Light the Way.png" id="DRT_216_Light the Way" data-flag="@X" onclick="openSidebar('DRT_216_Light the Way',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\224_Maulclaw Ursa.png" id="DRT_224_Maulclaw Ursa" data-flag="@X" onclick="openSidebar('DRT_224_Maulclaw Ursa',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\194_Ghostbark Ancestor.png" id="DRT_194_Ghostbark Ancestor" data-flag="@X" onclick="openSidebar('DRT_194_Ghostbark Ancestor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\219_Mantis Keeper.png" id="DRT_219_Mantis Keeper" data-flag="@X" onclick="openSidebar('DRT_219_Mantis Keeper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\249_Soulclaimer Rakshasa.png" id="DRT_249_Soulclaimer Rakshasa" data-flag="@X" onclick="openSidebar('DRT_249_Soulclaimer Rakshasa',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\221_Mardu Command.png" id="DRT_221_Mardu Command" data-flag="@X" onclick="openSidebar('DRT_221_Mardu Command',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\259_Temur Command.png" id="DRT_259_Temur Command" data-flag="@X" onclick="openSidebar('DRT_259_Temur Command',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\205_Ivorytusk Worldshaker.png" id="DRT_205_Ivorytusk Worldshaker" data-flag="@X" onclick="openSidebar('DRT_205_Ivorytusk Worldshaker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\230_One with the Way.png" id="DRT_230_One with the Way" data-flag="@X" onclick="openSidebar('DRT_230_One with the Way',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\252_Sultai Command.png" id="DRT_252_Sultai Command" data-flag="@X" onclick="openSidebar('DRT_252_Sultai Command',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\200_Hordechief's Challenge.png" id="DRT_200_Hordechiefs Challenge" data-flag="@X" onclick="openSidebar('DRT_200_Hordechiefs Challenge',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\174_Chianul's Companion.png" id="DRT_174_Chianuls Companion" data-flag="@X" onclick="openSidebar('DRT_174_Chianuls Companion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\217_Living Kin-Tree.png" id="DRT_217_Living Kin-Tree" data-flag="@X" onclick="openSidebar('DRT_217_Living Kin-Tree',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\204_Innerflame Master.png" id="DRT_204_Innerflame Master" data-flag="@X" onclick="openSidebar('DRT_204_Innerflame Master',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\176_Corpse-Pit Descent.png" id="DRT_176_Corpse-Pit Descent" data-flag="@X" onclick="openSidebar('DRT_176_Corpse-Pit Descent',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\233_Roughrider Krushok.png" id="DRT_233_Roughrider Krushok" data-flag="@X" onclick="openSidebar('DRT_233_Roughrider Krushok',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\195_Gifts of the Whisperers.png" id="DRT_195_Gifts of the Whisperers" data-flag="@X" onclick="openSidebar('DRT_195_Gifts of the Whisperers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\232_Reduce to Dust.png" id="DRT_232_Reduce to Dust" data-flag="@X" onclick="openSidebar('DRT_232_Reduce to Dust',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\223_Mastery of Meditation.png" id="DRT_223_Mastery of Meditation" data-flag="@X" onclick="openSidebar('DRT_223_Mastery of Meditation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\227_Necropolis Flenser.png" id="DRT_227_Necropolis Flenser" data-flag="@X" onclick="openSidebar('DRT_227_Necropolis Flenser',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
 				<div id="colorless" class="anchor"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\1_Dragonstorm Harbinger.png" id="1_Dragonstorm Harbinger" data-flag="@X" onclick="openSidebar('1_Dragonstorm Harbinger',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\2_Ghostfire Practitioner.png" id="2_Ghostfire Practitioner" data-flag="@X" onclick="openSidebar('2_Ghostfire Practitioner',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\269_Dragonhunter's Bow.png" id="269_Dragonhunters Bow" data-flag="@X" onclick="openSidebar('269_Dragonhunters Bow',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\276_Totem of the Spirit Dragon.png" id="276_Totem of the Spirit Dragon" data-flag="@X" onclick="openSidebar('276_Totem of the Spirit Dragon',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\3_Ugin's Guardian.png" id="3_Ugins Guardian" data-flag="@X" onclick="openSidebar('3_Ugins Guardian',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\267_Abzan Insignia.png" id="267_Abzan Insignia" data-flag="@X" onclick="openSidebar('267_Abzan Insignia',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\268_Bottled Dragonfire.png" id="268_Bottled Dragonfire" data-flag="@X" onclick="openSidebar('268_Bottled Dragonfire',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\270_Dragonloft Sentry.png" id="270_Dragonloft Sentry" data-flag="@X" onclick="openSidebar('270_Dragonloft Sentry',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\271_Jeskai Insignia.png" id="271_Jeskai Insignia" data-flag="@X" onclick="openSidebar('271_Jeskai Insignia',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\272_Lanterns of Clarity.png" id="272_Lanterns of Clarity" data-flag="@X" onclick="openSidebar('272_Lanterns of Clarity',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\273_Mardu Insignia.png" id="273_Mardu Insignia" data-flag="@X" onclick="openSidebar('273_Mardu Insignia',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\274_Sultai Insignia.png" id="274_Sultai Insignia" data-flag="@X" onclick="openSidebar('274_Sultai Insignia',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\275_Temur Insignia.png" id="275_Temur Insignia" data-flag="@X" onclick="openSidebar('275_Temur Insignia',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\277_Witness of the Long Forgotten.png" id="277_Witness of the Long Forgotten" data-flag="@X" onclick="openSidebar('277_Witness of the Long Forgotten',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\297_Tranquil Cove.png" id="297_Tranquil Cove" data-flag="@X" onclick="openSidebar('297_Tranquil Cove',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\281_Dismal Backwater.png" id="281_Dismal Backwater" data-flag="@X" onclick="openSidebar('281_Dismal Backwater',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\279_Bloodfell Caves.png" id="279_Bloodfell Caves" data-flag="@X" onclick="openSidebar('279_Bloodfell Caves',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\292_Rugged Highlands.png" id="292_Rugged Highlands" data-flag="@X" onclick="openSidebar('292_Rugged Highlands',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\280_Blossoming Sands.png" id="280_Blossoming Sands" data-flag="@X" onclick="openSidebar('280_Blossoming Sands',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\294_Scoured Barrens.png" id="294_Scoured Barrens" data-flag="@X" onclick="openSidebar('294_Scoured Barrens',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\295_Swiftwater Cliffs.png" id="295_Swiftwater Cliffs" data-flag="@X" onclick="openSidebar('295_Swiftwater Cliffs',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\287_Jungle Hollow.png" id="287_Jungle Hollow" data-flag="@X" onclick="openSidebar('287_Jungle Hollow',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\299_Wind-Scarred Crag.png" id="299_Wind-Scarred Crag" data-flag="@X" onclick="openSidebar('299_Wind-Scarred Crag',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\296_Thornwood Falls.png" id="296_Thornwood Falls" data-flag="@X" onclick="openSidebar('296_Thornwood Falls',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\283_Frostpeak Grotto.png" id="283_Frostpeak Grotto" data-flag="@X" onclick="openSidebar('283_Frostpeak Grotto',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\284_Ghostbark Dunes.png" id="284_Ghostbark Dunes" data-flag="@X" onclick="openSidebar('284_Ghostbark Dunes',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\285_Highspire Sanctuary.png" id="285_Highspire Sanctuary" data-flag="@X" onclick="openSidebar('285_Highspire Sanctuary',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\286_Hoofbeaten Expanse.png" id="286_Hoofbeaten Expanse" data-flag="@X" onclick="openSidebar('286_Hoofbeaten Expanse',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\291_Overgrown Wats.png" id="291_Overgrown Wats" data-flag="@X" onclick="openSidebar('291_Overgrown Wats',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\278_Ancient Boneyard.png" id="278_Ancient Boneyard" data-flag="@X" onclick="openSidebar('278_Ancient Boneyard',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\282_Frontier Bivouac.png" id="282_Frontier Bivouac" data-flag="@X" onclick="openSidebar('282_Frontier Bivouac',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\288_Mystic Monastery.png" id="288_Mystic Monastery" data-flag="@X" onclick="openSidebar('288_Mystic Monastery',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\289_Nomad Outpost.png" id="289_Nomad Outpost" data-flag="@X" onclick="openSidebar('289_Nomad Outpost',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\290_Opulent Palace.png" id="290_Opulent Palace" data-flag="@X" onclick="openSidebar('290_Opulent Palace',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\293_Sandsteppe Citadel.png" id="293_Sandsteppe Citadel" data-flag="@X" onclick="openSidebar('293_Sandsteppe Citadel',false)"></div>
-				<div class="container"><img alt="/sets\DRT-files\img\298_Uncharted Haven.png" id="298_Uncharted Haven" data-flag="@X" onclick="openSidebar('298_Uncharted Haven',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\1_Dragonstorm Harbinger.png" id="DRT_1_Dragonstorm Harbinger" data-flag="@X" onclick="openSidebar('DRT_1_Dragonstorm Harbinger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\2_Ghostfire Practitioner.png" id="DRT_2_Ghostfire Practitioner" data-flag="@X" onclick="openSidebar('DRT_2_Ghostfire Practitioner',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\269_Dragonhunter's Bow.png" id="DRT_269_Dragonhunters Bow" data-flag="@X" onclick="openSidebar('DRT_269_Dragonhunters Bow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\276_Totem of the Spirit Dragon.png" id="DRT_276_Totem of the Spirit Dragon" data-flag="@X" onclick="openSidebar('DRT_276_Totem of the Spirit Dragon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\3_Ugin's Guardian.png" id="DRT_3_Ugins Guardian" data-flag="@X" onclick="openSidebar('DRT_3_Ugins Guardian',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\267_Abzan Insignia.png" id="DRT_267_Abzan Insignia" data-flag="@X" onclick="openSidebar('DRT_267_Abzan Insignia',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\268_Bottled Dragonfire.png" id="DRT_268_Bottled Dragonfire" data-flag="@X" onclick="openSidebar('DRT_268_Bottled Dragonfire',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\270_Dragonloft Sentry.png" id="DRT_270_Dragonloft Sentry" data-flag="@X" onclick="openSidebar('DRT_270_Dragonloft Sentry',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\271_Jeskai Insignia.png" id="DRT_271_Jeskai Insignia" data-flag="@X" onclick="openSidebar('DRT_271_Jeskai Insignia',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\272_Lanterns of Clarity.png" id="DRT_272_Lanterns of Clarity" data-flag="@X" onclick="openSidebar('DRT_272_Lanterns of Clarity',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\273_Mardu Insignia.png" id="DRT_273_Mardu Insignia" data-flag="@X" onclick="openSidebar('DRT_273_Mardu Insignia',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\274_Sultai Insignia.png" id="DRT_274_Sultai Insignia" data-flag="@X" onclick="openSidebar('DRT_274_Sultai Insignia',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\275_Temur Insignia.png" id="DRT_275_Temur Insignia" data-flag="@X" onclick="openSidebar('DRT_275_Temur Insignia',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\277_Witness of the Long Forgotten.png" id="DRT_277_Witness of the Long Forgotten" data-flag="@X" onclick="openSidebar('DRT_277_Witness of the Long Forgotten',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\297_Tranquil Cove.png" id="DRT_297_Tranquil Cove" data-flag="@X" onclick="openSidebar('DRT_297_Tranquil Cove',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\281_Dismal Backwater.png" id="DRT_281_Dismal Backwater" data-flag="@X" onclick="openSidebar('DRT_281_Dismal Backwater',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\279_Bloodfell Caves.png" id="DRT_279_Bloodfell Caves" data-flag="@X" onclick="openSidebar('DRT_279_Bloodfell Caves',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\292_Rugged Highlands.png" id="DRT_292_Rugged Highlands" data-flag="@X" onclick="openSidebar('DRT_292_Rugged Highlands',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\280_Blossoming Sands.png" id="DRT_280_Blossoming Sands" data-flag="@X" onclick="openSidebar('DRT_280_Blossoming Sands',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\294_Scoured Barrens.png" id="DRT_294_Scoured Barrens" data-flag="@X" onclick="openSidebar('DRT_294_Scoured Barrens',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\295_Swiftwater Cliffs.png" id="DRT_295_Swiftwater Cliffs" data-flag="@X" onclick="openSidebar('DRT_295_Swiftwater Cliffs',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\287_Jungle Hollow.png" id="DRT_287_Jungle Hollow" data-flag="@X" onclick="openSidebar('DRT_287_Jungle Hollow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\299_Wind-Scarred Crag.png" id="DRT_299_Wind-Scarred Crag" data-flag="@X" onclick="openSidebar('DRT_299_Wind-Scarred Crag',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\296_Thornwood Falls.png" id="DRT_296_Thornwood Falls" data-flag="@X" onclick="openSidebar('DRT_296_Thornwood Falls',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\283_Frostpeak Grotto.png" id="DRT_283_Frostpeak Grotto" data-flag="@X" onclick="openSidebar('DRT_283_Frostpeak Grotto',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\284_Ghostbark Dunes.png" id="DRT_284_Ghostbark Dunes" data-flag="@X" onclick="openSidebar('DRT_284_Ghostbark Dunes',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\285_Highspire Sanctuary.png" id="DRT_285_Highspire Sanctuary" data-flag="@X" onclick="openSidebar('DRT_285_Highspire Sanctuary',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\286_Hoofbeaten Expanse.png" id="DRT_286_Hoofbeaten Expanse" data-flag="@X" onclick="openSidebar('DRT_286_Hoofbeaten Expanse',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\291_Overgrown Wats.png" id="DRT_291_Overgrown Wats" data-flag="@X" onclick="openSidebar('DRT_291_Overgrown Wats',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\278_Ancient Boneyard.png" id="DRT_278_Ancient Boneyard" data-flag="@X" onclick="openSidebar('DRT_278_Ancient Boneyard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\282_Frontier Bivouac.png" id="DRT_282_Frontier Bivouac" data-flag="@X" onclick="openSidebar('DRT_282_Frontier Bivouac',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\288_Mystic Monastery.png" id="DRT_288_Mystic Monastery" data-flag="@X" onclick="openSidebar('DRT_288_Mystic Monastery',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\289_Nomad Outpost.png" id="DRT_289_Nomad Outpost" data-flag="@X" onclick="openSidebar('DRT_289_Nomad Outpost',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\290_Opulent Palace.png" id="DRT_290_Opulent Palace" data-flag="@X" onclick="openSidebar('DRT_290_Opulent Palace',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\293_Sandsteppe Citadel.png" id="DRT_293_Sandsteppe Citadel" data-flag="@X" onclick="openSidebar('DRT_293_Sandsteppe Citadel',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\DRT-files\img\298_Uncharted Haven.png" id="DRT_298_Uncharted Haven" data-flag="@X" onclick="openSidebar('DRT_298_Uncharted Haven',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="DRT_e" data-flag="@E" onclick="openSidebar('DRT_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="DRT_er" data-flag="@E" onclick="openSidebar('DRT_er',false)"></div>
 	</div>
 	</div>
 	<div class="sidebar" id="sidebar">
 		<div class="sidebar-container">
-			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_img" class="sidebar-img">
 			<img id="sidebar_h_img" class="sidebar-h-img">
 			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
 		</div>
@@ -573,19 +597,111 @@
 		let specialchars = "";
 
 	document.addEventListener('DOMContentLoaded', async function() {
-		await fetch('/lists/all-cards.json')
+		await fetch(rootPath + '/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
+				await fetch(rootPath + '/resources/replacechars.txt')
 					.then(response => response.text())
 					.then(text => {
 						specialchars = text; 
 				}).catch(error => console.error('Error:', error));
 
 				card_list_arrayified = card_list.cards;
+
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
 
 		preloadImgs = document.getElementsByClassName('preload-hidden');
 
@@ -620,13 +736,16 @@
 			const flag = img.getAttribute('data-flag');
 
 			if (flag === '@N') {
-				img.src = '/img/card_back.png';
+				img.src = rootPath + '/img/card_back.png';
 				img.removeAttribute("onclick");
 				img.style.cursor = 'default';
 			}
 			else
 			{
-				img.src = img.alt;
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
 
 				if (flag === '@E') {
 					img.removeAttribute("onclick");
@@ -652,27 +771,51 @@
 	let horizontal = false;
 
 	function imgFlip(num) {
-		tmp = document.getElementById(num).src;
-		console.log(num);
-		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
-		document.getElementById(num).dataset.alt_src = tmp;
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
 
-		if (num == 'sidebar_img')
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
 		{
-			const rotated_img = document.getElementById('sidebar_h_img');
 			const sidebar_img = document.getElementById('sidebar_img');
 
-			if (horizontal && rotated_img.style.display == 'none')
-			{
-				rotated_img.style.display = "block";
-				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
-			}
-			else
-			{
-				rotated_img.style.display = "none";
-				sidebar_img.style.filter = "";
-			}
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
 		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
 	}
 
 	function openSidebar(id, h = false) {
@@ -684,17 +827,19 @@
 		const rotated_img = document.getElementById('sidebar_h_img');
 		const sidebar_img = document.getElementById('sidebar_img');
 
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
 		sidebar_img.src = document.getElementById(id).src;
 		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
 
 		if (horizontal && !sidebar_img.src.includes("_back"))
 		{
-			rotated_img.style.display = "block";
+			rotated_img.style.opacity = "1";
 			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
 		}
 		else
 		{
-			rotated_img.style.display = "none";
+			rotated_img.style.opacity = "0";
 			sidebar_img.style.filter = "";
 		}
 
@@ -727,6 +872,7 @@
 	}
 
 	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
 		var sets = document.querySelectorAll('.inactive');
 		for(const set of sets)
 		{
@@ -736,6 +882,7 @@
 	}
 
 	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
 		var sets = document.querySelectorAll('.inactive');
 		for(const set of sets)
 		{
@@ -752,27 +899,27 @@
 	});
 
 	function search() {
-		const url = new URL('search', window.location.origin);
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
 		url.searchParams.append('search', document.getElementById("search").value);
-		window.location.href = url;
+		window.location.href = url.pathname + url.search;
 	}
 
 		function randomCard() {
-			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-			let random_card = card_list_arrayified[i];
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
 
-			const url = new URL('card', window.location.origin);
-			const params = {
-				set: random_card.set,
-				num: random_card.number,
-				name: random_card.card_name
-			}
-			for (const key in params) {
-				url.searchParams.append(key, params[key]);
-			}
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
 
-			window.location.href = url;
-		}
+				window.location.href = url.pathname + url.search;
+			}
 	</script>
 </body>
 </html>

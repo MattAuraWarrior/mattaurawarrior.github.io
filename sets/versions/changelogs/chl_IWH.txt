@@ -1,4 +1,534 @@
-﻿VERSION 6 CHANGELOG
+﻿VERSION 7 CHANGELOG
+====================
+
+Saint's Salvation added.
+Horrendous Experiment added.
+Covetous Neonate added.
+Odric's Fury added.
+Embers of a New Moon added.
+Harvest Warden added.
+Traft's Embrace added.
+Demented Pyro-Alchemist added.
+Ashiok's Manipulation added.
+Putrid Bloodbag added.
+Famished Twins added.
+Skulking Shadowbeast added.
+Blight of Hamlets added.
+Silverflame Zealot added.
+Curse of Wretched Secrets added.
+Nebelgast Retainer added.
+Mysteries of the Forbidden added.
+Curse of Dark Blasphemy added.
+Disciple of Darker Powers added.
+Cordelia Stromkirk added.
+Curse of Searing Ground added.
+Curse of Harvest's Reaping added.
+Dawnhart Augur added.
+Drowntide Rising added.
+The Goremoon Unleashed added.
+Ghrin-Danu Returned added.
+Horrors Wrought added.
+Lidern, the Goreblossom added.
+Odric, Traft's Anointed added.
+Urgent Investigations added.
+Odric, Accursed Slayer added.
+
+Inciting Gossip removed.
+Saintly Embrace removed.
+Spectral Salvation removed.
+Ashiok's Intrusion removed.
+Curse of the Eerie Portrait removed.
+Grizzled Pyro-Alchemist removed.
+Nebelghast Retainer removed.
+Secrets of the Forbidden removed.
+Wretched Experiment removed.
+Curse of the Unlucky Thirteenth removed.
+Drawn to Blasphemy removed.
+Warped Mind removed.
+Bloody Indulgence removed.
+Calamitous Parade removed.
+Cordelia Falkenrath removed.
+Covetous Initiate removed.
+Curse of the Goremoon removed.
+The Goremoon's Call removed.
+Hedonistic Revelry removed.
+Curse of the Deep Woods removed.
+Harvestwood Effigy removed.
+Relentless Dire Swine removed.
+Beckon the Drowntide removed.
+Dawnheart Augur removed.
+Townblight Ooze removed.
+
+Gavony Trapper
+
+Sacred Stag
+
+Saint-Blessed Priest
+rules_text: Vigilance
+When this creature enters, creatures you control get +1/+1 until end of turn. You gain 1 life for each Human and/or token you control. => Vigilance
+When this creature enters, creatures you control get +1/+1 until end of turn. You gain 1 life for each Human you control.
+pt: 3/4 => 3/3
+
+Bewitching Hagmother
+
+Angelic Purge
+
+Moonrapture
+
+Cathar's Charm
+rules_text: Choose one —
+• Cathar's Charm deals 2 damage to target attacking or blocking creature.
+• Exile target card from a graveyard. Draw a card.
+• Destroy target enchantment with mana value 3 or less. => Choose one —
+• Exile target card from a graveyard. Draw a card.
+• Cathar's Charm deals 2 damage to target attacking or blocking creature.
+• Destroy target enchantment with mana value 3 or less.
+
+Thalia's Skill
+
+Enthralled Alchemist
+
+Geist Researcher
+
+Scions of Flesh and Spirit
+
+Hulking Horror
+
+Geralf's Experimentation
+cost: {3}{U} => {2}{U}
+rules_text: Target creature or planeswalker's owner puts it on their choice of the top or bottom of their library. Surveil 2. [i](Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i] => Return up to one target nonland permanent to its owner's hand. 
+Draw a card.
+
+March of the Drowntide
+cost: {2}{U} => {3}{U}
+rules_text: This spell has flash as long as you control a Zombie.
+Return target nonland permanent to its owner's hand.
+Draw a card. => You may cast this spell as though it had flash if you behold a Zombie as an additional cost to cast it. [i](You may reveal a Zombie card from your hand or choose one you control.)[/i]
+Target creature's owner puts it on the top or bottom of their library. Surveil 2.
+
+Storms over Nephalia
+
+Thought Scour
+
+Trapped in the Mirror
+
+Callous Killer
+rules_text: Menace
+{1}{B}, Sacrifice another creature: Draw a card. If there are four or more creature cards in your graveyard, transform this creature. Activate only as a sorcery. => Menace
+{1}{B}, Sacrifice another creature: Draw a card. If there are seven or more cards in your graveyard, you may transform this creature. Activate only as a sorcery.
+
+Hungering Assembly
+
+Overfueled Abomination
+rules_text: Menace
+When this creature enters, infuse 3. If you don't create a Zombie token this way, put two +1/+1 counters on this creature. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i] => Menace
+When this creature enters, infuse 3. If you don't create a Zombie token this way, put two +1/+1 counters on this creature. [i](To infuse 3, you may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i]
+
+Overlord of Ashmouth
+
+Bittersweet Parting
+
+Cornered by the Dead
+
+Sorin's Interrogation
+
+Thirsty Work
+rules_text: Target creature gets -2/-2 until end of turn. If you control a Vampire, you gain 2 life. => As an additional cost to cast this spell, you may behold a Vampire. [i](You may reveal a Vampire card from your hand or choose one you control.)[/i]
+Target creature gets -2/-2 until end of turn. If a Vampire was beheld, you gain 2 life.
+
+Cackling Igniter
+type: Creature — Devil => Creature — Elemental Devil
+
+Falkenrath Executor
+type: Creature — Vampire Warrior => Creature — Vampire Berserker
+
+Ashmouth Wolf
+
+Russetpack Predator
+rules_text: When this creature enters, it deals damage to each opponent equal to the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => When this creature enters, it deals 1 damage to each opponent for each savage creature you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+
+Stromkirk Warlord
+rules_text: At the beginning of combat on your turn, you may have target creature you control get +1/+0 and gain first strike until end of turn.
+{4}{R}: Vampires you control gain trample until end of turn. => At the beginning of combat on your turn, you may have target creature you control get +1/+0 and gain first strike until end of turn.
+{2}{R}: Vampires you control gain trample until end of turn.
+
+Feudrach's Hunger
+
+Full-Moon Assault
+
+Speaker of Ghrin-Danu
+rules_text: When this creature enters, surveil 2.
+[i]Concord — {2}{G}: [/i]Put a +1/+1 counter on target Human. Activate only as a sorcery and only if there are there are four or more card types among permanents you control. => When this creature enters, surveil 2.
+[i]Concord — {2}{G}: [/i]Put a +1/+1 counter on target Human you control. Activate only as a sorcery and only if there are there are four or more card types among permanents you control.
+
+Gitrog's Spawn
+rules_text: Deathtouch
+When this creature enters, you may discard a card. If you do, search your library for a land card, reveal it, put it into your hand, then shuffle. => Deathtouch
+When this creature enters, you may discard a card. If you do, search your library for a basic land card, reveal it, put it into your hand, then shuffle.
+
+Dawnhart Familiar
+
+Backroads Incursion
+rules_text: Destroy target creature with flying or enchantment. If you control a savage creature, surveil 2. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => Destroy target creature with flying or artifact. If you control a savage creature, surveil 2. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+
+Rabid Mauling
+
+Foray into Stensia
+type: Instant => Sorcery
+rules_text: Creatures you control get +1/+1 until end of turn. Whenever a Human you control attacks this turn, it gets +1/+1 until end of turn. => As an additional cost to cast this spell, you may behold a Human. [i](To behold a Human, you may reveal a Human card from your hand or choose one you control.)[/i]
+Put a +1/+1 counter on each creature you control. If a Human was beheld, those creatures gain vigilance until end of turn.
+
+Ulrich's Proclamation
+
+Moldgraf Stewards
+rules_text: Whenever this creature attacks, if you control five or more creatures, put a +1/+1 counter on it.
+{2}{W}: Target attacking creature you control gain indestructible until end of turn. => Whenever this creature attacks, if you control four or more creatures, put a +1/+1 counter on target creature.
+{2}{W}: Target attacking creature gains indestructible until end of turn.
+
+Devilthorn Hunter
+rules_text: Flash
+When this creature enters, until end of turn, permanents entering the battlefield don't cause abilities to trigger.
+{1}{W}, Sacrifice this creature: Until end of turn, permanents entering the battlefield don't cause abilities to trigger. => Flash
+When this creature enters, until end of turn, permanents entering the battlefield don't cause abilities to trigger.
+{W}, Sacrifice this creature: Until end of turn, permanents entering the battlefield don't cause abilities to trigger.
+
+Parish Slayer
+
+Heronblade Vanguard
+rules_text: Flying, first strike
+When this creature enters, you may return target creature card with mana value 2 or less from your graveyard to the battlefield tapped. => Flying, first strike
+Attacking creatures you control get +1/+0.
+pt: 4/3 => 3/5
+
+Blessings of a New Spring
+rules_text: Enchant creature
+When this enchantment enters, create a 1/1 white Human creature token.
+Enchanted creature gets +1/+1 and has lifelink.
+{2}, Sacrifice a Human: Enchanted creature gains indestructible until end of turn. => Enchant creature
+When this enchantment enters, create a 1/1 white Human creature token.
+Enchanted creature gets +1/+1, has lifelink, and has “{2}, Sacrifice a Human: This creature gains indestructible until end of turn.”
+
+Katilda's Dawning Rites
+
+Prayer of Banishing
+
+Selhoff Conduit
+rules_text: Whenever you cast an instant or sorcery spell, this creature gets +1/+1 until end of turn.
+As long as there are four or more different names among instant and sorcery cards in your graveyard, this creature has flying and ward {1}. => Whenever you cast an instant or sorcery spell, this creature gets +1/+1 until end of turn.
+Whenever this creature attacks, if there are four or more differently named instant and/or sorcery cards in your graveyard, draw a card.
+
+Cultist of the Drowntide
+
+Grasping Dreams
+rules_text: Return target nonland permanent an opponent controls that isn't an untapped creature to its owner's hand. Surveil 1.
+Flashback {1}{W}, Sacrifice a Spirit. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i] => Return target nonland permanent an opponent controls that isn't an untapped creature to its owner's hand. Surveil 1.
+Flashback—{1}{W}, Sacrifice a Spirit. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i]
+
+Play on Their Fears
+rules_text: Enchant nonland permanent
+When this enchantment enters, tap enchanted permanent and put a stun counter on it. It loses all abilities for as long as it has a stun counter on it.
+You control enchanted permanent. => Enchant nonland permanent
+When this enchantment enters, tap enchanted permanent and put a stun counter on it. It loses all abilities for as long as it remains tapped.
+You control enchanted permanent.
+
+Plunder the Grafs
+rules_text: Any number of target players each mill twice X cards.
+Infuse X. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create an X/X blue Zombie creature token.)[/i] => Any number of target players each mill twice X cards. Infuse X, then if you control three or more Zombies, draw a card. [i](To infuse X, you may exile a creature card and an instant or sorcery card from your graveyard to create an X/X blue Zombie creature token.)[/i]
+
+Ritual Preparations
+rules_text: Put a +1/+1 counter on each of up to two target creatures you control. Those creatures gain vigilance until end of turn.
+Flashback {G}, Return a Human you control to its owner's hand. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i] => Put a +1/+1 counter on each of up to two target creatures you control. Those creatures gain vigilance until end of turn.
+Flashback—{G}, Return a Human you control to its owner's hand. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i]
+
+Illicit Mortician
+rules_text: Deathtouch
+If a card would be put into a graveyard from anywhere except exile, exile that card instead.
+{2}: Put target card exiled with this creature into its owner's graveyard. Any player may activate this ability. => Deathtouch
+When this creature enters, you may exile up to two target cards from graveyards.
+If a card would be put into an opponent's graveyard from anywhere, exile it unless that player pays 1 life.
+pt: 1/3 => 2/2
+
+Shadowgrange Tormenter
+
+Anje's Thirst
+
+Dirge of the Drowned
+rules_text: Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard. You lose 1 life.
+Flashback {U}, Discard a Zombie card. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i] => Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard. You lose 1 life.
+Flashback—{U}, Discard a Zombie card. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i]
+
+Deadly Invitation
+rules_text: Each creature gets -2/-2 until end of turn, then choose one —
+• If a creature an opponent controls would die this turn, exile it instead.
+• Surveil 1. => Each creature gets -2/-2 until end of turn, then choose one.
+• If a creature an opponent controls would die this turn, exile it instead.
+• Surveil 1.
+
+Farbog Invocation
+
+Nightpack Alpha
+
+Repressed Aristocrat
+rules_text: Ward—Pay 3 life.
+Whenever this creature attacks, you may have it gorge. Then if you discarded a card and sacrificed a creature this turn, transform it. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i] => Whenever this creature attacks, you may have it gorge. Then if you discarded a card and sacrificed a creature this turn, transform it. [i](To gorge, discard a nonland card or sacrifice another creature to put a +1/+1 counter on this creature and draw a card.)[/i]
+
+Lunarblind Packmaster
+
+Claret Ascendance
+
+Wanton Display
+
+Secluded Recluse
+rules_text: Ward {2}
+When this creature transforms into Secluded Recluse, tap it and put a stun counter on it.
+At the beginning of each upkeep, if no spells were cast last turn, transform this creature. => Ward {1}
+When this creature transforms into Secluded Recluse, tap it and put a stun counter on it.
+At the beginning of each upkeep, if no spells were cast last turn, transform this creature.
+
+Arlinn's Kindred
+cost: {1}{G}{G} => {2}{G}{G}
+pt: 3/3 => 4/3
+
+Dawnhart Shepherd
+rules_text: Ward {2}
+[i]Concord — [/i]Whenever this creature enters or attacks, target creature you control gets +2/+2 until end of turn. If there are four or more card types among permanents you control, untap that creature and it gains trample until end of turn. => [i]Concord — [/i]Whenever this creature enters or attacks, target creature you control gets +2/+2 until end of turn. If there are four or more card types among permanents you control, untap that creature. It gains trample until end of turn.
+
+Hamlet Guardians
+rules_text: Whenever another Human enters under your control, put a +1/+1 counter on it if it was a token. Otherwise, draw a card. => Whenever another Human you control enters, put a +1/+1 counter on it if it was a token. Otherwise, draw a card.
+
+Descent of the Fog
+cost: {1}{G} => {2}{G}
+rules_text: Choose one —
+• Choose up to one target creature you control. Prevent all combat damage that would be dealt this turn except by the chosen creature.
+• Descent of the Fog deals 2 damage to each creature with flying. If a creature dealt damage this way would die this turn, exile it instead. => Choose one —
+• Choose up to one target creature you control. Prevent all combat damage that would be dealt this turn except by the chosen creature.
+• Descent of the Fog deals 3 damage to each creature with flying. If a creature dealt damage this way would die this turn, exile it instead.
+
+Tovolar's Ambush
+rules_text: Target creature you control gets +2/+1 until end of turn. You may have it fight up to one target creature you don't control.
+Flashback {5}{R}, Tap an untapped Wolf or Werewolf you control. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i] => Target creature you control gets +2/+1 until end of turn. You may have it fight up to one target creature you don't control.
+Flashback—{5}{R}, Tap an untapped Wolf or Werewolf you control. [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i]
+
+Addled Psyche
+
+Envoy of the Red Court
+rules_text: Ward—Pay 3 life. [i](Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 3 life.)[/i]
+Other Vampires you control get +1/+1. => Ward—Pay 2 life. [i](Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays 2 life.)[/i]
+Other Vampires you control get +1/+1.
+
+Grizzled Ironwright
+rules_text: When this creature enters, create a Weapon token. [i](It's an Equipment artifact with equip {2} and “Equipped creature gets +1/+1.”)[/i]
+Whenever an artifact or enchantment enters under your control, you may pay {GW}. If you do, put a +1/+1 counter on target Human you control. => When this creature enters, create a Weapon token. [i](It's an Equipment artifact with equip {2} and “Equipped creature gets +1/+1.”)[/i]
+Whenever an artifact or enchantment you control enters, you may pay {1}. If you do, put a +1/+1 counter on target Human.
+
+Rally to Thraben
+
+Sanguine Sacrament
+
+Stonegraf Awakener
+rules_text: Menace
+Other Zombies you control get +1/+1.
+When you infuse, you may exile a Zombie card from your graveyard rather than two cards. => Menace
+Other Zombies you control get +1/+1.
+If you would infuse, you may exile a Zombie card from your graveyard rather than two cards.
+
+Unstable Experimentation
+
+Fleshwrithe Apparatus
+
+Wolf-Fang Talisman
+
+Beyond Comprehension
+rules_text: Destroy all creatures. Each player who controlled three or more creatures destroyed this way may surveil 2. [i](To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i] => Destroy all creatures. Starting with you, each player who controlled three or more creatures destroyed this way may surveil 2. [i](To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i]
+
+Curse of the Disturbed Tomb
+type: Enchantment — Aura Curse Saga => Enchantment — Aura Curse
+cost: {3}{W} => {3}{W}{W}
+rules_text:  => Enchant player
+When this Curse enters, each of enchanted player's opponents may return a creature card from their graveyard to the battlefield.
+Whenever a player attacks enchanted player, they put a +1/+1 counter on target attacking creature. It gains lifelink until end of turn.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Enchant player
+Each player mills three cards. You gain 3 life.
+Each of enchanted player's opponents may return a creature card from their graveyard to the battlefield.
+Exile enchanted player's graveyard. Put a +1/+1 counter on each creature you control. => 
+
+Guardian's Charm
+cost: {1}{W} => {2}{W}
+rules_text: Choose one —
+• Exile target creature. Its controller surveils 2.
+• Target creature gains double strike until end if turn.
+• Return target noncreature spell to its owner's hand if two or less mana was spent to cast it. => Choose one —
+• Exile target nonland permanent. Its controller surveils 2.
+• Target creature gets +1/+1 and gains double strike until end if turn.
+• Return target noncreature spell to its owner's hand.
+
+Heron's Grace Rescuer
+rules_text: Flash
+When this creature enters, you may return another target nonland permanent you own to your hand.
+[i]Concord — [/i]Whenever this creature attacks, if there are four or more card types among permanents you control, you may put a nonland permanent card with mana value 2 or less from your hand onto the battlefield. => Flash
+When this creature enters, you may return another target nonland permanent you own to your hand.
+[i]Concord — [/i]Whenever this creature attacks, if there are four or more card types among permanents you control, you may put a permanent card with mana value 2 or less from your hand onto the battlefield.
+
+Westvale Cult Induction
+rules_text: When this enchantment enters, you may create a white Aura enchantment token with “Enchanted creature loses all abilities and has base power and toughness 3/3” and attach it to target creature. 
+{3}{W}{W}: Transform this enchantment. Activate only as a sorcery. => When this enchantment enters, you may create a white Aura enchantment token with “Enchanted creature loses all abilities and has base power and toughness 3/3” and attach it to target creature. 
+{2}{W}{W}: Transform this enchantment. Activate only as a sorcery.
+
+Herghast, Niblis Magister
+rules_text: Flash
+Flying, ward {1}
+{U}: Attach target Aura you control to target permanent it could enchant. Activate only once each turn. => Flash
+Flying, ward {1}
+{U}: Choose target permanent. Attach an Aura you control that could enchant it to it, or move a counter from a permanent you control to it. Activate only once each turn.
+
+Angel of Fading Dusk
+cost: {3}{B}{B} => {2}{B}{B}
+rules_text: Flying
+When this creature enters, you may sacrifice another creature. If you do, each opponent loses 3 life and you gain 3 life.
+{2}{W}: Exile target creature card with mana value 2 or less from your graveyard. Create tapped token that's a copy of the exiled card. => Flying
+When this creature enters, you may sacrifice another creature. If you do, each opponent loses 3 life and you gain 3 life.
+{2}{W}: Return target creature card with mana value 2 or less from your graveyard to the battlefield tapped with a finality counter on it.
+pt: 5/5 => 4/4
+
+Beckon the Beyond
+rules_text: Choose one —
+• Reveal a planeswalker, Eldrazi or Horror card you own from outside the game and put it into your hand.
+• Draw two cards and you lose 2 life. => Choose one —
+• Reveal a planeswalker, Eldrazi or Horror card you own from outside the game and put it into your hand.
+• Surveil 2, then draw two cards. You lose 2 life.
+
+Bloodstarved Slumber
+rules_text: Whenever a nontoken creature you control dies, put a blood counter on this enchantment.
+{1}{B}, Sacrifice a creature: Draw a card and you gain 1 life.
+{2}{B}: Transform this enchantment. Activate only if this enchantment has three or more blood counters on it and only as a sorcery. => Whenever a nontoken creature you control dies, put a feed counter on this enchantment.
+{1}{B}, Sacrifice a creature: Draw a card and you gain 1 life.
+{2}{B}: Transform this enchantment. Activate only if this enchantment has three or more feed counters on it and only as a sorcery.
+
+Captain Faulmorr
+rules_text: Whenever one or more Zombie cards are put into your graveyard from anywhere, put a +1/+1 counter on this creature.
+{1}{B}, Pay 2 life, Exile three cards from your graveyard: Draw a card. => Whenever one or more Zombie cards are put into your graveyard from anywhere, put a +1/+1 counter on Captain Faulmorr.
+{1}{B}, Pay 2 life, Exile three cards from your graveyard: Draw a card.
+
+Horrific Stitching
+rules_text: Choose up to one —
+• Each creature gets -3/-3 until end of turn.
+• Each player discards three cards.
+Then infuse 3. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i] => Choose one —
+• Each creature gets -3/-3 until end of turn.
+• Each player discards three cards.
+When you do, infuse 3. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i]
+
+Ash-Addled Pyromaniac
+rules_text: When this creature dies, choose one —
+• Create a 1/1 red Devil creature token with “When this creature dies, it deals 1 damage to any target.”
+• Create a red Ardor enchantment token with ““Sacrifice this enchantment: Target creature gets +1/+0 and gains haste until end of turn.”
+• Create a Treasure token. => When this creature dies, choose one —
+• Create a 1/1 red Devil creature token with “When this creature dies, it deals 1 damage to any target.”
+• Create a red Ardor enchantment token with “Sacrifice this enchantment: Target creature gets +1/+0 and gains haste until end of turn.”
+• Create a Treasure token.
+
+Tempting Puzzlebox
+rules_text: At the beginning of combat on your turn, exile the top card of your library. You may play it this turn. Then if there are five or more mana values among cards you own in exile, you may pay {1}{R}. If you do, transform this artifact and tap it. It's attacking. => At the beginning of combat on your turn, exile the top card of your library with a puzzle counter on it. You may play it this turn. Then if there are three or more mana values among cards you own in exile with puzzle counters on them, you may transform this artifact.
+
+Call of the Ulvenvater
+rules_text: This spell costs {X} less to cast, where X is the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+Look at the top eight cards of your library. You may reveal a creature and/or a land card from among them, put them into your hand, then put the rest on the bottom in a random order. => This spell costs {X} less to cast, where X is the number of savage creatures you control. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+Look at the top ten cards of your library. You may reveal a creature and/or a land card from among them, put them into your hand, then put the rest on the bottom in a random order.
+
+Devotion to Ghrin-Danu
+rules_text: When Devotion to Ghrin-Danu enters, mill two cards and you gain 3 life. When you do, you may return target land card from your graveyard to the battlefield.
+{3}{G}{G}: Transform Devotion to Ghrin-Danu. Activate only if there are thirteen or more cards in your graveyard and only as a sorcery. => When Devotion to Ghrin-Danu enters, mill two cards and you gain 3 life. When you do, you may return target land card from your graveyard to the battlefield.
+{3}{G}{G}: Transform Devotion to Ghrin-Danu. Activate only if there are seven or more cards in your graveyard and only as a sorcery.
+
+Estwald Brigands
+
+Gavony Watchman
+rules_text: Vigilance, trample
+When this creature dies, target opponent chooses one, then you choose one that hasn't been chosen this way —
+• That player creates a tapped Treasure token.
+• That player creates a 1/1 white Human creature token. => Vigilance, trample
+When this creature dies, target opponent chooses one, then you choose one that hasn't been chosen this way.
+• That player creates a tapped Treasure token.
+• That player creates a 1/1 white Human creature token.
+
+Harvesttide Procession
+rules_text: At the beginning of your end step, create your choice of a 1/1 white Human creature token, a Treasure token, or a Weapon token.
+[i]Concord — [/i]If there are four or more card types among permanents you control, if an effect would create one or more tokens under your control, it creates that many plus one of those tokens instead. => At the beginning of your end step, create your choice of a 1/1 white Human creature token or a Treasure token.
+[i]Concord — [/i]If there are four or more card types among permanents you control, if an effect would create one or more tokens under your control, it creates that many plus one of those tokens instead.
+
+Malignant Entangler
+rules_text: Reach, deathtouch
+When this creature enters, surveil 2. Then if there are seven or more cards in your graveyard, you may pay {1}{B}. If you do, destroy target nonland permanent. => Reach, deathtouch
+When this creature enters, surveil 2. When you do, if there are seven or more cards in your graveyard, you may pay {1}{B}. If you do, destroy target nonland permanent.
+
+Elgaud Dawnrider
+rules_text: Lifelink, haste
+Whenever this creature attacks, choose one. If you control five or more creatures, you may choose both instead.
+• Create a 1/1 white Human creature token that's tapped and attacking.
+• Other attacking creatures get +1/+0 and gain trample until end of turn. => Lifelink, haste
+Whenever this creature attacks, choose one. If you control four or more creatures, you may choose both instead.
+• Create a 1/1 white Human creature token that's tapped and attacking.
+• Other attacking creatures get +1/+0 and gain trample until end of turn.
+
+Wildcaster Devil
+rules_text: Flash
+When this creature enters, you may exile an instant and a sorcery card each with mana value 2 or less from your graveyard. If you do, choose one of them at random and cast a copy of it without paying its mana cost. Put the other card into your hand. => Flash
+When this creature enters, you may exile an instant and a sorcery card each with mana value 2 or less from your graveyard. If you exiled two cards this way, choose one of them at random and cast a copy of it without paying its mana cost. Put the other card into your hand.
+
+Eerie Nightdrifter
+rules_text: Flying, lifelink
+When this creature enters, mill four cards. You may put an enchantment or Spirit card milled this way into your hand.
+{5}{W}{W}: This creature's base power and toughness each become equal to your life total until end of turn. => Flying, lifelink
+When this creature enters, mill five cards. You may put an enchantment and/or Spirit card milled this way into your hand.
+{5}{W}{W}: This creature's base power and toughness each become equal to your life total until end of turn.
+
+Ashiok, Your Worst Fear
+special_text: [+1]: Tap up to one target nonland permanent and put a stun counter on it. It loses all abilities for as long as it remains tapped.
+[-2]: Search your library for an instant, sorcery or Curse card, exile it, then shuffle. Put that card into your hand unless an opponent has you draw two cards.
+[-8]: You get an emblem with “During each opponent's turn, until the end of that player's first main phase, you control that player. When you lose control of that player, they untap each land they control.” => [+1]: Tap up to one target nonland permanent and put a stun counter on it. It loses all abilities for as long as it remains tapped.
+[-2]: Search your library for an instant, sorcery or Curse card, exile it, then shuffle. Put that card into your hand unless an opponent has you draw two cards.
+[-8]: During each opponent's turn, until the end of that player's combat phase, you control that player. When you lose control of that player, they untap each land they control.
+
+Master Skaabstitcher
+rules_text: When this creature enters, infuse 3. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i]
+Whenever you infuse, the Zombie token gains “Whenever this creature deals combat damage to a player, copy the exiled instant or sorcery card and you may cast it without paying its mana cost.” => When this creature enters, infuse 3. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 3/3 blue Zombie creature token.)[/i]
+Whenever a Zombie token you control deals combat damage to a player, you may copy an instant or sorcery card infused with that token. You may cast it without paying its mana cost.
+
+Sorin, Errant Bloodlord
+cost: {2}{B} => {1}{B}{B}
+
+Witching Hour
+
+Feudrach of Ashmouth
+rules_text: Flying, menace
+{1}{R}: Target creature you control gets +1/+0 until end of turn.
+Whenever a creature you control attacks, Feudrach deals X damage to any target, where X is the difference between that creature's power and its base power. => Flying
+{1}{R}: Target creature gets +1/+0 until end of turn.
+Whenever you attack, Feudrach deals X damage to any target, where X is the difference between target creature you control's power and base power.
+
+The Collabomination
+type: Legendary Creature — Zombie => Legendary Creature — Zombie Horror
+cost: {3}{U}{B} => {2}{U}{B}{B}
+rules_text: Whenever you cast an instant or sorcery spell from your hand, create a 2/2 black Zombie creature token.
+Whenever this creature deals combat damage to a player, exile target instant or sorcery card in your graveyard. For each Zombie you control, copy that spell. You may cast the copies without paying their mana costs. => Whenever The Collabomination or another nontoken Zombie you control enters, mill two cards and create a 2/2 black Zombie creature token.
+Pay 1 life, Exile a card from your graveyard: Add {C}. Spend this mana only to cast an instant or sorcery spell without X in its mana cost.
+pt: 4/6 => 4/4
+
+Ominous Frogs
+rules_text: Whenever you cast an instant or sorcery spell, this creature deals 1 damage to each opponent. Put a croak counter on it. Then if it has three or more croak counters on it, remove them all and transform it. => Whenever you cast an instant or sorcery spell, this creature deals 1 damage to each opponent. Put a croak counter on it. Then if it has three or more croak counters on it, you may remove them all and transform it.
+
+Sigarda, Hope's Accord
+rules_text: Flying
+When Sigarda enters, reveal the top five cards of your library. You may put a noncreature permanent card with mana value 3 or less from among them onto the battlefield, then shuffle.
+[i]Concord —[/i] As long as there are four or more card types among permanents you control, Humans you control get +1/+1. => Flying
+When Sigarda enters, reveal the top six cards of your library. You may put a noncreature permanent card with mana value 3 or less from among them onto the battlefield, then shuffle.
+[i]Concord —[/i] As long as there are four or more card types among permanents you control, other Angels and Humans you control get +1/+1.
+
+Traft, Aiding the Worthy
+
+
+VERSION 6 CHANGELOG
 ====================
 
 Guardian's Charm added.

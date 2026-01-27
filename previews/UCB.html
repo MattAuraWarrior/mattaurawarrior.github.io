@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" type="image/png" href="/sets/UCB-files/icon.png"/>
-	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="icon" type="image/png" href="../sets/UCB-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
 	<title>UCB visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
 	<style>
 		@font-face {
 			font-family: Beleren;
-			src: url('/resources/beleren.ttf');
+			src: url('../resources/beleren.ttf');
 		}
 		body {
 			font-family: Arial, sans-serif;
@@ -39,19 +42,21 @@
 			position: relative;
 		}
 		.sidebar-h-img {
-			display: none;
-			transform: rotate(90deg);
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
 			position: absolute;
 			left: 10%;
 			top: 10%;
 			width: 85%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.sidebar-img {
 			vertical-align: middle;
 			width: 100%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.close-btn {
-			background: url('/img/close.png') no-repeat;
+			background: url('../img/close.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 10%;
@@ -62,7 +67,7 @@
 			right: 4%;
 		}
 		.close-btn:hover {
-			background: url('/img/close-hover.png') no-repeat;
+			background: url('../img/close-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
@@ -82,6 +87,7 @@
 			display: block;
 			visibility: hidden;
 			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
 		}
 		.banner {
 			width: 100%;
@@ -102,9 +108,10 @@
 		.container img {
 			width: 100%;
 			height: auto;
+			border-radius: 3.733% / 2.677%;
 		}
 		.flip-btn {
-			background: url('/img/flip.png') no-repeat;
+			background: url('../img/flip.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 15%;
@@ -118,7 +125,7 @@
 			opacity: 0.5;
 		}
 		.flip-btn:hover {
-			background: url('/img/flip-hover.png') no-repeat;
+			background: url('../img/flip-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
@@ -126,12 +133,13 @@
 			background: rgba(23, 23, 23, 0.8);
 			border-radius: 8px;
 			position: absolute;
-			left: 10%;
+			left: 5%;
 			width: fit-content;
+			max-width: 90%;
 			margin: 20px 0;
 			padding: 5px 0;
-			display: flex;
-			flex-direction: column;
+			display: grid;
+			grid-template-columns: 1fr;
 			z-index: 3;
 		}
 		.dropdown .set-bar {
@@ -173,394 +181,410 @@
 	</style>
 </head>
 <body>
-	<img class="preload-hidden" src="/img/dot.png" />
-	<img class="preload-hidden" src="/sets/UCB-files/logo.png" />
-	<img class="preload-hidden" src="/sets/DRT-files/icon.png" />
-		<img class="preload-hidden" src="/sets/IWH-files/icon.png" />
-		<img class="preload-hidden" src="/sets/TPW-files/icon.png" />
-		<img class="preload-hidden" src="/sets/UCB-files/icon.png" />
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/UCB-files/logo.png" />
+	<img class="preload-hidden" src="../sets/DRT-files/icon.png" />
+		<img class="preload-hidden" src="../sets/IWH-files/icon.png" />
+		<img class="preload-hidden" src="../sets/TPW-files/icon.png" />
+		<img class="preload-hidden" src="../sets/UCB-files/icon.png" />
 		<div class="header">
 		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
 		</div>
 	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
 
-	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
+
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
 	
-		<a class="set-bar" href="UCB"><img src="/sets/UCB-files/icon.png">Urshad: Covenant of Blood</a>
+		<a class="set-bar" href="../previews/UCB"><img src="../sets/UCB-files/icon.png">Urshad: Covenant of Blood</a>
 	
-		<a class="set-bar inactive" href="DRT"><img src="/sets/DRT-files/icon.png"></a>
+		<a class="set-bar inactive" href="../previews/DRT"><img src="../sets/DRT-files/icon.png"></a>
 	
-		<a class="set-bar inactive" href="IWH"><img src="/sets/IWH-files/icon.png">Innistrad: Witching Hour</a>
+		<a class="set-bar inactive" href="../previews/IWH"><img src="../sets/IWH-files/icon.png">Innistrad: Witching Hour</a>
 	
-		<a class="set-bar inactive" href="TPW"><img src="/sets/TPW-files/icon.png">The Petals Wilt</a>
+		<a class="set-bar inactive" href="../previews/TPW"><img src="../sets/TPW-files/icon.png">The Petals Wilt</a>
 	
 		</div>
 		<div class="banner">
-		<img class="logo" src="/sets/UCB-files/logo.png">
+		<img class="logo" src="../sets/UCB-files/logo.png">
 		</div>
 		<div class="main-content" id="main-content">
 			<div class="grid-container">
-					<div class="container"><img alt="/sets\UCB-files\img\10_Hannaru, the Lion Queen.png" id="10_Hannaru, the Lion Queen" data-flag="@X" onclick="openSidebar('10_Hannaru, the Lion Queen',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\55_Ekebram of the Great Archives.png" id="55_Ekebram of the Great Archives" data-flag="@X" onclick="openSidebar('55_Ekebram of the Great Archives',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\95_Conqueror of Empires.png" id="95_Conqueror of Empires" data-flag="@X" onclick="openSidebar('95_Conqueror of Empires',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\145_Dunescourge Hilakite.png" id="145_Dunescourge Hilakite" data-flag="@X" onclick="openSidebar('145_Dunescourge Hilakite',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\179_Bahabu, the Last Guardian.png" id="179_Bahabu, the Last Guardian" data-flag="@X" onclick="openSidebar('179_Bahabu, the Last Guardian',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\31_Patriarch of Empires.png" id="31_Patriarch of Empires" data-flag="@X" onclick="openSidebar('31_Patriarch of Empires',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\66_Marilye, Got Your Back.png" id="66_Marilye, Got Your Back" data-flag="@X" onclick="openSidebar('66_Marilye, Got Your Back',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\99_Deathless Inishtu.png" id="99_Deathless Inishtu" data-flag="@X" onclick="openSidebar('99_Deathless Inishtu',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\152_The Impassioned Lovers.png" id="152_The Impassioned Lovers" data-flag="@X" onclick="openSidebar('152_The Impassioned Lovers',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\204_Jobiah of the Boundless Flock.png" id="204_Jobiah of the Boundless Flock" data-flag="@X" onclick="openSidebar('204_Jobiah of the Boundless Flock',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\1_Bearer of Golden Harvests.png" id="1_Bearer of Golden Harvests" data-flag="@X" onclick="openSidebar('1_Bearer of Golden Harvests',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\49_Balasi's Mandate.png" id="49_Balasis Mandate" data-flag="@X" onclick="openSidebar('49_Balasis Mandate',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\91_Autocracy.png" id="91_Autocracy" data-flag="@X" onclick="openSidebar('91_Autocracy',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\135_Aspect of the Fallen God.png" id="135_Aspect of the Fallen God" data-flag="@X" onclick="openSidebar('135_Aspect of the Fallen God',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\177_Attendant of Hasmanu.png" id="177_Attendant of Hasmanu" data-flag="@X" onclick="openSidebar('177_Attendant of Hasmanu',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\6_Determined Return.png" id="6_Determined Return" data-flag="@X" onclick="openSidebar('6_Determined Return',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\52_Cleansing Deluge.png" id="52_Cleansing Deluge" data-flag="@X" onclick="openSidebar('52_Cleansing Deluge',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\93_Bloodpact Sukkal.png" id="93_Bloodpact Sukkal" data-flag="@X" onclick="openSidebar('93_Bloodpact Sukkal',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\139_Chemistry.png" id="139_Chemistry" data-flag="@X" onclick="openSidebar('139_Chemistry',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\178_Awaken the Primordials.png" id="178_Awaken the Primordials" data-flag="@X" onclick="openSidebar('178_Awaken the Primordials',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\7_Godhood.png" id="7_Godhood" data-flag="@X" onclick="openSidebar('7_Godhood',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\54_Divine Amalgamation.png" id="54_Divine Amalgamation" data-flag="@X" onclick="openSidebar('54_Divine Amalgamation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\98_Death Pits Trophy-Taker.png" id="98_Death Pits Trophy-Taker" data-flag="@X" onclick="openSidebar('98_Death Pits Trophy-Taker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\143_Dehmi's Repentance.png" id="143_Dehmis Repentance" data-flag="@X" onclick="openSidebar('143_Dehmis Repentance',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\183_Borsuppa Reclaimer.png" id="183_Borsuppa Reclaimer" data-flag="@X" onclick="openSidebar('183_Borsuppa Reclaimer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\27_Malach of Divine Messages.png" id="27_Malach of Divine Messages" data-flag="@X" onclick="openSidebar('27_Malach of Divine Messages',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\61_Heart to Heart.png" id="61_Heart to Heart" data-flag="@X" onclick="openSidebar('61_Heart to Heart',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\101_Den Prowler.png" id="101_Den Prowler" data-flag="@X" onclick="openSidebar('101_Den Prowler',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\157_Musha, Hila King.png" id="157_Musha, Hila King" data-flag="@X" onclick="openSidebar('157_Musha, Hila King',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\194_Forestry.png" id="194_Forestry" data-flag="@X" onclick="openSidebar('194_Forestry',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\28_Marble Row Edificers.png" id="28_Marble Row Edificers" data-flag="@X" onclick="openSidebar('28_Marble Row Edificers',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\68_Maw-Swallow Whale.png" id="68_Maw-Swallow Whale" data-flag="@X" onclick="openSidebar('68_Maw-Swallow Whale',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\102_Devouring Herald.png" id="102_Devouring Herald" data-flag="@X" onclick="openSidebar('102_Devouring Herald',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\160_Primordial's Wake.png" id="160_Primordials Wake" data-flag="@X" onclick="openSidebar('160_Primordials Wake',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\195_Forsake Divinity.png" id="195_Forsake Divinity" data-flag="@X" onclick="openSidebar('195_Forsake Divinity',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\39_Servant of Soul's Passage.png" id="39_Servant of Souls Passage" data-flag="@X" onclick="openSidebar('39_Servant of Souls Passage',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\71_Namuzzar's Scion.png" id="71_Namuzzars Scion" data-flag="@X" onclick="openSidebar('71_Namuzzars Scion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\105_Duskreaper Malach.png" id="105_Duskreaper Malach" data-flag="@X" onclick="openSidebar('105_Duskreaper Malach',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\164_Sarrutu Worldshaper.png" id="164_Sarrutu Worldshaper" data-flag="@X" onclick="openSidebar('164_Sarrutu Worldshaper',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\207_Mother of Stings.png" id="207_Mother of Stings" data-flag="@X" onclick="openSidebar('207_Mother of Stings',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\40_Shala's Intervention.png" id="40_Shalas Intervention" data-flag="@X" onclick="openSidebar('40_Shalas Intervention',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\79_Sailing.png" id="79_Sailing" data-flag="@X" onclick="openSidebar('79_Sailing',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\119_Namuzzar's Authority.png" id="119_Namuzzars Authority" data-flag="@X" onclick="openSidebar('119_Namuzzars Authority',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\165_Searing Annihilus.png" id="165_Searing Annihilus" data-flag="@X" onclick="openSidebar('165_Searing Annihilus',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\208_Rampant Hydraffe.png" id="208_Rampant Hydraffe" data-flag="@X" onclick="openSidebar('208_Rampant Hydraffe',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\42_Theocratic Magistrate.png" id="42_Theocratic Magistrate" data-flag="@X" onclick="openSidebar('42_Theocratic Magistrate',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\84_Torrential Eradicatus.png" id="84_Torrential Eradicatus" data-flag="@X" onclick="openSidebar('84_Torrential Eradicatus',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\128_Selezzar, Venomous Tyrant.png" id="128_Selezzar, Venomous Tyrant" data-flag="@X" onclick="openSidebar('128_Selezzar, Venomous Tyrant',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\171_Unshackled Flamebinder.png" id="171_Unshackled Flamebinder" data-flag="@X" onclick="openSidebar('171_Unshackled Flamebinder',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\217_Tabni, Guardian of Fields.png" id="217_Tabni, Guardian of Fields" data-flag="@X" onclick="openSidebar('217_Tabni, Guardian of Fields',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\44_Vault of Countless Codices.png" id="44_Vault of Countless Codices" data-flag="@X" onclick="openSidebar('44_Vault of Countless Codices',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\87_Unyielding Kulilu.png" id="87_Unyielding Kulilu" data-flag="@X" onclick="openSidebar('87_Unyielding Kulilu',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\132_Ushem of the Lone Gun.png" id="132_Ushem of the Lone Gun" data-flag="@X" onclick="openSidebar('132_Ushem of the Lone Gun',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\174_Wily Stingswoop.png" id="174_Wily Stingswoop" data-flag="@X" onclick="openSidebar('174_Wily Stingswoop',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\218_The Trials of Alamazzar.png" id="218_The Trials of Alamazzar" data-flag="@X" onclick="openSidebar('218_The Trials of Alamazzar',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\9_Guardian of Sannuria.png" id="9_Guardian of Sannuria" data-flag="@X" onclick="openSidebar('9_Guardian of Sannuria',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\47_Awakener of Immortals.png" id="47_Awakener of Immortals" data-flag="@X" onclick="openSidebar('47_Awakener of Immortals',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\90_Amalgamate Pariah.png" id="90_Amalgamate Pariah" data-flag="@X" onclick="openSidebar('90_Amalgamate Pariah',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\133_Ankulithic Crucible.png" id="133_Ankulithic Crucible" data-flag="@X" onclick="openSidebar('133_Ankulithic Crucible',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\180_Bahabu's Spawn.png" id="180_Bahabus Spawn" data-flag="@X" onclick="openSidebar('180_Bahabus Spawn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\11_Hannaru's Charm.png" id="11_Hannarus Charm" data-flag="@X" onclick="openSidebar('11_Hannarus Charm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\56_Ekebram's Charm.png" id="56_Ekebrams Charm" data-flag="@X" onclick="openSidebar('56_Ekebrams Charm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\96_Corpsemaker Sukur.png" id="96_Corpsemaker Sukur" data-flag="@X" onclick="openSidebar('96_Corpsemaker Sukur',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\136_Bone Mesa Shardseeker.png" id="136_Bone Mesa Shardseeker" data-flag="@X" onclick="openSidebar('136_Bone Mesa Shardseeker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\184_Bursting Dunes.png" id="184_Bursting Dunes" data-flag="@X" onclick="openSidebar('184_Bursting Dunes',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\14_Heartland Croptender.png" id="14_Heartland Croptender" data-flag="@X" onclick="openSidebar('14_Heartland Croptender',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\62_Herald of Lethul.png" id="62_Herald of Lethul" data-flag="@X" onclick="openSidebar('62_Herald of Lethul',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\100_Deathwake Goliath.png" id="100_Deathwake Goliath" data-flag="@X" onclick="openSidebar('100_Deathwake Goliath',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\140_Consumed by Power.png" id="140_Consumed by Power" data-flag="@X" onclick="openSidebar('140_Consumed by Power',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\188_Dawncrest Camaar.png" id="188_Dawncrest Camaar" data-flag="@X" onclick="openSidebar('188_Dawncrest Camaar',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\15_Herald of Darutu.png" id="15_Herald of Darutu" data-flag="@X" onclick="openSidebar('15_Herald of Darutu',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\63_Imperator's Resplendence.png" id="63_Imperators Resplendence" data-flag="@X" onclick="openSidebar('63_Imperators Resplendence',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\104_Drover of the Nameless.png" id="104_Drover of the Nameless" data-flag="@X" onclick="openSidebar('104_Drover of the Nameless',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\141_Currency Broker.png" id="141_Currency Broker" data-flag="@X" onclick="openSidebar('141_Currency Broker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\192_Encroaching Sirrush.png" id="192_Encroaching Sirrush" data-flag="@X" onclick="openSidebar('192_Encroaching Sirrush',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\16_Imperator's Custodian.png" id="16_Imperators Custodian" data-flag="@X" onclick="openSidebar('16_Imperators Custodian',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\65_Lammasu Surveyor.png" id="65_Lammasu Surveyor" data-flag="@X" onclick="openSidebar('65_Lammasu Surveyor',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\107_Faithless End.png" id="107_Faithless End" data-flag="@X" onclick="openSidebar('107_Faithless End',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\144_Dunechoke.png" id="144_Dunechoke" data-flag="@X" onclick="openSidebar('144_Dunechoke',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\200_Herald of Behama.png" id="200_Herald of Behama" data-flag="@X" onclick="openSidebar('200_Herald of Behama',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\17_Imperial Claim.png" id="17_Imperial Claim" data-flag="@X" onclick="openSidebar('17_Imperial Claim',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\73_Parted Oceans.png" id="73_Parted Oceans" data-flag="@X" onclick="openSidebar('73_Parted Oceans',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\110_Goldscale Spitefang.png" id="110_Goldscale Spitefang" data-flag="@X" onclick="openSidebar('110_Goldscale Spitefang',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\147_Emerabi's Charm.png" id="147_Emerabis Charm" data-flag="@X" onclick="openSidebar('147_Emerabis Charm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\201_Heritage.png" id="201_Heritage" data-flag="@X" onclick="openSidebar('201_Heritage',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\18_Inishtu's Attendant.png" id="18_Inishtus Attendant" data-flag="@X" onclick="openSidebar('18_Inishtus Attendant',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\74_Philosophy.png" id="74_Philosophy" data-flag="@X" onclick="openSidebar('74_Philosophy',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\113_Haruzah Brokerage.png" id="113_Haruzah Brokerage" data-flag="@X" onclick="openSidebar('113_Haruzah Brokerage',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\148_Erupting Amalgam.png" id="148_Erupting Amalgam" data-flag="@X" onclick="openSidebar('148_Erupting Amalgam',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\205_Jobiah's Charm.png" id="205_Jobiahs Charm" data-flag="@X" onclick="openSidebar('205_Jobiahs Charm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\21_Khulnarah Bloodseeker.png" id="21_Khulnarah Bloodseeker" data-flag="@X" onclick="openSidebar('21_Khulnarah Bloodseeker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\75_Pinnacle Messenger.png" id="75_Pinnacle Messenger" data-flag="@X" onclick="openSidebar('75_Pinnacle Messenger',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\114_Herald of Nacash.png" id="114_Herald of Nacash" data-flag="@X" onclick="openSidebar('114_Herald of Nacash',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\149_Fracture.png" id="149_Fracture" data-flag="@X" onclick="openSidebar('149_Fracture',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\210_Rhudai Greensower.png" id="210_Rhudai Greensower" data-flag="@X" onclick="openSidebar('210_Rhudai Greensower',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\22_Khulnarah Orator.png" id="22_Khulnarah Orator" data-flag="@X" onclick="openSidebar('22_Khulnarah Orator',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\78_Rites of Irrigation.png" id="78_Rites of Irrigation" data-flag="@X" onclick="openSidebar('78_Rites of Irrigation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\117_Inishtu's Charm.png" id="117_Inishtus Charm" data-flag="@X" onclick="openSidebar('117_Inishtus Charm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\151_Herald of Enkim.png" id="151_Herald of Enkim" data-flag="@X" onclick="openSidebar('151_Herald of Enkim',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\211_Sacred Bull.png" id="211_Sacred Bull" data-flag="@X" onclick="openSidebar('211_Sacred Bull',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\24_Law.png" id="24_Law" data-flag="@X" onclick="openSidebar('24_Law',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\81_Splinter of Rising Storms.png" id="81_Splinter of Rising Storms" data-flag="@X" onclick="openSidebar('81_Splinter of Rising Storms',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\120_Necromantics.png" id="120_Necromantics" data-flag="@X" onclick="openSidebar('120_Necromantics',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\154_Ironworking.png" id="154_Ironworking" data-flag="@X" onclick="openSidebar('154_Ironworking',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\213_Seeker of Nissegal.png" id="213_Seeker of Nissegal" data-flag="@X" onclick="openSidebar('213_Seeker of Nissegal',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\36_Ruler of Cities.png" id="36_Ruler of Cities" data-flag="@X" onclick="openSidebar('36_Ruler of Cities',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\83_Tempestous Amalgam.png" id="83_Tempestous Amalgam" data-flag="@X" onclick="openSidebar('83_Tempestous Amalgam',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\121_Pay the Price.png" id="121_Pay the Price" data-flag="@X" onclick="openSidebar('121_Pay the Price',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\167_Sihari's Resolve.png" id="167_Siharis Resolve" data-flag="@X" onclick="openSidebar('167_Siharis Resolve',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\214_The Shepherd's Golden Gifts.png" id="214_The Shepherds Golden Gifts" data-flag="@X" onclick="openSidebar('214_The Shepherds Golden Gifts',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\43_Toilfield Penance.png" id="43_Toilfield Penance" data-flag="@X" onclick="openSidebar('43_Toilfield Penance',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\85_Two by Two.png" id="85_Two by Two" data-flag="@X" onclick="openSidebar('85_Two by Two',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\126_Scoursand Pilgrimage.png" id="126_Scoursand Pilgrimage" data-flag="@X" onclick="openSidebar('126_Scoursand Pilgrimage',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\170_Strongarm Rhox.png" id="170_Strongarm Rhox" data-flag="@X" onclick="openSidebar('170_Strongarm Rhox',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\216_Stonewrecker Goliath.png" id="216_Stonewrecker Goliath" data-flag="@X" onclick="openSidebar('216_Stonewrecker Goliath',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\2_Blessed Aegis.png" id="2_Blessed Aegis" data-flag="@X" onclick="openSidebar('2_Blessed Aegis',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\45_Amalgam of Torrents.png" id="45_Amalgam of Torrents" data-flag="@X" onclick="openSidebar('45_Amalgam of Torrents',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\89_Adorned Despot.png" id="89_Adorned Despot" data-flag="@X" onclick="openSidebar('89_Adorned Despot',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\134_Ascendant Amalgam.png" id="134_Ascendant Amalgam" data-flag="@X" onclick="openSidebar('134_Ascendant Amalgam',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\181_Blessing of Shards.png" id="181_Blessing of Shards" data-flag="@X" onclick="openSidebar('181_Blessing of Shards',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\3_Bloodclaimant's Skill.png" id="3_Bloodclaimants Skill" data-flag="@X" onclick="openSidebar('3_Bloodclaimants Skill',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\46_Antiquate.png" id="46_Antiquate" data-flag="@X" onclick="openSidebar('46_Antiquate',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\92_Bloodfueled Frenzy.png" id="92_Bloodfueled Frenzy" data-flag="@X" onclick="openSidebar('92_Bloodfueled Frenzy',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\137_Borsuppa Firefang.png" id="137_Borsuppa Firefang" data-flag="@X" onclick="openSidebar('137_Borsuppa Firefang',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\182_Blossoming Scorpion.png" id="182_Blossoming Scorpion" data-flag="@X" onclick="openSidebar('182_Blossoming Scorpion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\4_Brick by Brick.png" id="4_Brick by Brick" data-flag="@X" onclick="openSidebar('4_Brick by Brick',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\48_Azutahn Watershaper.png" id="48_Azutahn Watershaper" data-flag="@X" onclick="openSidebar('48_Azutahn Watershaper',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\94_Bone Mesa Bloodclaimer.png" id="94_Bone Mesa Bloodclaimer" data-flag="@X" onclick="openSidebar('94_Bone Mesa Bloodclaimer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\138_Bring Down.png" id="138_Bring Down" data-flag="@X" onclick="openSidebar('138_Bring Down',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\185_Carapace Scavenger.png" id="185_Carapace Scavenger" data-flag="@X" onclick="openSidebar('185_Carapace Scavenger',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\5_Conqueror's Hymn.png" id="5_Conquerors Hymn" data-flag="@X" onclick="openSidebar('5_Conquerors Hymn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\50_Blossoming Abundance.png" id="50_Blossoming Abundance" data-flag="@X" onclick="openSidebar('50_Blossoming Abundance',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\97_Death Pits Skullsplitters.png" id="97_Death Pits Skullsplitters" data-flag="@X" onclick="openSidebar('97_Death Pits Skullsplitters',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\142_Death Pits Chariot.png" id="142_Death Pits Chariot" data-flag="@X" onclick="openSidebar('142_Death Pits Chariot',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\186_Cradle of Civilization.png" id="186_Cradle of Civilization" data-flag="@X" onclick="openSidebar('186_Cradle of Civilization',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\8_Great Archives Codifier.png" id="8_Great Archives Codifier" data-flag="@X" onclick="openSidebar('8_Great Archives Codifier',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\51_Chronicler's Hymn.png" id="51_Chroniclers Hymn" data-flag="@X" onclick="openSidebar('51_Chroniclers Hymn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\103_Disciple of Noxious Whispers.png" id="103_Disciple of Noxious Whispers" data-flag="@X" onclick="openSidebar('103_Disciple of Noxious Whispers',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\146_Echoes of Anku.png" id="146_Echoes of Anku" data-flag="@X" onclick="openSidebar('146_Echoes of Anku',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\187_Darutu's Herd.png" id="187_Darutus Herd" data-flag="@X" onclick="openSidebar('187_Darutus Herd',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\12_Hannaru's Effulgence.png" id="12_Hannarus Effulgence" data-flag="@X" onclick="openSidebar('12_Hannarus Effulgence',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\53_Delta Shardseeker.png" id="53_Delta Shardseeker" data-flag="@X" onclick="openSidebar('53_Delta Shardseeker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\106_Endak City Enforcer.png" id="106_Endak City Enforcer" data-flag="@X" onclick="openSidebar('106_Endak City Enforcer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\150_Harshapal Battlemaster.png" id="150_Harshapal Battlemaster" data-flag="@X" onclick="openSidebar('150_Harshapal Battlemaster',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\189_Drag Beneath.png" id="189_Drag Beneath" data-flag="@X" onclick="openSidebar('189_Drag Beneath',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\13_Harshapal Speardrover.png" id="13_Harshapal Speardrover" data-flag="@X" onclick="openSidebar('13_Harshapal Speardrover',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\57_Empowered Clayscribe.png" id="57_Empowered Clayscribe" data-flag="@X" onclick="openSidebar('57_Empowered Clayscribe',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\108_Funerary Assistant.png" id="108_Funerary Assistant" data-flag="@X" onclick="openSidebar('108_Funerary Assistant',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\153_Inspired Seeker.png" id="153_Inspired Seeker" data-flag="@X" onclick="openSidebar('153_Inspired Seeker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\190_Dryscale Survivor.png" id="190_Dryscale Survivor" data-flag="@X" onclick="openSidebar('190_Dryscale Survivor',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\19_Jobiah's Seedsower.png" id="19_Jobiahs Seedsower" data-flag="@X" onclick="openSidebar('19_Jobiahs Seedsower',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\58_Enforcer's Shakedown.png" id="58_Enforcers Shakedown" data-flag="@X" onclick="openSidebar('58_Enforcers Shakedown',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\109_Gilded Tether.png" id="109_Gilded Tether" data-flag="@X" onclick="openSidebar('109_Gilded Tether',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\155_Lithoclad Champion.png" id="155_Lithoclad Champion" data-flag="@X" onclick="openSidebar('155_Lithoclad Champion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\191_Empowered Hippo.png" id="191_Empowered Hippo" data-flag="@X" onclick="openSidebar('191_Empowered Hippo',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\20_Kanaan Frontliner.png" id="20_Kanaan Frontliner" data-flag="@X" onclick="openSidebar('20_Kanaan Frontliner',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\59_Gift of the Ankuliths.png" id="59_Gift of the Ankuliths" data-flag="@X" onclick="openSidebar('59_Gift of the Ankuliths',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\111_Grinning Jackal.png" id="111_Grinning Jackal" data-flag="@X" onclick="openSidebar('111_Grinning Jackal',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\156_Lovers' Hymn.png" id="156_Lovers Hymn" data-flag="@X" onclick="openSidebar('156_Lovers Hymn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\193_Faithlost Wanderer.png" id="193_Faithlost Wanderer" data-flag="@X" onclick="openSidebar('193_Faithlost Wanderer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\23_Lammasu Architect.png" id="23_Lammasu Architect" data-flag="@X" onclick="openSidebar('23_Lammasu Architect',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\60_Haruzah Subjugator.png" id="60_Haruzah Subjugator" data-flag="@X" onclick="openSidebar('60_Haruzah Subjugator',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\112_Gunslinger's Figment.png" id="112_Gunslingers Figment" data-flag="@X" onclick="openSidebar('112_Gunslingers Figment',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\158_Pouncing Caracal.png" id="158_Pouncing Caracal" data-flag="@X" onclick="openSidebar('158_Pouncing Caracal',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\196_Goliathbane Sling.png" id="196_Goliathbane Sling" data-flag="@X" onclick="openSidebar('196_Goliathbane Sling',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\25_Lion Queen's Champion.png" id="25_Lion Queens Champion" data-flag="@X" onclick="openSidebar('25_Lion Queens Champion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\64_Infused Snapper.png" id="64_Infused Snapper" data-flag="@X" onclick="openSidebar('64_Infused Snapper',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\115_Herald's Hymn.png" id="115_Heralds Hymn" data-flag="@X" onclick="openSidebar('115_Heralds Hymn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\159_Power Struggle.png" id="159_Power Struggle" data-flag="@X" onclick="openSidebar('159_Power Struggle',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\197_Grand Hunt.png" id="197_Grand Hunt" data-flag="@X" onclick="openSidebar('197_Grand Hunt',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\26_Lisseria Returns Triumphant.png" id="26_Lisseria Returns Triumphant" data-flag="@X" onclick="openSidebar('26_Lisseria Returns Triumphant',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\67_Mastery of Creation.png" id="67_Mastery of Creation" data-flag="@X" onclick="openSidebar('67_Mastery of Creation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\116_Imperial Condemnation.png" id="116_Imperial Condemnation" data-flag="@X" onclick="openSidebar('116_Imperial Condemnation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\161_Rain of Sulfur.png" id="161_Rain of Sulfur" data-flag="@X" onclick="openSidebar('161_Rain of Sulfur',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\198_Great Migration.png" id="198_Great Migration" data-flag="@X" onclick="openSidebar('198_Great Migration',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\29_Masterful Strategy.png" id="29_Masterful Strategy" data-flag="@X" onclick="openSidebar('29_Masterful Strategy',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\69_Merchant Fleet.png" id="69_Merchant Fleet" data-flag="@X" onclick="openSidebar('69_Merchant Fleet',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\118_Nameless Chattel.png" id="118_Nameless Chattel" data-flag="@X" onclick="openSidebar('118_Nameless Chattel',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\162_Remnant of Anku's Rage.png" id="162_Remnant of Ankus Rage" data-flag="@X" onclick="openSidebar('162_Remnant of Ankus Rage',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\199_Heartland Grovetender.png" id="199_Heartland Grovetender" data-flag="@X" onclick="openSidebar('199_Heartland Grovetender',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\30_Nikanuur's Sorrow.png" id="30_Nikanuurs Sorrow" data-flag="@X" onclick="openSidebar('30_Nikanuurs Sorrow',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\70_Nacash's Tightening Coils.png" id="70_Nacashs Tightening Coils" data-flag="@X" onclick="openSidebar('70_Nacashs Tightening Coils',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\122_Pledged to Endak.png" id="122_Pledged to Endak" data-flag="@X" onclick="openSidebar('122_Pledged to Endak',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\163_Sarrutu Shardcaster.png" id="163_Sarrutu Shardcaster" data-flag="@X" onclick="openSidebar('163_Sarrutu Shardcaster',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\202_Hila Incursion.png" id="202_Hila Incursion" data-flag="@X" onclick="openSidebar('202_Hila Incursion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\32_Remnant of Anku's Tyranny.png" id="32_Remnant of Ankus Tyranny" data-flag="@X" onclick="openSidebar('32_Remnant of Ankus Tyranny',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\72_Ordain with Gold.png" id="72_Ordain with Gold" data-flag="@X" onclick="openSidebar('72_Ordain with Gold',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\123_Rancid Vigor.png" id="123_Rancid Vigor" data-flag="@X" onclick="openSidebar('123_Rancid Vigor',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\166_Shemesh's Spearbeater.png" id="166_Shemeshs Spearbeater" data-flag="@X" onclick="openSidebar('166_Shemeshs Spearbeater',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\203_Huntress's Echo.png" id="203_Huntresss Echo" data-flag="@X" onclick="openSidebar('203_Huntresss Echo',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\33_Rhox Protector.png" id="33_Rhox Protector" data-flag="@X" onclick="openSidebar('33_Rhox Protector',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\76_Rabudan Overseer.png" id="76_Rabudan Overseer" data-flag="@X" onclick="openSidebar('76_Rabudan Overseer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\124_Remnant of Anku's Sorrow.png" id="124_Remnant of Ankus Sorrow" data-flag="@X" onclick="openSidebar('124_Remnant of Ankus Sorrow',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\168_Spineback Manticore.png" id="168_Spineback Manticore" data-flag="@X" onclick="openSidebar('168_Spineback Manticore',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\206_Loyal Dromoryx.png" id="206_Loyal Dromoryx" data-flag="@X" onclick="openSidebar('206_Loyal Dromoryx',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\34_Rhudai Grain-Hauler.png" id="34_Rhudai Grain-Hauler" data-flag="@X" onclick="openSidebar('34_Rhudai Grain-Hauler',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\77_Remnant of Anku's Cunning.png" id="77_Remnant of Ankus Cunning" data-flag="@X" onclick="openSidebar('77_Remnant of Ankus Cunning',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\125_Sacred Shot.png" id="125_Sacred Shot" data-flag="@X" onclick="openSidebar('125_Sacred Shot',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\169_Stonesurge Ankulim.png" id="169_Stonesurge Ankulim" data-flag="@X" onclick="openSidebar('169_Stonesurge Ankulim',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\209_Remnant of Anku's Might.png" id="209_Remnant of Ankus Might" data-flag="@X" onclick="openSidebar('209_Remnant of Ankus Might',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\35_Roaming Bactribok.png" id="35_Roaming Bactribok" data-flag="@X" onclick="openSidebar('35_Roaming Bactribok',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\80_Shardswindle.png" id="80_Shardswindle" data-flag="@X" onclick="openSidebar('80_Shardswindle',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\127_Seeker's Madness.png" id="127_Seekers Madness" data-flag="@X" onclick="openSidebar('127_Seekers Madness',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\172_Urud Pathguide.png" id="172_Urud Pathguide" data-flag="@X" onclick="openSidebar('172_Urud Pathguide',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\212_Sandchurner Wurm.png" id="212_Sandchurner Wurm" data-flag="@X" onclick="openSidebar('212_Sandchurner Wurm',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\37_Scriptural Decree.png" id="37_Scriptural Decree" data-flag="@X" onclick="openSidebar('37_Scriptural Decree',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\82_Steward of Ekebram.png" id="82_Steward of Ekebram" data-flag="@X" onclick="openSidebar('82_Steward of Ekebram',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\129_Shardclaimer's Bargain.png" id="129_Shardclaimers Bargain" data-flag="@X" onclick="openSidebar('129_Shardclaimers Bargain',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\173_Visage of Forsaken Destiny.png" id="173_Visage of Forsaken Destiny" data-flag="@X" onclick="openSidebar('173_Visage of Forsaken Destiny',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\215_Shepherd's Hymn.png" id="215_Shepherds Hymn" data-flag="@X" onclick="openSidebar('215_Shepherds Hymn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\38_Serene Skies.png" id="38_Serene Skies" data-flag="@X" onclick="openSidebar('38_Serene Skies',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\86_Unfathomable Leviathan.png" id="86_Unfathomable Leviathan" data-flag="@X" onclick="openSidebar('86_Unfathomable Leviathan',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\130_Tyrant's Scalesworn.png" id="130_Tyrants Scalesworn" data-flag="@X" onclick="openSidebar('130_Tyrants Scalesworn',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\175_Worldshaper's Embrace.png" id="175_Worldshapers Embrace" data-flag="@X" onclick="openSidebar('175_Worldshapers Embrace',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\219_Urmahlullu of the Cedars.png" id="219_Urmahlullu of the Cedars" data-flag="@X" onclick="openSidebar('219_Urmahlullu of the Cedars',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\41_Sundering Procession.png" id="41_Sundering Procession" data-flag="@X" onclick="openSidebar('41_Sundering Procession',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\88_Wallowing Calf.png" id="88_Wallowing Calf" data-flag="@X" onclick="openSidebar('88_Wallowing Calf',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\131_Undying Infusion.png" id="131_Undying Infusion" data-flag="@X" onclick="openSidebar('131_Undying Infusion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\176_Ziggurat Empowerment.png" id="176_Ziggurat Empowerment" data-flag="@X" onclick="openSidebar('176_Ziggurat Empowerment',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\220_Wasteland Solifuge.png" id="220_Wasteland Solifuge" data-flag="@X" onclick="openSidebar('220_Wasteland Solifuge',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+					<div class="container"><img loading="lazy" alt="sets\UCB-files\img\10_Hannaru, the Lion Queen.png" id="UCB_10_Hannaru, the Lion Queen" data-flag="@X" onclick="openSidebar('UCB_10_Hannaru, the Lion Queen',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\55_Ekebram of the Great Archives.png" id="UCB_55_Ekebram of the Great Archives" data-flag="@X" onclick="openSidebar('UCB_55_Ekebram of the Great Archives',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\95_Conqueror of Empires.png" id="UCB_95_Conqueror of Empires" data-flag="@X" onclick="openSidebar('UCB_95_Conqueror of Empires',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\145_Dunescourge Hilakite.png" id="UCB_145_Dunescourge Hilakite" data-flag="@X" onclick="openSidebar('UCB_145_Dunescourge Hilakite',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\179_Bahabu, the Last Guardian.png" id="UCB_179_Bahabu, the Last Guardian" data-flag="@X" onclick="openSidebar('UCB_179_Bahabu, the Last Guardian',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\31_Patriarch of Empires.png" id="UCB_31_Patriarch of Empires" data-flag="@X" onclick="openSidebar('UCB_31_Patriarch of Empires',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\66_Marilye, Got Your Back.png" id="UCB_66_Marilye, Got Your Back" data-flag="@X" onclick="openSidebar('UCB_66_Marilye, Got Your Back',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\99_Deathless Inishtu.png" id="UCB_99_Deathless Inishtu" data-flag="@X" onclick="openSidebar('UCB_99_Deathless Inishtu',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\152_The Impassioned Lovers.png" id="UCB_152_The Impassioned Lovers" data-flag="@X" onclick="openSidebar('UCB_152_The Impassioned Lovers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\204_Jobiah of the Boundless Flock.png" id="UCB_204_Jobiah of the Boundless Flock" data-flag="@X" onclick="openSidebar('UCB_204_Jobiah of the Boundless Flock',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\1_Bearer of Golden Harvests.png" id="UCB_1_Bearer of Golden Harvests" data-flag="@X" onclick="openSidebar('UCB_1_Bearer of Golden Harvests',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\49_Balasi's Mandate.png" id="UCB_49_Balasis Mandate" data-flag="@X" onclick="openSidebar('UCB_49_Balasis Mandate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\91_Autocracy.png" id="UCB_91_Autocracy" data-flag="@X" onclick="openSidebar('UCB_91_Autocracy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\135_Aspect of the Fallen God.png" id="UCB_135_Aspect of the Fallen God" data-flag="@X" onclick="openSidebar('UCB_135_Aspect of the Fallen God',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\177_Attendant of Hasmanu.png" id="UCB_177_Attendant of Hasmanu" data-flag="@X" onclick="openSidebar('UCB_177_Attendant of Hasmanu',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\6_Determined Return.png" id="UCB_6_Determined Return" data-flag="@X" onclick="openSidebar('UCB_6_Determined Return',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\52_Cleansing Deluge.png" id="UCB_52_Cleansing Deluge" data-flag="@X" onclick="openSidebar('UCB_52_Cleansing Deluge',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\93_Bloodpact Sukkal.png" id="UCB_93_Bloodpact Sukkal" data-flag="@X" onclick="openSidebar('UCB_93_Bloodpact Sukkal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\139_Chemistry.png" id="UCB_139_Chemistry" data-flag="@X" onclick="openSidebar('UCB_139_Chemistry',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\178_Awaken the Primordials.png" id="UCB_178_Awaken the Primordials" data-flag="@X" onclick="openSidebar('UCB_178_Awaken the Primordials',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\7_Godhood.png" id="UCB_7_Godhood" data-flag="@X" onclick="openSidebar('UCB_7_Godhood',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\54_Divine Amalgamation.png" id="UCB_54_Divine Amalgamation" data-flag="@X" onclick="openSidebar('UCB_54_Divine Amalgamation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\98_Death Pits Trophy-Taker.png" id="UCB_98_Death Pits Trophy-Taker" data-flag="@X" onclick="openSidebar('UCB_98_Death Pits Trophy-Taker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\143_Dehmi's Repentance.png" id="UCB_143_Dehmis Repentance" data-flag="@X" onclick="openSidebar('UCB_143_Dehmis Repentance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\183_Borsuppa Reclaimer.png" id="UCB_183_Borsuppa Reclaimer" data-flag="@X" onclick="openSidebar('UCB_183_Borsuppa Reclaimer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\27_Malach of Divine Messages.png" id="UCB_27_Malach of Divine Messages" data-flag="@X" onclick="openSidebar('UCB_27_Malach of Divine Messages',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\61_Heart to Heart.png" id="UCB_61_Heart to Heart" data-flag="@X" onclick="openSidebar('UCB_61_Heart to Heart',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\101_Den Prowler.png" id="UCB_101_Den Prowler" data-flag="@X" onclick="openSidebar('UCB_101_Den Prowler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\157_Musha, Hila King.png" id="UCB_157_Musha, Hila King" data-flag="@X" onclick="openSidebar('UCB_157_Musha, Hila King',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\194_Forestry.png" id="UCB_194_Forestry" data-flag="@X" onclick="openSidebar('UCB_194_Forestry',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\28_Marble Row Edificers.png" id="UCB_28_Marble Row Edificers" data-flag="@X" onclick="openSidebar('UCB_28_Marble Row Edificers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\68_Maw-Swallow Whale.png" id="UCB_68_Maw-Swallow Whale" data-flag="@X" onclick="openSidebar('UCB_68_Maw-Swallow Whale',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\102_Devouring Herald.png" id="UCB_102_Devouring Herald" data-flag="@X" onclick="openSidebar('UCB_102_Devouring Herald',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\160_Primordial's Wake.png" id="UCB_160_Primordials Wake" data-flag="@X" onclick="openSidebar('UCB_160_Primordials Wake',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\195_Forsake Divinity.png" id="UCB_195_Forsake Divinity" data-flag="@X" onclick="openSidebar('UCB_195_Forsake Divinity',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\39_Servant of Soul's Passage.png" id="UCB_39_Servant of Souls Passage" data-flag="@X" onclick="openSidebar('UCB_39_Servant of Souls Passage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\71_Namuzzar's Scion.png" id="UCB_71_Namuzzars Scion" data-flag="@X" onclick="openSidebar('UCB_71_Namuzzars Scion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\105_Duskreaper Malach.png" id="UCB_105_Duskreaper Malach" data-flag="@X" onclick="openSidebar('UCB_105_Duskreaper Malach',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\164_Sarrutu Worldshaper.png" id="UCB_164_Sarrutu Worldshaper" data-flag="@X" onclick="openSidebar('UCB_164_Sarrutu Worldshaper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\207_Mother of Stings.png" id="UCB_207_Mother of Stings" data-flag="@X" onclick="openSidebar('UCB_207_Mother of Stings',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\40_Shala's Intervention.png" id="UCB_40_Shalas Intervention" data-flag="@X" onclick="openSidebar('UCB_40_Shalas Intervention',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\79_Sailing.png" id="UCB_79_Sailing" data-flag="@X" onclick="openSidebar('UCB_79_Sailing',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\119_Namuzzar's Authority.png" id="UCB_119_Namuzzars Authority" data-flag="@X" onclick="openSidebar('UCB_119_Namuzzars Authority',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\165_Searing Annihilus.png" id="UCB_165_Searing Annihilus" data-flag="@X" onclick="openSidebar('UCB_165_Searing Annihilus',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\208_Rampant Hydraffe.png" id="UCB_208_Rampant Hydraffe" data-flag="@X" onclick="openSidebar('UCB_208_Rampant Hydraffe',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\42_Theocratic Magistrate.png" id="UCB_42_Theocratic Magistrate" data-flag="@X" onclick="openSidebar('UCB_42_Theocratic Magistrate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\84_Torrential Eradicatus.png" id="UCB_84_Torrential Eradicatus" data-flag="@X" onclick="openSidebar('UCB_84_Torrential Eradicatus',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\128_Selezzar, Venomous Tyrant.png" id="UCB_128_Selezzar, Venomous Tyrant" data-flag="@X" onclick="openSidebar('UCB_128_Selezzar, Venomous Tyrant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\171_Unshackled Flamebinder.png" id="UCB_171_Unshackled Flamebinder" data-flag="@X" onclick="openSidebar('UCB_171_Unshackled Flamebinder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\217_Tabni, Guardian of Fields.png" id="UCB_217_Tabni, Guardian of Fields" data-flag="@X" onclick="openSidebar('UCB_217_Tabni, Guardian of Fields',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\44_Vault of Countless Codices.png" id="UCB_44_Vault of Countless Codices" data-flag="@X" onclick="openSidebar('UCB_44_Vault of Countless Codices',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\87_Unyielding Kulilu.png" id="UCB_87_Unyielding Kulilu" data-flag="@X" onclick="openSidebar('UCB_87_Unyielding Kulilu',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\132_Ushem of the Lone Gun.png" id="UCB_132_Ushem of the Lone Gun" data-flag="@X" onclick="openSidebar('UCB_132_Ushem of the Lone Gun',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\174_Wily Stingswoop.png" id="UCB_174_Wily Stingswoop" data-flag="@X" onclick="openSidebar('UCB_174_Wily Stingswoop',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\218_The Trials of Alamazzar.png" id="UCB_218_The Trials of Alamazzar" data-flag="@X" onclick="openSidebar('UCB_218_The Trials of Alamazzar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\9_Guardian of Sannuria.png" id="UCB_9_Guardian of Sannuria" data-flag="@X" onclick="openSidebar('UCB_9_Guardian of Sannuria',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\47_Awakener of Immortals.png" id="UCB_47_Awakener of Immortals" data-flag="@X" onclick="openSidebar('UCB_47_Awakener of Immortals',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\90_Amalgamate Pariah.png" id="UCB_90_Amalgamate Pariah" data-flag="@X" onclick="openSidebar('UCB_90_Amalgamate Pariah',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\133_Ankulithic Crucible.png" id="UCB_133_Ankulithic Crucible" data-flag="@X" onclick="openSidebar('UCB_133_Ankulithic Crucible',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\180_Bahabu's Spawn.png" id="UCB_180_Bahabus Spawn" data-flag="@X" onclick="openSidebar('UCB_180_Bahabus Spawn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\11_Hannaru's Charm.png" id="UCB_11_Hannarus Charm" data-flag="@X" onclick="openSidebar('UCB_11_Hannarus Charm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\56_Ekebram's Charm.png" id="UCB_56_Ekebrams Charm" data-flag="@X" onclick="openSidebar('UCB_56_Ekebrams Charm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\96_Corpsemaker Sukur.png" id="UCB_96_Corpsemaker Sukur" data-flag="@X" onclick="openSidebar('UCB_96_Corpsemaker Sukur',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\136_Bone Mesa Shardseeker.png" id="UCB_136_Bone Mesa Shardseeker" data-flag="@X" onclick="openSidebar('UCB_136_Bone Mesa Shardseeker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\184_Bursting Dunes.png" id="UCB_184_Bursting Dunes" data-flag="@X" onclick="openSidebar('UCB_184_Bursting Dunes',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\14_Heartland Croptender.png" id="UCB_14_Heartland Croptender" data-flag="@X" onclick="openSidebar('UCB_14_Heartland Croptender',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\62_Herald of Lethul.png" id="UCB_62_Herald of Lethul" data-flag="@X" onclick="openSidebar('UCB_62_Herald of Lethul',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\100_Deathwake Goliath.png" id="UCB_100_Deathwake Goliath" data-flag="@X" onclick="openSidebar('UCB_100_Deathwake Goliath',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\140_Consumed by Power.png" id="UCB_140_Consumed by Power" data-flag="@X" onclick="openSidebar('UCB_140_Consumed by Power',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\188_Dawncrest Camaar.png" id="UCB_188_Dawncrest Camaar" data-flag="@X" onclick="openSidebar('UCB_188_Dawncrest Camaar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\15_Herald of Darutu.png" id="UCB_15_Herald of Darutu" data-flag="@X" onclick="openSidebar('UCB_15_Herald of Darutu',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\63_Imperator's Resplendence.png" id="UCB_63_Imperators Resplendence" data-flag="@X" onclick="openSidebar('UCB_63_Imperators Resplendence',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\104_Drover of the Nameless.png" id="UCB_104_Drover of the Nameless" data-flag="@X" onclick="openSidebar('UCB_104_Drover of the Nameless',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\141_Currency Broker.png" id="UCB_141_Currency Broker" data-flag="@X" onclick="openSidebar('UCB_141_Currency Broker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\192_Encroaching Sirrush.png" id="UCB_192_Encroaching Sirrush" data-flag="@X" onclick="openSidebar('UCB_192_Encroaching Sirrush',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\16_Imperator's Custodian.png" id="UCB_16_Imperators Custodian" data-flag="@X" onclick="openSidebar('UCB_16_Imperators Custodian',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\65_Lammasu Surveyor.png" id="UCB_65_Lammasu Surveyor" data-flag="@X" onclick="openSidebar('UCB_65_Lammasu Surveyor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\107_Faithless End.png" id="UCB_107_Faithless End" data-flag="@X" onclick="openSidebar('UCB_107_Faithless End',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\144_Dunechoke.png" id="UCB_144_Dunechoke" data-flag="@X" onclick="openSidebar('UCB_144_Dunechoke',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\200_Herald of Behama.png" id="UCB_200_Herald of Behama" data-flag="@X" onclick="openSidebar('UCB_200_Herald of Behama',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\17_Imperial Claim.png" id="UCB_17_Imperial Claim" data-flag="@X" onclick="openSidebar('UCB_17_Imperial Claim',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\73_Parted Oceans.png" id="UCB_73_Parted Oceans" data-flag="@X" onclick="openSidebar('UCB_73_Parted Oceans',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\110_Goldscale Spitefang.png" id="UCB_110_Goldscale Spitefang" data-flag="@X" onclick="openSidebar('UCB_110_Goldscale Spitefang',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\147_Emerabi's Charm.png" id="UCB_147_Emerabis Charm" data-flag="@X" onclick="openSidebar('UCB_147_Emerabis Charm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\201_Heritage.png" id="UCB_201_Heritage" data-flag="@X" onclick="openSidebar('UCB_201_Heritage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\18_Inishtu's Attendant.png" id="UCB_18_Inishtus Attendant" data-flag="@X" onclick="openSidebar('UCB_18_Inishtus Attendant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\74_Philosophy.png" id="UCB_74_Philosophy" data-flag="@X" onclick="openSidebar('UCB_74_Philosophy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\113_Haruzah Brokerage.png" id="UCB_113_Haruzah Brokerage" data-flag="@X" onclick="openSidebar('UCB_113_Haruzah Brokerage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\148_Erupting Amalgam.png" id="UCB_148_Erupting Amalgam" data-flag="@X" onclick="openSidebar('UCB_148_Erupting Amalgam',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\205_Jobiah's Charm.png" id="UCB_205_Jobiahs Charm" data-flag="@X" onclick="openSidebar('UCB_205_Jobiahs Charm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\21_Khulnarah Bloodseeker.png" id="UCB_21_Khulnarah Bloodseeker" data-flag="@X" onclick="openSidebar('UCB_21_Khulnarah Bloodseeker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\75_Pinnacle Messenger.png" id="UCB_75_Pinnacle Messenger" data-flag="@X" onclick="openSidebar('UCB_75_Pinnacle Messenger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\114_Herald of Nacash.png" id="UCB_114_Herald of Nacash" data-flag="@X" onclick="openSidebar('UCB_114_Herald of Nacash',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\149_Fracture.png" id="UCB_149_Fracture" data-flag="@X" onclick="openSidebar('UCB_149_Fracture',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\210_Rhudai Greensower.png" id="UCB_210_Rhudai Greensower" data-flag="@X" onclick="openSidebar('UCB_210_Rhudai Greensower',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\22_Khulnarah Orator.png" id="UCB_22_Khulnarah Orator" data-flag="@X" onclick="openSidebar('UCB_22_Khulnarah Orator',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\78_Rites of Irrigation.png" id="UCB_78_Rites of Irrigation" data-flag="@X" onclick="openSidebar('UCB_78_Rites of Irrigation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\117_Inishtu's Charm.png" id="UCB_117_Inishtus Charm" data-flag="@X" onclick="openSidebar('UCB_117_Inishtus Charm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\151_Herald of Enkim.png" id="UCB_151_Herald of Enkim" data-flag="@X" onclick="openSidebar('UCB_151_Herald of Enkim',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\211_Sacred Bull.png" id="UCB_211_Sacred Bull" data-flag="@X" onclick="openSidebar('UCB_211_Sacred Bull',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\24_Law.png" id="UCB_24_Law" data-flag="@X" onclick="openSidebar('UCB_24_Law',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\81_Splinter of Rising Storms.png" id="UCB_81_Splinter of Rising Storms" data-flag="@X" onclick="openSidebar('UCB_81_Splinter of Rising Storms',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\120_Necromantics.png" id="UCB_120_Necromantics" data-flag="@X" onclick="openSidebar('UCB_120_Necromantics',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\154_Ironworking.png" id="UCB_154_Ironworking" data-flag="@X" onclick="openSidebar('UCB_154_Ironworking',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\213_Seeker of Nissegal.png" id="UCB_213_Seeker of Nissegal" data-flag="@X" onclick="openSidebar('UCB_213_Seeker of Nissegal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\36_Ruler of Cities.png" id="UCB_36_Ruler of Cities" data-flag="@X" onclick="openSidebar('UCB_36_Ruler of Cities',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\83_Tempestous Amalgam.png" id="UCB_83_Tempestous Amalgam" data-flag="@X" onclick="openSidebar('UCB_83_Tempestous Amalgam',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\121_Pay the Price.png" id="UCB_121_Pay the Price" data-flag="@X" onclick="openSidebar('UCB_121_Pay the Price',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\167_Sihari's Resolve.png" id="UCB_167_Siharis Resolve" data-flag="@X" onclick="openSidebar('UCB_167_Siharis Resolve',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\214_The Shepherd's Golden Gifts.png" id="UCB_214_The Shepherds Golden Gifts" data-flag="@X" onclick="openSidebar('UCB_214_The Shepherds Golden Gifts',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\43_Toilfield Penance.png" id="UCB_43_Toilfield Penance" data-flag="@X" onclick="openSidebar('UCB_43_Toilfield Penance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\85_Two by Two.png" id="UCB_85_Two by Two" data-flag="@X" onclick="openSidebar('UCB_85_Two by Two',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\126_Scoursand Pilgrimage.png" id="UCB_126_Scoursand Pilgrimage" data-flag="@X" onclick="openSidebar('UCB_126_Scoursand Pilgrimage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\170_Strongarm Rhox.png" id="UCB_170_Strongarm Rhox" data-flag="@X" onclick="openSidebar('UCB_170_Strongarm Rhox',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\216_Stonewrecker Goliath.png" id="UCB_216_Stonewrecker Goliath" data-flag="@X" onclick="openSidebar('UCB_216_Stonewrecker Goliath',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\2_Blessed Aegis.png" id="UCB_2_Blessed Aegis" data-flag="@X" onclick="openSidebar('UCB_2_Blessed Aegis',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\45_Amalgam of Torrents.png" id="UCB_45_Amalgam of Torrents" data-flag="@X" onclick="openSidebar('UCB_45_Amalgam of Torrents',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\89_Adorned Despot.png" id="UCB_89_Adorned Despot" data-flag="@X" onclick="openSidebar('UCB_89_Adorned Despot',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\134_Ascendant Amalgam.png" id="UCB_134_Ascendant Amalgam" data-flag="@X" onclick="openSidebar('UCB_134_Ascendant Amalgam',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\181_Blessing of Shards.png" id="UCB_181_Blessing of Shards" data-flag="@X" onclick="openSidebar('UCB_181_Blessing of Shards',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\3_Bloodclaimant's Skill.png" id="UCB_3_Bloodclaimants Skill" data-flag="@X" onclick="openSidebar('UCB_3_Bloodclaimants Skill',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\46_Antiquate.png" id="UCB_46_Antiquate" data-flag="@X" onclick="openSidebar('UCB_46_Antiquate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\92_Bloodfueled Frenzy.png" id="UCB_92_Bloodfueled Frenzy" data-flag="@X" onclick="openSidebar('UCB_92_Bloodfueled Frenzy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\137_Borsuppa Firefang.png" id="UCB_137_Borsuppa Firefang" data-flag="@X" onclick="openSidebar('UCB_137_Borsuppa Firefang',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\182_Blossoming Scorpion.png" id="UCB_182_Blossoming Scorpion" data-flag="@X" onclick="openSidebar('UCB_182_Blossoming Scorpion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\4_Brick by Brick.png" id="UCB_4_Brick by Brick" data-flag="@X" onclick="openSidebar('UCB_4_Brick by Brick',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\48_Azutahn Watershaper.png" id="UCB_48_Azutahn Watershaper" data-flag="@X" onclick="openSidebar('UCB_48_Azutahn Watershaper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\94_Bone Mesa Bloodclaimer.png" id="UCB_94_Bone Mesa Bloodclaimer" data-flag="@X" onclick="openSidebar('UCB_94_Bone Mesa Bloodclaimer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\138_Bring Down.png" id="UCB_138_Bring Down" data-flag="@X" onclick="openSidebar('UCB_138_Bring Down',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\185_Carapace Scavenger.png" id="UCB_185_Carapace Scavenger" data-flag="@X" onclick="openSidebar('UCB_185_Carapace Scavenger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\5_Conqueror's Hymn.png" id="UCB_5_Conquerors Hymn" data-flag="@X" onclick="openSidebar('UCB_5_Conquerors Hymn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\50_Blossoming Abundance.png" id="UCB_50_Blossoming Abundance" data-flag="@X" onclick="openSidebar('UCB_50_Blossoming Abundance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\97_Death Pits Skullsplitters.png" id="UCB_97_Death Pits Skullsplitters" data-flag="@X" onclick="openSidebar('UCB_97_Death Pits Skullsplitters',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\142_Death Pits Chariot.png" id="UCB_142_Death Pits Chariot" data-flag="@X" onclick="openSidebar('UCB_142_Death Pits Chariot',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\186_Cradle of Civilization.png" id="UCB_186_Cradle of Civilization" data-flag="@X" onclick="openSidebar('UCB_186_Cradle of Civilization',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\8_Great Archives Codifier.png" id="UCB_8_Great Archives Codifier" data-flag="@X" onclick="openSidebar('UCB_8_Great Archives Codifier',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\51_Chronicler's Hymn.png" id="UCB_51_Chroniclers Hymn" data-flag="@X" onclick="openSidebar('UCB_51_Chroniclers Hymn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\103_Disciple of Noxious Whispers.png" id="UCB_103_Disciple of Noxious Whispers" data-flag="@X" onclick="openSidebar('UCB_103_Disciple of Noxious Whispers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\146_Echoes of Anku.png" id="UCB_146_Echoes of Anku" data-flag="@X" onclick="openSidebar('UCB_146_Echoes of Anku',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\187_Darutu's Herd.png" id="UCB_187_Darutus Herd" data-flag="@X" onclick="openSidebar('UCB_187_Darutus Herd',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\12_Hannaru's Effulgence.png" id="UCB_12_Hannarus Effulgence" data-flag="@X" onclick="openSidebar('UCB_12_Hannarus Effulgence',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\53_Delta Shardseeker.png" id="UCB_53_Delta Shardseeker" data-flag="@X" onclick="openSidebar('UCB_53_Delta Shardseeker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\106_Endak City Enforcer.png" id="UCB_106_Endak City Enforcer" data-flag="@X" onclick="openSidebar('UCB_106_Endak City Enforcer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\150_Harshapal Battlemaster.png" id="UCB_150_Harshapal Battlemaster" data-flag="@X" onclick="openSidebar('UCB_150_Harshapal Battlemaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\189_Drag Beneath.png" id="UCB_189_Drag Beneath" data-flag="@X" onclick="openSidebar('UCB_189_Drag Beneath',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\13_Harshapal Speardrover.png" id="UCB_13_Harshapal Speardrover" data-flag="@X" onclick="openSidebar('UCB_13_Harshapal Speardrover',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\57_Empowered Clayscribe.png" id="UCB_57_Empowered Clayscribe" data-flag="@X" onclick="openSidebar('UCB_57_Empowered Clayscribe',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\108_Funerary Assistant.png" id="UCB_108_Funerary Assistant" data-flag="@X" onclick="openSidebar('UCB_108_Funerary Assistant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\153_Inspired Seeker.png" id="UCB_153_Inspired Seeker" data-flag="@X" onclick="openSidebar('UCB_153_Inspired Seeker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\190_Dryscale Survivor.png" id="UCB_190_Dryscale Survivor" data-flag="@X" onclick="openSidebar('UCB_190_Dryscale Survivor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\19_Jobiah's Seedsower.png" id="UCB_19_Jobiahs Seedsower" data-flag="@X" onclick="openSidebar('UCB_19_Jobiahs Seedsower',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\58_Enforcer's Shakedown.png" id="UCB_58_Enforcers Shakedown" data-flag="@X" onclick="openSidebar('UCB_58_Enforcers Shakedown',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\109_Gilded Tether.png" id="UCB_109_Gilded Tether" data-flag="@X" onclick="openSidebar('UCB_109_Gilded Tether',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\155_Lithoclad Champion.png" id="UCB_155_Lithoclad Champion" data-flag="@X" onclick="openSidebar('UCB_155_Lithoclad Champion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\191_Empowered Hippo.png" id="UCB_191_Empowered Hippo" data-flag="@X" onclick="openSidebar('UCB_191_Empowered Hippo',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\20_Kanaan Frontliner.png" id="UCB_20_Kanaan Frontliner" data-flag="@X" onclick="openSidebar('UCB_20_Kanaan Frontliner',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\59_Gift of the Ankuliths.png" id="UCB_59_Gift of the Ankuliths" data-flag="@X" onclick="openSidebar('UCB_59_Gift of the Ankuliths',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\111_Grinning Jackal.png" id="UCB_111_Grinning Jackal" data-flag="@X" onclick="openSidebar('UCB_111_Grinning Jackal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\156_Lovers' Hymn.png" id="UCB_156_Lovers Hymn" data-flag="@X" onclick="openSidebar('UCB_156_Lovers Hymn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\193_Faithlost Wanderer.png" id="UCB_193_Faithlost Wanderer" data-flag="@X" onclick="openSidebar('UCB_193_Faithlost Wanderer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\23_Lammasu Architect.png" id="UCB_23_Lammasu Architect" data-flag="@X" onclick="openSidebar('UCB_23_Lammasu Architect',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\60_Haruzah Subjugator.png" id="UCB_60_Haruzah Subjugator" data-flag="@X" onclick="openSidebar('UCB_60_Haruzah Subjugator',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\112_Gunslinger's Figment.png" id="UCB_112_Gunslingers Figment" data-flag="@X" onclick="openSidebar('UCB_112_Gunslingers Figment',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\158_Pouncing Caracal.png" id="UCB_158_Pouncing Caracal" data-flag="@X" onclick="openSidebar('UCB_158_Pouncing Caracal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\196_Goliathbane Sling.png" id="UCB_196_Goliathbane Sling" data-flag="@X" onclick="openSidebar('UCB_196_Goliathbane Sling',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\25_Lion Queen's Champion.png" id="UCB_25_Lion Queens Champion" data-flag="@X" onclick="openSidebar('UCB_25_Lion Queens Champion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\64_Infused Snapper.png" id="UCB_64_Infused Snapper" data-flag="@X" onclick="openSidebar('UCB_64_Infused Snapper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\115_Herald's Hymn.png" id="UCB_115_Heralds Hymn" data-flag="@X" onclick="openSidebar('UCB_115_Heralds Hymn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\159_Power Struggle.png" id="UCB_159_Power Struggle" data-flag="@X" onclick="openSidebar('UCB_159_Power Struggle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\197_Grand Hunt.png" id="UCB_197_Grand Hunt" data-flag="@X" onclick="openSidebar('UCB_197_Grand Hunt',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\26_Lisseria Returns Triumphant.png" id="UCB_26_Lisseria Returns Triumphant" data-flag="@X" onclick="openSidebar('UCB_26_Lisseria Returns Triumphant',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\67_Mastery of Creation.png" id="UCB_67_Mastery of Creation" data-flag="@X" onclick="openSidebar('UCB_67_Mastery of Creation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\116_Imperial Condemnation.png" id="UCB_116_Imperial Condemnation" data-flag="@X" onclick="openSidebar('UCB_116_Imperial Condemnation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\161_Rain of Sulfur.png" id="UCB_161_Rain of Sulfur" data-flag="@X" onclick="openSidebar('UCB_161_Rain of Sulfur',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\198_Great Migration.png" id="UCB_198_Great Migration" data-flag="@X" onclick="openSidebar('UCB_198_Great Migration',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\29_Masterful Strategy.png" id="UCB_29_Masterful Strategy" data-flag="@X" onclick="openSidebar('UCB_29_Masterful Strategy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\69_Merchant Fleet.png" id="UCB_69_Merchant Fleet" data-flag="@X" onclick="openSidebar('UCB_69_Merchant Fleet',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\118_Nameless Chattel.png" id="UCB_118_Nameless Chattel" data-flag="@X" onclick="openSidebar('UCB_118_Nameless Chattel',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\162_Remnant of Anku's Rage.png" id="UCB_162_Remnant of Ankus Rage" data-flag="@X" onclick="openSidebar('UCB_162_Remnant of Ankus Rage',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\199_Heartland Grovetender.png" id="UCB_199_Heartland Grovetender" data-flag="@X" onclick="openSidebar('UCB_199_Heartland Grovetender',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\30_Nikanuur's Sorrow.png" id="UCB_30_Nikanuurs Sorrow" data-flag="@X" onclick="openSidebar('UCB_30_Nikanuurs Sorrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\70_Nacash's Tightening Coils.png" id="UCB_70_Nacashs Tightening Coils" data-flag="@X" onclick="openSidebar('UCB_70_Nacashs Tightening Coils',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\122_Pledged to Endak.png" id="UCB_122_Pledged to Endak" data-flag="@X" onclick="openSidebar('UCB_122_Pledged to Endak',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\163_Sarrutu Shardcaster.png" id="UCB_163_Sarrutu Shardcaster" data-flag="@X" onclick="openSidebar('UCB_163_Sarrutu Shardcaster',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\202_Hila Incursion.png" id="UCB_202_Hila Incursion" data-flag="@X" onclick="openSidebar('UCB_202_Hila Incursion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\32_Remnant of Anku's Tyranny.png" id="UCB_32_Remnant of Ankus Tyranny" data-flag="@X" onclick="openSidebar('UCB_32_Remnant of Ankus Tyranny',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\72_Ordain with Gold.png" id="UCB_72_Ordain with Gold" data-flag="@X" onclick="openSidebar('UCB_72_Ordain with Gold',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\123_Rancid Vigor.png" id="UCB_123_Rancid Vigor" data-flag="@X" onclick="openSidebar('UCB_123_Rancid Vigor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\166_Shemesh's Spearbeater.png" id="UCB_166_Shemeshs Spearbeater" data-flag="@X" onclick="openSidebar('UCB_166_Shemeshs Spearbeater',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\203_Huntress's Echo.png" id="UCB_203_Huntresss Echo" data-flag="@X" onclick="openSidebar('UCB_203_Huntresss Echo',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\33_Rhox Protector.png" id="UCB_33_Rhox Protector" data-flag="@X" onclick="openSidebar('UCB_33_Rhox Protector',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\76_Rabudan Overseer.png" id="UCB_76_Rabudan Overseer" data-flag="@X" onclick="openSidebar('UCB_76_Rabudan Overseer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\124_Remnant of Anku's Sorrow.png" id="UCB_124_Remnant of Ankus Sorrow" data-flag="@X" onclick="openSidebar('UCB_124_Remnant of Ankus Sorrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\168_Spineback Manticore.png" id="UCB_168_Spineback Manticore" data-flag="@X" onclick="openSidebar('UCB_168_Spineback Manticore',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\206_Loyal Dromoryx.png" id="UCB_206_Loyal Dromoryx" data-flag="@X" onclick="openSidebar('UCB_206_Loyal Dromoryx',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\34_Rhudai Grain-Hauler.png" id="UCB_34_Rhudai Grain-Hauler" data-flag="@X" onclick="openSidebar('UCB_34_Rhudai Grain-Hauler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\77_Remnant of Anku's Cunning.png" id="UCB_77_Remnant of Ankus Cunning" data-flag="@X" onclick="openSidebar('UCB_77_Remnant of Ankus Cunning',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\125_Sacred Shot.png" id="UCB_125_Sacred Shot" data-flag="@X" onclick="openSidebar('UCB_125_Sacred Shot',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\169_Stonesurge Ankulim.png" id="UCB_169_Stonesurge Ankulim" data-flag="@X" onclick="openSidebar('UCB_169_Stonesurge Ankulim',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\209_Remnant of Anku's Might.png" id="UCB_209_Remnant of Ankus Might" data-flag="@X" onclick="openSidebar('UCB_209_Remnant of Ankus Might',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\35_Roaming Bactribok.png" id="UCB_35_Roaming Bactribok" data-flag="@X" onclick="openSidebar('UCB_35_Roaming Bactribok',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\80_Shardswindle.png" id="UCB_80_Shardswindle" data-flag="@X" onclick="openSidebar('UCB_80_Shardswindle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\127_Seeker's Madness.png" id="UCB_127_Seekers Madness" data-flag="@X" onclick="openSidebar('UCB_127_Seekers Madness',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\172_Urud Pathguide.png" id="UCB_172_Urud Pathguide" data-flag="@X" onclick="openSidebar('UCB_172_Urud Pathguide',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\212_Sandchurner Wurm.png" id="UCB_212_Sandchurner Wurm" data-flag="@X" onclick="openSidebar('UCB_212_Sandchurner Wurm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\37_Scriptural Decree.png" id="UCB_37_Scriptural Decree" data-flag="@X" onclick="openSidebar('UCB_37_Scriptural Decree',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\82_Steward of Ekebram.png" id="UCB_82_Steward of Ekebram" data-flag="@X" onclick="openSidebar('UCB_82_Steward of Ekebram',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\129_Shardclaimer's Bargain.png" id="UCB_129_Shardclaimers Bargain" data-flag="@X" onclick="openSidebar('UCB_129_Shardclaimers Bargain',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\173_Visage of Forsaken Destiny.png" id="UCB_173_Visage of Forsaken Destiny" data-flag="@X" onclick="openSidebar('UCB_173_Visage of Forsaken Destiny',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\215_Shepherd's Hymn.png" id="UCB_215_Shepherds Hymn" data-flag="@X" onclick="openSidebar('UCB_215_Shepherds Hymn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\38_Serene Skies.png" id="UCB_38_Serene Skies" data-flag="@X" onclick="openSidebar('UCB_38_Serene Skies',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\86_Unfathomable Leviathan.png" id="UCB_86_Unfathomable Leviathan" data-flag="@X" onclick="openSidebar('UCB_86_Unfathomable Leviathan',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\130_Tyrant's Scalesworn.png" id="UCB_130_Tyrants Scalesworn" data-flag="@X" onclick="openSidebar('UCB_130_Tyrants Scalesworn',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\175_Worldshaper's Embrace.png" id="UCB_175_Worldshapers Embrace" data-flag="@X" onclick="openSidebar('UCB_175_Worldshapers Embrace',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\219_Urmahlullu of the Cedars.png" id="UCB_219_Urmahlullu of the Cedars" data-flag="@X" onclick="openSidebar('UCB_219_Urmahlullu of the Cedars',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\41_Sundering Procession.png" id="UCB_41_Sundering Procession" data-flag="@X" onclick="openSidebar('UCB_41_Sundering Procession',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\88_Wallowing Calf.png" id="UCB_88_Wallowing Calf" data-flag="@X" onclick="openSidebar('UCB_88_Wallowing Calf',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\131_Undying Infusion.png" id="UCB_131_Undying Infusion" data-flag="@X" onclick="openSidebar('UCB_131_Undying Infusion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\176_Ziggurat Empowerment.png" id="UCB_176_Ziggurat Empowerment" data-flag="@X" onclick="openSidebar('UCB_176_Ziggurat Empowerment',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\220_Wasteland Solifuge.png" id="UCB_220_Wasteland Solifuge" data-flag="@X" onclick="openSidebar('UCB_220_Wasteland Solifuge',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
 				<div id="gold" class="anchor"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\242_Lethul, Aspect of Oblivion.png" id="242_Lethul, Aspect of Oblivion" data-flag="@X" onclick="openSidebar('242_Lethul, Aspect of Oblivion',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\245_Nacash, Aspect of Secrets.png" id="245_Nacash, Aspect of Secrets" data-flag="@X" onclick="openSidebar('245_Nacash, Aspect of Secrets',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\235_Enkim, Aspect of Mischief.png" id="235_Enkim, Aspect of Mischief" data-flag="@X" onclick="openSidebar('235_Enkim, Aspect of Mischief',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\224_Behama, Aspect of Might.png" id="224_Behama, Aspect of Might" data-flag="@X" onclick="openSidebar('224_Behama, Aspect of Might',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\231_Darutu, Aspect of Growth.png" id="231_Darutu, Aspect of Growth" data-flag="@X" onclick="openSidebar('231_Darutu, Aspect of Growth',false)"></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\222_Architecture_back.png" alt="/sets\UCB-files\img\222_Architecture_front.png" id="222_Architecture" data-flag="@XD" onclick="openSidebar('222_Architecture',false)"><button class="flip-btn" onclick="imgFlip('222_Architecture')"></button></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\247_Organized Crime_back.png" alt="/sets\UCB-files\img\247_Organized Crime_front.png" id="247_Organized Crime" data-flag="@XD" onclick="openSidebar('247_Organized Crime',false)"><button class="flip-btn" onclick="imgFlip('247_Organized Crime')"></button></div>
-				<div class="container"><img alt="/sets\UCB-files\img\244_Madrati, Mother of Chaos.png" id="244_Madrati, Mother of Chaos" data-flag="@X" onclick="openSidebar('244_Madrati, Mother of Chaos',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\252_Sihari of Shifting Sands.png" id="252_Sihari of Shifting Sands" data-flag="@X" onclick="openSidebar('252_Sihari of Shifting Sands',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\249_Rhudai Rebuilder.png" id="249_Rhudai Rebuilder" data-flag="@X" onclick="openSidebar('249_Rhudai Rebuilder',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\237_Esteemed Overseer.png" id="237_Esteemed Overseer" data-flag="@X" onclick="openSidebar('237_Esteemed Overseer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\238_Haruzah District Enforcer.png" id="238_Haruzah District Enforcer" data-flag="@X" onclick="openSidebar('238_Haruzah District Enforcer',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\232_Death Pits Brutalizer.png" id="232_Death Pits Brutalizer" data-flag="@X" onclick="openSidebar('232_Death Pits Brutalizer',false)"></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\240_Inhospitable Settlement_back.png" alt="/sets\UCB-files\img\240_Inhospitable Settlement_front.png" id="240_Inhospitable Settlement" data-flag="@XD" onclick="openSidebar('240_Inhospitable Settlement',false)"><button class="flip-btn" onclick="imgFlip('240_Inhospitable Settlement')"></button></div>
-				<div class="container"><img alt="/sets\UCB-files\img\239_Hoofprints of the Harvest.png" id="239_Hoofprints of the Harvest" data-flag="@X" onclick="openSidebar('239_Hoofprints of the Harvest',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\228_Carrion Herder.png" id="228_Carrion Herder" data-flag="@X" onclick="openSidebar('228_Carrion Herder',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\223_Basking Hila.png" id="223_Basking Hila" data-flag="@X" onclick="openSidebar('223_Basking Hila',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\297_Shemesh the Wanderer.png" id="297_Shemesh the Wanderer" data-flag="@X" onclick="openSidebar('297_Shemesh the Wanderer',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\229_Consign to Creation.png" id="229_Consign to Creation" data-flag="@X" onclick="openSidebar('229_Consign to Creation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\233_Dehmi, the Worldshaper.png" id="233_Dehmi, the Worldshaper" data-flag="@X" onclick="openSidebar('233_Dehmi, the Worldshaper',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\234_Dekala, the Dripping Claw.png" id="234_Dekala, the Dripping Claw" data-flag="@X" onclick="openSidebar('234_Dekala, the Dripping Claw',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\241_Kiss of the Heartstopped.png" id="241_Kiss of the Heartstopped" data-flag="@X" onclick="openSidebar('241_Kiss of the Heartstopped',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\226_Bounteous Gardener.png" id="226_Bounteous Gardener" data-flag="@X" onclick="openSidebar('226_Bounteous Gardener',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\236_Epic of Eli.png" id="236_Epic of Eli" data-flag="@X" onclick="openSidebar('236_Epic of Eli',false)"></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\221_Ankulith Harnessing_back.png" alt="/sets\UCB-files\img\221_Ankulith Harnessing_front.png" id="221_Ankulith Harnessing" data-flag="@XD" onclick="openSidebar('221_Ankulith Harnessing',false)"><button class="flip-btn" onclick="imgFlip('221_Ankulith Harnessing')"></button></div>
-				<div class="container"><img alt="/sets\UCB-files\img\227_Brood-Queen Zupiqu.png" id="227_Brood-Queen Zupiqu" data-flag="@X" onclick="openSidebar('227_Brood-Queen Zupiqu',false)"></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\248_Professional Military_back.png" alt="/sets\UCB-files\img\248_Professional Military_front.png" id="248_Professional Military" data-flag="@XD" onclick="openSidebar('248_Professional Military',false)"><button class="flip-btn" onclick="imgFlip('248_Professional Military')"></button></div>
-				<div class="container"><img data-alt_src="/sets\UCB-files\img\230_Cultivation_back.png" alt="/sets\UCB-files\img\230_Cultivation_front.png" id="230_Cultivation" data-flag="@XD" onclick="openSidebar('230_Cultivation',false)"><button class="flip-btn" onclick="imgFlip('230_Cultivation')"></button></div>
-				<div class="container"><img alt="/sets\UCB-files\img\225_Border Besiegers.png" id="225_Border Besiegers" data-flag="@X" onclick="openSidebar('225_Border Besiegers',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\250_Sarrutu Bloodbinder.png" id="250_Sarrutu Bloodbinder" data-flag="@X" onclick="openSidebar('250_Sarrutu Bloodbinder',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\255_Zupiqu's Scavenger.png" id="255_Zupiqus Scavenger" data-flag="@X" onclick="openSidebar('255_Zupiqus Scavenger',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\243_Lisseria, Hannaru's Chosen.png" id="243_Lisseria, Hannarus Chosen" data-flag="@X" onclick="openSidebar('243_Lisseria, Hannarus Chosen',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\254_Sumun's Rainbringer.png" id="254_Sumuns Rainbringer" data-flag="@X" onclick="openSidebar('254_Sumuns Rainbringer',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\251_Shala Na, Peacemaker.png" id="251_Shala Na, Peacemaker" data-flag="@X" onclick="openSidebar('251_Shala Na, Peacemaker',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\253_Sumun, Steward of Rivers.png" id="253_Sumun, Steward of Rivers" data-flag="@X" onclick="openSidebar('253_Sumun, Steward of Rivers',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\246_Namuzzar, One Above All.png" id="246_Namuzzar, One Above All" data-flag="@X" onclick="openSidebar('246_Namuzzar, One Above All',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\242_Lethul, Aspect of Oblivion.png" id="UCB_242_Lethul, Aspect of Oblivion" data-flag="@X" onclick="openSidebar('UCB_242_Lethul, Aspect of Oblivion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\245_Nacash, Aspect of Secrets.png" id="UCB_245_Nacash, Aspect of Secrets" data-flag="@X" onclick="openSidebar('UCB_245_Nacash, Aspect of Secrets',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\235_Enkim, Aspect of Mischief.png" id="UCB_235_Enkim, Aspect of Mischief" data-flag="@X" onclick="openSidebar('UCB_235_Enkim, Aspect of Mischief',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\224_Behama, Aspect of Might.png" id="UCB_224_Behama, Aspect of Might" data-flag="@X" onclick="openSidebar('UCB_224_Behama, Aspect of Might',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\231_Darutu, Aspect of Growth.png" id="UCB_231_Darutu, Aspect of Growth" data-flag="@X" onclick="openSidebar('UCB_231_Darutu, Aspect of Growth',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\222_Architecture_back.png" alt="sets\UCB-files\img\222_Architecture_front.png" id="UCB_222_Architecture" data-flag="@XD" onclick="openSidebar('UCB_222_Architecture',false)"><button class="flip-btn" onclick="imgFlip('UCB_222_Architecture')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\247_Organized Crime_back.png" alt="sets\UCB-files\img\247_Organized Crime_front.png" id="UCB_247_Organized Crime" data-flag="@XD" onclick="openSidebar('UCB_247_Organized Crime',false)"><button class="flip-btn" onclick="imgFlip('UCB_247_Organized Crime')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\244_Madrati, Mother of Chaos.png" id="UCB_244_Madrati, Mother of Chaos" data-flag="@X" onclick="openSidebar('UCB_244_Madrati, Mother of Chaos',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\252_Sihari of Shifting Sands.png" id="UCB_252_Sihari of Shifting Sands" data-flag="@X" onclick="openSidebar('UCB_252_Sihari of Shifting Sands',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\249_Rhudai Rebuilder.png" id="UCB_249_Rhudai Rebuilder" data-flag="@X" onclick="openSidebar('UCB_249_Rhudai Rebuilder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\237_Esteemed Overseer.png" id="UCB_237_Esteemed Overseer" data-flag="@X" onclick="openSidebar('UCB_237_Esteemed Overseer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\238_Haruzah District Enforcer.png" id="UCB_238_Haruzah District Enforcer" data-flag="@X" onclick="openSidebar('UCB_238_Haruzah District Enforcer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\232_Death Pits Brutalizer.png" id="UCB_232_Death Pits Brutalizer" data-flag="@X" onclick="openSidebar('UCB_232_Death Pits Brutalizer',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\240_Inhospitable Settlement_back.png" alt="sets\UCB-files\img\240_Inhospitable Settlement_front.png" id="UCB_240_Inhospitable Settlement" data-flag="@XD" onclick="openSidebar('UCB_240_Inhospitable Settlement',false)"><button class="flip-btn" onclick="imgFlip('UCB_240_Inhospitable Settlement')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\239_Hoofprints of the Harvest.png" id="UCB_239_Hoofprints of the Harvest" data-flag="@X" onclick="openSidebar('UCB_239_Hoofprints of the Harvest',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\228_Carrion Herder.png" id="UCB_228_Carrion Herder" data-flag="@X" onclick="openSidebar('UCB_228_Carrion Herder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\223_Basking Hila.png" id="UCB_223_Basking Hila" data-flag="@X" onclick="openSidebar('UCB_223_Basking Hila',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\297_Shemesh the Wanderer.png" id="UCB_297_Shemesh the Wanderer" data-flag="@X" onclick="openSidebar('UCB_297_Shemesh the Wanderer',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\229_Consign to Creation.png" id="UCB_229_Consign to Creation" data-flag="@X" onclick="openSidebar('UCB_229_Consign to Creation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\233_Dehmi, the Worldshaper.png" id="UCB_233_Dehmi, the Worldshaper" data-flag="@X" onclick="openSidebar('UCB_233_Dehmi, the Worldshaper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\234_Dekala, the Dripping Claw.png" id="UCB_234_Dekala, the Dripping Claw" data-flag="@X" onclick="openSidebar('UCB_234_Dekala, the Dripping Claw',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\241_Kiss of the Heartstopped.png" id="UCB_241_Kiss of the Heartstopped" data-flag="@X" onclick="openSidebar('UCB_241_Kiss of the Heartstopped',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\226_Bounteous Gardener.png" id="UCB_226_Bounteous Gardener" data-flag="@X" onclick="openSidebar('UCB_226_Bounteous Gardener',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\236_Epic of Eli.png" id="UCB_236_Epic of Eli" data-flag="@X" onclick="openSidebar('UCB_236_Epic of Eli',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\221_Ankulith Harnessing_back.png" alt="sets\UCB-files\img\221_Ankulith Harnessing_front.png" id="UCB_221_Ankulith Harnessing" data-flag="@XD" onclick="openSidebar('UCB_221_Ankulith Harnessing',false)"><button class="flip-btn" onclick="imgFlip('UCB_221_Ankulith Harnessing')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\227_Brood-Queen Zupiqu.png" id="UCB_227_Brood-Queen Zupiqu" data-flag="@X" onclick="openSidebar('UCB_227_Brood-Queen Zupiqu',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\248_Professional Military_back.png" alt="sets\UCB-files\img\248_Professional Military_front.png" id="UCB_248_Professional Military" data-flag="@XD" onclick="openSidebar('UCB_248_Professional Military',false)"><button class="flip-btn" onclick="imgFlip('UCB_248_Professional Military')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\UCB-files\img\230_Cultivation_back.png" alt="sets\UCB-files\img\230_Cultivation_front.png" id="UCB_230_Cultivation" data-flag="@XD" onclick="openSidebar('UCB_230_Cultivation',false)"><button class="flip-btn" onclick="imgFlip('UCB_230_Cultivation')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\225_Border Besiegers.png" id="UCB_225_Border Besiegers" data-flag="@X" onclick="openSidebar('UCB_225_Border Besiegers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\250_Sarrutu Bloodbinder.png" id="UCB_250_Sarrutu Bloodbinder" data-flag="@X" onclick="openSidebar('UCB_250_Sarrutu Bloodbinder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\255_Zupiqu's Scavenger.png" id="UCB_255_Zupiqus Scavenger" data-flag="@X" onclick="openSidebar('UCB_255_Zupiqus Scavenger',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\243_Lisseria, Hannaru's Chosen.png" id="UCB_243_Lisseria, Hannarus Chosen" data-flag="@X" onclick="openSidebar('UCB_243_Lisseria, Hannarus Chosen',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\254_Sumun's Rainbringer.png" id="UCB_254_Sumuns Rainbringer" data-flag="@X" onclick="openSidebar('UCB_254_Sumuns Rainbringer',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\251_Shala Na, Peacemaker.png" id="UCB_251_Shala Na, Peacemaker" data-flag="@X" onclick="openSidebar('UCB_251_Shala Na, Peacemaker',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\253_Sumun, Steward of Rivers.png" id="UCB_253_Sumun, Steward of Rivers" data-flag="@X" onclick="openSidebar('UCB_253_Sumun, Steward of Rivers',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\246_Namuzzar, One Above All.png" id="UCB_246_Namuzzar, One Above All" data-flag="@X" onclick="openSidebar('UCB_246_Namuzzar, One Above All',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
 				<div id="colorless" class="anchor"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\257_Ankulithic Axe.png" id="257_Ankulithic Axe" data-flag="@X" onclick="openSidebar('257_Ankulithic Axe',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\267_Splintering Manifestation.png" id="267_Splintering Manifestation" data-flag="@X" onclick="openSidebar('267_Splintering Manifestation',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\271_Untempered Ankulim.png" id="271_Untempered Ankulim" data-flag="@X" onclick="openSidebar('271_Untempered Ankulim',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\260_Codex of the Fall.png" id="260_Codex of the Fall" data-flag="@X" onclick="openSidebar('260_Codex of the Fall',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\262_Erduk's Adornments.png" id="262_Erduks Adornments" data-flag="@X" onclick="openSidebar('262_Erduks Adornments',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\266_Shawl of Paradise.png" id="266_Shawl of Paradise" data-flag="@X" onclick="openSidebar('266_Shawl of Paradise',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\272_Warden of the Crucible.png" id="272_Warden of the Crucible" data-flag="@X" onclick="openSidebar('272_Warden of the Crucible',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\256_Ankulith Shard.png" id="256_Ankulith Shard" data-flag="@X" onclick="openSidebar('256_Ankulith Shard',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\258_Balasi's Masterpiece.png" id="258_Balasis Masterpiece" data-flag="@X" onclick="openSidebar('258_Balasis Masterpiece',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\259_Bastion of Empires.png" id="259_Bastion of Empires" data-flag="@X" onclick="openSidebar('259_Bastion of Empires',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\261_Duneburied Progenitor.png" id="261_Duneburied Progenitor" data-flag="@X" onclick="openSidebar('261_Duneburied Progenitor',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\263_Kanaan Warblades.png" id="263_Kanaan Warblades" data-flag="@X" onclick="openSidebar('263_Kanaan Warblades',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\264_Monument to Alamazzar.png" id="264_Monument to Alamazzar" data-flag="@X" onclick="openSidebar('264_Monument to Alamazzar',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\265_Primordial Servitor.png" id="265_Primordial Servitor" data-flag="@X" onclick="openSidebar('265_Primordial Servitor',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\268_Stonewoken Immortal.png" id="268_Stonewoken Immortal" data-flag="@X" onclick="openSidebar('268_Stonewoken Immortal',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\269_Subjugated Ankulim.png" id="269_Subjugated Ankulim" data-flag="@X" onclick="openSidebar('269_Subjugated Ankulim',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\270_Tablets of Prophecy.png" id="270_Tablets of Prophecy" data-flag="@X" onclick="openSidebar('270_Tablets of Prophecy',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\257_Ankulithic Axe.png" id="UCB_257_Ankulithic Axe" data-flag="@X" onclick="openSidebar('UCB_257_Ankulithic Axe',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\267_Splintering Manifestation.png" id="UCB_267_Splintering Manifestation" data-flag="@X" onclick="openSidebar('UCB_267_Splintering Manifestation',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\271_Untempered Ankulim.png" id="UCB_271_Untempered Ankulim" data-flag="@X" onclick="openSidebar('UCB_271_Untempered Ankulim',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\260_Codex of the Fall.png" id="UCB_260_Codex of the Fall" data-flag="@X" onclick="openSidebar('UCB_260_Codex of the Fall',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\262_Erduk's Adornments.png" id="UCB_262_Erduks Adornments" data-flag="@X" onclick="openSidebar('UCB_262_Erduks Adornments',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\266_Shawl of Paradise.png" id="UCB_266_Shawl of Paradise" data-flag="@X" onclick="openSidebar('UCB_266_Shawl of Paradise',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\272_Warden of the Crucible.png" id="UCB_272_Warden of the Crucible" data-flag="@X" onclick="openSidebar('UCB_272_Warden of the Crucible',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\256_Ankulith Shard.png" id="UCB_256_Ankulith Shard" data-flag="@X" onclick="openSidebar('UCB_256_Ankulith Shard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\258_Balasi's Masterpiece.png" id="UCB_258_Balasis Masterpiece" data-flag="@X" onclick="openSidebar('UCB_258_Balasis Masterpiece',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\259_Bastion of Empires.png" id="UCB_259_Bastion of Empires" data-flag="@X" onclick="openSidebar('UCB_259_Bastion of Empires',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\261_Duneburied Progenitor.png" id="UCB_261_Duneburied Progenitor" data-flag="@X" onclick="openSidebar('UCB_261_Duneburied Progenitor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\263_Kanaan Warblades.png" id="UCB_263_Kanaan Warblades" data-flag="@X" onclick="openSidebar('UCB_263_Kanaan Warblades',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\264_Monument to Alamazzar.png" id="UCB_264_Monument to Alamazzar" data-flag="@X" onclick="openSidebar('UCB_264_Monument to Alamazzar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\265_Primordial Servitor.png" id="UCB_265_Primordial Servitor" data-flag="@X" onclick="openSidebar('UCB_265_Primordial Servitor',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\268_Stonewoken Immortal.png" id="UCB_268_Stonewoken Immortal" data-flag="@X" onclick="openSidebar('UCB_268_Stonewoken Immortal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\269_Subjugated Ankulim.png" id="UCB_269_Subjugated Ankulim" data-flag="@X" onclick="openSidebar('UCB_269_Subjugated Ankulim',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\270_Tablets of Prophecy.png" id="UCB_270_Tablets of Prophecy" data-flag="@X" onclick="openSidebar('UCB_270_Tablets of Prophecy',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
 				<div id="land" class="anchor"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\296_Windbeaten Borderpost.png" id="296_Windbeaten Borderpost" data-flag="@X" onclick="openSidebar('296_Windbeaten Borderpost',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\290_Oasis Sanctum.png" id="290_Oasis Sanctum" data-flag="@X" onclick="openSidebar('290_Oasis Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\294_Shadowy Approach.png" id="294_Shadowy Approach" data-flag="@X" onclick="openSidebar('294_Shadowy Approach',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\286_Hilakite Territory.png" id="286_Hilakite Territory" data-flag="@X" onclick="openSidebar('286_Hilakite Territory',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\281_Dusty Pathways.png" id="281_Dusty Pathways" data-flag="@X" onclick="openSidebar('281_Dusty Pathways',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\287_Lethul's Sanctum.png" id="287_Lethuls Sanctum" data-flag="@X" onclick="openSidebar('287_Lethuls Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\288_Nacash's Sanctum.png" id="288_Nacashs Sanctum" data-flag="@X" onclick="openSidebar('288_Nacashs Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\282_Enkim's Sanctum.png" id="282_Enkims Sanctum" data-flag="@X" onclick="openSidebar('282_Enkims Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\273_Behama's Sanctum.png" id="273_Behamas Sanctum" data-flag="@X" onclick="openSidebar('273_Behamas Sanctum',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\275_Darutu's Sanctum.png" id="275_Darutus Sanctum" data-flag="@X" onclick="openSidebar('275_Darutus Sanctum',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\289_Nissegal, Exodus's End.png" id="289_Nissegal, Exoduss End" data-flag="@X" onclick="openSidebar('289_Nissegal, Exoduss End',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\274_The Crucible of Origins.png" id="274_The Crucible of Origins" data-flag="@X" onclick="openSidebar('274_The Crucible of Origins',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\285_Hasmanu, The Hanging Gardens.png" id="285_Hasmanu, The Hanging Gardens" data-flag="@X" onclick="openSidebar('285_Hasmanu, The Hanging Gardens',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\283_Eroding Expanse.png" id="283_Eroding Expanse" data-flag="@X" onclick="openSidebar('283_Eroding Expanse',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\291_Sandswept Ruins.png" id="291_Sandswept Ruins" data-flag="@X" onclick="openSidebar('291_Sandswept Ruins',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\292_Scholar's Plaza.png" id="292_Scholars Plaza" data-flag="@X" onclick="openSidebar('292_Scholars Plaza',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\295_Sundered Landscape.png" id="295_Sundered Landscape" data-flag="@X" onclick="openSidebar('295_Sundered Landscape',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\276_Desolate Barracks.png" id="276_Desolate Barracks" data-flag="@X" onclick="openSidebar('276_Desolate Barracks',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\277_Desolate Foundations.png" id="277_Desolate Foundations" data-flag="@X" onclick="openSidebar('277_Desolate Foundations',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\278_Desolate Horizon.png" id="278_Desolate Horizon" data-flag="@X" onclick="openSidebar('278_Desolate Horizon',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\279_Desolate Trail.png" id="279_Desolate Trail" data-flag="@X" onclick="openSidebar('279_Desolate Trail',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\280_Desolate Waterways.png" id="280_Desolate Waterways" data-flag="@X" onclick="openSidebar('280_Desolate Waterways',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\284_Forgotten Monument.png" id="284_Forgotten Monument" data-flag="@X" onclick="openSidebar('284_Forgotten Monument',false)"></div>
-				<div class="container"><img alt="/sets\UCB-files\img\293_Settlement Foundations.png" id="293_Settlement Foundations" data-flag="@X" onclick="openSidebar('293_Settlement Foundations',false)"></div>
-				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\296_Windbeaten Borderpost.png" id="UCB_296_Windbeaten Borderpost" data-flag="@X" onclick="openSidebar('UCB_296_Windbeaten Borderpost',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\290_Oasis Sanctum.png" id="UCB_290_Oasis Sanctum" data-flag="@X" onclick="openSidebar('UCB_290_Oasis Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\294_Shadowy Approach.png" id="UCB_294_Shadowy Approach" data-flag="@X" onclick="openSidebar('UCB_294_Shadowy Approach',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\286_Hilakite Territory.png" id="UCB_286_Hilakite Territory" data-flag="@X" onclick="openSidebar('UCB_286_Hilakite Territory',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\281_Dusty Pathways.png" id="UCB_281_Dusty Pathways" data-flag="@X" onclick="openSidebar('UCB_281_Dusty Pathways',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\287_Lethul's Sanctum.png" id="UCB_287_Lethuls Sanctum" data-flag="@X" onclick="openSidebar('UCB_287_Lethuls Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\288_Nacash's Sanctum.png" id="UCB_288_Nacashs Sanctum" data-flag="@X" onclick="openSidebar('UCB_288_Nacashs Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\282_Enkim's Sanctum.png" id="UCB_282_Enkims Sanctum" data-flag="@X" onclick="openSidebar('UCB_282_Enkims Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\273_Behama's Sanctum.png" id="UCB_273_Behamas Sanctum" data-flag="@X" onclick="openSidebar('UCB_273_Behamas Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\275_Darutu's Sanctum.png" id="UCB_275_Darutus Sanctum" data-flag="@X" onclick="openSidebar('UCB_275_Darutus Sanctum',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\289_Nissegal, Exodus's End.png" id="UCB_289_Nissegal, Exoduss End" data-flag="@X" onclick="openSidebar('UCB_289_Nissegal, Exoduss End',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\274_The Crucible of Origins.png" id="UCB_274_The Crucible of Origins" data-flag="@X" onclick="openSidebar('UCB_274_The Crucible of Origins',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\285_Hasmanu, The Hanging Gardens.png" id="UCB_285_Hasmanu, The Hanging Gardens" data-flag="@X" onclick="openSidebar('UCB_285_Hasmanu, The Hanging Gardens',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\283_Eroding Expanse.png" id="UCB_283_Eroding Expanse" data-flag="@X" onclick="openSidebar('UCB_283_Eroding Expanse',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\291_Sandswept Ruins.png" id="UCB_291_Sandswept Ruins" data-flag="@X" onclick="openSidebar('UCB_291_Sandswept Ruins',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\292_Scholar's Plaza.png" id="UCB_292_Scholars Plaza" data-flag="@X" onclick="openSidebar('UCB_292_Scholars Plaza',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\295_Sundered Landscape.png" id="UCB_295_Sundered Landscape" data-flag="@X" onclick="openSidebar('UCB_295_Sundered Landscape',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\276_Desolate Barracks.png" id="UCB_276_Desolate Barracks" data-flag="@X" onclick="openSidebar('UCB_276_Desolate Barracks',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\277_Desolate Foundations.png" id="UCB_277_Desolate Foundations" data-flag="@X" onclick="openSidebar('UCB_277_Desolate Foundations',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\278_Desolate Horizon.png" id="UCB_278_Desolate Horizon" data-flag="@X" onclick="openSidebar('UCB_278_Desolate Horizon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\279_Desolate Trail.png" id="UCB_279_Desolate Trail" data-flag="@X" onclick="openSidebar('UCB_279_Desolate Trail',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\280_Desolate Waterways.png" id="UCB_280_Desolate Waterways" data-flag="@X" onclick="openSidebar('UCB_280_Desolate Waterways',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\284_Forgotten Monument.png" id="UCB_284_Forgotten Monument" data-flag="@X" onclick="openSidebar('UCB_284_Forgotten Monument',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\UCB-files\img\293_Settlement Foundations.png" id="UCB_293_Settlement Foundations" data-flag="@X" onclick="openSidebar('UCB_293_Settlement Foundations',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="UCB_e" data-flag="@E" onclick="openSidebar('UCB_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="UCB_er" data-flag="@E" onclick="openSidebar('UCB_er',false)"></div>
 	</div>
 	</div>
 	<div class="sidebar" id="sidebar">
 		<div class="sidebar-container">
-			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_img" class="sidebar-img">
 			<img id="sidebar_h_img" class="sidebar-h-img">
 			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
 		</div>
@@ -573,19 +597,111 @@
 		let specialchars = "";
 
 	document.addEventListener('DOMContentLoaded', async function() {
-		await fetch('/lists/all-cards.json')
+		await fetch(rootPath + '/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
+				await fetch(rootPath + '/resources/replacechars.txt')
 					.then(response => response.text())
 					.then(text => {
 						specialchars = text; 
 				}).catch(error => console.error('Error:', error));
 
 				card_list_arrayified = card_list.cards;
+
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
 
 		preloadImgs = document.getElementsByClassName('preload-hidden');
 
@@ -620,13 +736,16 @@
 			const flag = img.getAttribute('data-flag');
 
 			if (flag === '@N') {
-				img.src = '/img/card_back.png';
+				img.src = rootPath + '/img/card_back.png';
 				img.removeAttribute("onclick");
 				img.style.cursor = 'default';
 			}
 			else
 			{
-				img.src = img.alt;
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
 
 				if (flag === '@E') {
 					img.removeAttribute("onclick");
@@ -652,27 +771,51 @@
 	let horizontal = false;
 
 	function imgFlip(num) {
-		tmp = document.getElementById(num).src;
-		console.log(num);
-		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
-		document.getElementById(num).dataset.alt_src = tmp;
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
 
-		if (num == 'sidebar_img')
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
 		{
-			const rotated_img = document.getElementById('sidebar_h_img');
 			const sidebar_img = document.getElementById('sidebar_img');
 
-			if (horizontal && rotated_img.style.display == 'none')
-			{
-				rotated_img.style.display = "block";
-				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
-			}
-			else
-			{
-				rotated_img.style.display = "none";
-				sidebar_img.style.filter = "";
-			}
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
 		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
 	}
 
 	function openSidebar(id, h = false) {
@@ -684,17 +827,19 @@
 		const rotated_img = document.getElementById('sidebar_h_img');
 		const sidebar_img = document.getElementById('sidebar_img');
 
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
 		sidebar_img.src = document.getElementById(id).src;
 		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
 
 		if (horizontal && !sidebar_img.src.includes("_back"))
 		{
-			rotated_img.style.display = "block";
+			rotated_img.style.opacity = "1";
 			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
 		}
 		else
 		{
-			rotated_img.style.display = "none";
+			rotated_img.style.opacity = "0";
 			sidebar_img.style.filter = "";
 		}
 
@@ -727,6 +872,7 @@
 	}
 
 	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
 		var sets = document.querySelectorAll('.inactive');
 		for(const set of sets)
 		{
@@ -736,6 +882,7 @@
 	}
 
 	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
 		var sets = document.querySelectorAll('.inactive');
 		for(const set of sets)
 		{
@@ -752,27 +899,27 @@
 	});
 
 	function search() {
-		const url = new URL('search', window.location.origin);
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
 		url.searchParams.append('search', document.getElementById("search").value);
-		window.location.href = url;
+		window.location.href = url.pathname + url.search;
 	}
 
 		function randomCard() {
-			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-			let random_card = card_list_arrayified[i];
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
 
-			const url = new URL('card', window.location.origin);
-			const params = {
-				set: random_card.set,
-				num: random_card.number,
-				name: random_card.card_name
-			}
-			for (const key in params) {
-				url.searchParams.append(key, params[key]);
-			}
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
 
-			window.location.href = url;
-		}
+				window.location.href = url.pathname + url.search;
+			}
 	</script>
 </body>
 </html>
