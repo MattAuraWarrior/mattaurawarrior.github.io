@@ -1,4 +1,84 @@
-﻿VERSION 8 CHANGELOG
+﻿VERSION 9 CHANGELOG
+====================
+
+Spirit added.
+Human added.
+Angel added.
+Angel added.
+Sheep added.
+Zombie added.
+Zombie added.
+Zombie added.
+Zombie added.
+Zombie added.
+Zombie added.
+Vampire added.
+Vampire added.
+Bat added.
+Elemental added.
+Devil added.
+Vampire added.
+Elemental added.
+Wolf added.
+Bear added.
+Insect added.
+Offering added.
+Cleric added.
+Ardor added.
+Monument added.
+Cloister added.
+Blood added.
+Treasure added.
+Food added.
+Weapon added.
+
+
+Ashiok's Manipulation
+
+Gatstaf Butcher
+
+Lunarblind Packmaster
+
+Getander Wildlander
+rules_text: When this creature enters or attacks, create a tapped Treasure token. [i](It's an artifact with “{T}, Sacrifice this artifact: Add one mana of any color.”)[/i]
+{G}, Sacrifice three artifacts or enchantments: Create a 4/4 green Beast creature token. Activate only as a sorcery. => When this creature enters or attacks, create a tapped Treasure token. [i](It's an artifact with “{T}, Sacrifice this artifact: Add one mana of any color.”)[/i]
+{G}, Sacrifice three artifacts or enchantments: Create a 4/4 green Bear creature token. Activate only as a sorcery.
+
+Addled Psyche
+
+Curse of Wretched Secrets
+type: Enchantment — Aura => Enchantment — Aura Curse
+rules_text: Enchant player
+Whenever a creature deals combat damage to enchanted player, its controller looks at the top card of their library and puts it into their hand. If there are seven or more cards in that creatures' controller's graveyard, they may cast it without paying their mana cost instead. => Enchant player
+Whenever one or more creatures deal combat damage to enchanted player, their controller looks at that many cards from the top of their library. If there are seven or more cards in those creatures' controller's graveyard, they may cast a card from among them without paying their mana cost. They put the rest into their hand.
+
+Mysteries of the Forbidden
+
+Curse of Dark Blasphemy
+rules_text: Enchant player
+When this Curse enters, enchanted player exiles a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.
+Whenever enchanted player draws a card, each of their opponents loses 1 life and draws a card. => Enchant player
+When this Curse enters, enchanted player exiles a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.
+Whenever enchanted player draws a card, each of their opponents may pay 1 life. Each player that does draws a card.
+
+Geistblaster's Breakthrough
+rules_text: Geistblaster's Breakthrough deals damage to target creature or planeswalker equal to the number of differently named instant and sorcery cards in your graveyard plus 1.
+When you discard this card, you may pay {3}{R}{R}. If you do, create a 5/5 red Spirit creature token with haste. => Geistblaster's Breakthrough deals damage to target creature or planeswalker equal to the number of differently named instant and sorcery cards in your graveyard plus 1.
+When you discard this card, you may pay {3}{R}{R}. If you do, create a 5/5 red Elemental creature token with haste.
+
+Blood Bank
+
+Curse of Entomophobia
+rules_text: Enchant player
+When this enchantment enters, enchanted player mills three cards.
+Whenever one or more land cards are put into enchanted player's graveyard from anywhere, create a 1/1 green Insect creature token. => Enchant player
+When this enchantment enters, enchanted player mills three cards.
+Whenever one or more land cards are put into enchanted player's graveyard from anywhere, create a 1/1 blue and green Insect creature token.
+
+Ghrin-Danu Returned
+
+
+VERSION 8 CHANGELOG
 ====================
 
 No changes.

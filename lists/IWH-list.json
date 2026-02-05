@@ -2550,6 +2550,259 @@
     {
         "card_name": "er"
     },
+    "a->token",
+    {
+        "card_name": "Blood",
+        "number": 26,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Food",
+        "number": 27,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Monument",
+        "number": 28,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Treasure",
+        "number": 29,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Weapon",
+        "number": 30,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Angel",
+        "number": 1,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Angel",
+        "number": 2,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Cloister",
+        "number": 3,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Human",
+        "number": 4,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Sheep",
+        "number": 5,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Spirit",
+        "number": 6,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 7,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 8,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 9,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 10,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 11,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Bat",
+        "number": 12,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Vampire",
+        "number": 13,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Vampire",
+        "number": 14,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Zombie",
+        "number": 15,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Ardor",
+        "number": 16,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Devil",
+        "number": 17,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Elemental",
+        "number": 18,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Elemental",
+        "number": 19,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Vampire",
+        "number": 20,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Bear",
+        "number": 21,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Wolf",
+        "number": 22,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Cleric",
+        "number": 23,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Insect",
+        "number": 24,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "Offering",
+        "number": 25,
+        "shape": "token",
+        "set": "IWH",
+        "rotated": false,
+        "position": ""
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
     {
         "card_name": "er"
     }
