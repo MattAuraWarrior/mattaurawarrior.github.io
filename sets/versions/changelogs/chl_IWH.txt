@@ -1,4 +1,183 @@
-﻿VERSION 9 CHANGELOG
+﻿VERSION 10 CHANGELOG
+====================
+
+Geralf's Studies added.
+Crofter's Charm added.
+Descent of the Mists added.
+Aura added.
+Geist-Honored Warden added.
+Niblis of the Gloom added.
+Ceaseless Horseman added.
+Bloodpack Invoker added.
+Curse of Warped Realities added.
+Flooded Grafyards added.
+Lonely Cabin added.
+Marzela's Sanctum added.
+Niblis's Haunt added.
+Solstice Circle added.
+
+Geralf's Experimentation removed.
+Katilda's Dawning Rites removed.
+Descent of the Fog removed.
+Secluded Courtyard removed.
+
+Cathar's Charm
+rules_text: Choose one —
+• Exile target card from a graveyard. Draw a card.
+• Cathar's Charm deals 2 damage to target attacking or blocking creature.
+• Destroy target enchantment with mana value 3 or less. => Choose one —
+• Each opponent sacrifices an enchantment.
+• Cathar's Charm deals 2 damage to target tapped creature.
+• Exile up to three target cards from graveyards.
+
+Saint's Salvation
+rules_text: As an additional cost to cast this spell, behold a Spirit or pay {2}. [i](To behold a Spirit, you may reveal a Spirit card from your hand or choose one you control.)[/i]
+Return target nonland permanent card with mana value 3 or less from your graveyard to the battlefield tapped. => As an additional cost to cast this spell, behold a Spirit or pay {2}. [i](To behold a Spirit, reveal a Spirit card from your hand or choose one you control.)[/i]
+Return target nonland permanent card with mana value 3 or less from your graveyard to the battlefield tapped.
+
+Gravestitched Fledgling
+
+Distilled Essence
+rules_text: Choose one —
+• Counter target spell unless its controller pays {2}.
+• Infuse 2. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 2/2 blue Zombie creature token.)[/i] => Counter target spell unless its controller pays {2}. If they do, infuse 2. [i](You may exile a creature card and an instant or sorcery card from your graveyard to create a 2/2 blue Zombie creature token.)[/i]
+
+March of the Drowntide
+rules_text: You may cast this spell as though it had flash if you behold a Zombie as an additional cost to cast it. [i](You may reveal a Zombie card from your hand or choose one you control.)[/i]
+Target creature's owner puts it on the top or bottom of their library. Surveil 2. => You may cast this spell as though it had flash if you behold a Zombie as an additional cost to cast it. [i](To behold a Zombie, reveal a Zombie card from your hand or choose one you control.)[/i]
+Target creature's owner puts it on the top or bottom of their library. Surveil 2.
+
+Festering Rats
+type: Creature — Rat Horror => Creature — Zombie Rat Horror
+rules_text: When this creature enters, surveil 2. [i](Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i]
+This creature has deathtouch as long as there are seven or more cards in your graveyard. => When this creature enters, surveil 2. [i](Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i]
+This creature gets +1/+0 and has deathtouch as long as there are seven or more cards in your graveyard.
+
+Rotjaw Predator
+rules_text: Whenever one or more cards leave your graveyard, each opponent loses 1 life and you gain 1 life. => {T}: Each opponent loses 1 life and you gain 1 life. Activate only if a card left your graveyard this turn.
+pt: 2/3 => 1/4
+
+Overfueled Abomination
+
+Cornered by the Dead
+
+Embers of a New Moon
+rules_text: As an additional cost to cast this spell, behold a Wolf or Werewolf or pay {2}. [i](To behold a Wolf or Werewolf, you may reveal a Wolf or Werewolf card from your hand or choose one you control.)[/i]
+Exile the top two cards of your library. You may play them until the end of your next turn. => As an additional cost to cast this spell, behold a Wolf or Werewolf or pay {2}. [i](To behold a Wolf or Werewolf, reveal a Wolf or Werewolf card from your hand or choose one you control.)[/i]
+Exile the top two cards of your library. You may play them until the end of your next turn.
+
+Foray into Stensia
+rules_text: As an additional cost to cast this spell, you may behold a Human. [i](To behold a Human, you may reveal a Human card from your hand or choose one you control.)[/i]
+Put a +1/+1 counter on each creature you control. If a Human was beheld, those creatures gain vigilance until end of turn. => As an additional cost to cast this spell, you may behold a Human. [i](To behold a Human, reveal a Human card from your hand or choose one you control.)[/i]
+Put a +1/+1 counter on each creature you control. If a Human was beheld, those creatures gain vigilance until end of turn.
+
+Grand Necrotect
+
+Plunder the Grafs
+
+Shambling Rotcap
+rules_text: Menace
+Whenever this creature attacks, surveil 1. [i](Look at the top card of your library. You may put it into your graveyard.)[/i]
+{2}{G}: Return target land card from your graveyard to your hand. => Whenever this creature attacks, surveil 1. [i](Look at the top card of your library. You may put it into your graveyard.)[/i]
+{2}{G}: Return target land card from your graveyard to your hand.
+
+Ambitious Necrologist
+
+It's Alive!
+
+Deadly Invitation
+rules_text: Each creature gets -2/-2 until end of turn, then choose one.
+• If a creature an opponent controls would die this turn, exile it instead.
+• Surveil 1. => If a creature an opponent controls would die this turn, exile it instead. Each creature gets -2/-2 until end of turn.
+
+Farbog Invocation
+
+Darkthicket Howler
+rules_text: {T}: Add one mana of any color.
+{T}: Whenever target savage creature you control deals combat damage to a player this turn, draw a card. Activate only as a sorcery. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i] => {T}: Add {R} or {G}.
+{1}, {T}: Whenever target savage creature you control deals combat damage to a player this turn, draw a card. Activate only as a sorcery. [i](Transformed creatures and ones with greater power than their base power are savage.)[/i]
+
+Boughbreak Lumberknot
+rules_text: Trample, reach
+When this creature enters, choose one —
+• Surveil 2.
+• Destroy target artifact or enchantment.
+• Shuffle up to four target cards in graveyards into their owner's libraries. => Reach, trample
+When this creature enters, you may choose target artifact, enchantment, or card in a graveyard. If you do, shuffle that card into its owner's library.
+
+Fleshwrithe Apparatus
+
+Guardian's Charm
+rules_text: Choose one —
+• Exile target nonland permanent. Its controller surveils 2.
+• Target creature gets +1/+1 and gains double strike until end if turn.
+• Return target noncreature spell to its owner's hand. => Choose one —
+• Exile target nonland permanent with mana value 4 or less.
+• Target creature gets +1/+1 and gains first strike and lifelink until end of turn.
+• Return target instant or sorcery spell to its owner's hand.
+
+Westvale Cult Induction
+
+Havengul Prodigy
+
+Nebelgast Retainer
+
+Mysteries of the Forbidden
+rules_text: Look at the top X cards of your library, where X is 2 plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If you look at thirteen or more cards this way, you may put all of those cards into your hand instead.
+Flashback {3}{U} => Look at the top X cards of your library, where X is 1 plus the number of differently named instant or sorcery cards in your graveyard. Put one of those cards in your hand and the rest on the bottom in a random order. If you look at thirteen or more cards this way, you may put all of those cards into your hand instead.
+Flashback {3}{U}
+
+Beckon the Beyond
+rules_text: Choose one —
+• Reveal a planeswalker, Eldrazi or Horror card you own from outside the game and put it into your hand.
+• Surveil 2, then draw two cards. You lose 2 life. => You may reveal a planeswalker, Eldrazi or Horror card you own from outside the game and put it into your hand. If you don't, you lose 2 life, surveil 2, then draw two cards.
+
+Horrific Stitching
+
+Indulgent Patrician
+rules_text: When this creature enters, you may have target player discard a card. If you discard a card this way, put a +1/+1 counter on each Vampire you control.
+Once each turn, when a player discards one or more cards, you gain 1 life and each opponent loses 1 life. => When this creature enters, you may have target player discard a card. If you discard a card this way, put a +1/+1 counter on each Vampire you control.
+Whenever a player discards one or more cards, each opponent loses 1 life and you gain 1 life.
+
+Elgaud Dawnrider
+rules_text: Lifelink, haste
+Whenever this creature attacks, choose one. If you control four or more creatures, you may choose both instead.
+• Create a 1/1 white Human creature token that's tapped and attacking.
+• Other attacking creatures get +1/+0 and gain trample until end of turn. => Lifelink, haste
+Whenever this creature attacks, you may create a 1/1 white Human creature token that's tapped and attacking. Then if you didn't or you control four or more creatures, other attacking creatures get +1/+0 and gain trample until end of turn.
+
+Nephalia Heartsewer
+
+Master Skaabstitcher
+
+Witching Hour
+rules_text: Search your library for a Curse card with mana value twice X or less and put it onto the battlefield enchanting target player. That player's life total becomes 13. => Search your library for a Curse card with mana value twice X or less and put it onto the battlefield enchanting target player. You may have that player's life total become 13.
+
+Prying Eyedra
+rules_text: Reach, trample
+This creature's power and toughness are each equal to the number of cards in your hand.
+Whenever this creature enters or attacks, you may sacrifice another creature. If you do, You draw X cards and gain X life, where X is the sacrificed creature's toughness. => Reach
+This creature's power and toughness are each equal to the number of cards in your hand.
+Whenever this creature enters or attacks, you may sacrifice another non-Eye creature. If you do, you draw X cards and gain X life, where X is the sacrificed creature's toughness.
+
+The Collabomination
+
+Ominous Frogs
+
+Zombie
+
+Zombie
+
+Zombie
+
+Zombie
+
+Zombie
+
+Cloister
+
+
+VERSION 9 CHANGELOG
 ====================
 
 Spirit added.
