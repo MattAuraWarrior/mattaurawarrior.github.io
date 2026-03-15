@@ -1,4 +1,202 @@
-﻿VERSION 1 CHANGELOG
+﻿VERSION 2 CHANGELOG
+====================
+
+
+
+Bloodclaimant's Skill
+
+Great Archives Codifier
+
+Heartland Croptender
+
+Nikanuur's Sorrow
+
+Ruler of Cities
+
+Azutahn Watershaper
+
+Chronicler's Hymn
+
+Parted Oceans
+
+Pinnacle Messenger
+
+Two by Two
+
+Bloodpact Sukkal
+rules_text: Deathtouch
+When this creature enters, create a Blood token. [i](It's an artifact with “{1}, {T}, Discard a card, Sacrifice this artifact: Draw a card.”)[/i]
+Whenever this creature attacks, you may sacrifice an artifact, an enchantment, and a creature. If you do, create a 4/4 black Demon creature token with flying that's tapped and attacking. => Deathtouch
+When this creature enters, create a Blood token. [i](It's an artifact with “{1}, {T}, Discard a card, Sacrifice this artifact: Draw a card.”)[/i]
+Whenever this creature attacks, you may sacrifice an artifact, a creature, and an enchantment. If you do, create a 4/4 black Demon creature token with flying.
+
+Conqueror of Empires
+pt: 4/3 => 3/3
+
+Deathless Inishtu
+rules_text: Indestructible
+Inishtu can't attack or block unless there are seven or more cards in your graveyard.
+Whenever another creature you control dies, surveil 1. Each opponent loses 1 life and you gain 1 life.
+Incarnate [b]{1}{B}[/b] => Indestructible
+Inishtu can't attack or block unless there are seven or more cards in your graveyard.
+Whenever another creature you control dies, each opponent loses 1 life and you gain 1 life.
+Incarnate [b]{1}{B}[/b]
+
+Duskreaper Malach
+pt: 4/4 => 4/5
+
+Faithless End
+cost: {3}{B} => {1}{B}{B}
+rules_text: This spell costs {3} less to cast if there are no creature or planeswalker cards in graveyards.
+Destroy target creature or planeswalker. => This spell costs {1}{B} less to cast if there are no creature or planeswalker cards in graveyards.
+Destroy target creature or planeswalker.
+
+Gunslinger's Figment
+
+Herald of Nacash
+rules_text: Deathtouch
+{1}, Sacrifice a creature: You draw a card and you lose 1 life.
+Incarnate {1}{B} [i]({1}{B}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i] => Deathtouch
+{1}, Sacrifice a creature: Draw a card and you lose 1 life.
+Incarnate {1}{B} [i]({1}{B}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i]
+
+Pledged to Endak
+
+Scoursand Pilgrimage
+rules_text: Enchant land
+When this enchantment enters, each opponent sacrifices a creature. If they can't, they discard a card.
+Enchanted land has “{B}, {T}: Exile target card from a graveyard. If a land card is exiled this way, each opponent loses 1 life.” => Enchant land
+When this enchantment enters, each opponent sacrifices a nontoken creature. If they can't, they discard a card.
+Enchanted land has “{B}, {T}: Exile target card from a graveyard. If a land card is exiled this way, each opponent loses 1 life.”
+
+Bone Mesa Shardseeker
+pt: 3/2 => 2/3
+
+Death Pits Chariot
+
+Lovers' Hymn
+
+Primordial's Wake
+cost: {2}{R}{R} => {1}{R}{R}
+rules_text: Choose one —
+• Primordial's Wake deals 4 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.
+• Exile all artifacts. => Choose one —
+• Primordial's Wake deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.
+• Exile each artifact with mana value 3 or less.
+
+Sarrutu Worldshaper
+rules_text: Whenever this creature enters or attacks, create a Blood token. [i](It's an artifact with “{1}, {T}, Discard a card, Sacrifice this artifact: Draw a card.”)[/i]
+Once each turn, when you discard an instant or sorcery card with mana value 3 or less, you may exile it from your graveyard. If you do, cast a copy of that spell without paying its mana cost. => Whenever this creature enters or attacks, create a Blood token. [i](It's an artifact with “{1}, {T}, Discard a card, Sacrifice this artifact: Draw a card.”)[/i]
+Once each turn, when you discard an instant or sorcery card with mana value 2 or less, you may cast it without paying its mana cost.
+
+Searing Annihilus
+rules_text: Ward—Pay 3 life.
+Other Elementals you control get +1/+1.
+For each artifact or Elemental you control, when you activate an ability of that permanent for the first time each turn, this creature deals 1 damage to each opponent. => Ward—Pay 2 life.
+Other Elementals you control get +1/+1.
+For each artifact or Elemental you control, when you activate an ability of that permanent for the first time each turn, this creature deals 1 damage to each opponent.
+
+Shemesh's Spearbeater
+
+Unshackled Flamebinder
+rules_text: Whenever a creature you control deals combat damage to a player, you may discard a card. If you do, draw a card.
+{3}{R}, Exile four cards from your graveyard: This creature deals 4 damage to any target. Activate only as a sorcery. => Whenever a creature you control deals combat damage to a player, you may discard a card. If you do, draw a card.
+{4}{R}, Exile four cards from your graveyard: This creature deals 4 damage to any target. Activate only as a sorcery.
+
+Wily Stingswoop
+rules_text: This creature has flying as long as it's your turn.
+Whenever this creature attacks, exile the top card of your library. You may play it this turn. It costs {X} less to cast, where X is the number of creatures you control with power greater than their base power.
+Whenever you cast a spell from anywhere but your hand, put a +1/+1 counter on target creature. => This creature has flying as long as it's your turn.
+Whenever this creature attacks, exile the top card of your library. You may play it this turn. It costs {1} less to cast this way for each creature you control with power greater than its base power.
+Whenever you cast a spell from anywhere but your hand, put a +1/+1 counter on target creature.
+
+Dawncrest Camaar
+cost: {G} => {1}{G}
+rules_text: As long as there are five or more Deserts among lands you control and land cards in your graveyard, this creature gets +3/+2 and has vigilance.
+{T}: Add {R} or {G}. => As long as there are five or more Deserts among lands you control and land cards in your graveyard, this creature gets +3/+1 and has vigilance.
+{T}: Add {R} or {G}.
+pt: 0/1 => 1/3
+
+Grand Hunt
+
+Heartland Grovetender
+
+Herald of Behama
+rules_text: Trample
+Whenever a land you control enters, put a +1/+1 counter on this creature and up to one other target creature.
+Incarnate {3}{G} [i]({3}{G}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i] => Trample
+Whenever a land you control enters, put a +1/+1 counter on target creature.
+Incarnate {3}{G} [i]({3}{G}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i]
+pt: 5/4 => 5/5
+
+Mother of Stings
+rules_text: Deathtouch
+Once each turn, when a card leaves your graveyard, you may create a 1/1 green Scorpion creature token with deathtouch. => Once during each of your turns, when a card leaves your graveyard, you may create a 1/1 green Scorpion creature token with deathtouch.
+
+Seeker of Nissegal
+
+Haruzah District Enforcer
+
+Inhospitable Settlement
+special_text: 
+Put a +1/+1 counter on target creature you control. It fights up to one target creature you don't control.
+This enchantment deals 2 damage to each opponent.
+C — Transform this enchantment. => [i](As this Discovery enters and after your draw step, add a progress counter. Stop after you've discovered.)[/i]
+I — Put a +1/+1 counter on target creature you control. It fights up to one target creature you don't control.
+II — This enchantment deals 2 damage to each opponent.
+C — Transform this enchantment.
+
+Lethul, Aspect of Oblivion
+rules_text: Primordial [i](You may activate one that hasn't been chosen on your turn as a sorcery. This can't attack or block until you start your turn with all chosen.)[/i]
+• Exile target nonland permanent with mana value 4 or less an opponent controls.
+• Return target noncreature, nonland card from your graveyard to your hand.
+• Until the start of your next turn, spells your opponents cast cost {1} more to cast. => Primordial [i](You may activate one that hasn't been chosen on your turn as a sorcery. This can't attack or block until you start your turn with all chosen.)[/i]
+• Exile up to one target nonland permanent with mana value 4 or less.
+• Return up to one target noncreature, nonland card from your graveyard to your hand.
+• Until the start of your next turn, spells your opponents cast cost {1} more to cast.
+
+Zupiqu's Scavenger
+rules_text: Deathtouch
+Whenever this creature enters or attacks, mill two cards.
+Whenever one or more cards leave your graveyard, you draw a card and you lose 1 life. => Deathtouch
+Whenever this creature enters or attacks, mill two cards.
+Whenever one or more cards leave your graveyard, you may pay 1 life. If you do, draw a card.
+
+Kanaan Warblades
+
+Splintering Manifestation
+rules_text: Whenever this creature attacks, you may discard a card. If you do, exile the top card of your library. You may play that card this turn.
+{5}, Exile five other cards from your graveyard: Return this card from your graveyard to the battlefield tapped. => Whenever this creature attacks, you may discard a card. If you do, exile the top two cards of your library. You may play one of them this turn.
+{5}, Exile five other cards from your graveyard: Return this card from your graveyard to the battlefield tapped.
+
+Stonewoken Immortal
+
+Tablets of Prophecy
+
+Sandswept Ruins
+
+Madrati, Mother of Chaos
+rules_text: Flying, haste
+Whenever Madrati attacks, you may sacrifice another creature. If you do, search your library for three creature cards and reveal them. If you revealed three cards with different names that each share a creature type with the sacrificed creature this way, put one of those cards at random onto the battlefield tapped and attacking. Then shuffle. => Flying, haste
+Whenever Madrati attacks, you may sacrifice another creature. If you do, search your library for three creature cards that share a creature type with that creature and reveal them. If you revealed three cards with different names this way, put one of those cards at random onto the battlefield tapped and attacking. Then shuffle.
+
+Kiss of the Heartstopped
+rules_text: Flying, lifelink, haste
+Incarnate {1}{R}{W} [i]({1}{R}{W}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i] => This spell can't be countered.
+Flying, lifelink, haste
+Incarnate {1}{R}{W} [i]({1}{R}{W}, Exile this from your graveyard: Target creature you control becomes a copy of it until end of turn. Incarnate only as a sorcery.)[/i]
+
+Oasis Sanctum
+rules_text: [i]({T}: Add {U}.)[/i]
+This land enters tapped unless you pay 2 life.
+{2}{U}, Discard this card: Tap target nonland permanent and put two stun counters on it. => [i]({T}: Add {U}.)[/i]
+This land enters tapped unless you pay 2 life.
+{2}{U}, Discard this card: Tap target nonland permanent and put a stun counter on it. It loses all abilities for as long as it remains tapped.
+
+Shemesh the Wanderer
+
+
+VERSION 1 CHANGELOG
 ====================
 
 First version published.
